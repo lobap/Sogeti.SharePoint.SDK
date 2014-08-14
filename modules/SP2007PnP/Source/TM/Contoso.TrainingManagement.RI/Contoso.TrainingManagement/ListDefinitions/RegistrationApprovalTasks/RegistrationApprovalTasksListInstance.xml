@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="d3809482-9c5c-4ace-a48c-a4f4ae56796d" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature id at deployment time.
+  -->
+  <ListInstance FeatureId="00bfea71-a83e-497e-9ba0-7a5c597d0107" 
+                Title="Registration Approval Tasks" 
+                Url="Lists/RegistrationApprovalTasks"
+                OnQuickLaunch="TRUE"
+                QuickLaunchUrl="Lists/RegistrationApprovalTasks">      
+  </ListInstance>
+  <ContentTypeBinding ContentTypeId="0x01080100b3629edc2920465085800d1eb262d5ad" ListUrl="Lists/RegistrationApprovalTasks" />
+</Elements>

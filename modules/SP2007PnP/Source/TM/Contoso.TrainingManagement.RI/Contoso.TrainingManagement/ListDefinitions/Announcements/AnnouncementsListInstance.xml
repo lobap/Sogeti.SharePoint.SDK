@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="81a3dca5-6981-4d31-bfe4-ce6744b931b0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance FeatureId="00BFEA71-D1CE-42de-9C63-A44004CE0104" Title="Announcements" Url="Lists/Announcements" TemplateType="104">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Welcome to your Training Management Site</Field>
+          <Field Name="Body">Welcome to your new Training Management Site. Please use the My Training link under Dashbaords to get started.</Field>
+          <Field Name="Expires">&lt;ows:TodayISO/&gt;</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

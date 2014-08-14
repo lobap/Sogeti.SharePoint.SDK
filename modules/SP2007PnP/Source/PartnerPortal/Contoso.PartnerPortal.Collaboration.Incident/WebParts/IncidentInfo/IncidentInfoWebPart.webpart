@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the Web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="4e02ab7f-8fae-4835-822a-48b667c9d7cc" />
+      <importErrorMessage>Cannot import IncidentInfo Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">IncidentInfo Web Part</property>
+        <property name="Description" type="string">IncidentInfo Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

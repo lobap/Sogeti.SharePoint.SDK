@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" Id="a5b67b39-bce7-4e2e-a72f-cfeaf959aa55">
+  <Workflow
+     Name="Registration Approval v2"
+     Description="Workflow that handles the approval of training course registrations."
+     Id="7759c309-b510-48ef-be41-d2c7bfcde059"
+     CodeBesideClass="Contoso.TrainingManagement.Workflows.RegistrationApproval.Workflow"
+     CodeBesideAssembly="Contoso.TrainingManagement.Workflows.RegistrationApproval, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" 
+     TaskListContentTypeId="0x01080100b3629edc2920465085800d1eb262d5ad">
+    <Categories/>
+    <MetaData>     
+      <StatusPageUrl>_layouts/WrkStat.aspx</StatusPageUrl>
+    </MetaData>
+  </Workflow>
+</Elements>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14C0C8ED-F03D-486E-8743-F739CDE6E3BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Practices.SharePoint.Common.Tests</RootNamespace>
+    <AssemblyName>Microsoft.Practices.SharePoint.Common.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Moles.Framework, Version=0.94.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <!--<Reference Include="Microsoft.Practices.ServiceLocation.Moles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.SharePoint.Common.Moles, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />-->
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <!--<Reference Include="Microsoft.SharePoint.Behaviors, Version=0.94.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />-->
+
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <!--<Reference Include="Microsoft.SharePoint.Moles, Version=14.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />-->
+    <Reference Include="Microsoft.SharePoint.Security, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <!--<Reference Include="mscorlib.Behaviors, Version=0.94.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib.Moles, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />-->
+    <Reference Include="System" />
+    <!--<Reference Include="System.Behaviors, Version=0.94.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />-->
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Selectors" />
+    <Reference Include="System.Messaging" />
+    <!--<Reference Include="System.Moles, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />-->
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <!--<Reference Include="System.Web.Behaviors, Version=0.94.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Moles, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />-->
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <!--<Reference Include="System.Xml.Moles, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationContextProviderTests.cs" />
+    <Compile Include="Behaviors\BIConfigManager.cs" />
+    <Compile Include="Behaviors\BIConfigStack.cs" />
+    <Compile Include="Behaviors\BSPConfiguredFarm.cs" />
+    <Compile Include="Behaviors\BSPConfiguredWebApp.cs" />
+    <Compile Include="CAMLQueryBuilderTests.cs" />
+    <Compile Include="Configuration\ConfigMangerTests.cs" />
+    <Compile Include="Configuration\ConfigSettingSerializerTests.cs" />
+    <Compile Include="Configuration\ConfigurationListTests.cs" />
+    <Compile Include="Configuration\PropertyBagHierarchyTests.cs" />
+    <Compile Include="Configuration\FarmPropertyBagHierarchyTests.cs" />
+    <Compile Include="Configuration\FullTrustPropertyBagHierarchyTests.cs" />
+    <Compile Include="Configuration\HierarchicalConfigTests.cs" />
+    <Compile Include="Configuration\HierarchyBuilderTests.cs" />
+    <Compile Include="Configuration\IPropertyBagTest.cs" />
+    <Compile Include="Configuration\SandboxFarmPropertyBagHeirarchyTest.cs" />
+    <Compile Include="Configuration\SandboxPropertyBagHierarchyTests.cs" />
+    <Compile Include="Configuration\SandboxFarmPropertyBagTests.cs" />
+    <Compile Include="Configuration\SandboxWebAppPropertyBagTests.cs" />
+    <Compile Include="Configuration\SandboxWithProxyPropertyBagHierarchyTests.cs" />
+    <Compile Include="Configuration\SPFarmPropertyBagTests.cs" />
+    <Compile Include="Configuration\SPSitePropertyBagTests.cs" />
+    <Compile Include="Configuration\SPWebAppPropertyBagTests.cs" />
+    <Compile Include="Configuration\SPWebPropertyBagTests.cs" />
+    <Compile Include="Configuration\TestablePropertyBagHierarchy.cs" />
+    <Compile Include="Logging\TestableBaseLogger.cs" />
+    <Compile Include="Logging\DiagnosticCategoryTests.cs" />
+    <Compile Include="Logging\DiagnosticsAreaEventSourceTests.cs" />
+    <Compile Include="Mocks\MockApplicationContextProvider.cs" />
+    <Compile Include="Mocks\MockEventAndTraceLogger.cs" />
+    <Compile Include="Mocks\MockLoggingConfigMgr.cs" />
+    <Compile Include="Behaviors\BIConfigSettingSerializer.cs" />
+    <Compile Include="Mocks\MockServiceLocatorConfig.cs" />
+    <Compile Include="Proxies\ContainsKeyOperationTests.cs" />
+    <Compile Include="Proxies\LoggingOperationTests.cs" />
+    <Compile Include="Proxies\ProxyInstalledOperationTests.cs" />
+    <Compile Include="Proxies\ReadConfigurationOperationTests.cs" />
+    <Compile Include="Proxies\TracingOperationTests.cs" />
+    <Compile Include="ServiceLocation\FarmSiteCombinedServiceLocatorTests.cs" />
+    <Compile Include="ServiceLocation\ServiceLocatorConfigTests.cs" />
+    <Compile Include="ServiceLocation\TestableSharePointServiceLocator.cs" />
+    <Compile Include="SharePointEnvironmentTests.cs" />
+    <Compile Include="TestsConstants.cs" />
+    <Compile Include="Logging\BaseLoggerTests.cs" />
+    <Compile Include="Logging\DiagnosticsAreaCollectionTests.cs" />
+    <Compile Include="Logging\DiagnosticsAreaTests.cs" />
+    <Compile Include="Logging\DiagnosticsCategoryCollectionTests.cs" />
+    <Compile Include="Logging\DiagnosticsServiceTests.cs" />
+    <Compile Include="Logging\EventLogLoggerTests.cs" />
+    <Compile Include="Logging\SharePointLoggerTests.cs" />
+    <Compile Include="Logging\TraceLoggerTests.cs" />
+    <Compile Include="Behaviors\BIServiceLocatorFactory.cs" />
+    <Compile Include="ServiceLocation\ActivatingServiceLocatorFactoryTests.cs" />
+    <Compile Include="ServiceLocation\ActivatingServiceLocatorTests.cs" />
+    <Compile Include="Behaviors\BIPropertyBag.cs" />
+    <Compile Include="ServiceLocation\ServiceLocatorTypeMappingsTests.cs" />
+    <Compile Include="ServiceLocation\SharePointServiceLocatorTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Moles Include="mscorlib.moles" />
+    <Moles Include="Microsoft.Practices.ServiceLocation.moles" />
+    <Moles Include="Microsoft.Practices.SharePoint.Common.moles" />
+    <Moles Include="Microsoft.SharePoint.moles" />
+    <Moles Include="System.moles" />
+    <Moles Include="System.Web.moles" />
+    <Moles Include="System.Xml.moles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ListRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Microsoft.Practices.SharePoint.Common.Configuration.ConfigurationProxy\Microsoft.Practices.SharePoint.Common.Configuration.ConfigurationProxy.csproj">
+      <Project>{D748308E-E485-44CB-86E1-6A79815821E2}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common.Configuration.ConfigurationProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Microsoft.Practices.SharePoint.Common.LoggerProxy\Microsoft.Practices.SharePoint.Common.LoggerProxy.csproj">
+      <Project>{8BDAA22D-CF8D-4784-A896-F19ED2F0029D}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common.LoggerProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Source\Microsoft.Practices.SharePoint.Common.csproj">
+      <Project>{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

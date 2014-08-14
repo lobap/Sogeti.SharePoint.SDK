@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<WebApp Port="80" />
+  <Sites>
+    <Site Name="Manufacturing" Title="Manufacturing Plant" SandWebPart="True">
+      <Projects>
+        <Project Name="Expansion of the cooling capacity for the clean room" />
+        <Project Name="Replace water and purification system filters" />
+        <Project Name="Add a process cooling tower to expand manufacturing capacity" />
+        <Project Name="Overhaul No. 2 and No. 4 air handlers" />
+      </Projects>
+      <Webs>
+        <Web Name="Construction" Description="Construction">
+          <Estimates>
+            <Estimate Title="Clean room chiller purchase and installation" ProjectId="1" SOWStatus="Approved" ContentType="Estimate" Name="Constfile1.xls" VendorId="1" VendorName="ADatum Corporation" EstimateValue="$2000" />
+            <Estimate Title="Foundation and wall concrete construction " ProjectId="3" SOWStatus="Approved" ContentType="Estimate" Name="Constfile2.xls" VendorId="2" VendorName="Fabrikam,Inc." EstimateValue="$3000"/>
+            <Estimate Title="Chiller processing system purchase and installation" ProjectId="3" SOWStatus="Approved" ContentType="Estimate" Name="Constfile3.xls" VendorId="3" VendorName="Litware,Inc." EstimateValue="$4000"/>
+            <Estimate Title="Electrical system installation" ProjectId="3" SOWStatus="Submitted" ContentType="Estimate" Name="Constfile4.xls" VendorId="4" VendorName="Trey Research" EstimateValue="$5000"/>
+           
+          </Estimates>
+        </Web>
+        <Web Name="Maintenance" Description="Maintenance">
+          <Estimates>
+            <Estimate Title="Disassemble, replace, and reassemble water purification filtration media for purification system" ProjectId="2" SOWStatus="Approved" ContentType="Estimate" Name="Maintfile1.xls" VendorId="5" VendorName="Wide World Importers" EstimateValue="12500"/>
+            <Estimate Title="Remove and overhaul air handler drive motors" ProjectId="4" SOWStatus="Approved" ContentType="Estimate" Name="Maintfile2.xls" VendorId="6" VendorName="Blue Yonder Airlines" EstimateValue="$13500"/>
+            <Estimate Title="Replace and calibrate pressure sensors and flow regulators" ProjectId="4" SOWStatus="Draft" ContentType="Estimate" Name="Maintfile3.xls" VendorId="7" VendorName="Alpine Ski House" EstimateValue="$15000"/>
+           
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>  
+  </Sites>
+  
+  
+</Settings>

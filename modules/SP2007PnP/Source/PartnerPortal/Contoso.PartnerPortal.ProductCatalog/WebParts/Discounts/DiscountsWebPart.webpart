@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the Web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="6a6228d9-7008-4efc-83f4-303def7a57af" />
+      <importErrorMessage>Cannot import Discounts Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Discounts Web Part</property>
+        <property name="Description" type="string">Displays a list of applicable discounts for a product.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

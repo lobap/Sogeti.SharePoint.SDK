@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IncidentDataSet" targetNamespace="http://tempuri.org/IncidentDataSet.xsd" xmlns:mstns="http://tempuri.org/IncidentDataSet.xsd" xmlns="http://tempuri.org/IncidentDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IncidentDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="IncidentDataSet" msprop:Generator_DataSetName="IncidentDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Incident" msprop:Generator_UserTableName="Incident" msprop:Generator_RowDeletedName="IncidentRowDeleted" msprop:Generator_RowChangedName="IncidentRowChanged" msprop:Generator_RowClassName="IncidentRow" msprop:Generator_RowChangingName="IncidentRowChanging" msprop:Generator_RowEvArgName="IncidentRowChangeEvent" msprop:Generator_RowEvHandlerName="IncidentRowChangeEventHandler" msprop:Generator_TableClassName="IncidentDataTable" msprop:Generator_TableVarName="tableIncident" msprop:Generator_RowDeletingName="IncidentRowDeleting" msprop:Generator_TablePropName="Incident">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="Product" msprop:Generator_UserColumnName="Product" msprop:Generator_ColumnVarNameInTable="columnProduct" msprop:Generator_ColumnPropNameInRow="Product" msprop:Generator_ColumnPropNameInTable="ProductColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Partner" msprop:Generator_UserColumnName="Partner" msprop:Generator_ColumnPropNameInRow="Partner" msprop:Generator_ColumnVarNameInTable="columnPartner" msprop:Generator_ColumnPropNameInTable="PartnerColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IncidentHistory" msprop:Generator_UserTableName="IncidentHistory" msprop:Generator_RowDeletedName="IncidentHistoryRowDeleted" msprop:Generator_RowChangedName="IncidentHistoryRowChanged" msprop:Generator_RowClassName="IncidentHistoryRow" msprop:Generator_RowChangingName="IncidentHistoryRowChanging" msprop:Generator_RowEvArgName="IncidentHistoryRowChangeEvent" msprop:Generator_RowEvHandlerName="IncidentHistoryRowChangeEventHandler" msprop:Generator_TableClassName="IncidentHistoryDataTable" msprop:Generator_TableVarName="tableIncidentHistory" msprop:Generator_RowDeletingName="IncidentHistoryRowDeleting" msprop:Generator_TablePropName="IncidentHistory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IncidentId" msprop:Generator_UserColumnName="IncidentId" msprop:Generator_ColumnVarNameInTable="columnIncidentId" msprop:Generator_ColumnPropNameInRow="IncidentId" msprop:Generator_ColumnPropNameInTable="IncidentIdColumn" type="xs:int" />
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_UserColumnName="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Incident" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:keyref name="FK_Incident_IncidentHistory" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Incident_IncidentHistory" msprop:rel_Generator_RelationVarName="relationFK_Incident_IncidentHistory" msprop:rel_Generator_UserChildTable="IncidentHistory" msprop:rel_Generator_UserParentTable="Incident" msprop:rel_Generator_ParentPropName="IncidentRow" msprop:rel_Generator_ChildPropName="GetIncidentHistoryRows">
+      <xs:selector xpath=".//mstns:IncidentHistory" />
+      <xs:field xpath="mstns:IncidentId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

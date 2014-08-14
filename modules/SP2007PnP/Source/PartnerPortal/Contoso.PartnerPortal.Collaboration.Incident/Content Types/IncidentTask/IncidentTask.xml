@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="b4d642dc-c00f-46ae-b11c-485114d8d9e3" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentType ID="0x0108009bbba7168ed64455b16ecdbd00ba7997" Name="Incident Task" Group="Contoso" Description="Incident Task Content Type" Version="0">
+    <FieldRefs>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers>
+          <Receiver>
+            <Name>ItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Class>9ec9cc50-80d2-4d15-8135-afc67bcba036</Class>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="9c6f9bca-2cf5-4ec7-b493-39d081730ca7" Title="Microsoft patterns &amp; practices Sub Site Creation Workflow (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="SubSiteCreationWorkflow\SubSiteCreationWorkflow.xml" />
+  </ElementManifests>
+</Feature>

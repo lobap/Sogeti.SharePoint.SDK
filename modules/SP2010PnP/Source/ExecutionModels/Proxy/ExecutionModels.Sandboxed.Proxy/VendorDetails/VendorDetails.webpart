@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="ExecutionModels.Sandboxed.Proxy.VendorDetails.VendorDetails, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Execution Models Proxy Vendor Details</property>
+        <property name="Description" type="string">
+          AggregateView Web Part - Proxy Vendor Details.
+          This web part uses querystring parameters to make a proxy call to a WCF service to return the vendor's total Account Payable.
+        </property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

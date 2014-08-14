@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="ExecutionModels.Sandboxed.AggregateView.AggregateView, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">P&amp;P SPG V3 - Execution Models Sandbox Aggregate View</property>
+        <property name="Description" type="string">AggregateView Web Part - Sandbox Execution Model.
+This web part shows aggregating multiple lists in the same site collection.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,9 @@
+﻿<solution id="95d86ffd-5d15-4b13-ad50-92fde929f691" name="ContosoPartnerPortalPartnerDirectory">
+  <features>
+    <feature id="24b19a96-b876-47d2-b43a-6fa7d5a70d07">
+      <featureElements>
+        <featureElement id="3e088607-edb1-4fa1-9840-e8a7bd31b2d9" name="PartnerIdField" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

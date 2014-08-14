@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="b4dab344-a235-426e-b50d-4cfde9c8b597" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="Tasks"
+                DisplayName="Tasks"
+                Description=""
+                BaseType="0"
+                Type="107"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="360"
+                Image="/_layouts/images/ittask.gif" />
+</Elements>

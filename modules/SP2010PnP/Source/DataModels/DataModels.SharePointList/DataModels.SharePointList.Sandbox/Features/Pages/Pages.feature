@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9d97f987-e315-4d00-b494-cdbf4e8f1d80" description="Deploys a Custom Pages Library and all required pages for the Parts Management site to run in the sandbox" featureId="9d97f987-e315-4d00-b494-cdbf4e8f1d80" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.40bc4b78-a0e5-4f2e-8e24-6ab8b982ae6b.FullName$" solutionId="00000000-0000-0000-0000-000000000000" title="Patterns and Practies SharePoint Guidance V3 - Data Models - SharePoint List Data - Parts Management - Pages - Sandbox" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+  <projectItems>
+    <projectItemReference itemId="728b6ecf-e025-481c-9133-8c3af12c9c04" />
+  </projectItems>
+</feature>

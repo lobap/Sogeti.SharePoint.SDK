@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Contoso.LOB.Services/2009/01" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Contoso.LOB.Services/2009/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Contoso.LOB.Services/2009/01/Imports">
+      <xsd:import schemaLocation="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd0" namespace="http://Contoso.LOB.Services/2009/01" />
+      <xsd:import schemaLocation="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Contoso.LOB.Services.Contracts" />
+      <xsd:import schemaLocation="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd3" namespace="http://Contoso.LOB.Services/2009/01/BusinessEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProductCatalog_GetProductSkus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSkus" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProductSkus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductSkusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProductBySku_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductBySku" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProductBySku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductBySkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProductBySku_LOBServicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Contoso.LOB.Services.Contracts" name="detail" element="q1:LOBServicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProductsByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsByCategory" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProductsByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProducts" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetCategoryById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryById" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetCategoryById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategories" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetChildCategoriesByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChildCategoriesByCategory" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetChildCategoriesByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChildCategoriesByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetPartsByProductSku_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartsByProductSku" />
+  </wsdl:message>
+  <wsdl:message name="IProductCatalog_GetPartsByProductSku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartsByProductSkuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProductCatalog">
+    <wsdl:operation name="GetProductSkus">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductSkus" message="tns:IProductCatalog_GetProductSkus_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductSkusResponse" message="tns:IProductCatalog_GetProductSkus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductBySku">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductBySku" message="tns:IProductCatalog_GetProductBySku_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductBySkuResponse" message="tns:IProductCatalog_GetProductBySku_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductBySkuLOBServicesFaultFault" name="LOBServicesFaultFault" message="tns:IProductCatalog_GetProductBySku_LOBServicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByCategory">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductsByCategory" message="tns:IProductCatalog_GetProductsByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductsByCategoryResponse" message="tns:IProductCatalog_GetProductsByCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProducts" message="tns:IProductCatalog_GetProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetProductsResponse" message="tns:IProductCatalog_GetProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryById">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetCategoryById" message="tns:IProductCatalog_GetCategoryById_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetCategoryByIdResponse" message="tns:IProductCatalog_GetCategoryById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetCategories" message="tns:IProductCatalog_GetCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetCategoriesResponse" message="tns:IProductCatalog_GetCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChildCategoriesByCategory">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetChildCategoriesByCategory" message="tns:IProductCatalog_GetChildCategoriesByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetChildCategoriesByCategoryResponse" message="tns:IProductCatalog_GetChildCategoriesByCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartsByProductSku">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetPartsByProductSku" message="tns:IProductCatalog_GetPartsByProductSku_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IProductCatalog/GetPartsByProductSkuResponse" message="tns:IProductCatalog_GetPartsByProductSku_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

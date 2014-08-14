@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="EstimateTemplate" Url="_cts/Estimate">
+    <File Url="estimate.xltx" Type="GhostableInLibrary" />
+  </Module>
+  <Module Name="SOWTemplate" Url="_cts/SOW">
+    <File Url="SOW.dotx" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

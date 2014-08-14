@@ -1,0 +1,16 @@
+﻿<solution id="c8c1fe2b-fdd4-418a-a76c-4f527ee1f3ef" name="ContosoPartnerPortalCollaborationIncident">
+  <features>
+    <feature id="1c28f48f-6544-45b3-8db0-e87977c09e46">
+      <featureElements>
+        <featureElement id="b4d642dc-c00f-46ae-b11c-485114d8d9e3" name="Incident Task Content Type" />
+        <featureElement id="4e02ab7f-8fae-4835-822a-48b667c9d7cc" name="IncidentInfoWebPart" />
+        <featureElement id="f8df25d5-4f7c-41fa-985f-10caa88bb874" name="IncidentStatusListWebPart" />
+      </featureElements>
+    </feature>
+    <feature id="86dfa338-3643-49c3-a935-26b043547326">
+      <featureElements>
+        <featureElement id="1109f486-96ed-46f7-bfb6-df0f3a4ad241" name="IncidentDashboard" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

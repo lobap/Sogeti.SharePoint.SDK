@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1a7ce3ea-2008-4221-825a-ccf3b6735c5f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:81/Vendor/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service22.xsd" MetadataType="Schema" ID="35d74d02-35ba-4bab-947c-3a5e380fd1de" SourceId="1" SourceUrl="http://fcheung1.redmond.corp.microsoft.com:81/Vendor/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service11.disco" MetadataType="Disco" ID="86d24a04-5324-4426-8599-29936680fe46" SourceId="1" SourceUrl="http://fcheung1.redmond.corp.microsoft.com:81/Vendor/Service.svc?disco" />
+    <MetadataFile FileName="VendorServices11.wsdl" MetadataType="Wsdl" ID="4c8ab4b5-2b6a-4b38-a831-177dbbcb8e3e" SourceId="1" SourceUrl="http://fcheung1.redmond.corp.microsoft.com:81/Vendor/Service.svc?wsdl" />
+    <MetadataFile FileName="Service23.xsd" MetadataType="Schema" ID="32d8a0e5-94bb-4876-8348-c7bfc643c3df" SourceId="1" SourceUrl="http://fcheung1.redmond.corp.microsoft.com:81/Vendor/Service.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

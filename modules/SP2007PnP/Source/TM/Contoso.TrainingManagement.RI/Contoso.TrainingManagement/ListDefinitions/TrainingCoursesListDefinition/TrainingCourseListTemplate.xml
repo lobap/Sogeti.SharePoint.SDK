@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="d81bd4d7-c2fc-4789-9438-6d8ca4896669" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="TrainingCourseListTemplate"
+                DisplayName="Training Courses List Template"
+                Description=""
+                BaseType="0"
+                Type="1001"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="410"
+                Image="/_layouts/images/itgen.gif" />
+</Elements>

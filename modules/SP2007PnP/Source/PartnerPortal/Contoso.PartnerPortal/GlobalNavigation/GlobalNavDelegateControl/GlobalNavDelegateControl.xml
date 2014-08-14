@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="ad7b6ced-91cc-468d-a152-2bfaead271d1" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Control Id="TopNavigationDataSource"
+           Sequence="20"
+           ControlClass="System.Web.UI.WebControls.SiteMapDataSource"
+           ControlAssembly="System.Web, Culture=neutral, Version=2.0.0.0, PublicKeyToken=b03f5f7f11d50a3a">
+    <Property Name="ShowStartingNode">false</Property>
+    <Property Name="StartingNodeUrl"></Property>
+    <Property Name="SiteMapProvider">HierarchicalConfigSiteMapProvider</Property>
+    <Property Name="ID">topSiteMap</Property>
+  </Control>
+</Elements>

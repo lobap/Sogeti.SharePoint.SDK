@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<WebApp Port="80" />
+  <Sites>
+    <Site Name="HeadQuarters" Title="DivisionalHeadQuarters" FarmSol="True">
+      <Webs />          
+     </Site>
+    <Site Name="MaintenanceBB" Title="Facilities Maintenance-Blue Bell" FarmSol="False">
+      <Projects>
+        <Project Name="Improve Purification Process" />
+        <Project Name="Boiler cleaning and repair" />
+      </Projects>
+      <Webs>
+        <Web Name="Maintenance" Description="Maintenance">
+          <Estimates>
+            <Estimate Title="Extend the production line to add an additional processing stage" ProjectId="1" SOWStatus="Submitted" ContentType="Estimate" Name="MaintBB-test-file1.xls" VendorId="1" VendorName="Alpine Ski House" EstimateValue="$2000"/>
+            <Estimate Title="Install and calibrate a centrifugal peeler separation stage" ProjectId="1" SOWStatus="Submitted" ContentType="Estimate" Name="MaintBB-test-file2.xls" VendorId="2" VendorName="Blue Yonder Airlines" EstimateValue="$3000"/>
+            <Estimate Title="Open boiler, repair defects and clean boiler and tubes, close boiler and pressure test boiler system." ProjectId="2" SOWStatus="Approved" ContentType="Estimate" Name="MaintBB-test-file3.xls" VendorId="3" VendorName="Coho Vineyard" EstimateValue="$3500"/>
+           
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>
+    <Site Name="ConstructionBB" Title="Construction - Blue Bell" FarmSol="False">
+      <Projects>
+        <Project Name="Add hazardous waste containment facility" />
+        
+      </Projects>
+      <Webs>
+        <Web Name="Construction" Description="Construction">
+          <Estimates>
+            <Estimate Title="Create temporary load bearing wall and demolish rear wall of the holding facility." ProjectId="1" SOWStatus="Approved" ContentType="Estimate" Name="ConstBB-test-file1.xls" VendorId="4" VendorName="Contoso Pharmaceuticals" EstimateValue="$4000"/>
+            <Estimate Title="Excavate, and build foundation and walls (concrete) extending the holding facility for a hazardous waste area" ProjectId="1" SOWStatus="Submitted" ContentType="Estimate" Name="ConstBB-test-file2.xls" VendorId="5" VendorName="Fabrikam, Inc." EstimateValue="5000"/>
+            <Estimate Title="Install and test HVAC with negative pressure system" ProjectId="1" SOWStatus="Draft" ContentType="Estimate" Name="ConstBB-test-file3.xls" VendorId="6" VendorName="Humongous Insurance" EstimateValue="$6000"/>
+            <Estimate Title="Install electrical system for containment facility." ProjectId="1" SOWStatus="Draft" ContentType="Estimate" Name="ConstBB-test-file4.xls" VendorId="7" VendorName="Lucerne Publishing" EstimateValue="$7500"/>
+            
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>
+    <Site Name="MaintenanceNB" Title="Facilities Maintenance- New Brunswick" FarmSol="False">
+      <Projects>
+        <Project Name="Expand office space for research engineers"/>
+        <Project Name="Revamp shift room to improve shift turnover"/>
+      </Projects>
+      <Webs>
+        <Web Name="Maintenance" Description="Maintenance">
+          <Estimates>
+            <Estimate Title="Move the finanance department workers to new office facility and re-arrange space into pods for engineers" ProjectId="1" SOWStatus="Approved" ContentType="Estimate" Name="MaintNB-test-file1.xls" VendorId="8" VendorName="Northwind Traders" EstimateValue="$8500"/>
+            <Estimate Title="Add display panels, wire information feeds to display shift status and product rates last shift" ProjectId="2" SOWStatus="Submitted" ContentType="Estimate" Name="MaintNB-test-file2.xls" VendorId="9" VendorName="Southridge Video" EstimateValue="$9000"/>
+            <Estimate Title="Install four white boards." ProjectId="2" SOWStatus="Submitted" ContentType="Estimate" Name="MaintNB-test-file3.xls" VendorId="10" VendorName="Trey Research" EstimateValue="$13500"/>
+         
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>
+    <Site Name="ConstructionNB" Title="Construction - New Brunswick" FarmSol="False">
+      <Projects>
+        <Project Name="Repave parking lot"/>
+      </Projects>
+      <Webs>
+        <Web Name="Construction" Description="Construction">
+          <Estimates>
+            <Estimate Title="Repair and reinforce problem areas in parking lot and repave the lot" ProjectId="1" SOWStatus="Draft" ContentType="Estimate" Name="ConstNB-test-file1.xls" VendorId="11" VendorName="Wide World Importers" EstimateValue="$15000"/>
+         
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>
+  </Sites>
+</Settings>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="5b83916b-c856-4fe7-9a0b-bd78e24f2d7e" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature Id at deployment time.
+  -->
+  <ListInstance FeatureId="01965bb6-21f0-4c4f-9206-4e5222e0c42b" 
+                Title="Documents instance" 
+                Url="Lists/Documents">
+  </ListInstance>
+</Elements>

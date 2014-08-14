@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="C28BAAA4-BC40-4f72-B27F-B04B11B014AC" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="DefaultBlank" >
+    <File Url="default.aspx" Path="default.aspx" NavBarHome="True" Type="Ghostable">
+      <View List="Lists/Documents" BaseViewID="1" DisplayName="Documents Library" Name="Documents Library" WebPartOrder="1" WebPartZoneID="Left" />
+      <View List="Lists/Tasks" BaseViewID="1" DisplayName="Tasks" Name="Tasks" WebPartOrder="1" WebPartZoneID="Left" />
+      <View List="Lists/Discussion" BaseViewID="1" DisplayName="Discussion" Name="Discussion" WebPartOrder="1" WebPartZoneID="Left" />
+      <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="Contoso.PartnerPortal.Collaboration.OrderException.WebParts.OrderExceptionInfo, Contoso.PartnerPortal.Collaboration.OrderException, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9b94efc288348c2" />
+                <importErrorMessage>Cannot import Order Exception Info Web Part.</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Order Exception Info Web Part</property>
+                  <property name="Description" type="string">Order Exception Information</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <NavBarPage Name="$Resources:core,nav_Home;" ID="1002" Position="Start"/>
+      <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start"/>
+    </File>
+  </Module>
+</Elements>

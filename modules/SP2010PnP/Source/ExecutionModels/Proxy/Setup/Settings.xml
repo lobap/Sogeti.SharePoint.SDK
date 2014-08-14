@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<WebApp Port="80" />
+  <Sites>
+    <Site Name="SpringfieldProxy" Title="SpringfieldProxy Plant" SandWebPart="False" ProxyWebPart="True">
+      <Projects>
+        <Project Name="Expansion of the cooling capacity for the clean room" />
+        <Project Name="Replace water and purification system filters" />
+        <Project Name="Add a process cooling tower to expand manufacturing capacity" />
+        <Project Name="Overhaul #2 and #4 air handlers" />
+      </Projects>
+      <Webs>
+        <Web Name="Construction" Description="Construction">
+          <Estimates>
+            <Estimate Title="Clean room chiller purchase and installation" ProjectId="1" SOWStatus="Approved" ContentType="Estimate" Name="Constfile1.xlsx" VendorId="1" VendorName="A. Datum Corporation." EstimateValue="5000" />
+            <Estimate Title="Foundation and wall concrete construction " ProjectId="3" SOWStatus="Approved" ContentType="Estimate" Name="Constfile2.xlsx" VendorId="2" VendorName="Fabrikam, Inc." EstimateValue="9000"/>
+            <Estimate Title="Chiller processing system purchase and installation" ProjectId="3" SOWStatus="Approved" ContentType="Estimate" Name="Constfile3.xlsx" VendorId="3" VendorName="Litware, Inc." EstimateValue="4000"/>
+            <Estimate Title="Electrical system installation" ProjectId="3" SOWStatus="Submitted" ContentType="Estimate" Name="Constfile4.xlsx" VendorId="4" VendorName="Trey Research." EstimateValue="3000"/>
+           
+          </Estimates>
+        </Web>
+        <Web Name="Maintenance" Description="Maintenance">
+          <Estimates>
+            <Estimate Title="Disassemble, replace, and reassemble water purification filtration media for purification system" ProjectId="2" SOWStatus="Approved" ContentType="Estimate" Name="Maintfile1.xlsx" VendorId="5" VendorName="Wide World Importers." EstimateValue="7000"/>
+            <Estimate Title="Remove and overhaul air handler drive motors" ProjectId="4" SOWStatus="Approved" ContentType="Estimate" Name="Maintfile2.xlsx" VendorId="6" VendorName="Woodgrove Bank." EstimateValue="6000"/>
+            <Estimate Title="Replace and calibrate pressure sensors and flow regulators" ProjectId="4" SOWStatus="Draft" ContentType="Estimate" Name="Maintfile3.xlsx" VendorId="7" VendorName="Wingtip Toys." EstimateValue="8000"/>
+           
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>  
+  </Sites>
+  
+  
+</Settings>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="57e15457-3dff-4be4-b22c-08f1325463ff" Title="Contoso Partner Central (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="PartnerRollupPage\Module.xml" />
+    <ElementFile Location="PartnerRollupPage\PartnerRollup.aspx" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="212f448e-32bb-4bee-b7c6-f845cf7c33ac"/>
+  </ActivationDependencies>
+</Feature>

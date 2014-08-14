@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="73d53eb7-be26-4d84-9d1e-04d2ded76535" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Assemblies>
+    <Assembly Location="Contoso.LOB.Services.Client.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoLOBServicesClientWebApp\feature.xml" />
+  </FeatureManifests>
+  <TemplateFiles>
+    <TemplateFile Location="FEATURES\ContosoLOBServicesClientWebApp\WcfServiceConfiguration.xml" />
+  </TemplateFiles>
+</Solution>

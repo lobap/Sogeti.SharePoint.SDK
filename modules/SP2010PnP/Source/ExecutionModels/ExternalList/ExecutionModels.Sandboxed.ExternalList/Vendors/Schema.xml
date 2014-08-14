@@ -1,0 +1,59 @@
+﻿<List Title="Vendors" Direction="none" Url="Lists/Vendors" BaseType="0" Type="600" DontSaveInTemplate="TRUE" DisableGridEditing="TRUE" NoCrawl="TRUE" DisallowContentTypes="TRUE" BrowserFileHandling="Permissive" FolderCreation="FALSE" DisableAttachments="TRUE" Catalog="FALSE" SendToLocation="|" ImageUrl="/_layouts/images/itebl.png" xmlns:ows="Microsoft SharePoint" xmlns:spctf="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms" xmlns="http://schemas.microsoft.com/sharepoint/">
+	<MetaData>
+		<ContentTypes>
+			<ContentType ID="0x01" Name="Item" Group="List Content Types" Description="Create a new list item." FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}">
+				<Folder TargetName="Item" />
+				<FieldRefs>
+					<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+					<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+				</FieldRefs>
+				<XmlDocuments>
+					<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+						<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+							<Display>ListForm</Display>
+							<Edit>ListForm</Edit>
+							<New>ListForm</New>
+						</FormTemplates>
+					</XmlDocument>
+				</XmlDocuments>
+			</ContentType>
+		</ContentTypes>
+		<Fields>
+			<Field DisplayName="BDC Identity" Hidden="FALSE" Name="BdcIdentity" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BdcIdentity" Type="Text" />
+			<Field DisplayName="Id" Hidden="FALSE" Name="Id" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Id" Type="Integer" />
+			<Field DisplayName="Name" Hidden="FALSE" Name="Name" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Name" Type="Text" />
+			<Field DisplayName="Address" Hidden="FALSE" Name="Address" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Address" Type="Text" />
+			<Field DisplayName="City" Hidden="FALSE" Name="City" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="City" Type="Text" />
+			<Field DisplayName="State" Hidden="FALSE" Name="State" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="State" Type="Text" />
+			<Field DisplayName="ZipCode" Hidden="FALSE" Name="ZipCode" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ZipCode" Type="Text" />
+			<Field DisplayName="Country" Hidden="FALSE" Name="Country" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Country" Type="Text" />
+			<Field DisplayName="Telephone" Hidden="FALSE" Name="Telephone" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Telephone" Type="Text" />
+			<Field DisplayName="Industry" Hidden="FALSE" Name="Industry" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Industry" Type="Text" />
+		</Fields>
+		<Forms />
+		<Views>
+			<View DisplayName="Vendors Read List" DefaultView="TRUE" BaseViewID="1" Type="HTML" MobileView="TRUE" MobileDefaultView="TRUE" ImageUrl="/_layouts/images/generic.png" XslLink="main.xsl" WebPartZoneID="Main" WebPartOrder="0" Url="Read List.aspx" SetupPath="pages\viewpage.aspx">
+				<XslLink>main.xsl</XslLink>
+				<Method Name="Read List" />
+				<Query>
+					<OrderBy>
+						<FieldRef Name="Id" />
+					</OrderBy>
+				</Query>
+				<ViewFields>
+					<FieldRef Name="Id" ListItemMenu="TRUE" LinkToItem="TRUE" />
+					<FieldRef Name="Name" />
+					<FieldRef Name="Address" />
+					<FieldRef Name="City" />
+					<FieldRef Name="State" />
+					<FieldRef Name="ZipCode" />
+					<FieldRef Name="Country" />
+					<FieldRef Name="Telephone" />
+					<FieldRef Name="Industry" />
+				</ViewFields>
+				<RowLimit Paged="TRUE">30</RowLimit>
+				<Aggregations Value="Off" />
+			</View>
+		</Views>
+	</MetaData>
+</List>

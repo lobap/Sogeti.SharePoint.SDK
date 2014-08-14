@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="a2a76ac2-fb7f-42c4-948d-d0d4403ce766" ChangeDateTime="03/17/2010 17:49:24">
+    <Property Name="ElementName" Value="[dbo].[GetAllPartSuppliers]" />
+    <Property Name="ElementType" Value="ISql100Procedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[GetPartSuppliers]" />
+  </Operation>
+</Operations>

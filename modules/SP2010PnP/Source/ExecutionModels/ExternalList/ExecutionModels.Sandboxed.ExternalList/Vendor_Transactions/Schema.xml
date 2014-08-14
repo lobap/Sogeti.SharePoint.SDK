@@ -1,0 +1,57 @@
+﻿<List Title="VendorTransactions" Direction="none" Url="Lists/VendorTransactions" BaseType="0" Type="600" DontSaveInTemplate="TRUE" DisableGridEditing="TRUE" NoCrawl="TRUE" DisallowContentTypes="TRUE" BrowserFileHandling="Permissive" FolderCreation="FALSE" DisableAttachments="TRUE" Catalog="FALSE" SendToLocation="|" ImageUrl="/_layouts/images/itebl.png" xmlns:ows="Microsoft SharePoint" xmlns:spctf="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms" xmlns="http://schemas.microsoft.com/sharepoint/">
+	<MetaData>
+		<ContentTypes>
+			<ContentType ID="0x01" Name="Item" Group="List Content Types" Description="Create a new list item." FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}">
+				<Folder TargetName="Item" />
+				<FieldRefs>
+					<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+					<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+				</FieldRefs>
+				<XmlDocuments>
+					<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+						<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+							<Display>ListForm</Display>
+							<Edit>ListForm</Edit>
+							<New>ListForm</New>
+						</FormTemplates>
+					</XmlDocument>
+				</XmlDocuments>
+			</ContentType>
+		</ContentTypes>
+		<Fields>
+			<Field DisplayName="BDC Identity" Hidden="FALSE" Name="BdcIdentity" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BdcIdentity" Type="Text" />
+			<Field DisplayName="ID" Hidden="FALSE" Name="ID" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ID" Type="Integer" />
+			<Field DisplayName="VendorID" Hidden="FALSE" Name="VendorID" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="VendorID" Type="Integer" />
+			<Field DisplayName="TransactionTypeId" Hidden="FALSE" Name="TransactionTypeId" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TransactionTypeId" Type="Integer" />
+			<Field DisplayName="Notes" Hidden="FALSE" Name="Notes" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Notes" Type="Text" />
+			<Field DisplayName="TransactionDate" Hidden="FALSE" Name="TransactionDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TransactionDate" Type="DateTime" />
+			<Field DisplayName="Amount" Hidden="FALSE" Name="Amount" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Amount" Type="Decimal" />
+			<Field DisplayName="Name" Hidden="FALSE" Name="Name" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Name" Type="Text" />
+			<Field DisplayName="TransactionType" Hidden="FALSE" Name="TransactionType" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TransactionType" Type="Text" />
+		</Fields>
+		<Forms />
+		<Views>
+			<View DisplayName="VendorTransactions View Read List" DefaultView="TRUE" BaseViewID="1" Type="HTML" MobileView="TRUE" MobileDefaultView="TRUE" ImageUrl="/_layouts/images/generic.png" XslLink="main.xsl" WebPartZoneID="Main" WebPartOrder="0" Url="VendorTransactionViewRead List.aspx" SetupPath="pages\viewpage.aspx">
+				<XslLink>main.xsl</XslLink>
+				<Method Name="Read List" />
+				<Query>
+					<OrderBy>
+						<FieldRef Name="ID" />
+					</OrderBy>
+				</Query>
+				<ViewFields>
+					<FieldRef Name="ID" ListItemMenu="TRUE" LinkToItem="TRUE" />
+					<FieldRef Name="VendorID" />
+					<FieldRef Name="TransactionTypeId" />
+					<FieldRef Name="Notes" />
+					<FieldRef Name="TransactionDate" />
+					<FieldRef Name="Amount" />
+					<FieldRef Name="Name" />
+					<FieldRef Name="TransactionType" />
+				</ViewFields>
+				<RowLimit Paged="TRUE">30</RowLimit>
+				<Aggregations Value="Off" />
+			</View>
+		</Views>
+	</MetaData>
+</List>

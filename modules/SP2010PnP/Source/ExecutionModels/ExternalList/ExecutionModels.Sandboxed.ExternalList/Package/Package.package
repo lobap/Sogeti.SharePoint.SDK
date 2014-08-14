@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ccc65377-e950-4f76-96f0-5455afb33a71" solutionId="ccc65377-e950-4f76-96f0-5455afb33a71" resetWebServer="false" name="ExecutionModels.Sandbox.ExternalList" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Microsoft.Practices.SharePoint.Common.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\SharePoint 2010\Microsoft.Practices.SharePoint.Common\Source\bin\Debug\Microsoft.Practices.SharePoint.Common.dll" />
+    <customAssembly location="Microsoft.Web.CommandUI.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.Web.CommandUI.dll" />
+    <projectOutputAssembly location="ExecutionModels.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="477bac9e-c3fd-4495-ae28-485f72450a62" />
+    <featureReference itemId="78f3f866-beae-4223-b7ea-5c5fc44ab9a4" />
+  </features>
+</package>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="d962e88b-1ce2-44f3-b30d-8d8f23dfc2e2" Title="Microsoft patterns &amp; practices Sub Site Creation Infrastructure (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="Business Event Type Configuration\instance.xml" />
+    <ElementManifest Location="BusinessEventTypeConfiguration\ListDefinition.xml" />
+    <ElementFile Location="BusinessEventTypeConfiguration\schema.xml" />
+    <ElementFile Location="BusinessEventTypeConfiguration\AllItems.aspx" />
+    <ElementFile Location="BusinessEventTypeConfiguration\DispForm.aspx" />
+    <ElementFile Location="BusinessEventTypeConfiguration\EditForm.aspx" />
+    <ElementFile Location="BusinessEventTypeConfiguration\NewForm.aspx" />
+    <ElementManifest Location="SubSiteCreationRequests instance\instance.xml" />
+    <ElementManifest Location="SubSiteCreationRequests\ListDefinition.xml" />
+    <ElementFile Location="SubSiteCreationRequests\schema.xml" />
+    <ElementFile Location="SubSiteCreationRequests\AllItems.aspx" />
+    <ElementFile Location="SubSiteCreationRequests\DispForm.aspx" />
+    <ElementFile Location="SubSiteCreationRequests\EditForm.aspx" />
+    <ElementFile Location="SubSiteCreationRequests\NewForm.aspx" />
+    <ElementManifest Location="SubSiteCreationRequestTasks\instance.xml" />
+    <ElementManifest Location="SubSiteCreationRerquestWorkflowHistory\instance.xml" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="9c6f9bca-2cf5-4ec7-b493-39d081730ca7"/>
+  </ActivationDependencies>
+</Feature>

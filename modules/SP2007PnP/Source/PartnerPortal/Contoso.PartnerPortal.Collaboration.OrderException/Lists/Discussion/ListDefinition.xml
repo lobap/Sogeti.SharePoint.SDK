@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="cf22c15f-461e-4111-9400-1e9c1f852712" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="Discussion"
+                DisplayName="Discussion"
+                Description=""
+                BaseType="0"
+                Type="108"
+                OnQuickLaunch="TRUE"
+                SecurityBits="12"
+                Sequence="350"
+                Image="/_layouts/images/itdisc.gif" />
+</Elements>

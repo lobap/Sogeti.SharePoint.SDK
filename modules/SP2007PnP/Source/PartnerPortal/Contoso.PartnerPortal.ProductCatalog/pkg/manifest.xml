@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="a3ade33c-9b7a-4f67-a652-28f8e5c06a29" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoPartnerPortalProductCatalogSite\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalProductCatalogWeb\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Contoso.PartnerPortal.ProductCatalog.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\DiscountsControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\PricingControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\ProductDetailsControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\RelatedPartsControl.ascx" />
+  </TemplateFiles>
+</Solution>

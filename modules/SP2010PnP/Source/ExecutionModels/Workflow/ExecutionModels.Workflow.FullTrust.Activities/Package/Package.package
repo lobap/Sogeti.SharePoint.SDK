@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="feab7bdf-25ba-4f89-bc44-511ab457361c" solutionId="feab7bdf-25ba-4f89-bc44-511ab457361c" resetWebServer="false" name="ExecutionModels.Workflow.FullTrust.SubsiteCreation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5b085f60-c691-4cca-9318-95251d853861" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="1e44a9d3-bd0b-4e3e-9340-3624d834fd92" />
+  </projectItems>
+</package>

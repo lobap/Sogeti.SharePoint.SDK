@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProductCatalogDataSet xmlns="http://tempuri.org/ProductCatalogDataSet.xsd">
+  <!--Categories-->
+  <Category>
+    <Id>0</Id>
+    <Name>Root Category</Name>
+    <ParentId></ParentId>    
+  </Category>
+  <Category>
+    <Id>1</Id>
+    <Name>Medical Supplies</Name>
+    <ParentId>0</ParentId>    
+  </Category>
+  <Category>
+    <Id>2</Id>
+    <Name>Hospital Equipment</Name>
+    <ParentId>0</ParentId>
+  </Category>
+  <Category>
+    <Id>3</Id>
+    <Name>Physician Equipment</Name>
+    <ParentId>0</ParentId>
+  </Category>
+  <Category>
+    <Id>4</Id>
+    <Name>Dental Equipment</Name>
+    <ParentId>0</ParentId>
+  </Category>
+
+  <!--<Category>
+    <Id>5</Id>
+    <Name>Emergency/First Aid</Name>
+    <ParentId>1</ParentId>
+  </Category>-->
+  <!--<Category>
+    <Id>6</Id>
+    <Name>Disinfecting Products</Name>
+    <ParentId>1</ParentId>
+  </Category>-->
+  <Category>
+    <Id>7</Id>
+    <Name>Misc. Supplies</Name>
+    <ParentId>1</ParentId>
+  </Category>
+
+  <Category>
+    <Id>8</Id>
+    <Name>Cardiology</Name>
+    <ParentId>2</ParentId>
+  </Category>
+  <Category>
+    <Id>9</Id>
+    <Name>Maternity Ward</Name>
+    <ParentId>2</ParentId>
+  </Category>
+  <Category>
+    <Id>10</Id>
+    <Name>Emergency Room</Name>
+    <ParentId>2</ParentId>
+  </Category>
+
+  <!--<Category>
+    <Id>11</Id>
+    <Name>Chiropractic</Name>
+    <ParentId>3</ParentId>
+  </Category>-->
+  <Category>
+    <Id>12</Id>
+    <Name>Exercise Therapy</Name>
+    <ParentId>3</ParentId>
+  </Category>
+  <Category>
+    <Id>13</Id>
+    <Name>Pediatric</Name>
+    <ParentId>3</ParentId>
+  </Category>
+
+  <!--<Category>
+    <Id>14</Id>
+    <Name>Drills</Name>
+    <ParentId>4</ParentId>
+  </Category>-->
+  <Category>
+    <Id>15</Id>
+    <Name>X-Ray</Name>
+    <ParentId>4</ParentId>
+  </Category>
+  <!--Products-->
+  <Product>
+    <Id>1</Id>
+    <Name>Blood Pressure Kit</Name>
+    <ShortDescription>Blood pressure kit includes cuff and easy to read dial.</ShortDescription>
+    <LongDescription>Blood pressure kit includes cuff with velcro adhesive and easy to read glow in the dark dial.</LongDescription>
+    <SKU>1000000000</SKU>
+    <CategoryId>8</CategoryId>
+    <!--<ThumbnailImagePath>http://localhost:8585/Contoso.LOB.Servicesimages/bloodpressure.jpg</ThumbnailImagePath>-->
+    <ThumbnailImagePath>images/bloodpressure.jpg</ThumbnailImagePath>
+    <ImagePath>images/bloodpressure.jpg</ImagePath>
+  </Product>  
+  <Product>
+    <Id>2</Id>
+    <Name>Gurney</Name>
+    <ShortDescription>Gurney includes rubber wheels and extra padding.</ShortDescription>
+    <LongDescription>Gurney includes rubber wheels and extra padding. Meets most federal safety requirements.</LongDescription>
+    <SKU>2000000000</SKU>
+    <CategoryId>10</CategoryId>
+    <ThumbnailImagePath>images/gurney.jpg</ThumbnailImagePath>
+    <ImagePath>images/gurney.jpg</ImagePath>
+  </Product>
+  <Product>
+    <Id>3</Id>
+    <Name>Hot Water Bottle</Name>
+    <ShortDescription>Deluxe hot water bottle can hold either hot or cold water.</ShortDescription>
+    <LongDescription>Deluxe hot water bottle can hold either hot or cold water.</LongDescription>
+    <SKU>3000000000</SKU>
+    <CategoryId>7</CategoryId>
+    <ThumbnailImagePath>images/hotwaterbottle.jpg</ThumbnailImagePath>
+    <ImagePath>images/hotwaterbottle.jpg</ImagePath>
+  </Product>
+  <Product>
+    <Id>4</Id>
+    <Name>Walker</Name>
+    <ShortDescription>Aluminum walking assistant</ShortDescription>
+    <LongDescription>Aluminum walking assistant</LongDescription>
+    <SKU>4000000000</SKU>
+    <CategoryId>12</CategoryId>
+    <ThumbnailImagePath>images/walker.jpg</ThumbnailImagePath>
+    <ImagePath>images/walker.jpg</ImagePath>
+  </Product>
+  <Product>
+    <Id>5</Id>
+    <Name>Wheel Chair</Name>
+    <ShortDescription>Wheel chair featuring rubber wheels and foot rests</ShortDescription>
+    <LongDescription>Wheel chair featuring rubber wheels and foot rests</LongDescription>
+    <SKU>5000000000</SKU>
+    <CategoryId>9</CategoryId>
+    <ThumbnailImagePath>images/wheelchair.jpg</ThumbnailImagePath>
+    <ImagePath>images/wheelchair.jpg</ImagePath>
+  </Product>
+  <Product>
+    <Id>6</Id>
+    <Name>X-ray Machine</Name>
+    <ShortDescription>X-ray machine with Bone Diagnostic Software v1.1</ShortDescription>
+    <LongDescription>X-ray machine with Bone Diagnostic Software v1.1. Works as well for teeth as it does for bones.</LongDescription>
+    <SKU>6000000000</SKU>
+    <CategoryId>15</CategoryId>
+    <ThumbnailImagePath>images/xraymachine.jpg</ThumbnailImagePath>
+    <ImagePath>images/xraymachine.jpg</ImagePath>
+  </Product>
+  <Product>
+    <Id>7</Id>
+    <Name>Stethoscope</Name>
+    <ShortDescription>Deluxe stethoscope</ShortDescription>
+    <LongDescription>Hear your patient's heart beat with remarkable clarity.</LongDescription>
+    <SKU>7000000000</SKU>
+    <CategoryId>13</CategoryId>
+    <ThumbnailImagePath>images/stethoscope.jpg</ThumbnailImagePath>
+    <ImagePath>images/stethoscope.jpg</ImagePath>
+  </Product>
+  <Part>
+    <Id>1</Id>
+    <Name>Part 1</Name>
+  </Part>
+  <Part>
+    <Id>2</Id>
+    <Name>Part 2</Name>
+  </Part>
+  <ProductPart>
+    <ProductSku>1000000000</ProductSku>
+    <PartId>1</PartId>
+  </ProductPart>
+  <ProductPart>
+    <ProductSku>1000000000</ProductSku>
+    <PartId>2</PartId>
+  </ProductPart>
+  <ProductPart>
+    <ProductSku>2</ProductSku>
+    <PartId>2000000000</PartId>
+  </ProductPart>
+</ProductCatalogDataSet>

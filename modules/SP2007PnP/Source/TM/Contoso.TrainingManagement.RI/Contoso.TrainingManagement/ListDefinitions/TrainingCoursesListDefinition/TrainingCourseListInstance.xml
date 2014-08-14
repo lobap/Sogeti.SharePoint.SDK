@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="81f3bb2b-9c7f-46e6-b1cf-66be9eb3213b" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature id at deployment time.
+  -->
+  <ListInstance FeatureId="d81bd4d7-c2fc-4789-9438-6d8ca4896669" Title="Training Courses" Url="Lists/TrainingCourses" OnQuickLaunch="TRUE" QuickLaunchUrl="Lists\TrainingCourses" >
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Office 2007 Training</Field>
+          <Field Name="TrainingCourseCode">OFFICE07</Field>
+          <Field Name="TrainingCourseEnrollmentDate">2010-12-31</Field>
+          <Field Name="TrainingCourseStartDate">2011-01-01</Field>
+          <Field Name="TrainingCourseEndDate">2011-01-06</Field>
+          <Field Name="TrainingCourseCost">100.0</Field>
+          <Field Name="TrainingCourseDifficultyLevel">4.0</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

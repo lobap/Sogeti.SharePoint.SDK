@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="5facd16e-356c-470e-b7f7-c8f3c9d47800" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="MicrosoftSPGSubSiteCreationSite\feature.xml" />
+    <FeatureManifest Location="MicrosoftSPGSubSiteCreationWeb\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Microsoft.Practices.SPG.SubSiteCreation.Features.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Microsoft.Practices.SPG.SubSiteCreation.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+</Solution>

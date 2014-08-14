@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="24B19A96-B876-47d2-B43A-6FA7D5A70D07" Title="Contoso Partner Directory (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="PartnerIdField\partnerfield.xml" />
+  </ElementManifests>
+</Feature>

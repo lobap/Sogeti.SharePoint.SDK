@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PricingDataSet xmlns="http://tempuri.org/PricingDataSet.xsd">
+  <Pricing>
+    <Id>1</Id>
+    <ProductSku>1000000000</ProductSku>
+    <Price>319.99</Price>
+  </Pricing>
+  <Pricing>
+    <Id>2</Id>
+    <ProductSku>2000000000</ProductSku>
+    <Price>29.91</Price>
+  </Pricing>
+  <Pricing>
+    <Id>3</Id>
+    <ProductSku>3000000000</ProductSku>
+    <Price>39.91</Price>
+  </Pricing>
+  <Pricing>
+    <Id>4</Id>
+    <ProductSku>4000000000</ProductSku>
+    <Price>49.91</Price>
+  </Pricing>
+  <Pricing>
+    <Id>5</Id>
+    <ProductSku>5000000000</ProductSku>
+    <Price>59.91</Price>
+  </Pricing>
+  <Pricing>
+    <Id>6</Id>
+    <ProductSku>6000000000</ProductSku>
+    <Price>69.91</Price>
+  </Pricing>
+  <Pricing>
+    <Id>7</Id>
+    <ProductSku>7000000000</ProductSku>
+    <Price>79.91</Price>
+  </Pricing>
+  <Discount>
+    <Id>1</Id>
+    <ProductSku>1000000000</ProductSku>
+    <PartnerId>ContosoPartner1</PartnerId>
+    <Name>2 for 1</Name>
+    <Value>50</Value>
+  </Discount>
+  <Discount>
+    <Id>2</Id>
+    <ProductSku>2000000000</ProductSku>
+    <PartnerId>ContosoPartner2</PartnerId>
+    <Name>25% discount</Name>
+    <Value>25</Value>
+  </Discount>
+  <Discount>
+    <Id>3</Id>
+    <ProductSku>3000000000</ProductSku>
+    <PartnerId>ContosoPartner1</PartnerId>
+    <Name>30% discount</Name>
+    <Value>30</Value>
+  </Discount>
+  <Discount>
+    <Id>4</Id>
+    <ProductSku>4000000000</ProductSku>
+    <PartnerId>ContosoPartner2</PartnerId>
+    <Name>40% discount</Name>
+    <Value>40</Value>
+  </Discount>
+  <Discount>
+    <Id>5</Id>
+    <ProductSku>5000000000</ProductSku>
+    <PartnerId>ContosoPartner1</PartnerId>
+    <Name>60% discount</Name>
+    <Value>60</Value>
+  </Discount>
+</PricingDataSet>

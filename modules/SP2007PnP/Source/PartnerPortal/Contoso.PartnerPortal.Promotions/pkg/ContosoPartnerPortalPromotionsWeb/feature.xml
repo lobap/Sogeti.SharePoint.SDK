@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="2c988455-7e87-4a52-a81d-2756121ff663" Title="Contoso Partner Portal Promotions (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="DemoMediaInstance\instance.xml" />
+    <ElementManifest Location="DemoMediaDefinition\ListDefinition.xml" />
+    <ElementFile Location="DemoMediaDefinition\schema.xml" />
+    <ElementFile Location="DemoMediaDefinition\AllItems.aspx" />
+    <ElementFile Location="DemoMediaDefinition\DispForm.aspx" />
+    <ElementFile Location="DemoMediaDefinition\EditForm.aspx" />
+    <ElementFile Location="DemoMediaDefinition\Selected.aspx" />
+    <ElementFile Location="DemoMediaDefinition\SlidShow.aspx" />
+    <ElementFile Location="DemoMediaDefinition\Upload.aspx" />
+    <ElementFile Location="DemoMediaDefinition\WebFldr.aspx" />
+    <ElementManifest Location="Media\Module.xml" />
+    <ElementFile Location="Media\Intro.wmv" />
+    <ElementFile Location="Media\WWH08_Doctors_around_System2.jpg" />
+    <ElementManifest Location="PromotionLayoutModule\Module.xml" />
+    <ElementFile Location="PromotionLayoutModule\PromotionLayout.aspx" />
+    <ElementFile Location="PromotionLayoutModule\PromotionLayoutVerticalStack.aspx" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="6fd12cb8-f910-4cf4-b7d0-6b74769483ae" />
+    <ActivationDependency FeatureId="946de646-f75e-4800-9694-d4426c586612" />
+  </ActivationDependencies>
+</Feature>

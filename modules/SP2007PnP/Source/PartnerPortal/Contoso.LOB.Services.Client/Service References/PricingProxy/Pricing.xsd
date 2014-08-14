@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Contoso.LOB.Services/2009/01" elementFormDefault="qualified" targetNamespace="http://Contoso.LOB.Services/2009/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd2" namespace="http://Contoso.LOB.Services/2009/01/BusinessEntities" />
+  <xs:element name="GetPriceBySku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sku" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceBySkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetPriceBySkuResult" nillable="true" type="q1:Price" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetDiscountByIdResult" nillable="true" type="q2:Discount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetDiscountByNameResult" nillable="true" type="q3:Discount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscounts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetDiscountsResult" nillable="true" type="q4:ArrayOfDiscount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountsBySku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sku" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountsBySkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetDiscountsBySkuResult" nillable="true" type="q5:ArrayOfDiscount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

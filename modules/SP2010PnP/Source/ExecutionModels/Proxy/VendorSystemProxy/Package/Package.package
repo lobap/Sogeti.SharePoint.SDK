@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="96f05b71-1c2c-445d-bb67-cbdbbc5895f1" solutionId="96f05b71-1c2c-445d-bb67-cbdbbc5895f1" resetWebServer="false" name="VendorSystemProxyRegistration" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="VendorInterface.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\VendorInterface\VendorInterface.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="a0323f52-85cb-47b6-93e4-dcf64bc65de2" />
+  </features>
+</package>

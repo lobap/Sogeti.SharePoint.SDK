@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="e3446eb2-a4e1-48ed-927e-c0f167d57a7c" Title="Microsoft patterns &amp; practices AJAX Support (WebApp)" Scope="WebApplication" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+</Feature>

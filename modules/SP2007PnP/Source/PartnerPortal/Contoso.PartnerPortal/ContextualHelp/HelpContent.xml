@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"?>
+<ArrayOfHelpContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HelpContent>
+    <Url>/sites/partner1/pages/default.aspx</Url>
+    <Content>This page has a combination of 1) authored content (Contoso News) and 2) dynamic content (My Promotion Web part). The Web Part shows the promotions available to this partner.</Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partner2/pages/default.aspx</Url>
+    <Content>This page has a combination of 1) authored content (Contoso News) and 2) dynamic content (My Promotion Web Part). The Web Part shows the promotions available to this partner.</Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partner1/incidents/default.aspx</Url>
+    <Content>Active Incident Task is a Content Query Web Part that shows all incident tasks whose task status is not complete.&lt;br /&gt;
+      The Incident Status List Web Part is a custom Web Part that uses the PortalSiteMapProvider class to also query for Incident Tasks. This Web Part shows status, created date, and last modified date. These fields not available to the Content Query Web Part.&lt;br /&gt;
+      Both the Content Query Web Part and PortalSiteMapProvider make use the Microsoft Office SharePoint Server 2007 object cache.</Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partner2/incidents/default.aspx</Url>
+    <Content>
+      Active Incident Task is a Content Query Web Part that shows all incident tasks whose task status is not complete.&lt;br /&gt;
+      The Incident Status List Web Part is a custom Web Part that uses the PortalSiteMapProvider class to also query for Incident Tasks. This Web Part shows status, created date, and last modified date. These fields not available to the Content Query Web Part.&lt;br /&gt;
+      Both the Content Query Web Part and PortalSiteMapProvider make use the Microsoft Office SharePoint Server 2007 object cache.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partner1/orderexceptions/default.aspx</Url>
+    <Content>
+      This is the parent site for Order Exception sites. When the Subsite Creation Workflow creates sites for Order Exceptions they are created as subsites of this site.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partner2/orderexceptions/default.aspx</Url>
+    <Content>
+      This is the parent site for Order Exception sites. When the Subsite Creation Workflow creates sites for Order Exceptions they are created as subsites of this site.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/productcatalog/category.aspx</Url>
+    <Content>
+      This page is the Business Data Catalog (BDC) profile page for the Catalog entity.&lt;br /&gt;
+      The top of this page shows custom navigation for the hierarchy of product categories.&lt;br /&gt;
+      The Category Detail &amp; Category List Web Parts are standard BDC Web Parts.&lt;br /&gt;
+      The Product List Web Part is also a standard Web Part that shows the products associated with the current category.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/productcatalog/product.aspx</Url>
+    <Content>
+      This page is the Business Data Catalog (BDC) profile page for the product business entity.&lt;br /&gt;
+      The ProductDetailsWebPart shows details of the current product from the BDC. The BDC gets the product details from the product catalog LOB service.&lt;br /&gt;
+      The PricingWebPart shows the current partner’s price for this product. This Web parts get pricing information from the pricing repository.&lt;br /&gt;
+      The DiscountsWebPart also uses the pricing repository to show the discounts related to this product for this partner.&lt;br /&gt;
+      The RelatedPartsWebPart uses AJAX to retrieve information on  parts that are related to the current product.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/promotions/pages/default.aspx</Url>
+    <Content>
+      This page includes the Promotions Web Part. This is a List View Web Part with a custom view that only shows Promotion list items.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partnercentral/default.aspx</Url>
+    <Content>
+      Open Task in the System Web Part shows all open incident tasks across all partners, grouped by partners.  This Web Part uses Microsoft Office SharePoint Server 2007 Search to collect its data.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partnercentral/partnerdirectory/pages/category.aspx</Url>
+    <Content>
+      Please click on the Partners tab to view a list of partner site collections.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partnercentral/partnerdirectory/pages/partnersites.aspx</Url>
+    <Content>
+      This page shows a list of partner site collections with their corresponding Partner IDs.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partnercentral/spgsubsite/default.aspx</Url>
+    <Content>
+      This site contains the configuration data (Business Event Type Configuration list and Subsite Creation Requests list) for the subsite creation process.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partnercentral/spgsubsite/lists/businesseventtypeconfiguration/allitems.aspx</Url>
+    <Content>
+      This list contains the configuration data that maps Business Event with a site template, Identifier Key and Top Level Site URL for the subsite creation process.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/sites/partnercentral/spgsubsite/lists/subsitecreationrequests/allitems.aspx</Url>
+    <Content>
+      This list contains the subsite creation requests that trigger the SubSite creation workflow.
+    </Content>
+  </HelpContent>
+  <HelpContent>
+    <Url>/unittest</Url>
+    <Content>Test Data</Content>
+  </HelpContent>
+</ArrayOfHelpContent>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="1e98f121-e107-4301-854a-0db8ba88385b" />
+      <importErrorMessage>Cannot import Contoso Training Budget Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Contoso Training Budget</property>
+        <property name="Description" type="string">The Contoso Training Budget Web Part will display total budget, remaining budget, and a list of transactions, grouped by cost center.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,45 @@
+﻿<system.serviceModel>
+  <bindings>
+    <customBinding>
+      <!-- This binding shows how the Trusted Facade pattern is implemented for this RI.
+        
+        The trusted facade pattern means that the LOB Service trusts that our SharePoint application has authenticated its users
+        and that the SharePoint application is providing the appropriate PartnerID for it's users. Because of this trust relationship,
+        the LOB Services don't have to re-validate the username/password of the users. 
+        -->
+      <binding name="TrustedFacadeBinding">
+
+        <!-- The PartnerID is sent as a claim over the transport Channel. We're using the UserName property from UserNameOverTransport
+          for that. The Contoso.LOB.Services.Security.SecurityHelper class can then look inside the claimsset and find the username.  -->
+        <security authenticationMode="UserNameOverTransport"/>
+
+        <!-- The Requests are sent over HTTP. To ensure it's only our SharePoint applicationt that's calling us, we're also requiring the 
+          SharePoint service account to be passed over the transport. In the Pricing service, we're using the PrincipalPermission attribute
+          to ensure it's only the SharePoint service account, by checking the Roles the calling system account has. The SharePoint service account
+          is in the WinContosoServiceAccounts group.  -->
+        <httpsTransport authenticationScheme="Ntlm" />
+      </binding>
+    </customBinding>
+  </bindings>
+  <client>
+    <endpoint address="https://ServiceHostComputerName:8686/Contoso.LOB.Services/Pricing.svc"
+              binding="customBinding" bindingConfiguration="TrustedFacadeBinding"
+              contract="PricingProxy.IPricing" name="WSHttpBinding_IPricing"
+              behaviorConfiguration="ClientCertificateBehavior"/>
+    <endpoint address="https://ServiceHostComputerName:8686/Contoso.LOB.Services/IncidentManagement.svc"
+              binding="customBinding" bindingConfiguration="TrustedFacadeBinding"
+              contract="IncidentProxy.IIncidentManagement" name="WSHttpBinding_IIncidentManagement"
+              behaviorConfiguration="ClientCertificateBehavior"/>
+  </client>
+  <behaviors>
+    <endpointBehaviors>
+      <behavior name="ClientCertificateBehavior">
+        <clientCredentials>
+          <serviceCertificate>
+            <authentication certificateValidationMode="None"/>
+          </serviceCertificate>
+        </clientCredentials>
+      </behavior>
+    </endpointBehaviors>
+  </behaviors>
+</system.serviceModel>

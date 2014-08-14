@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="946de646-f75e-4800-9694-d4426c586612" Title="Contoso Partner Portal Product Catalog (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="DiscountsWebPart\DiscountsWebPart.xml" />
+    <ElementFile Location="DiscountsWebPart\DiscountsWebPart.webpart" />
+    <ElementManifest Location="PricingWebPart\PricingWebPart.xml" />
+    <ElementFile Location="PricingWebPart\PricingWebPart.webpart" />
+    <ElementManifest Location="ProductDetailsWebPart\ProductDetailsWebPart.xml" />
+    <ElementFile Location="ProductDetailsWebPart\ProductDetailsWebPart.webpart" />
+    <ElementManifest Location="RelatedPartsWebPart\RelatedPartsWebPart.xml" />
+    <ElementFile Location="RelatedPartsWebPart\RelatedPartsWebPart.webpart" />
+  </ElementManifests>
+</Feature>

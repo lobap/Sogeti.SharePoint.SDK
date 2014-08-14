@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1f14577b-5a3c-4cf0-9238-02f8d829dc47" solutionId="1f14577b-5a3c-4cf0-9238-02f8d829dc47" resetWebServer="true" name="DataModels.ExternalData.PartsManagement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Supplier.SampleService.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Supplier.SampleService\Supplier.SampleService.csproj">
+      <safeControls>
+        <safeControl assemblyName="Supplier.SampleService" namespaceName="Supplier.SampleService" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </projectOutputAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="3cb0cf1c-6bcc-460b-b105-e37c41789f6f" />
+    <featureReference itemId="0016e60c-856f-40b2-b485-ea13a4575a79" />
+    <featureReference itemId="b37e7b81-f4e6-4cae-800f-e5c28bec930a" />
+    <featureReference itemId="32aa69a2-1e9c-4e99-a186-3941135af67e" />
+    <featureReference itemId="0422842b-14d8-4481-8b8f-1666264e9354" />
+  </features>
+</package>

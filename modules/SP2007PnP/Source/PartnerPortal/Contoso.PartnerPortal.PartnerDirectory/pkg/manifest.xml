@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="95d86ffd-5d15-4b13-ad50-92fde929f691" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoPartnerPortalPartnerDirectorySite\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalPartnerDirectoryWeb\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Contoso.PartnerPortal.PartnerDirectory.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+</Solution>

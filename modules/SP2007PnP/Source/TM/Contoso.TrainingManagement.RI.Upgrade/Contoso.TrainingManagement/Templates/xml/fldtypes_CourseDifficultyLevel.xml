@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">CourseDifficultyLevelField</Field>
+    <Field Name="TypeDisplayName">CourseDifficultyLevelField</Field>
+    <Field Name="TypeShortDescription">CourseDifficultyLevelField</Field>
+    <Field Name="ParentType">Number</Field>
+    <Field Name="UserCreatable">TRUE</Field>
+    <Field Name="FieldTypeClass">Contoso.TrainingManagement.FieldTypes.CourseDifficultyLevelField, Contoso.TrainingManagement, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5</Field>
+    <RenderPattern Name="DisplayPattern">
+      <HTML><![CDATA[<div style='text-align:right;'>]]></HTML>
+      <Switch>
+        <Expr>
+          <Column />
+        </Expr>
+        <Case Value="1">
+          <HTML><![CDATA[<img src='/_layouts/images/trainingmanagement/level1.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]></HTML>
+        </Case>
+        <Case Value="2">
+          <HTML><![CDATA[<img src='/_layouts/images/trainingmanagement/level1.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level2.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]></HTML>
+        </Case>
+        <Case Value="3">
+          <HTML><![CDATA[<img src='/_layouts/images/trainingmanagement/level1.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level2.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level3.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]></HTML>
+        </Case>
+        <Case Value="4">
+          <HTML><![CDATA[<img src='/_layouts/images/trainingmanagement/level1.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level2.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level3.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level4.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]></HTML>
+        </Case>
+        <Case Value="5">
+          <HTML><![CDATA[<img src='/_layouts/images/trainingmanagement/level1.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level2.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level3.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level4.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level5.gif' />]]></HTML>
+        </Case>
+        <Default>
+          <HTML><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]><![CDATA[<img src='/_layouts/images/trainingmanagement/level0.gif' />]]></HTML>
+        </Default>
+      </Switch>
+      <HTML><![CDATA[</div>]]></HTML>
+    </RenderPattern>
+  </FieldType>
+</FieldTypes>

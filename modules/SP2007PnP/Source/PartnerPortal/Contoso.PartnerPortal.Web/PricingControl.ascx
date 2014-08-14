@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Contoso.PartnerPortal.ProductCatalog.Controls.PricingControl, Contoso.PartnerPortal.ProductCatalog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0dcd9137292eac97" %>
+<div><%# this.PriceText %></div>

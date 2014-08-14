@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5B1BA74-FA2E-4E62-B93A-6037791B346F}</ProjectGuid>
+    <ProjectTypeGuids>{593B0543-81F6-4436-BA1E-4747859CAAE2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Contoso.RI.UpdateTheme</RootNamespace>
+    <AssemblyName>Contoso.RI.UpdateTheme</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>Properties\Contoso.TrainingManagement.UpdateTheme.snk</AssemblyOriginatorKeyFile></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ApplyThemeFeatureReceiver.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Contoso.RI.UpdateTheme.snk" />
+    <None Include="Properties\Contoso.TrainingManagement.UpdateTheme.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContosoThemeFeatureStapler\featureElement.xml" />
+    <Content Include="pkg\ContosoThemeFeatureStapler\feature.xml" />
+    <Content Include="pkg\ContosoTheme\feature.xml" />
+    <Content Include="pkg\manifest.xml" />
+    <Content Include="pkg\solution.xml" />
+    <Content Include="TEMPLATES\THEMES\Contoso\alldayOver_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\allday_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\ApplyFiltersActive.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\ApplyFiltersHoverOver.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\ApplyFiltersInactive.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\breadcrumbBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\CONTOSO.INF" />
+    <Content Include="TEMPLATES\THEMES\Contoso\formtitlegrad_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\linksectiongrad_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\listheadergrad_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\mossExtension.css" />
+    <Content Include="TEMPLATES\THEMES\Contoso\navBullet_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\navBullet_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\navFrameBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\navHeaderBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\pageMarginBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\pageTitleBKGD_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\partgrad_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\portaltabhover.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\portaltabselected.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\portraitbackground.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\quickLaunchHeader_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\recycleBinBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\rightMarginBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\siteActionBorderBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\siteTitleBKGDBor_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\siteTitleBKGDSel_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\siteTitleBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\siteTitleBKGD_simple.jpg" />
+    <Content Include="TEMPLATES\THEMES\Contoso\theme.css" />
+    <Content Include="TEMPLATES\THEMES\Contoso\titleHeader.jpg" />
+    <Content Include="TEMPLATES\THEMES\Contoso\titleHeaderBKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\toolgrad_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\topnavhover_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\topnavselected_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\vh2BKGD_cp.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\viewheadergrad_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\weekbox_simple.gif" />
+    <Content Include="TEMPLATES\THEMES\Contoso\wpHeaderBKGD_cp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Security, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio />
+  </ProjectExtensions>
+</Project>

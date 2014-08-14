@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="eef6447a-4f05-47fe-9e8a-7c2886671008" solutionId="eef6447a-4f05-47fe-9e8a-7c2886671008" resetWebServer="false" name="ExecutionModels.Sandboxed" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="ExecutionModels.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="5972bee6-868a-4ef7-aba1-6e161484c702" />
+    <featureReference itemId="ded26074-e93b-433c-b64a-f414c2c91076" />
+    <featureReference itemId="922a4c7b-e641-42e3-bdf8-bd26c3737373" />
+  </features>
+</package>

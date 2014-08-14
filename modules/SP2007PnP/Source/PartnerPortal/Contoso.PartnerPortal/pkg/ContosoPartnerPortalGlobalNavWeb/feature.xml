@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="be8c9c0c-3201-45e7-a433-806d9dfc35eb" Title="Contoso Partner Portal Global Navigation (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ActivationDependencies>
+    <!-- Registers the HierarchicalConfigSiteMapProvider in web.config and sets the default site map xml into the config store. -->
+    <ActivationDependency FeatureId="2f9a50ad-6165-4a3d-8b37-cb2666a62dbd" />
+  </ActivationDependencies>
+  <ElementManifests>
+    <ElementManifest Location="GlobalNavDelegateControl\GlobalNavDelegateControl.xml" />
+  </ElementManifests>
+</Feature>

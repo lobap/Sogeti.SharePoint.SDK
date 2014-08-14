@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{91EBB5B9-D8C5-43C5-98A2-BCB1400438B7}"
+         Name="SOWStatus"
+         DisplayName="SOW Status"
+         StaticName="SOWStatus"
+         DisplaceOnUpgrade="TRUE"
+         Group="SiteColumns"
+         Type="Choice"
+         Format="Dropdown">
+    <CHOICES>
+      <CHOICE>Draft</CHOICE>
+      <CHOICE>Submitted</CHOICE>
+      <CHOICE>Approved</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{41B33F77-5931-40A2-88DB-09723AA89098}"
+         Name="EstimateValue"
+         DisplayName="Estimate Value"
+         StaticName="Estimate Value"
+         DisplaceOnUpgrade="TRUE"
+         Group="SiteColumns"
+         Type="Currency">
+  </Field>
+  <Field ID="{F52FAC8A-7028-4BE1-B5C7-2A316AB1B88E}"
+      Name="ProjectsLookup"
+      DisplayName="Projects Lookup"
+      StaticName="ProjectsLookup"
+      Group="SiteColumns"
+      DisplaceOnUpgrade="TRUE"
+      Type="Lookup"
+      ShowField="Title"
+      WebId=""
+      List="Lists/Projects">
+  </Field>
+  <Field ID="{2769CEEC-F157-4770-A83D-AEF610F60E3D}"
+      Name="VendorName"
+      DisplayName="Vendor Name"
+      StaticName="VendorName"
+      Group="SiteColumns"
+      DisplaceOnUpgrade="TRUE"
+      Type="Text">
+  </Field>
+  <Field ID="{DF4C7989-DD3B-450F-B957-B387DAE16CC3}"
+      Name="VendorId"
+      DisplayName="Vendor Id"
+      StaticName="VendorId"
+      Group="SiteColumns"
+      DisplaceOnUpgrade="TRUE"
+      Type="Text">
+  </Field>
+</Elements>

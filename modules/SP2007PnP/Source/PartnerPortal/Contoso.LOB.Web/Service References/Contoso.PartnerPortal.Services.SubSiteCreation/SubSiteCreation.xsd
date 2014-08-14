@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Contoso.PartnerPortal.Services/2009/01" elementFormDefault="qualified" targetNamespace="http://Contoso.PartnerPortal.Services/2009/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CreateSubSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="businessEvent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eventIdentifier" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="entityId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSubSiteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

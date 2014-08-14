@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="c5decae2-d3e2-4048-a25a-42c5fe6eac29" Title="Contoso Partner Portal Order Exception Management (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="OrderExceptionInfo\OrderExceptionInfo.xml" />
+    <ElementFile Location="OrderExceptionInfo\OrderExceptionInfo.webpart" />
+  </ElementManifests>
+</Feature>

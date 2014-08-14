@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="3a888d14-a364-4a94-a534-ce6a4fd38d26" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="RegistrationListTemplate"
+                DisplayName="Registration List Template"
+                Description="Registrations"
+                BaseType="0"
+                Type="1002"
+                OnQuickLaunch="FALSE"
+                SecurityBits="11"
+                Sequence="410"
+                Image="/_layouts/images/itgen.gif" />
+</Elements>

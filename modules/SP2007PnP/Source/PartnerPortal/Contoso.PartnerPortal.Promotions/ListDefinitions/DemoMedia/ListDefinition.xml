@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="9fa1ef02-f1ae-4444-8d23-55edffd2138e" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="DemoMedia"
+                DisplayName="DemoMedia"
+                Description=""
+                BaseType="1"
+                Type="109"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="210"
+                Image="/_layouts/images/itil.gif"
+                DocumentTemplate="100" />
+</Elements>

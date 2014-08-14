@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="5ff60bef-66ea-4736-b97c-6bbd4d13b386" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoTrainingManagementRegistrationApproval_v2\feature.xml" />
+    <FeatureManifest Location="ContosoTrainingManagementRegistrationApprovalAssociation_v2\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Contoso.TrainingManagement.Workflows.RegistrationApproval.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+</Solution>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="69c22291-665f-4011-96bd-f0850639e645" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Contoso.Common" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8585/Contoso.LOB.Services/Pricing.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Pricing.disco" MetadataType="Disco" ID="5cad3a52-9c43-42bf-98a7-4ebfac989984" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?disco" />
+    <MetadataFile FileName="Pricing.xsd" MetadataType="Schema" ID="f4eebc15-f259-42f8-b0c4-6bff9282a11c" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd0" />
+    <MetadataFile FileName="Pricing1.xsd" MetadataType="Schema" ID="a4207c60-1437-4152-bba8-82245c71cfe5" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd1" />
+    <MetadataFile FileName="Pricing2.xsd" MetadataType="Schema" ID="60431d21-cb65-4cd5-86a6-8044b2a5a08b" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd2" />
+    <MetadataFile FileName="Pricing.wsdl" MetadataType="Wsdl" ID="b7bb9ce7-e037-4587-bb6c-c256772c6fb5" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Pricing1.wsdl" MetadataType="Wsdl" ID="f29a3304-7ee7-4211-9562-a008a2211590" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

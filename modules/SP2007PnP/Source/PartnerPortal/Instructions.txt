@@ -1,0 +1,9 @@
+===========================================================
+Instructions for importing Product Catalog BDC Definition
+===========================================================
+1. Open browser to SharePoint Central Admininstration site
+2. Browse to your Shared Services Administration site
+3. Under Business Data Catalog, click on Import Application Data
+4. Browse to the ProductCatalogDefinition.xml file.
+5. Leave the "File Type" and "Resources to import" options with default values
+6. Click "Import".

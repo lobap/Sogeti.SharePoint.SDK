@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="d56f7159-1f51-4b34-8a1f-a69f173244f1" Title="Contoso Partner Portal Redirect (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="PartnerRedirect\Module.xml" />
+    <ElementFile Location="PartnerRedirect\partnerredirect.aspx" />
+  </ElementManifests>
+</Feature>

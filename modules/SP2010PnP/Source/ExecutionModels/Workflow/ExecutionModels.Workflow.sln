@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{AC4532A7-0930-4EBE-935A-932986E35195}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8EB53F20-9AED-4F93-A0AA-6617E94937B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SharePoint.Common", "..\..\Sharepoint 2010\Microsoft.Practices.Sharepoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj", "{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{7AA29CBD-A07E-45DB-971F-D99698BCD735}"
+	ProjectSection(SolutionItems) = preProject
+		Create Project Site.wsp = Create Project Site.wsp
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Common", "..\ExecutionModels.Common\ExecutionModels.Common.csproj", "{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Workflow.FullTrust.Activities", "ExecutionModels.Workflow.FullTrust.Activities\ExecutionModels.Workflow.FullTrust.Activities.csproj", "{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Workflow.Sandboxed.Activities", "ExecutionModels.Workflow.Sandbox.Activities\ExecutionModels.Workflow.Sandboxed.Activities.csproj", "{21214C27-C067-41FA-AB5B-3D6880614E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateProjectSite", "Create Project Site\CreateProjectSite.csproj", "{00CC7B17-0AC6-4278-A333-6BADD9129A2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{21214C27-C067-41FA-AB5B-3D6880614E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21214C27-C067-41FA-AB5B-3D6880614E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21214C27-C067-41FA-AB5B-3D6880614E34}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{21214C27-C067-41FA-AB5B-3D6880614E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21214C27-C067-41FA-AB5B-3D6880614E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21214C27-C067-41FA-AB5B-3D6880614E34}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D409FD42-7853-4A65-ABA4-E1E0AB0473D3} = {AC4532A7-0930-4EBE-935A-932986E35195}
+		{21214C27-C067-41FA-AB5B-3D6880614E34} = {AC4532A7-0930-4EBE-935A-932986E35195}
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57} = {8EB53F20-9AED-4F93-A0AA-6617E94937B1}
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0} = {8EB53F20-9AED-4F93-A0AA-6617E94937B1}
+		{00CC7B17-0AC6-4278-A333-6BADD9129A2D} = {7AA29CBD-A07E-45DB-971F-D99698BCD735}
+	EndGlobalSection
+EndGlobal

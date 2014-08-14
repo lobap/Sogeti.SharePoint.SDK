@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-f600-43f6-a895-40c0de7b0117}" TemplateType="117" Title="Workflows" Description="" Url="Workflows" CustomSchema="Files\Workflows\Schema.xml" HyperlinkBaseUrl="http://v-robogu-spdev/sites/ManufacturingWF" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Data>
+			<Rows>
+				<Row>
+					<Field Name="ContentTypeId">0x01200026CD001879818B4D84324343070749C1</Field>
+					<Field Name="_ModerationStatus">0</Field>
+					<Field Name="FSObjType">1</Field>
+					<Field Name="FileLeafRef">Create Project Site</Field>
+					<Field Name="MetaInfo">1;#</Field>
+					<Field Name="Order">900.000000000000</Field>
+				</Row>
+				<Row>
+					<Field Name="ContentTypeId">0x01200026CD001879818B4D84324343070749C1</Field>
+					<Field Name="_ModerationStatus">0</Field>
+					<Field Name="FSObjType">1</Field>
+					<Field Name="FileLeafRef">Create Project Site-ListOf</Field>
+					<Field Name="MetaInfo">2;#</Field>
+					<Field Name="Order">200.000000000000</Field>
+				</Row>
+			</Rows>
+		</Data>
+	</ListInstance>
+</Elements>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<WorkflowActions>
+		<Action Name="Copy Library" SandboxedFunction="true" Assembly="$SharePoint.Project.AssemblyFullName$" ClassName="ExecutionModels.Workflow.Sandboxed.Activities.CopyLibrary" FunctionName="CopyLibraryActivity" AppliesTo="list" UsesCurrentItem="true" Category="Patterns and Practices Sandbox">
+			<RuleDesigner Sentence="Copy all items from library %1 to site %2 (Exceptions logged to %3)">
+				<FieldBind Field="libraryName" Text="Library Name" Id="1" DesignerType="TextBox" />
+				<FieldBind Field="targetSiteUrl" Text="Target Site" Id="2" DesignerType="TextBox" />
+        <FieldBind Field="exception" Text="Exception" Id="3" DesignerType="ParameterNames" />
+			</RuleDesigner>
+			<Parameters>
+				<Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+				<Parameter Name="libraryName" Type="System.String, mscorlib" Direction="In" DesignerType="TextBox" Description="The library to copy" />
+				<Parameter Name="targetSiteUrl" Type="System.String, mscorlib" Direction="In" DesignerType="TextBox" Description="The URL of the target site" />
+        <Parameter Name="exception" Type="System.String, mscorlib" Direction="Out" DesignerType="ParameterNames" Description="Exception"/>
+			</Parameters>
+		</Action>
+	</WorkflowActions>
+</Elements>

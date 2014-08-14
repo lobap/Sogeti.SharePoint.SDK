@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="e472dbac-58aa-4b81-b809-387bc55bb21d" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature id at deployment time.
+  -->
+  <ListInstance FeatureId="00BFEA71-4EA5-48D4-A4AD-305CF7030140" 
+                Title="Workflow History" 
+                Url="Lists/WorkflowHistory"
+                OnQuickLaunch="FALSE"
+                TemplateType="140"  >
+  </ListInstance>
+  <ContentTypeBinding ContentTypeId="0x0109" ListUrl="Lists/WorkflowHistory"/>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="81a3dca5-6981-4d31-bfe4-ce6744b931b0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance FeatureId="00BFEA71-D1CE-42de-9C63-A44004CE0104" Title="Announcements" Url="Lists/Announcements" TemplateType="104">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Training Management Site Upgraded</Field>
+          <Field Name="Body">Your Training Management Site has been upgraded to version 2.0</Field>
+          <Field Name="Expires">&lt;ows:TodayISO/&gt;</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,18 @@
+﻿<solution id="a3ade33c-9b7a-4f67-a652-28f8e5c06a29" name="ContosoPartnerPortalProductCatalog">
+  <features>
+    <feature id="946de646-f75e-4800-9694-d4426c586612">
+      <featureElements>
+        <featureElement id="6a6228d9-7008-4efc-83f4-303def7a57af" name="DiscountsWebPart" />
+        <featureElement id="7a154334-274a-4e0a-8dd1-422a81593448" name="PricingWebPart" />
+        <featureElement id="d2cc0f8d-0404-483a-b8bb-85bd1d2cd180" name="ProductDetailsWebPart" />
+        <featureElement id="65a3de36-07df-49f1-b57b-516796077d75" name="RelatedPartsWebPart" />
+      </featureElements>
+    </feature>
+    <feature id="68a85277-0049-49ed-8d52-fd4dbbd52f1b">
+      <featureElements>
+        <featureElement id="4b339a0c-4690-4419-9809-f0d25662251f" name="CategoryPage" />
+        <featureElement id="5c431d05-f9ab-48d0-94d0-152b4243b333" name="Product Page" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

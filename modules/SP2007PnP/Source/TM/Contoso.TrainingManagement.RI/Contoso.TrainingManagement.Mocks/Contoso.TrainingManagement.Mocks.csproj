@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contoso.TrainingManagement.Mocks</RootNamespace>
+    <AssemblyName>Contoso.TrainingManagement.Mocks</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment><SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Temporary.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeMock, Version=5.0.0.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MockAccountingManager.cs" />
+    <Compile Include="MockHelper.cs" />
+    <Compile Include="MockHRManager.cs" />
+    <Compile Include="MockRegistrationApprovalTaskRepository.cs" />
+    <Compile Include="MockRegistrationRepository.cs" />
+    <Compile Include="MockListItemRepository.cs" />
+    <Compile Include="MockTrainingCourseRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contoso.AccountingManagement\Contoso.AccountingManagement.csproj">
+      <Project>{C7F714CB-0FED-476A-AF16-4CC92B76A68A}</Project>
+      <Name>Contoso.AccountingManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.HRManagement\Contoso.HRManagement.csproj">
+      <Project>{F7D4567E-2051-4BA1-875A-3664A18F098A}</Project>
+      <Name>Contoso.HRManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Repository\Contoso.TrainingManagement.Repository.csproj">
+      <Project>{5EB7688B-1AB4-4421-B339-6BB347399366}</Project>
+      <Name>Contoso.TrainingManagement.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement\Contoso.TrainingManagement.csproj">
+      <Project>{059ACB18-E4BF-489C-874D-2EBEDBE7D073}</Project>
+      <Name>Contoso.TrainingManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Common\Contoso.TrainingManagement.Common.csproj">
+      <Project>{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}</Project>
+      <Name>Contoso.TrainingManagement.Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Temporary.snk">
+      <Link>Temporary.snk</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

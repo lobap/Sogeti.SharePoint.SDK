@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="1c28f48f-6544-45b3-8db0-e87977c09e46" Title="Contoso Partner Portal Incident Management (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="Incident Task Content Type\IncidentTask.xml" />
+    <ElementManifest Location="IncidentInfoWebPart\IncidentInfoWebPart.xml" />
+    <ElementFile Location="IncidentInfoWebPart\IncidentInfoWebPart.webpart" />
+    <ElementManifest Location="IncidentStatusListWebPart\IncidentStatusListWebPart.xml" />
+    <ElementFile Location="IncidentStatusListWebPart\IncidentStatusListWebPart.webpart" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="8b0f085e-72a0-4d9f-ac74-0038dc0f6dd5"/>
+  </ActivationDependencies>
+</Feature>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="cec9bea9-b988-4302-9586-f91c176e7851" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ContextualHelpMasterPage" Url="_catalogs/masterpage" Path="" List="101" RootWebOnly="false">
+    <File Path="contextualHelp.master" Url="contextualHelp.master" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

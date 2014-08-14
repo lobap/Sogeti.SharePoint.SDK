@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IVendorServices" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="TransportCredentialOnly" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:81/Vendor/Service.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IVendorServices" contract="VendorService.IVendorServices"
+                name="BasicHttpBinding_IVendorServices" />
+        </client>
+    </system.serviceModel>
+</configuration>

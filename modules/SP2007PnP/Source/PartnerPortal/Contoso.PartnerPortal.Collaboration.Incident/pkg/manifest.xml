@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="c8c1fe2b-fdd4-418a-a76c-4f527ee1f3ef" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Assemblies>
+    <Assembly Location="Contoso.PartnerPortal.Collaboration.Incident.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoPartnerPortalCollaborationIncidentSite\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalCollaborationIncidentWeb\feature.xml" />
+  </FeatureManifests>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\IncidentStatusListControl.ascx" />
+  </TemplateFiles>
+</Solution>

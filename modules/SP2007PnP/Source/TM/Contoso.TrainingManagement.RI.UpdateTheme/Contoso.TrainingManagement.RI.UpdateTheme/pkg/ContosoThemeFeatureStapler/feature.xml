@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="1c67a1c7-6f25-4fba-9dd0-a36197a9f637" Title="Contoso Theme Feature Stapler" Scope="Farm" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ApplyTheme\featureElement.xml" />
+  </ElementManifests>
+</Feature>

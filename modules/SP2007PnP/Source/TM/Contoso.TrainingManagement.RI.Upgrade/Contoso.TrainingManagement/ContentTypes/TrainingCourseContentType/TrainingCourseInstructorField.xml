@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="82fde2ad-e0ae-4889-b3c8-8ba72c822ac1" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{65f64276-ef6f-4357-a33a-183e6e6a5863}" 
+         Type="Text" 
+         Name="TrainingCourseInstructor" 
+         DisplayName="Instructor" 
+         Hidden="False" 
+         Required="FALSE" 
+         Sealed="FALSE"
+         DisplaceOnUpgrade="TRUE"/>
+</Elements>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="60035595-1ba7-4a83-be1a-f2dbe9b21bb4" solutionId="60035595-1ba7-4a83-be1a-f2dbe9b21bb4" resetWebServer="false" name="DataModels.ListOf.CreateLink" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="8eb8ed3e-8b7c-4d2a-91c4-65f13ff5c7fe" />
+    <featureReference itemId="2a45036e-96fb-4d27-a300-14fffce02ff1" />
+  </features>
+</package>

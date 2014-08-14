@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="23389722-f5d6-42da-b39b-ff75cf991ab3" Title="Contoso Partner Portal Order Exception Management (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="Discussion instance\instance.xml" />
+    <ElementManifest Location="Discussion\ListDefinition.xml" />
+    <ElementFile Location="Discussion\schema.xml" />
+    <ElementFile Location="Discussion\AllItems.aspx" />
+    <ElementFile Location="Discussion\DispForm.aspx" />
+    <ElementFile Location="Discussion\EditForm.aspx" />
+    <ElementFile Location="Discussion\Flat.aspx" />
+    <ElementFile Location="Discussion\NewForm.aspx" />
+    <ElementFile Location="Discussion\Threaded.aspx" />
+    <ElementManifest Location="Documents instance\instance.xml" />
+    <ElementManifest Location="Documents\ListDefinition.xml" />
+    <ElementFile Location="Documents\schema.xml" />
+    <ElementFile Location="Documents\AllItems.aspx" />
+    <ElementFile Location="Documents\Combine.aspx" />
+    <ElementFile Location="Documents\DispForm.aspx" />
+    <ElementFile Location="Documents\EditDlg.htm" />
+    <ElementFile Location="Documents\EditForm.aspx" />
+    <ElementFile Location="Documents\FileDlg.htm" />
+    <ElementFile Location="Documents\Repair.aspx" />
+    <ElementFile Location="Documents\Upload.aspx" />
+    <ElementFile Location="Documents\WebFldr.aspx" />
+    <ElementManifest Location="Tasks instance\instance.xml" />
+    <ElementManifest Location="Tasks\ListDefinition.xml" />
+    <ElementFile Location="Tasks\schema.xml" />
+    <ElementFile Location="Tasks\Active.aspx" />
+    <ElementFile Location="Tasks\AllItems.aspx" />
+    <ElementFile Location="Tasks\Byowner.aspx" />
+    <ElementFile Location="Tasks\DispForm.aspx" />
+    <ElementFile Location="Tasks\DueToday.aspx" />
+    <ElementFile Location="Tasks\EditForm.aspx" />
+    <ElementFile Location="Tasks\MyGrTsks.aspx" />
+    <ElementFile Location="Tasks\MyItems.aspx" />
+    <ElementFile Location="Tasks\NewForm.aspx" />
+    <ElementManifest Location="DefaultBlank\Module.xml" />
+    <ElementFile Location="DefaultBlank\default.aspx" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="c5decae2-d3e2-4048-a25a-42c5fe6eac29"/>
+  </ActivationDependencies>
+</Feature>

@@ -1,0 +1,9 @@
+﻿<solution id="ac57024b-87aa-4d3d-8351-b97e67245cf9" name="ContosoTrainingManagementRegistrationApproval_v2">
+  <features>
+    <feature id="17900052-86f9-4cae-b963-97495c0a6306">
+      <featureElements>
+        <featureElement id="a5b67b39-bce7-4e2e-a72f-cfeaf959aa55" name="RegistrationApproval_v2" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

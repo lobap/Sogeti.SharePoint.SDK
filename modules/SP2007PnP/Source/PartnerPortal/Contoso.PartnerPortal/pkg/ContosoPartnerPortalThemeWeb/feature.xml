@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="7a576729-6fb8-4597-bbad-59c2aa7d7d0e" Title="Contoso Partner Portal Theme (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests />
+</Feature>

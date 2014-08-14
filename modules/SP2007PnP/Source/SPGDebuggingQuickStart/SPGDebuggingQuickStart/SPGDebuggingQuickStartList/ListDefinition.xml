@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="791c56ba-bd97-445f-94eb-02988ad30160" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="SPGDebuggingQuickStartList"
+                DisplayName="SPGDebuggingQuickStartList"
+                Description=""
+                BaseType="0"
+                Type="100"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="410"
+                Image="/_layouts/images/itgen.gif" />
+</Elements>

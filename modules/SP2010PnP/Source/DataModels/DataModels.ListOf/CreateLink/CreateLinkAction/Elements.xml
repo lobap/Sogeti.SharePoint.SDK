@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Get Root URL" SandboxedFunction="true" Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="DataModels.ListOf.CreateLink" FunctionName="GetRootWebUrlAction" AppliesTo="all" UsesCurrentItem="true" Category="Patterns and Practices Sandbox">
+      <RuleDesigner Sentence="Set Variable %1 to site collection root URL">
+        <FieldBind Field="rootWebUrl" Text="Root Url" Id="1" DesignerType="ParameterNames" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="rootWebUrl" Type="System.String, mscorlib" Direction="Out" DesignerType="ParameterNames" Description="Root web URL"/>
+      </Parameters>
+    </Action>
+    <Action Name="Create Link" SandboxedFunction="true" Assembly="$SharePoint.Project.AssemblyFullName$" 
+            ClassName="DataModels.ListOf.CreateLink" FunctionName="CreateLinkForItemAction" AppliesTo="all" UsesCurrentItem="true" Category="Patterns and Practices Sandbox">
+      <RuleDesigner Sentence="Create Link with url %2 and description %3 to link list at %1 (Exceptions logged to %4)">
+        <FieldBind Field="targetListUrl" Text="Target List Url" Id="1" DesignerType="TextBox" />
+        <FieldBind Field="linkTargetUrl" Text="Link Target Url" Id="2" DesignerType="TextBox" />
+        <FieldBind Field="linkDescription" Text="Link Description" Id="3" DesignerType="TextBox" />
+        <FieldBind Field="exception" Text="Exception" Id="4" DesignerType="ParameterNames" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="targetListUrl" Type="System.String, mscorlib" Direction="In" DesignerType="TextBox" Description="URL of the list to create the link in" />
+        <Parameter Name="linkTargetUrl" Type="System.String, mscorlib" Direction="In" DesignerType="TextBox" Description="The target URL for the link" />
+        <Parameter Name="linkDescription" Type="System.String, mscorlib" Direction="In" DesignerType="TextBox" Description="The description for the link" />
+        <Parameter Name="exception" Type="System.String, mscorlib" Direction="Out" DesignerType="ParameterNames" Description="Exception"/>
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncidentDataSet xmlns="http://tempuri.org/IncidentDataSet.xsd">
+  <Incident>
+    <Id>1</Id>
+    <Product>X-ray machine</Product>
+    <Description>Installation issues</Description>
+    <Status>Open</Status>
+    <Partner>ContosoPartner1</Partner>
+  </Incident>
+  <IncidentHistory>
+    <IncidentId>1</IncidentId>
+    <Note>Incident created.</Note>
+    <CreatedDate>2008-01-01T01:01:01-08:00</CreatedDate>
+  </IncidentHistory>
+  <Incident>
+    <Id>2</Id>
+    <Product>Contoso Blood Pressure Kit</Product>
+    <Description>Item damaged during delivery.</Description>
+    <Status>Open</Status>
+    <Partner>ContosoPartner1</Partner>
+  </Incident>
+  <IncidentHistory>
+    <IncidentId>2</IncidentId>
+    <Note>Incident created.</Note>
+    <CreatedDate>2008-02-01T08:11:01-08:00</CreatedDate>
+  </IncidentHistory>
+  <Incident>
+    <Id>3</Id>
+    <Product>Contoso Wheel Chair</Product>
+    <Description>Order delayed by supplier</Description>
+    <Status>Open</Status>
+    <Partner>ContosoPartner2</Partner>
+  </Incident>
+  <Incident>
+    <Id>4</Id>
+    <Product>Contoso Gurney</Product>
+    <Description>Partner exceeded allowed credit balance</Description>
+    <Status>Open</Status>
+    <Partner>ContosoPartner2</Partner>
+  </Incident>
+</IncidentDataSet>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Categories" Url="Lists/Categories" RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Departments" Url="Lists/Departments" RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Inventory Locations" Url="Lists/InventoryLocations" RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Machine Departments" Url="Lists/MachineDepartments"  RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Machine Parts" Description="" Url="Lists/MachineParts" RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Machines" Description="" Url="Lists/Machines" RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Manufacturers" Description="" Url="Lists/Manufacturers" RootWebOnly="FALSE"  />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Part Suppliers" Description="" Url="Lists/PartSuppliers" RootWebOnly="FALSE"  />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Parts" Description="" Url="Lists/Parts" RootWebOnly="FALSE" />
+  <ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Suppliers" Description="" Url="Lists/Suppliers" RootWebOnly="FALSE" />
+</Elements>

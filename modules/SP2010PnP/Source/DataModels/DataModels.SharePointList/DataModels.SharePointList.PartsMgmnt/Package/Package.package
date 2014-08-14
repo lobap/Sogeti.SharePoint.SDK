@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0112cd68-e7f4-4282-981c-d61d9ad4df85" solutionId="0112cd68-e7f4-4282-981c-d61d9ad4df85" resetWebServer="true" name="DataModels.SharePointListData.PartsManagement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="DataModels.SharePointList.Model.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\DataModels.SharePointList.Model\DataModels.SharePointList.Model.csproj" />
+    <customAssembly location="Microsoft.Practices.SharePoint.Common.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\SharePoint 2010\Microsoft.Practices.SharePoint.Common\Source\bin\Debug\Microsoft.Practices.SharePoint.Common.dll" />
+    <customAssembly location="Microsoft.Practices.SharePoint.Common.XmlSerializers.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\SharePoint 2010\Microsoft.Practices.SharePoint.Common\Source\bin\Debug\Microsoft.Practices.SharePoint.Common.XmlSerializers.dll" />
+    <customAssembly location="Microsoft.Practices.ServiceLocation.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\lib\Microsoft.Practices.ServiceLocation.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="d3d91542-631b-4386-9c67-63e1aba8fcde" />
+    <featureReference itemId="aa4d0e60-2b45-43c5-85cb-f53516488ac4" />
+    <featureReference itemId="7064ea64-ef73-47f8-886a-b90f01b963c0" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="9e9c898b-ac74-4d53-a1ba-1c5b5e4b26e9" />
+  </projectItems>
+</package>

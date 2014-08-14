@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Templates">
+    <File Path="Templates\Sample.txt" Url="Lists/Templates/Sample.txt" Type="GhostableInLibrary"/>
+  <File Path="Templates\Burn Down Worksheet.xltx" Url="Lists/Templates/Burn Down Worksheet.xltx" Type="GhostableInLibrary" />
+</Module>
+</Elements>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="86dfa338-3643-49c3-a935-26b043547326" Title="Contoso Partner Portal Incident Management (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="IncidentDashboard\Module.xml" />
+    <ElementFile Location="IncidentDashboard\IncidentDashboard.aspx" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="1c28f48f-6544-45b3-8db0-e87977c09e46"/>
+  </ActivationDependencies>
+</Feature>

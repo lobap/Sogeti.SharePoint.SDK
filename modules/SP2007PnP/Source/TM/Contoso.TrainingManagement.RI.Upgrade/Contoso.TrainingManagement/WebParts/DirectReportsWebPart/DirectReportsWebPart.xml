@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="fa39abe9-4672-4be3-b9d2-290c4d7a8822" xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="DirecReportsWebPart" List="113" Url="_catalogs/wp">
+    <File Path="DirectReports.webpart" Url="DirectReports.webpart" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

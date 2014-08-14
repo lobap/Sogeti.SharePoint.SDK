@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="CustomPages">
+    <File Url="Silverlight/SilverlightCsom.aspx" Path ="CustomPages\CustomPage.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Silverlight CSOM Part Search" />
+      <Property Name="Description" Value="Part Search that Shows Related Suppliers using Silverlight and the Client Object Model" />
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="SilverlightCSOM">
+        <![CDATA[ <webParts>
+        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          <metaData>
+            <type name="Microsoft.SharePoint.WebPartPages.SilverlightWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+            <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+          </metaData>
+          <data>
+            <properties>
+              <property name="HelpUrl" type="string" />
+              <property name="AllowClose" type="bool">True</property>
+              <property name="ExportMode" type="exportmode">All</property>
+              <property name="Hidden" type="bool">False</property>
+              <property name="AllowEdit" type="bool">True</property>
+              <property name="Direction" type="direction">NotSet</property>
+              <property name="TitleIconImageUrl" type="string" />
+              <property name="AllowConnect" type="bool">True</property>
+              <property name="HelpMode" type="helpmode">Modal</property>
+              <property name="CustomProperties" type="string" null="true" />
+              <property name="AllowHide" type="bool">True</property>
+              <property name="Description" type="string">A web part to display a Silverlight application.</property>
+              <property name="CatalogIconImageUrl" type="string" />
+              <property name="MinRuntimeVersion" type="string" null="true" />
+              <property name="ApplicationXml" type="string" />
+              <property name="AllowMinimize" type="bool">True</property>
+              <property name="AllowZoneChange" type="bool">True</property>
+              <property name="CustomInitParameters" type="string" null="true" />
+              <property name="Height" type="unit">650px</property>
+              <property name="ChromeType" type="chrometype">Default</property>
+              <property name="Width" type="unit">800px</property>
+              <property name="Title" type="string">Silverlight Web Part</property>
+              <property name="ChromeState" type="chromestate">Normal</property>
+              <property name="TitleUrl" type="string" />
+              <property name="Url" type="string">~site/Lists/SilverlightApps/Client.CSOM.Silverlight.xap</property>
+              <property name="WindowlessMode" type="bool">True</property>
+            </properties>
+          </data>
+        </webPart>
+      </webParts> ]]>
+        </AllUsersWebPart>
+    </File >
+    <File Url="Silverlight/SilverlightRest.aspx" Path ="CustomPages\CustomPage.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Silverlight REST Part Search" />
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="SilverlightREST">
+        <![CDATA[ <webParts>
+        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          <metaData>
+            <type name="Microsoft.SharePoint.WebPartPages.SilverlightWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+            <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+          </metaData>
+          <data>
+            <properties>
+              <property name="HelpUrl" type="string" />
+              <property name="AllowClose" type="bool">True</property>
+              <property name="ExportMode" type="exportmode">All</property>
+              <property name="Hidden" type="bool">False</property>
+              <property name="AllowEdit" type="bool">True</property>
+              <property name="Direction" type="direction">NotSet</property>
+              <property name="TitleIconImageUrl" type="string" />
+              <property name="AllowConnect" type="bool">True</property>
+              <property name="HelpMode" type="helpmode">Modal</property>
+              <property name="CustomProperties" type="string" null="true" />
+              <property name="AllowHide" type="bool">True</property>
+              <property name="Description" type="string">A web part to display a Silverlight application.</property>
+              <property name="CatalogIconImageUrl" type="string" />
+              <property name="MinRuntimeVersion" type="string" null="true" />
+              <property name="ApplicationXml" type="string" />
+              <property name="AllowMinimize" type="bool">True</property>
+              <property name="AllowZoneChange" type="bool">True</property>
+              <property name="CustomInitParameters" type="string" null="true" />
+              <property name="Height" type="unit">650px</property>
+              <property name="ChromeType" type="chrometype">Default</property>
+              <property name="Width" type="unit">800px</property>
+              <property name="Title" type="string">Silverlight Web Part</property>
+              <property name="ChromeState" type="chromestate">Normal</property>
+              <property name="TitleUrl" type="string" />
+              <property name="Url" type="string">~site/Lists/SilverlightApps/Client.REST.Silverlight.xap</property>
+              <property name="WindowlessMode" type="bool">True</property>
+            </properties>
+          </data>
+        </webPart>
+      </webParts> ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Url="Silverlight/SilverlightRestAlt.aspx" Path ="CustomPages\CustomPage.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Silverlight REST ALT Part Search" />
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="SilverlightRESTAlt">
+        <![CDATA[ <webParts>
+        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          <metaData>
+            <type name="Microsoft.SharePoint.WebPartPages.SilverlightWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+            <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+          </metaData>
+          <data>
+            <properties>
+              <property name="HelpUrl" type="string" />
+              <property name="AllowClose" type="bool">True</property>
+              <property name="ExportMode" type="exportmode">All</property>
+              <property name="Hidden" type="bool">False</property>
+              <property name="AllowEdit" type="bool">True</property>
+              <property name="Direction" type="direction">NotSet</property>
+              <property name="TitleIconImageUrl" type="string" />
+              <property name="AllowConnect" type="bool">True</property>
+              <property name="HelpMode" type="helpmode">Modal</property>
+              <property name="CustomProperties" type="string" null="true" />
+              <property name="AllowHide" type="bool">True</property>
+              <property name="Description" type="string">A web part to display a Silverlight application.</property>
+              <property name="CatalogIconImageUrl" type="string" />
+              <property name="MinRuntimeVersion" type="string" null="true" />
+              <property name="ApplicationXml" type="string" />
+              <property name="AllowMinimize" type="bool">True</property>
+              <property name="AllowZoneChange" type="bool">True</property>
+              <property name="CustomInitParameters" type="string" null="true" />
+              <property name="Height" type="unit">650px</property>
+              <property name="ChromeType" type="chrometype">Default</property>
+              <property name="Width" type="unit">800px</property>
+              <property name="Title" type="string">Silverlight Web Part</property>
+              <property name="ChromeState" type="chromestate">Normal</property>
+              <property name="TitleUrl" type="string" />
+              <property name="Url" type="string">~site/Lists/SilverlightApps/Client.REST.Silverlight.Alt.xap</property>
+              <property name="WindowlessMode" type="bool">True</property>
+            </properties>
+          </data>
+        </webPart>
+      </webParts> ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Url="Silverlight/SilverlightRestAltNoMVVM.aspx" Path ="CustomPages\CustomPage.aspx" Type ="Ghostable" >
+        <Property Name="Title" Value="Silverlight REST ALT Part With No MVVM Search" />
+        <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="SilverlightRESTAltNoMVVM">
+            <![CDATA[ <webParts>
+    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+        <metaData>
+        <type name="Microsoft.SharePoint.WebPartPages.SilverlightWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+        <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+        </metaData>
+        <data>
+        <properties>
+            <property name="HelpUrl" type="string" />
+            <property name="AllowClose" type="bool">True</property>
+            <property name="ExportMode" type="exportmode">All</property>
+            <property name="Hidden" type="bool">False</property>
+            <property name="AllowEdit" type="bool">True</property>
+            <property name="Direction" type="direction">NotSet</property>
+            <property name="TitleIconImageUrl" type="string" />
+            <property name="AllowConnect" type="bool">True</property>
+            <property name="HelpMode" type="helpmode">Modal</property>
+            <property name="CustomProperties" type="string" null="true" />
+            <property name="AllowHide" type="bool">True</property>
+            <property name="Description" type="string">A web part to display a Silverlight application.</property>
+            <property name="CatalogIconImageUrl" type="string" />
+            <property name="MinRuntimeVersion" type="string" null="true" />
+            <property name="ApplicationXml" type="string" />
+            <property name="AllowMinimize" type="bool">True</property>
+            <property name="AllowZoneChange" type="bool">True</property>
+            <property name="CustomInitParameters" type="string" null="true" />
+            <property name="Height" type="unit">650px</property>
+            <property name="ChromeType" type="chrometype">Default</property>
+            <property name="Width" type="unit">800px</property>
+            <property name="Title" type="string">Silverlight Web Part</property>
+            <property name="ChromeState" type="chromestate">Normal</property>
+            <property name="TitleUrl" type="string" />
+            <property name="Url" type="string">~site/Lists/SilverlightApps/Client.REST.Silverlight.Alt.NoMVVM.xap</property>
+            <property name="WindowlessMode" type="bool">True</property>
+        </properties>
+        </data>
+    </webPart>
+    </webParts> ]]>
+        </AllUsersWebPart>
+    </File >
+
+    <File Url="Silverlight/SilverlightExternalService.aspx" Path ="CustomPages\CustomPage.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Silverlight External Service" />
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="SilverlightExternalService">
+        <![CDATA[ <webParts>
+        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          <metaData>
+            <type name="Microsoft.SharePoint.WebPartPages.SilverlightWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+            <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+          </metaData>
+          <data>
+            <properties>
+              <property name="HelpUrl" type="string" />
+              <property name="AllowClose" type="bool">True</property>
+              <property name="ExportMode" type="exportmode">All</property>
+              <property name="Hidden" type="bool">False</property>
+              <property name="AllowEdit" type="bool">True</property>
+              <property name="Direction" type="direction">NotSet</property>
+              <property name="TitleIconImageUrl" type="string" />
+              <property name="AllowConnect" type="bool">True</property>
+              <property name="HelpMode" type="helpmode">Modal</property>
+              <property name="CustomProperties" type="string" null="true" />
+              <property name="AllowHide" type="bool">True</property>
+              <property name="Description" type="string">A web part to display a Silverlight application.</property>
+              <property name="CatalogIconImageUrl" type="string" />
+              <property name="MinRuntimeVersion" type="string" null="true" />
+              <property name="ApplicationXml" type="string" />
+              <property name="AllowMinimize" type="bool">True</property>
+              <property name="AllowZoneChange" type="bool">True</property>
+              <property name="CustomInitParameters" type="string" null="true" />
+              <property name="Height" type="unit">650px</property>
+              <property name="ChromeType" type="chrometype">Default</property>
+              <property name="Width" type="unit">800px</property>
+              <property name="Title" type="string">Silverlight Web Part</property>
+              <property name="ChromeState" type="chromestate">Normal</property>
+              <property name="TitleUrl" type="string" />
+              <property name="Url" type="string">~site/Lists/SilverlightApps/Client.ExtService.Silverlight.xap</property>
+              <property name="WindowlessMode" type="bool">True</property>
+            </properties>
+          </data>
+        </webPart>
+      </webParts> ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Url="Silverlight/SilverlightSPWebService.aspx" Path ="CustomPages\CustomPage.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Silverlight SP Web Service" />
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="SilverlightSPWebService">
+        <![CDATA[ <webParts>
+        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          <metaData>
+            <type name="Microsoft.SharePoint.WebPartPages.SilverlightWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+            <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+          </metaData>
+          <data>
+            <properties>
+              <property name="HelpUrl" type="string" />
+              <property name="AllowClose" type="bool">True</property>
+              <property name="ExportMode" type="exportmode">All</property>
+              <property name="Hidden" type="bool">False</property>
+              <property name="AllowEdit" type="bool">True</property>
+              <property name="Direction" type="direction">NotSet</property>
+              <property name="TitleIconImageUrl" type="string" />
+              <property name="AllowConnect" type="bool">True</property>
+              <property name="HelpMode" type="helpmode">Modal</property>
+              <property name="CustomProperties" type="string" null="true" />
+              <property name="AllowHide" type="bool">True</property>
+              <property name="Description" type="string">A web part to display a Silverlight application.</property>
+              <property name="CatalogIconImageUrl" type="string" />
+              <property name="MinRuntimeVersion" type="string" null="true" />
+              <property name="ApplicationXml" type="string" />
+              <property name="AllowMinimize" type="bool">True</property>
+              <property name="AllowZoneChange" type="bool">True</property>
+              <property name="CustomInitParameters" type="string" null="true" />
+              <property name="Height" type="unit">650px</property>
+              <property name="ChromeType" type="chrometype">Default</property>
+              <property name="Width" type="unit">800px</property>
+              <property name="Title" type="string">Silverlight Web Part</property>
+              <property name="ChromeState" type="chromestate">Normal</property>
+              <property name="TitleUrl" type="string" />
+              <property name="Url" type="string">~site/Lists/SilverlightApps/Client.SPWebService.Silverlight.xap</property>
+              <property name="WindowlessMode" type="bool">True</property>
+            </properties>
+          </data>
+        </webPart>
+      </webParts> ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="CustomPages\JavascriptWithCSOM.aspx" Url="AJAX/JavascriptWithCSOM.aspx" >
+      <Property Name="Title" Value="Part Search using CSOM and JavaScript" />
+    </File >
+    <File Path="CustomPages\JavascriptWithREST.aspx" Url="AJAX/JavascriptWithREST.aspx" >
+      <Property Name="Title" Value="Part Search using REST and JavaScript" />
+    </File >
+    
+</Module>
+</Elements>

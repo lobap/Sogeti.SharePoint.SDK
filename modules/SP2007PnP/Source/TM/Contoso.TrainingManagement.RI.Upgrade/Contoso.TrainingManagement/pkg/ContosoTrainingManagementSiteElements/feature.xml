@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="aef4d353-c04c-4bf5-8472-e881da3802a1" Title="ContosoTrainingManagementSiteElements" Scope="Web" Version="1.0.0.0" Hidden="TRUE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ContosoTrainingManagementSiteElements\elementManifest.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FullTrustListBasedConfiguration.CentralSiteConfig" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAQAAAA=</HashCode>
+      <FileName>CentralSiteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FullTrustListBasedConfiguration.ListBackedConfigManager" Collapsed="true">
+    <Position X="8" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListBackedConfigManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FullTrustListBasedConfiguration.ListBackedHierarchicalConfig" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListBackedHierarchicalConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Practices.SharePoint.Common.Configuration.ConfigManager" Collapsed="true">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Practices.SharePoint.Common.Configuration.HierarchicalConfig" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Practices.SharePoint.Common.Configuration.PropertyBagHierarchy" Collapsed="true">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Practices.SharePoint.Common.Configuration.ListBackedPropertyBag" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Practices.SharePoint.Common.Configuration.ListBackedUrlPropertyBag" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FullTrustListBasedConfiguration.ListBackedConfigHierarachy" Collapsed="true">
+    <Position X="3" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListBackedConfigHierarchy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Practices.SharePoint.Common.Configuration.ConfigurationList" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

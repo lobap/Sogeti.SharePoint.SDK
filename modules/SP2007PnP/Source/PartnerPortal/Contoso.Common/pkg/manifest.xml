@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="3f848452-e0ed-4a14-948d-5e8b3badf258" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Assemblies>
+    <Assembly Location="Contoso.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Microsoft.Practices.SPG.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Microsoft.Practices.ServiceLocation.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="System.Web.Silverlight.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+</Solution>

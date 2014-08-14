@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Parts Management Pages" List="101" Url="">
+  <File Url="PartsMgmntSandbox/SearchPage.aspx" Path ="Pages\PartsMgmnt.aspx" Type ="Ghostable" >
+    <Property Name="Title" Value="Search Page" />
+    <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+      <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.SearchPage.SearchPage, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SearchPage Title</property>
+        <property name="Description" type="string">SearchPage Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>  
+  ]]>
+    </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageParts.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Parts" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageParts.ManageParts, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageParts Title</property>
+        <property name="Description" type="string">ManageParts Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageMachines.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Machines" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageMachines.ManageMachines, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageMachines Title</property>
+        <property name="Description" type="string">ManageMachines Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageSuppliers.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Part Suppliers" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageSuppliers.ManageSuppliers, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageSuppliers Title</property>
+        <property name="Description" type="string">ManageSuppliers Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageManufacturers.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Manufacturers" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageManufacturers.ManageManufacturers, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageManufacturers Title</property>
+        <property name="Description" type="string">ManageManufacturers Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageCategories.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Categories" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageCategories.ManageCategories, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageCategories Title</property>
+        <property name="Description" type="string">ManageCategories Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageDepartments.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Departments" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageDepartments.ManageDepartments, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageDepartments Title</property>
+        <property name="Description" type="string">ManageDepartments Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManageInventory.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Inventory" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageInventory.ManageInventory, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageInventory Title</property>
+        <property name="Description" type="string">ManageInventory Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File>
+    
+        <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManagePartMachines.aspx" Type ="Ghostable" >
+          <Property Name="Title" Value="Manage Machine Parts" />
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManagePartMachines.ManagePartMachines, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManagePartMachines Title</property>
+        <property name="Description" type="string">ManagePartMachines Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File>
+
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManagePartSuppliers.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Part Suppliers" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManagePartSuppliers.ManagePartSuppliers, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManagePartSuppliers Title</property>
+        <property name="Description" type="string">ManagePartSuppliers Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File>
+
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntSandbox/ManagePartLocations.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Part Locations" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManagePartLocations.ManagePartLocations, DataModels.SharePointList.Sandbox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87525ccbb018dcf4" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+      <Solution SolutionId="95d8ad37-27e7-47cd-862f-e8381ef329d0" xmlns="http://schemas.microsoft.com/sharepoint/" />
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManagePartLocations Title</property>
+        <property name="Description" type="string">ManagePartLocations Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts> 
+  ]]>
+      </AllUsersWebPart>
+    </File>
+</Module>
+  <CustomAction Location="ScriptLink" ScriptBlock ="
+                function ShowModalDialog(url) {
+    var options = SP.UI.$create_DialogOptions();
+    options.url = url;
+    options.height = 400;
+    SP.UI.ModalDialog.showModalDialog(options);
+}">
+  </CustomAction>
+</Elements>

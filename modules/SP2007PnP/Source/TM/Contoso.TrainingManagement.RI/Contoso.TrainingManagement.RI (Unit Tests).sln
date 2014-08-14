@@ -1,0 +1,131 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{10DE51B6-4B93-48CC-BEDD-0C7363E22D55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC198E41-B466-4B1A-AA50-1508634D102E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.AccountingManagement", "Contoso.AccountingManagement\Contoso.AccountingManagement.csproj", "{C7F714CB-0FED-476A-AF16-4CC92B76A68A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.HRManagement", "Contoso.HRManagement\Contoso.HRManagement.csproj", "{F7D4567E-2051-4BA1-875A-3664A18F098A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement", "Contoso.TrainingManagement\Contoso.TrainingManagement.csproj", "{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Repository", "Contoso.TrainingManagement.Repository\Contoso.TrainingManagement.Repository.csproj", "{5EB7688B-1AB4-4421-B339-6BB347399366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.ServiceLocator", "Contoso.TrainingManagement.ServiceLocator\Contoso.TrainingManagement.ServiceLocator.csproj", "{86C279C6-BDEC-491B-BA06-611BB2E8F139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Web", "Contoso.TrainingManagement.Web\Contoso.TrainingManagement.Web.csproj", "{071D716A-6217-4211-AC5B-942BDA39F6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.AccountingManagement.Tests", "Contoso.AccountingManagement.Tests\Contoso.AccountingManagement.Tests.csproj", "{08488B72-5FB6-427C-A6DD-BD0E6A6E5AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.HRManagement.Tests", "Contoso.HRManagement.Tests\Contoso.HRManagement.Tests.csproj", "{49B44D7D-EA0A-48C7-B0CF-A647A635A9BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Mocks", "Contoso.TrainingManagement.Mocks\Contoso.TrainingManagement.Mocks.csproj", "{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Repository.Tests", "Contoso.TrainingManagement.Repository.Tests\Contoso.TrainingManagement.Repository.Tests.csproj", "{3F2207E1-B80B-49A7-B844-3016448C0B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Tests", "Contoso.TrainingManagement.Tests\Contoso.TrainingManagement.Tests.csproj", "{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68254DA-000D-43EF-9F98-486DD3427B82} = {A68254DA-000D-43EF-9F98-486DD3427B82}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Common", "Contoso.TrainingManagement.Common\Contoso.TrainingManagement.Common.csproj", "{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Workflows.RegistrationApproval", "Contoso.TrainingManagement.Workflows.RegistrationApproval\Contoso.TrainingManagement.Workflows.RegistrationApproval.csproj", "{805397FD-8658-42B8-AFED-3E5E87959A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Workflows", "Contoso.TrainingManagement.Workflows\Contoso.TrainingManagement.Workflows.csproj", "{A68254DA-000D-43EF-9F98-486DD3427B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.Repository.IntegrationTests", "Contoso.TrainingManagement.Repository.Integration.Tests\Contoso.TrainingManagement.Repository.IntegrationTests.csproj", "{B81F80CD-04F7-4B79-84EE-6119BD726CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TrainingManagement.IntegrationTests", "Contoso.TrainingManagement.Integration.Tests\Contoso.TrainingManagement.IntegrationTests.csproj", "{046512CE-EB1B-4082-AA49-ACCF738C00BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{18E5EA25-B706-4DAF-A6F3-DF1A2C77C05E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Contoso.TrainingManagement.RI (Unit Tests).vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7F714CB-0FED-476A-AF16-4CC92B76A68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F714CB-0FED-476A-AF16-4CC92B76A68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F714CB-0FED-476A-AF16-4CC92B76A68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F714CB-0FED-476A-AF16-4CC92B76A68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D4567E-2051-4BA1-875A-3664A18F098A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D4567E-2051-4BA1-875A-3664A18F098A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D4567E-2051-4BA1-875A-3664A18F098A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D4567E-2051-4BA1-875A-3664A18F098A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5EB7688B-1AB4-4421-B339-6BB347399366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB7688B-1AB4-4421-B339-6BB347399366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB7688B-1AB4-4421-B339-6BB347399366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB7688B-1AB4-4421-B339-6BB347399366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C279C6-BDEC-491B-BA06-611BB2E8F139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C279C6-BDEC-491B-BA06-611BB2E8F139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C279C6-BDEC-491B-BA06-611BB2E8F139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C279C6-BDEC-491B-BA06-611BB2E8F139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071D716A-6217-4211-AC5B-942BDA39F6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071D716A-6217-4211-AC5B-942BDA39F6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08488B72-5FB6-427C-A6DD-BD0E6A6E5AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08488B72-5FB6-427C-A6DD-BD0E6A6E5AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08488B72-5FB6-427C-A6DD-BD0E6A6E5AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08488B72-5FB6-427C-A6DD-BD0E6A6E5AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B44D7D-EA0A-48C7-B0CF-A647A635A9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B44D7D-EA0A-48C7-B0CF-A647A635A9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B44D7D-EA0A-48C7-B0CF-A647A635A9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B44D7D-EA0A-48C7-B0CF-A647A635A9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2207E1-B80B-49A7-B844-3016448C0B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2207E1-B80B-49A7-B844-3016448C0B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2207E1-B80B-49A7-B844-3016448C0B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2207E1-B80B-49A7-B844-3016448C0B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805397FD-8658-42B8-AFED-3E5E87959A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805397FD-8658-42B8-AFED-3E5E87959A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805397FD-8658-42B8-AFED-3E5E87959A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805397FD-8658-42B8-AFED-3E5E87959A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805397FD-8658-42B8-AFED-3E5E87959A00}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A68254DA-000D-43EF-9F98-486DD3427B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68254DA-000D-43EF-9F98-486DD3427B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68254DA-000D-43EF-9F98-486DD3427B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68254DA-000D-43EF-9F98-486DD3427B82}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B81F80CD-04F7-4B79-84EE-6119BD726CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81F80CD-04F7-4B79-84EE-6119BD726CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81F80CD-04F7-4B79-84EE-6119BD726CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81F80CD-04F7-4B79-84EE-6119BD726CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046512CE-EB1B-4082-AA49-ACCF738C00BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046512CE-EB1B-4082-AA49-ACCF738C00BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046512CE-EB1B-4082-AA49-ACCF738C00BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046512CE-EB1B-4082-AA49-ACCF738C00BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08488B72-5FB6-427C-A6DD-BD0E6A6E5AD3} = {10DE51B6-4B93-48CC-BEDD-0C7363E22D55}
+		{49B44D7D-EA0A-48C7-B0CF-A647A635A9BA} = {10DE51B6-4B93-48CC-BEDD-0C7363E22D55}
+		{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B} = {10DE51B6-4B93-48CC-BEDD-0C7363E22D55}
+		{3F2207E1-B80B-49A7-B844-3016448C0B3D} = {10DE51B6-4B93-48CC-BEDD-0C7363E22D55}
+		{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67} = {10DE51B6-4B93-48CC-BEDD-0C7363E22D55}
+		{046512CE-EB1B-4082-AA49-ACCF738C00BF} = {18E5EA25-B706-4DAF-A6F3-DF1A2C77C05E}
+		{B81F80CD-04F7-4B79-84EE-6119BD726CEA} = {18E5EA25-B706-4DAF-A6F3-DF1A2C77C05E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+﻿<solution id="db304e8b-6c82-4e0a-a43f-ea72bf8886b8" name="ContosoPartnerPortalPromotions">
+  <features>
+    <feature id="6fd12cb8-f910-4cf4-b7d0-6b74769483ae">
+      <featureElements>
+        <featureElement id="73fec268-8247-430e-8d0f-77e93ada0c10" name="PromotionPage" />
+        <featureElement id="6058a309-fda6-4675-9b8e-f485531c47a4" name="PartnerPromotionsWebPart" />
+      </featureElements>
+    </feature>
+    <feature id="2c988455-7e87-4a52-a81d-2756121ff663">
+      <featureElements>
+        <featureElement id="60c36335-3939-4f87-88d4-cd07110663d7" name="DemoMediaInstance" />
+        <featureElement id="9fa1ef02-f1ae-4444-8d23-55edffd2138e" name="DemoMediaDefinition" />
+        <featureElement id="79cd6df4-37b5-4a12-9619-496b85f5dcbd" name="Media" />
+        <featureElement id="9944037b-8e5e-4f9c-94ac-b80982c20425" name="PromotionLayoutModule" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

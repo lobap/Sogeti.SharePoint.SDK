@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.ExternalData.PartsManagement.ManageMachines.ManageMachines, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Manage Machines ECT</property>
+        <property name="Description" type="string">WebPart to manage machines in an external SQL LOB System</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

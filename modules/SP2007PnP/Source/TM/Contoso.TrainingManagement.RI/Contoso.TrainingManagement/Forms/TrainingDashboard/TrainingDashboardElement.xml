@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="463a3ae8-9021-4e8b-9d96-eecff9bb589c" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="TrainingDashboard">
+    <File Path="trainingdashboard.aspx" Url="trainingdashboard.aspx" Type="Ghostable">
+      <View List="Lists/TrainingCourses" BaseViewID="0" RecurrenceRowset="TRUE" WebPartZoneID="Left" WebPartOrder="1"/>
+      <View List="Lists/Registrations" BaseViewID="2" RecurrenceRowset="TRUE" WebPartZoneID="Left" WebPartOrder="2">
+        <![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListViewWebPart</TypeName>
+                        <Title>My Registrations</Title>
+                   </WebPart>
+            ]]>
+      </View>
+    </File>    
+  </Module>
+</Elements>

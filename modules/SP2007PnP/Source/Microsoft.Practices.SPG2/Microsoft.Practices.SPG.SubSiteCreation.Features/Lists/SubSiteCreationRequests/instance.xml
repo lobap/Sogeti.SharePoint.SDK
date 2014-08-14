@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="1a88fe5f-fc7e-4974-badd-887e130345d5" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature Id at deployment time.
+  -->
+  <ListInstance FeatureId="96240ac3-2af6-4ca7-95a9-2288851c634b" 
+                Title="Sub Site Creation Requests" 
+                Url="Lists/SubSiteCreationRequests"
+                OnQuickLaunch="true"
+                QuickLaunchUrl="Lists/SubSiteCreationRequests">
+  </ListInstance>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="01965bb6-21f0-4c4f-9206-4e5222e0c42b" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="Documents"
+                DisplayName="Documents"
+                Description=""
+                BaseType="1"
+                Type="101"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="110"
+                Image="/_layouts/images/itdl.gif"
+                DocumentTemplate="101" />
+</Elements>

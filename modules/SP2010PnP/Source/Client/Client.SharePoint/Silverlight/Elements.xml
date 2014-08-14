@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Module Name="Silverlight" Path ="Silverlight" Url ="Lists/SilverlightApps">
+        <File Path="Client.CSOM.Silverlight.xap" Url="Client.CSOM.Silverlight.xap" Type ="GhostableInLibrary" />
+        <File Path="Client.SPWebService.Silverlight.xap" Url="Client.SPWebService.Silverlight.xap" Type ="GhostableInLibrary" />
+        <File Path="Client.REST.Silverlight.xap" Url="Client.REST.Silverlight.xap"  Type ="GhostableInLibrary" />
+        <File Path="Client.REST.Silverlight.Alt.xap" Url="Client.REST.Silverlight.Alt.xap" Type ="GhostableInLibrary"  />
+        <File Path="Client.REST.Silverlight.Alt.NoMVVM.xap" Url="Client.REST.Silverlight.Alt.NoMVVM.xap" Type ="GhostableInLibrary"  />
+        <File Path="Client.ExtService.Silverlight.xap" Url="Client.ExtService.Silverlight.xap" Type ="GhostableInLibrary"  />
+    </Module>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="fdce0e79-fda2-49e5-8aba-e1fa4317d980" solutionId="fdce0e79-fda2-49e5-8aba-e1fa4317d980" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="ExecutionModels.Workflow.SandboxActivity">
+    <features>
+        <featureReference itemId="f33934c3-83ed-42d5-9aeb-0458de74e46c" />
+    </features>
+</package>

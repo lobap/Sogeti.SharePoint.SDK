@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Client.ExtService.Silverlight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:dataInput="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input" d:DesignHeight="658" d:DesignWidth="423" xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data" Cursor="{Binding Cursor}">
+
+    <Grid x:Name="LayoutRoot" Background="White" Height="658" Width="423">
+        <dataInput:Label Height="20" HorizontalAlignment="Left" Margin="12,44,0,0" Name="vendorLabel" VerticalAlignment="Top" Width="55" Content="Suppliers:" />
+        <Button Content="Get Suppliers" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="getSuppliersButton" VerticalAlignment="Top" Width="85" Click="getSuppliersButton_Click" />
+        <dataInput:Label Height="16" HorizontalAlignment="Left" Margin="12,250,0,0" Name="accountsPayableLabel" VerticalAlignment="Top" Width="100" Content="Accounts Payable:" />
+        <dataInput:Label Height="26" HorizontalAlignment="Left" Margin="133,220,0,0" Name="numberOfVendorsFoundValueLabel" VerticalAlignment="Top" Width="28" Content="{Binding NumberOfSuppliersFound}" />
+        <dataInput:Label Height="24" HorizontalAlignment="Left" Margin="12,220,0,0" Name="numberOfVendorsFoundLabel" VerticalAlignment="Top" Width="120" Content="# of Suppliers Found:" />
+        <dataInput:Label Height="16" HorizontalAlignment="Left" Margin="118,250,0,0" Name="accountsPayableValueLabel" VerticalAlignment="Top" Width="132" Content="{Binding AccountsPayableValue}" />
+        <data:DataGrid ItemsSource="{Binding Suppliers}" AutoGenerateColumns="True" Height="144" HorizontalAlignment="Left" Margin="12,70,0,0" Name="vendorsDataGrid" VerticalAlignment="Top" Width="400" SelectedItem="{Binding CurrentSupplier, Mode=TwoWay}" />
+        <TextBlock Height="348" HorizontalAlignment="Left" Margin="12,296,0,0" Name="errorTextBlock" Text="{Binding ErrorText}" VerticalAlignment="Top" Width="400" TextWrapping="Wrap" />
+        <dataInput:Label Height="18" HorizontalAlignment="Left" Margin="12,272,0,0" Name="label1" VerticalAlignment="Top" Width="100" Content="Error messages:" />
+    </Grid>
+</UserControl>
+

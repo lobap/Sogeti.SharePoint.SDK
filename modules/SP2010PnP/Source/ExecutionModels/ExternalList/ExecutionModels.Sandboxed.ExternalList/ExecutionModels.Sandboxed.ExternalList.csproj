@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1511B21F-4251-4699-A30D-04B4F127FA30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExecutionModels.Sandboxed.ExternalList</RootNamespace>
+    <AssemblyName>ExecutionModels.Sandboxed.ExternalList</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\..\Build\TeamBuildTypes\MicrosoftExtendedCorrectnessRulesTreatAsErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="VendorTransactionList\VendorTransactionList.cs" />
+    <Compile Include="VendorTransactionList\VendorTransactionListViewPresenter.cs" />
+    <Compile Include="VendorTransactionList\IVendorTransactionListView.cs" />
+    <Compile Include="VendorList\VendorService.cs" />
+    <Compile Include="VendorList\VendorListViewPresenter.cs" />
+    <Compile Include="VendorList\IVendorService.cs" />
+    <Compile Include="VendorList\IVendorListView.cs" />
+    <Compile Include="VendorList\VendorList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\VendorLists\VendorLists.feature">
+      <FeatureId>{477bac9e-c3fd-4495-ae28-485f72450a62}</FeatureId>
+    </None>
+    <None Include="ModalPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3d399a1-190d-4834-9868-18dd1aa53418}</SharePointProjectItemId>
+    </None>
+    <None Include="Vendors\ListsVendors_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b7fa75dc-e5ce-45cd-9e24-60cf72474551}</SharePointProjectItemId>
+    </None>
+    <None Include="Vendors\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{17fabc28-f692-41a0-8e13-2882ad65ba1a}</SharePointProjectItemId>
+    </None>
+    <None Include="VendorTransactionList\VendorTransactionList.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorTransactionList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b90f2a2d-47ec-42ae-9767-e0762ee67f01}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorList\VendorList.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{78cbe901-d4db-4ce2-9263-eacc1c789dd4}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\VendorData\VendorData.feature">
+      <FeatureId>{78f3f866-beae-4223-b7ea-5c5fc44ab9a4}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{ccc65377-e950-4f76-96f0-5455afb33a71}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36605c95-0e76-473c-ba7c-323ced59ce34}</SharePointProjectItemId>
+    </None>
+    <None Include="Vendor_Transactions\ListsVendor_Transactions_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1f63e2d-c9af-4fc0-be9c-f00fd467f640}</SharePointProjectItemId>
+    </None>
+    <None Include="Vendor_Transactions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{987ca631-6987-42f1-ae38-fb8f734409d3}</SharePointProjectItemId>
+    </None>
+    <None Include="Vendor_Transaction_Types\ListsVendor_Transaction_Types_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34d2ef62-aa40-4c75-85e6-5550f5fad43b}</SharePointProjectItemId>
+    </None>
+    <None Include="Vendor_Transaction_Types\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5a32adf-4684-4a76-9396-b968831cdb0b}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SharePoint 2010\Microsoft.Practices.SharePoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj">
+      <Project>{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj">
+      <Project>{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}</Project>
+      <Name>ExecutionModels.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\VendorLists\VendorLists.Template.xml">
+      <DependentUpon>VendorLists.feature</DependentUpon>
+    </Content>
+    <Content Include="ModalPages\Elements.xml" />
+    <Content Include="Vendors\Elements.xml" />
+    <Content Include="Vendors\ListsVendors_pages\Elements.xml" />
+    <Content Include="Vendors\Schema.xml" />
+    <Content Include="VendorTransactionList\Elements.xml" />
+    <Content Include="VendorList\Elements.xml" />
+    <Content Include="Features\VendorData\VendorData.Template.xml">
+      <DependentUpon>VendorData.feature</DependentUpon>
+    </Content>
+    <Content Include="Pages\VendorTransactionDetail.aspx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Vendor_Transactions\Elements.xml" />
+    <Content Include="Vendor_Transactions\ListsVendor_Transactions_pages\Elements.xml" />
+    <Content Include="Vendor_Transactions\Schema.xml" />
+    <Content Include="Vendor_Transaction_Types\Elements.xml" />
+    <Content Include="Vendor_Transaction_Types\ListsVendor_Transaction_Types_pages\Elements.xml" />
+    <Content Include="Vendor_Transaction_Types\Schema.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

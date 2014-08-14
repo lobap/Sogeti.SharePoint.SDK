@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRunConfiguration name="Local Test Run" id="85bfb430-7948-4824-9028-2c272158a8ac" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Description>This is a default test run configuration for a local test run.</Description>
+  <CodeCoverage enabled="true">
+    <Regular>
+      <CodeCoverageItem binaryFile="Contoso.Common\bin\Debug\Contoso.Common.dll" pdbFile="Contoso.Common\bin\Debug\Contoso.Common.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.LOB.Services.Client\bin\Debug\Contoso.LOB.Services.Client.dll" pdbFile="Contoso.LOB.Services.Client\bin\Debug\Contoso.LOB.Services.Client.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.Collaboration\bin\Debug\Contoso.PartnerPortal.Collaboration.dll" pdbFile="Contoso.PartnerPortal.Collaboration\bin\Debug\Contoso.PartnerPortal.Collaboration.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.Collaboration.Incident\bin\Debug\Contoso.PartnerPortal.Collaboration.Incident.dll" pdbFile="Contoso.PartnerPortal.Collaboration.Incident\bin\Debug\Contoso.PartnerPortal.Collaboration.Incident.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.Collaboration.OrderException\bin\Debug\Contoso.PartnerPortal.Collaboration.OrderException.dll" pdbFile="Contoso.PartnerPortal.Collaboration.OrderException\bin\Debug\Contoso.PartnerPortal.Collaboration.OrderException.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal\bin\Debug\Contoso.PartnerPortal.dll" pdbFile="Contoso.PartnerPortal\bin\Debug\Contoso.PartnerPortal.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.PartnerCentral\bin\Debug\Contoso.PartnerPortal.PartnerCentral.dll" pdbFile="Contoso.PartnerPortal.PartnerCentral\bin\Debug\Contoso.PartnerPortal.PartnerCentral.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.PartnerDirectory\bin\Debug\Contoso.PartnerPortal.PartnerDirectory.dll" pdbFile="Contoso.PartnerPortal.PartnerDirectory\bin\Debug\Contoso.PartnerPortal.PartnerDirectory.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.ProductCatalog\bin\Debug\Contoso.PartnerPortal.ProductCatalog.dll" pdbFile="Contoso.PartnerPortal.ProductCatalog\bin\Debug\Contoso.PartnerPortal.ProductCatalog.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="Contoso.PartnerPortal.Promotions\bin\Debug\Contoso.PartnerPortal.Promotions.dll" pdbFile="Contoso.PartnerPortal.Promotions\bin\Debug\Contoso.PartnerPortal.Promotions.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.AJAXSupport\bin\Debug\Microsoft.Practices.SPG.AJAXSupport.dll" pdbFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.AJAXSupport\bin\Debug\Microsoft.Practices.SPG.AJAXSupport.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.Common\bin\Debug\Microsoft.Practices.SPG.Common.dll" pdbFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.Common\bin\Debug\Microsoft.Practices.SPG.Common.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation\bin\Debug\Microsoft.Practices.SPG.SubSiteCreation.dll" pdbFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation\bin\Debug\Microsoft.Practices.SPG.SubSiteCreation.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation.Features\bin\Debug\Microsoft.Practices.SPG.SubSiteCreation.Features.dll" pdbFile="C:\Projects\SPG\Trunk\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation.Features\bin\Debug\Microsoft.Practices.SPG.SubSiteCreation.Features.pdb" instrumentInPlace="true" />
+    </Regular>
+    <AspNet>
+      <AspNetCodeCoverageItem id="a1388c15-48cd-4807-baf3-4657287eadc0" name="Contoso.LOB.Services" applicationRoot="/Contoso.LOB.Services" url="http://localhost:8585/Contoso.LOB.Services/" isIis="true" />
+    </AspNet>
+  </CodeCoverage>
+  <TestTypeSpecific>
+    <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+      <Browser name="Internet Explorer 7.0">
+        <Headers>
+          <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+          <Header name="Accept" value="*/*" />
+          <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+          <Header name="Accept-Encoding" value="GZIP" />
+        </Headers>
+      </Browser>
+      <Network Name="LAN" BandwidthInKbps="0" />
+    </WebTestRunConfiguration>
+  </TestTypeSpecific>
+</TestRunConfiguration>

@@ -1,0 +1,132 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A9953C3-D818-4E20-99D6-005FACF275CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PartnerPortalBVT</RootNamespace>
+    <AssemblyName>PartnerPortalBVT</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Security, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collapsable control\VerifyCollapsableControlPromoPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlBusinessEventTypeConfiguration.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlExtranetProductCatalog.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlExtranetProductPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartner1IncidentPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartner1OrderExceptionPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartner2IncidentPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartner2OrderExceptionPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartnerCentral.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlProductCatalog.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlProductPage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlSubSiteCreationRequests.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableSPGSubSite.cs" />
+    <Compile Include="CustomEventSource\verifycustomeventsource.cs" />
+    <Compile Include="ExtranetPort\VerifyExranetContosoPartner2user1.cs" />
+    <Compile Include="ExtranetPort\VerifyExtranetContosoPartner1User1.cs" />
+    <Compile Include="PartnerCentral\VerifyBusinessEventTypeConfiguration.cs" />
+    <Compile Include="PartnerCentral\VerifyPartnerCentral.cs" />
+    <Compile Include="PartnerCentral\VerifySubSiteCreationRequests.cs" />
+    <Compile Include="PartnerPortal\VerifyProductCatalog_0.cs" />
+    <Compile Include="PartnerPortal\VerifyProductCatalog_1.cs" />
+    <Compile Include="PartnerPortal\VerifyProductCatalog_2.cs" />
+    <Compile Include="PartnerPortal\VerifyProductCatalog_3.cs" />
+    <Compile Include="PartnerPortal\verifyProductDetail.cs" />
+    <Compile Include="PartnerPortal_FBA\VerifyExtranetProductCatalog_0.cs" />
+    <Compile Include="PartnerPortal_FBA\VerifyExtranetProductCatalog_1.cs" />
+    <Compile Include="PartnerPortal_FBA\VerifyExtranetProductCatalog_2.cs" />
+    <Compile Include="PartnerPortal_FBA\VerifyExtranetProductCatalog_4.cs" />
+    <Compile Include="PartnerPortal_FBA\verifyProductDetail_FBA.cs" />
+    <Compile Include="Partners_FBA\VerifyPartner1HomePage_FBA.cs" />
+    <Compile Include="Partners_FBA\VerifyPartner2HomePage_FBA.cs" />
+    <Compile Include="Partners\VerifyPartner2HomePage.cs" />
+    <Compile Include="Partners\VerifyPartner1HomePage.cs" />
+    <Compile Include="Services\VerifySubSiteCreationPage.cs" />
+    <Compile Include="Services\VerifynewincidentPage.cs" />
+    <Compile Include="Services\VerifyIncidentManagementServicePage.cs" />
+    <Compile Include="Services\VerifyIncidentSiteServicePage.cs" />
+    <Compile Include="Services\VerifyPricingServicePage.cs" />
+    <Compile Include="Settings\CustConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\VerifyProductCatalogServicePage.cs" />
+    <Compile Include="PartnerCentral\verifyPartnerSiteDirectoryPage.cs" />
+    <Compile Include="PartnerCentral\verifySPGSubsitePage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartnerSites.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartnerDirectory.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartner1HomePage.cs" />
+    <Compile Include="Collapsable control\VerifyCollapsableControlPartner2HomePage.cs" />
+    <Compile Include="verifyincidentsorderexception\VerifyExtranetOrderExceptionPartner1.cs" />
+    <Compile Include="verifyincidentsorderexception\VerifyExtranetOrderExceptionPartner2.cs" />
+    <Compile Include="verifyincidentsorderexception\VerifyPartner1Incidents.cs" />
+    <Compile Include="verifyincidentsorderexception\VerifyPartner2Incidents.cs" />
+    <Compile Include="Windowsuser\VerifyPartnerHomeContosoPartner1User6.cs" />
+    <Compile Include="Windowsuser\VerifyPartnerHomeContosoPartner2User6.cs" />
+    <Compile Include="Windowsuser\VerifyProductCatalogContosoPartner1User6.cs" />
+    <Compile Include="Windowsuser\VerifyProductCatalogContosoPartner2User6.cs" />
+    <Compile Include="Windowsuser\VerifyProductPageContosoPartner1User6.cs" />
+    <Compile Include="Windowsuser\VerifyProductPageContosoPartner2User6.cs" />
+    <Compile Include="_Incidents site\_VerifyCreateIncident_4.cs" />
+    <Compile Include="_Incidents site\_VerifyCreateIncident_3.cs" />
+    <Compile Include="_Incidents site\_VerifyCreateIncident_2.cs" />
+    <Compile Include="_Incidents site\_VerifyCreateIncident_1.cs" />
+    <Compile Include="_Incidents site\VerifyIncidentsPagePartner2.cs" />
+    <Compile Include="_Incidents site\VerifyIncidentsPagePartner1.cs" />
+    <Compile Include="_Order Exception\_VerifyCreateOrderExceptionPartner1.cs" />
+    <Compile Include="_Order Exception\_VerifyCreateOrderExceptionPartner2.cs" />
+    <Compile Include="verifyincidentsorderexception\VerifyOrderExceptionSitePartner2.cs" />
+    <Compile Include="verifyincidentsorderexception\VerifyOrderExceptionSitePartner1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

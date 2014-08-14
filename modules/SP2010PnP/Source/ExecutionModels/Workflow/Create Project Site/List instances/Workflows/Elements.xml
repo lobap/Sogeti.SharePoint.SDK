@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-f600-43f6-a895-40c0de7b0117}" TemplateType="117" Title="Workflows" Description="" Url="Workflows" CustomSchema="Files\Workflows\Schema.xml" HyperlinkBaseUrl="http://v-robogu-spdev/sites/Manufacturing" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Data>
+			<Rows>
+				<Row>
+					<Field Name="ContentTypeId">0x0120009FF0B241B66DEA4EBF99F5884D6CA8FB</Field>
+					<Field Name="_ModerationStatus">0</Field>
+					<Field Name="FSObjType">1</Field>
+					<Field Name="FileLeafRef">Create Project Site</Field>
+					<Field Name="MetaInfo">1;#vti_contentversionisdirty:BW|false
+vti_isexecutable:BW|false
+vti_metainfoversion:IW|1
+vti_contentversion:IW|0
+vti_foldersubfolderitemcount:IW|0
+vti_folderitemcount:IW|4
+vti_hassubdirs:BW|false
+vti_isscriptable:BW|false
+vti_isbrowsable:BW|true
+vti_listbasetype:IW|1
+vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator
+vti_dirlateststamp:TW|20 Feb 2010 04:35:27 -0000
+vti_listname:SW|{$ListId:Workflows;}
+vti_listservertemplate:IW|117
+</Field>
+					<Field Name="Order">900.000000000000</Field>
+				</Row>
+			</Rows>
+		</Data>
+	</ListInstance>
+</Elements>

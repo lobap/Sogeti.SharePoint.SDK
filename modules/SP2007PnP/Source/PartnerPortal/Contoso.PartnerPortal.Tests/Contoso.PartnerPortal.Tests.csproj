@@ -1,0 +1,132 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D67B2D01-18E8-4E83-AC99-153B712C2339}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contoso.PartnerPortal.Tests</RootNamespace>
+    <AssemblyName>Contoso.PartnerPortal.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="microsoft.sharepoint.portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Security, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Silverlight, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\System.Web.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Typemock.ArrangeActAssert, Version=5.2.1.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContextualHelpPresenterTest.cs" />
+    <Compile Include="HelpContentTest.cs" />
+    <Compile Include="PartnerPromotionRepositoryFixture.cs" />
+    <Compile Include="PartnerRedirectPresenterFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.Common.Tests\Microsoft.Practices.SPG.Common.Tests.csproj">
+      <Project>{16C4F8FE-29F9-4818-8D08-D6B3E0A0D4D8}</Project>
+      <Name>Microsoft.Practices.SPG.Common.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.Common\Microsoft.Practices.SPG.Common.csproj">
+      <Project>{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0}</Project>
+      <Name>Microsoft.Practices.SPG.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation\Microsoft.Practices.SPG.SubSiteCreation.csproj">
+      <Project>{35849150-4D6D-45AE-A7C3-77854D66B0D3}</Project>
+      <Name>Microsoft.Practices.SPG.SubSiteCreation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.Common\Contoso.Common.csproj">
+      <Project>{877777BE-3581-4FE9-A80B-13B46B8780D5}</Project>
+      <Name>Contoso.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.LOB.Services.Client\Contoso.LOB.Services.Client.csproj">
+      <Project>{8ABADD8E-C321-48A1-A969-A0BCAFD01090}</Project>
+      <Name>Contoso.LOB.Services.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.PartnerPortal.PartnerDirectory\Contoso.PartnerPortal.PartnerDirectory.csproj">
+      <Project>{F2006F9D-FDF9-4179-A517-6291972E0662}</Project>
+      <Name>Contoso.PartnerPortal.PartnerDirectory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.PartnerPortal.ProductCatalog\Contoso.PartnerPortal.ProductCatalog.csproj">
+      <Project>{C4B75AF4-CF55-4E44-B779-D397DB9DDE44}</Project>
+      <Name>Contoso.PartnerPortal.ProductCatalog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.PartnerPortal.Promotions\Contoso.PartnerPortal.Promotions.csproj">
+      <Project>{8E55FCF6-D464-40D1-A38A-37DD499B8AC4}</Project>
+      <Name>Contoso.PartnerPortal.Promotions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.PartnerPortal\Contoso.PartnerPortal.csproj">
+      <Project>{74F60044-B703-489C-9D24-ECB09142C723}</Project>
+      <Name>Contoso.PartnerPortal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

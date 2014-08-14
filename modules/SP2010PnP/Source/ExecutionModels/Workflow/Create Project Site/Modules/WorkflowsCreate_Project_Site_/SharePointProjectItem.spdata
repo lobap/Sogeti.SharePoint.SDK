@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Files\Workflows\Create Project Site\CreateProjectSite.xsn" Target="Files\Workflows\Create Project Site\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\Create Project Site\CreateProjectSite.xoml.wfconfig.xml" Target="Files\Workflows\Create Project Site\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\Create Project Site\CreateProjectSite.xoml.rules" Target="Files\Workflows\Create Project Site\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\Create Project Site\CreateProjectSite.xoml" Target="Files\Workflows\Create Project Site\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\Create Project Site\Approval.xsn" Target="Files\Workflows\Create Project Site\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="WorkflowsCreate_Project_Site_\" Type="ElementManifest" />
+  </Files>
+</ProjectItem>

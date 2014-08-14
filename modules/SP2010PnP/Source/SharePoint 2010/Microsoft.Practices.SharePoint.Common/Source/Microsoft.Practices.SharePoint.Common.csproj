@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Practices.SharePoint.Common</RootNamespace>
+    <AssemblyName>Microsoft.Practices.SharePoint.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SGenUseProxyTypes>false</SGenUseProxyTypes>
+    <SGenSerializationTypes>Microsoft.Practices.SharePoint.Common.ServiceLocation.ServiceLocationConfigData</SGenSerializationTypes>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>..\..\..\..\Keys\Microsoft.Practices.Sharepoint.snk</AssemblyOriginatorKeyFile><TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <DocumentationFile>bin\Debug\Microsoft.Practices.SharePoint.Common.XML</DocumentationFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Security, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationContextProvider.cs" />
+    <Compile Include="Configuration\ConfigLevel.cs" />
+    <Compile Include="Configuration\ConfigManager.cs" />
+    <Compile Include="Configuration\ConfigSettingSerializer.cs" />
+    <Compile Include="Configuration\ExceptionHelper.cs" />
+    <Compile Include="Configuration\FarmSettingStore.cs" />
+    <Compile Include="Configuration\PropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\ConfigurationException.cs" />
+    <Compile Include="Configuration\ConfigurationList.cs" />
+    <Compile Include="Configuration\HierarchyBuilder.cs" />
+    <Compile Include="Configuration\ListBackedUrlPropertyBag.cs" />
+    <Compile Include="Configuration\ListBackedPropertyBag.cs" />
+    <Compile Include="Configuration\FarmPropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\FullTrustPropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\HierarchicalConfig.cs" />
+    <Compile Include="Configuration\IConfigManager.cs" />
+    <Compile Include="Configuration\IConfigSettingSerializer.cs" />
+    <Compile Include="Configuration\IPropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\IHierarchicalConfig.cs" />
+    <Compile Include="Configuration\IPropertyBag.cs" />
+    <Compile Include="Configuration\SandboxFarmPropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\SandboxPropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\SandboxFarmPropertyBag.cs" />
+    <Compile Include="Configuration\SandboxWebAppPropertyBag.cs" />
+    <Compile Include="Configuration\SandboxWithProxyPropertyBagHierarchy.cs" />
+    <Compile Include="Configuration\SPFarmPropertyBag.cs" />
+    <Compile Include="Configuration\SPSitePropertyBag.cs" />
+    <Compile Include="Configuration\SPWebAppPropertyBag.cs" />
+    <Compile Include="Configuration\SPWebConfigModificationHelper.cs" />
+    <Compile Include="Configuration\SPWebPropertyBag.cs" />
+    <Compile Include="Configuration\WebAppSettingStore.cs" />
+    <Compile Include="Configuration\XmlSerializerCache.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IApplicationContextProvider.cs" />
+    <Compile Include="Logging\DiagnosticsAreaEventSource.cs" />
+    <Compile Include="Logging\DiagnosticsCategoryCollection.cs" />
+    <Compile Include="Logging\DiagnosticsAreaCollection.cs" />
+    <Compile Include="Logging\DiagnosticsService.cs" />
+    <Compile Include="Logging\SandboxEventSeverity.cs" />
+    <Compile Include="Logging\SandboxTraceSeverity.cs" />
+    <Compile Include="ProxyArgs\ContainsKeyDataArgs.cs" />
+    <Compile Include="ProxyArgs\LoggingOperationArgs.cs" />
+    <Compile Include="ProxyArgs\ProxyInstalledArgs.cs" />
+    <Compile Include="ProxyArgs\ProxyOperationTypes.cs" />
+    <Compile Include="ProxyArgs\ReadConfigArgs.cs" />
+    <Compile Include="ProxyArgs\TracingOperationArgs.cs" />
+    <Compile Include="ServiceLocation\ServiceLocationConfigData.cs" />
+    <Compile Include="ServiceLocation\TypeMappingChangedArgs.cs" />
+    <Compile Include="SharePointEnvironment.cs" />
+    <Compile Include="Validation.cs" />
+    <Compile Include="ListRepository\CAMLFilter.cs" />
+    <Compile Include="ListRepository\CAMLQueryBuilder.cs" />
+    <Compile Include="ListRepository\FieldToEntityPropertyMapping.cs" />
+    <Compile Include="ListRepository\ListItemFieldMapper.cs" />
+    <Compile Include="ListRepository\ListItemFieldMappingException.cs" />
+    <Compile Include="Logging\BaseLogger.cs" />
+    <Compile Include="Logging\DiagnosticsArea.cs" />
+    <Compile Include="Logging\DiagnosticsCategory.cs" />
+    <Compile Include="Logging\EventLogLogger.cs" />
+    <Compile Include="Logging\IEventLogLogger.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ITraceLogger.cs" />
+    <Compile Include="Logging\LoggingException.cs" />
+    <Compile Include="Logging\SharePointLogger.cs" />
+    <Compile Include="Logging\TraceLogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceLocation\ActivatingServiceLocator.cs" />
+    <Compile Include="ServiceLocation\ActivatingServiceLocatorFactory.cs" />
+    <Compile Include="ServiceLocation\InstantiationType.cs" />
+    <Compile Include="ServiceLocation\IServiceLocatorConfig.cs" />
+    <Compile Include="ServiceLocation\IServiceLocatorFactory.cs" />
+    <Compile Include="ServiceLocation\NoSharePointContextException.cs" />
+    <Compile Include="ServiceLocation\ServiceLocatorConfig.cs" />
+    <Compile Include="ServiceLocation\SharePointServiceLocator.cs" />
+    <Compile Include="ServiceLocation\TypeMapping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Microsoft.Practices.SharePoint.Common.ruleset">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="project.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>call "$(VS100COMNTOOLS)..\..\VC\vcvarsall.bat" x86
+
+gacutil.exe -if "$(TargetDir)$(TargetFileName)" 
+gacutil.exe -if "$(TargetDir)Microsoft.Practices.SharePoint.Common.XmlSerializers.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>call "$(VS100COMNTOOLS)..\..\VC\vcvarsall.bat" x86
+
+gacutil.exe -u "$(TargetName)" 
+gacutil.exe -u "Microsoft.Practices.SharePoint.Common.XmlSerializers"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

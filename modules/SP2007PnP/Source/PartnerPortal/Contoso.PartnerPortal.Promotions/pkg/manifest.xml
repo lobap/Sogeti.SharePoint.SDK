@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="db304e8b-6c82-4e0a-a43f-ea72bf8886b8" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoPartnerPortalPromotionsSite\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalPromotionsWeb\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Contoso.PartnerPortal.Promotions.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Contoso.PartnerPortal.Promotions, Culture=neutral, Version=1.0.0.0, PublicKeyToken=7dfe266eb414dba8" Namespace="Contoso.PartnerPortal.Promotions.FieldControls" TypeName="*" Safe="True" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\PartnerPromotionsControl.ascx" />
+  </TemplateFiles>
+</Solution>

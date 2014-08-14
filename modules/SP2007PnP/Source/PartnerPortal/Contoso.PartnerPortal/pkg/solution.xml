@@ -1,0 +1,19 @@
+﻿<solution id="30e48f7f-14b1-4e7e-929e-bf0c08b2b283" name="ContosoPartnerPortal">
+  <features>
+    <feature id="be8c9c0c-3201-45e7-a433-806d9dfc35eb">
+      <featureElements>
+        <featureElement id="ad7b6ced-91cc-468d-a152-2bfaead271d1" name="GlobalNavDelegateControl" />
+      </featureElements>
+    </feature>
+    <feature id="92a99385-aefc-4718-98c2-1ac541c55a6e">
+      <featureElements>
+        <featureElement id="cec9bea9-b988-4302-9586-f91c176e7851" name="ContextualHelpMasterPage" />
+      </featureElements>
+    </feature>
+    <feature id="d56f7159-1f51-4b34-8a1f-a69f173244f1">
+      <featureElements>
+        <featureElement id="3ce74201-9343-444a-8e2b-636f0a74f362" name="PartnerRedirect" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

@@ -1,0 +1,28 @@
+﻿<solution id="ceb9d74a-9b83-4b62-9dbc-ecd18df6fd28" name="ContosoPartnerPortalCollaborationOrderException">
+  <features>
+    <feature id="c5decae2-d3e2-4048-a25a-42c5fe6eac29">
+      <featureElements>
+        <featureElement id="610fc132-c155-49f4-8bcb-413aedde0735" name="OrderExceptionInfo" />
+      </featureElements>
+    </feature>
+    <feature id="23389722-f5d6-42da-b39b-ff75cf991ab3">
+      <featureElements>
+        <featureElement id="9086ec22-ce38-46a6-811f-057376aa4e21" name="Discussion instance" />
+        <featureElement id="cf22c15f-461e-4111-9400-1e9c1f852712" name="Discussion" />
+        <featureElement id="5b83916b-c856-4fe7-9a0b-bd78e24f2d7e" name="Documents instance" />
+        <featureElement id="01965bb6-21f0-4c4f-9206-4e5222e0c42b" name="Documents" />
+        <featureElement id="1a440cd0-a463-4afc-ad83-f6428f8f8f06" name="Tasks instance" />
+        <featureElement id="b4dab344-a235-426e-b50d-4cfde9c8b597" name="Tasks" />
+        <featureElement id="c28baaa4-bc40-4f72-b27f-b04b11b014ac" name="DefaultBlank" />
+      </featureElements>
+    </feature>
+    <feature id="5a330523-abe9-40fc-9591-81a743d93a12">
+      <featureElements>
+        <featureElement id="5a330523-abe9-40fc-9591-81a743d93a12" name="ContosoPartnerPortalCollaborationOrderExceptionSiteElements" />
+      </featureElements>
+    </feature>
+  </features>
+  <sitedefinitions>
+    <sitedefinition id="5a330523-abe9-40fc-9591-81a743d93a12"/>
+  </sitedefinitions>
+</solution>

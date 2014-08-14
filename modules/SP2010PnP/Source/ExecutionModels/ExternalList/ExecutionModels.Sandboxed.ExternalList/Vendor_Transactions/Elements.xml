@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-9549-43f8-b978-e47e54a10600}" TemplateType="600" Title="VendorTransactions" Description="" Url="Lists/VendorTransactions" CustomSchema="Files\Lists\VendorTransactions\Schema.xml" HyperlinkBaseUrl="http://localhost/sites/ect" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<DataSource>
+			<Property Name="Entity" Value="Vendor Transactions" />
+			<Property Name="EntityNamespace" Value="ExecutionModels.ExternalList" />
+			<Property Name="LobSystemInstance" Value="VendorManagement" />
+			<Property Name="SpecificFinder" Value="Read Item" />
+		</DataSource>
+	</ListInstance>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="68a85277-0049-49ed-8d52-fd4dbbd52f1b" Title="Contoso Partner Portal Product Catalog (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="CategoryPage\Module.xml" />
+    <ElementFile Location="CategoryPage\Category.aspx" />
+    <ElementManifest Location="Product Page\Module.xml" />
+    <ElementFile Location="Product Page\Product.aspx" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="946de646-f75e-4800-9694-d4426c586612"/>
+    <ActivationDependency FeatureId="8b0f085e-72a0-4d9f-ac74-0038dc0f6dd5"/>
+  </ActivationDependencies>
+</Feature>

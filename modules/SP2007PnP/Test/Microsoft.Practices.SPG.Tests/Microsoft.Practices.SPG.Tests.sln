@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SPG.Tests", "Microsoft.Practices.SPG.Tests\Microsoft.Practices.SPG.Tests.csproj", "{ED355654-B721-452E-A90C-D4FB19AC3783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1F72D125-B97F-46AC-9BD1-4D8900707255}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference Projects", "Reference Projects", "{308F1962-E4C4-4486-8F9E-B10500561D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SPG.Common", "..\..\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.Common\Microsoft.Practices.SPG.Common.csproj", "{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SPG.SubSiteCreation", "..\..\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation\Microsoft.Practices.SPG.SubSiteCreation.csproj", "{35849150-4D6D-45AE-A7C3-77854D66B0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SPG.SubSiteCreation.Features", "..\..\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.SubSiteCreation.Features\Microsoft.Practices.SPG.SubSiteCreation.Features.csproj", "{F21F81FB-F51C-4CA0-927B-33F3124BAF54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SPG.AJAXSupport", "..\..\Source\Microsoft.Practices.SPG2\Microsoft.Practices.SPG.AJAXSupport\Microsoft.Practices.SPG.AJAXSupport.csproj", "{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Microsoft.Practices.SPG.Tests.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED355654-B721-452E-A90C-D4FB19AC3783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED355654-B721-452E-A90C-D4FB19AC3783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED355654-B721-452E-A90C-D4FB19AC3783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED355654-B721-452E-A90C-D4FB19AC3783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35849150-4D6D-45AE-A7C3-77854D66B0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35849150-4D6D-45AE-A7C3-77854D66B0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35849150-4D6D-45AE-A7C3-77854D66B0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35849150-4D6D-45AE-A7C3-77854D66B0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4082370-9B6E-4ADF-81D5-997CBDFBC2C0} = {308F1962-E4C4-4486-8F9E-B10500561D92}
+		{35849150-4D6D-45AE-A7C3-77854D66B0D3} = {308F1962-E4C4-4486-8F9E-B10500561D92}
+		{F21F81FB-F51C-4CA0-927B-33F3124BAF54} = {308F1962-E4C4-4486-8F9E-B10500561D92}
+		{32A68CF2-BDC0-4FDB-BB5D-F1DAED47C34F} = {308F1962-E4C4-4486-8F9E-B10500561D92}
+	EndGlobalSection
+EndGlobal

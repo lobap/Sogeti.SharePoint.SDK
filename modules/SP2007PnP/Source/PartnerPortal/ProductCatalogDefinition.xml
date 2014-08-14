@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<LobSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog BDCMetadata.xsd" Type="WebService" Version="1.1.0.0" Name="ContosoProductCatalogService" xmlns="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog">
+  <Properties>
+    <Property Name="WsdlFetchUrl" Type="System.String">http://localhost:8585/Contoso.LOB.Services/ProductCatalog.svc</Property>
+    <Property Name="WebServiceProxyNamespace" Type="System.String">ContosoProductCatalogProxy</Property>
+  </Properties>
+  <LobSystemInstances>
+    <LobSystemInstance Name="ContosoProductCatalogService">
+      <Properties>
+        <Property Name="LobSystemName" Type="System.String">ContosoProductCatalogService</Property>
+        <Property Name="WebServiceAuthenticationMode" Type="Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.WebService.HttpAuthenticationMode">RevertToSelf</Property>
+      </Properties>
+    </LobSystemInstance>
+  </LobSystemInstances>
+  <Entities>
+    <Entity EstimatedInstanceCount="10000" Name="Category">
+      <Properties>
+        <Property Name="Title" Type="System.String">Name</Property>
+      </Properties>
+      <Identifiers>
+        <Identifier TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CategoryId" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetCategoryById">
+          <Parameters>
+            <Parameter Direction="In" Name="categoryId">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CategoryId" Name="categoryId" />
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Category,ContosoProductCatalogService" Name="Category">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CategoryId" Name="CategoryId" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ParentId" />
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="SpecificFinder" ReturnParameterName="Return" ReturnTypeDescriptorName="Category" ReturnTypeDescriptorLevel="0" Name="FindSpecificCategoryInstance" />
+          </MethodInstances>
+        </Method>
+        <Method Name="GetChildCategoriesByCategory">
+          <Parameters>
+            <Parameter Direction="In" Name="categoryId">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CategoryId" Name="categoryId" />
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Category[],ContosoProductCatalogService" IsCollection="true" Name="Categories">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="ContosoProductCatalogProxy.Category,ContosoProductCatalogService" Name="Category">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CategoryId" Name="CategoryId" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ParentId" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+        </Method>
+        <Method Name="GetCategories">
+          <Parameters>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Category[],ContosoProductCatalogService" IsCollection="true" Name="Categories">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="ContosoProductCatalogProxy.Category,ContosoProductCatalogService" Name="Category">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CategoryId" Name="CategoryId" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ParentId" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="Return" ReturnTypeDescriptorName="Categories" ReturnTypeDescriptorLevel="0" Name="FindCategoriesInstance" />
+          </MethodInstances>
+        </Method>
+      </Methods>      
+    </Entity>
+
+     <Entity EstimatedInstanceCount="10000" Name="Product">
+      <Properties>
+        <Property Name="Title" Type="System.String">Product</Property>
+      </Properties>
+      <Identifiers>
+        <Identifier TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Sku" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetProductsByCategory">
+          <Parameters>
+            <Parameter Direction="In" Name="categoryId">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierEntityName="Category" IdentifierName="CategoryId" Name="categoryId" />
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Product[],ContosoProductCatalogService" IsCollection="true" Name="Products">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="ContosoProductCatalogProxy.Product,ContosoProductCatalogService" Name="Product">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CategoryId" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ImagePath" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="LongDescription" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ShortDescription" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="Sku" Name="Sku" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ThumbnailImagePath" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+        </Method>
+        <Method Name="GetProductBySku">
+          <Parameters>
+            <Parameter Direction="In" Name="sku">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="Sku" Name="sku" />
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Product,ContosoProductCatalogService" Name="Product">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CategoryId" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ImagePath" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="LongDescription" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ShortDescription" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="Sku" Name="Sku" />
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ThumbnailImagePath" />
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="SpecificFinder" ReturnParameterName="Return" ReturnTypeDescriptorName="Product" ReturnTypeDescriptorLevel="0" Name="FindSpecificGetProductInstance" />
+          </MethodInstances>
+        </Method>
+        <Method Name="GetProducts">
+          <Parameters>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Product[],ContosoProductCatalogService" IsCollection="true" Name="Products">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="ContosoProductCatalogProxy.Product,ContosoProductCatalogService" Name="Product">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CategoryId" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ImagePath" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="LongDescription" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ShortDescription" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="Sku" Name="Sku" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ThumbnailImagePath" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="Return" ReturnTypeDescriptorName="Products" ReturnTypeDescriptorLevel="0" Name="FindGetProductsInstance" />
+          </MethodInstances>
+        </Method>
+        <Method Name="GetProductSkus">
+          <Parameters>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="System.String[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="ProductSkus">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="Sku" Name="Sku" />
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="IdEnumerator" ReturnParameterName="Return" ReturnTypeDescriptorName="ProductSkus" ReturnTypeDescriptorLevel="0" Name="GetProductSkusInstance" />
+          </MethodInstances>
+        </Method>
+      </Methods>
+    </Entity>
+
+    <Entity EstimatedInstanceCount="10000" Name="Part">
+      <Properties>
+        <Property Name="Title" Type="System.String">Name</Property>
+      </Properties>
+      <Identifiers>
+        <Identifier TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="PartId" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetPartsByProductSku">
+          <Parameters>
+            <Parameter Direction="In" Name="productSku">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierEntityName="Product" IdentifierName="Sku" Name="sku" />
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="ContosoProductCatalogProxy.Part[],ContosoProductCatalogService" IsCollection="true" Name="Parts">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="ContosoProductCatalogProxy.Part,ContosoProductCatalogService" Name="Part">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="PartId" Name="PartId" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Name" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+        </Method>
+      </Methods>
+    </Entity>
+  </Entities>
+  <Associations>
+    <Association Name="CategoryToChildCategories" AssociationMethodEntityName="Category" AssociationMethodName="GetChildCategoriesByCategory" AssociationMethodReturnParameterName="Return" AssociationMethodReturnTypeDescriptorName="Categories" AssociationMethodReturnTypeDescriptorLevel="0">
+      <SourceEntity Name="Category" />
+      <DestinationEntity Name="Category" />
+    </Association>
+    <Association Name="CategoryToProducts" AssociationMethodEntityName="Product" AssociationMethodName="GetProductsByCategory" AssociationMethodReturnParameterName="Return" AssociationMethodReturnTypeDescriptorName="Products" AssociationMethodReturnTypeDescriptorLevel="0">
+      <SourceEntity Name="Category" />
+      <DestinationEntity Name="Product"/>
+    </Association>
+    <Association Name="ProductToParts" AssociationMethodEntityName="Part" AssociationMethodName="GetPartsByProductSku" AssociationMethodReturnParameterName="Return" AssociationMethodReturnTypeDescriptorName="Parts" AssociationMethodReturnTypeDescriptorLevel="0">
+      <SourceEntity Name="Product" />
+      <DestinationEntity Name="Part"/>
+    </Association>
+  </Associations>
+</LobSystem>

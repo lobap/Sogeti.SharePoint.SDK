@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-9549-43f8-b978-e47e54a10600}" TemplateType="600" Title="MachineParts" Description="" Url="Lists/MachineParts" CustomSchema="Files\Lists\MachineParts\Schema.xml" HyperlinkBaseUrl="http://localhost" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<DataSource>
+			<Property Name="Entity" Value="MachineParts" />
+			<Property Name="EntityNamespace" Value="DataModels.ExternalData.PartsManagement" />
+			<Property Name="LobSystemInstance" Value="PartsManagement" />
+			<Property Name="SpecificFinder" Value="Read Item" />
+		</DataSource>
+	</ListInstance>
+</Elements>

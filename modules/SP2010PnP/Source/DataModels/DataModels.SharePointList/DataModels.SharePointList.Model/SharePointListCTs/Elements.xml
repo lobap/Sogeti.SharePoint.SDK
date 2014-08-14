@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field Type="Text" DisplayName="Bin Number" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" 
+         Group="Parts Database Columns" ID="{9856789e-6f40-4479-8e49-34a85ed863cf}" 
+         Name="BinNumber" Overwrite="TRUE"  />
+  <Field Type="Text" DisplayName="Description" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255"
+         Group="Parts Database Columns" ID="{42DF0D4D-1B95-47C4-BB86-5F71F1FCFBED}" Name="PartsDescription" Overwrite="TRUE"  />
+  <Field Type="Text" DisplayName="Category Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Parts Database Columns" 
+         ID="{25d6d370-732a-4325-b5d9-64451f245e8c}" Name="CategoryName" Overwrite="TRUE" />
+  <Field Type="Number" DisplayName="Department Number" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Parts Database Columns" 
+         ID="{c572ec42-3ba0-416d-a91c-60352e51f103}" Name="DepartmentNumber" Overwrite="TRUE" />
+  <Field Type="Text" DisplayName="DUNS" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Parts Database Columns" 
+         ID="{435bc5ba-2019-45e1-90d7-7b03b0a38e79}" Name="DUNS" Overwrite="TRUE" />
+  <Field Type="Text" DisplayName="Manufacturer Address" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Parts Database Columns" ID="{f2290cdf-1893-466f-b38c-b5ca0888370a}" 
+         Name="ManufacturerAddress" Overwrite="TRUE" />
+  <Field Type="Text" DisplayName="Model Number" Required="TRUE" EnforceUniqueValues="TRUE" Indexed="TRUE" MaxLength="255" Group="Parts Database Columns" ID="{0ed6bdc7-d508-4dc8-8ab5-c2c4ffe148fc}" 
+         Name="ModelNumber" Overwrite="TRUE" />
+  <Field Type="Number" DisplayName="Quantity" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Parts Database Columns" ID="{499d922b-e331-4330-8fc1-eff0106a54f6}"
+          Name="Quantity" Percentage="FALSE" Overwrite="TRUE" />
+  <Field Type="Number" DisplayName="Rating" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Parts Database Columns" ID="{a0e35d31-3b02-44a4-9d1a-41491608e428}" 
+         Name="Rating" Overwrite="TRUE" />
+  <Field Type="Text" DisplayName="SKU" Required="TRUE" EnforceUniqueValues="TRUE" Indexed="TRUE" MaxLength="255" Group="Parts Database Columns" ID="{55334a5e-9810-4a11-87a6-3e420c014b0a}"
+         Name="SKU" Overwrite="TRUE" />  
+  
+  <Field Type="Lookup" DisplayName="Department" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Departments" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE"
+         Group="Parts Database Columns" ID="{295168ac-29a6-4bb1-91c6-ced3bcf5f086}" Name="DepartmentLookup" Overwrite="TRUE" />
+  <Field Type="Lookup" DisplayName="Category" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Categories" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE"
+       Group="Parts Database Columns" ID="{2da96196-e156-46bd-92ef-1a262569a18b}" Name="CategoryLookup" Overwrite="TRUE" />
+  <Field Type="Lookup" DisplayName="Machine" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Machines" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE"
+         Group="Parts Database Columns" ID="{322e5c46-da10-4948-b3ab-dc657bc51a4a}" Name="MachineLookup" Overwrite="TRUE" />
+  <Field Type="Lookup" DisplayName="Manufacturer" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Manufacturers" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE"
+         Group="Parts Database Columns" ID="{9d2b7421-2ac0-42db-8dd7-847ded5e9049}" Name="ManufacturerLookup" Overwrite="TRUE" />
+  <Field Type="Lookup" DisplayName="Part" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Parts" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE"
+         Group="Parts Database Columns" ID="{4962bb01-d4a4-409d-895c-fd412baa8293}" Name="PartLookup" Overwrite="TRUE" />
+  <!--<Field Type="Lookup" DisplayName="PartDUPE" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Parts" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE"
+         Group="Parts Database Columns" ID="{299E6CC0-0DEF-49CB-AB38-D371CC98EFCE}" Name="PartDUPELookup" Overwrite="TRUE" />-->
+  <Field Type="Lookup" DisplayName="Supplier" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/Suppliers" WebId="" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" 
+         Group="Parts Database Columns" ID="{3eb6e763-48dd-48a4-ab98-3d211b090d0f}" Name="SupplierLookup" Overwrite="TRUE" />
+
+  <ContentType ID="0x01001BE67949DD484746B132BFA579DE4D1A" Name="Category" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Category" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{25d6d370-732a-4325-b5d9-64451f245e8c}" Name="CategoryName" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x01004F9943253ED2684E90E2BC4FCD34A54B" Name="Department" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Department" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{c572ec42-3ba0-416d-a91c-60352e51f103}" Name="DepartmentNumber" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{42DF0D4D-1B95-47C4-BB86-5F71F1FCFBED}" Name="PartsDescription" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x01003ADD73260584374BA9AF545AB6ECF52B" Name="Inventory Location" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Inventory Location" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" Hidden="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{4962bb01-d4a4-409d-895c-fd412baa8293}" Name="PartLookup" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <!--<FieldRef ID="{299E6CC0-0DEF-49CB-AB38-D371CC98EFCE}" Name="PartDUPELookup" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />-->
+      <FieldRef ID="{9856789e-6f40-4479-8e49-34a85ed863cf}" Name="BinNumber" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{499d922b-e331-4330-8fc1-eff0106a54f6}" Name="Quantity" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x0100F8A89D8611A0E8439DC1395EE949C21A" Name="Machine Department" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Machine Department" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Hidden="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{322e5c46-da10-4948-b3ab-dc657bc51a4a}" Name="MachineLookup" Required="TRUE" />
+      <FieldRef ID="{295168ac-29a6-4bb1-91c6-ced3bcf5f086}" Name="DepartmentLookup" Required="TRUE" />
+      <FieldRef ID="{42DF0D4D-1B95-47C4-BB86-5F71F1FCFBED}" Name="PartsDescription" Required="TRUE" Hidden="FALSE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>List Item Adding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>DataModels.SharePointList.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acb84d90d3a9b0ad</Assembly>
+            <Class>DataModels.SharePointList.Model.ListEventReceivers.UniqueListItemEventReceiver</Class>
+            <Data>MachineLookup;DepartmentLookup</Data>
+            <Filter />
+          </Receiver>
+          <Receiver>
+            <Name>List Item Updating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>DataModels.SharePointList.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acb84d90d3a9b0ad</Assembly>
+            <Class>DataModels.SharePointList.Model.ListEventReceivers.UniqueListItemEventReceiver</Class>
+            <Data>MachineLookup;DepartmentLookup</Data>
+            <Filter />
+          </Receiver>
+        </spe:Receivers>
+      </XmlDocument>
+
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x0100220B06426A421E41A0CA50F1FA1F421F" Name="Machine Part" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Machine Part" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Hidden="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{322e5c46-da10-4948-b3ab-dc657bc51a4a}" Name="MachineLookup" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{4962bb01-d4a4-409d-895c-fd412baa8293}" Name="PartLookup" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>List Item Adding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>DataModels.SharePointList.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acb84d90d3a9b0ad</Assembly>
+            <Class>DataModels.SharePointList.Model.ListEventReceivers.UniqueListItemEventReceiver</Class>
+            <Data>MachineLookup;PartLookup</Data>
+            <Filter />
+          </Receiver>
+          <Receiver>
+            <Name>List Item Updating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>DataModels.SharePointList.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acb84d90d3a9b0ad</Assembly>
+            <Class>DataModels.SharePointList.Model.ListEventReceivers.UniqueListItemEventReceiver</Class>
+            <Data>MachineLookup;PartLookup</Data>
+            <Filter />
+          </Receiver>
+        </spe:Receivers>
+      </XmlDocument>
+
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x01002131F2F6C84FE042A765CDC2C96765F4" Name="Machine" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Machine" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{0ed6bdc7-d508-4dc8-8ab5-c2c4ffe148fc}" Name="ModelNumber" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{9d2b7421-2ac0-42db-8dd7-847ded5e9049}" Name="ManufacturerLookup" Required="TRUE" />
+      <FieldRef ID="{2da96196-e156-46bd-92ef-1a262569a18b}" Name="CategoryLookup" Required="TRUE" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x0100AE7CD2D2A3D4BC469EB4E95692B750F3" Name="Manufacturer" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Manufacturer" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{f2290cdf-1893-466f-b38c-b5ca0888370a}" Name="ManufacturerAddress" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x0100679072FB68AF53409FD9F7E845B4D053" Name="Part Supplier" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/PartSupplier" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Hidden="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{4962bb01-d4a4-409d-895c-fd412baa8293}" Name="PartLookup" Required="TRUE" />
+      <FieldRef ID="{3eb6e763-48dd-48a4-ab98-3d211b090d0f}" Name="SupplierLookup" Required="TRUE" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>List Item Adding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>DataModels.SharePointList.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acb84d90d3a9b0ad</Assembly>
+            <Class>DataModels.SharePointList.Model.ListEventReceivers.UniqueListItemEventReceiver</Class>
+            <Data>PartLookup;SupplierLookup</Data>
+            <Filter />
+          </Receiver>
+          <Receiver>
+            <Name>List Item Updating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>DataModels.SharePointList.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acb84d90d3a9b0ad</Assembly>
+            <Class>DataModels.SharePointList.Model.ListEventReceivers.UniqueListItemEventReceiver</Class>
+            <Data>PartLookup;SupplierLookup</Data>
+            <Filter />
+          </Receiver>
+        </spe:Receivers>
+      </XmlDocument>
+
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x01001966A9D6EDFEB845A8DD2DDA365BF5DC" Name="Part" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Part" />
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{55334a5e-9810-4a11-87a6-3e420c014b0a}" Name="SKU" Required="TRUE" Hidden="FALSE" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node="" />
+      <FieldRef ID="{42DF0D4D-1B95-47C4-BB86-5F71F1FCFBED}" Name="PartsDescription" Required="TRUE" />
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x0100C8F084CAA9580A4CB3E1B290909459F6" Name="Supplier" Group="Parts Database" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Folder TargetName="_cts/Supplier" />
+    <FieldRefs>
+      <FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <FieldRef ID="{435bc5ba-2019-45e1-90d7-7b03b0a38e79}" Name="DUNS" Required="TRUE" />
+      <FieldRef ID="{a0e35d31-3b02-44a4-9d1a-41491608e428}" Name="Rating" Required="TRUE" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>ListForm</Edit>
+          <New>ListForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

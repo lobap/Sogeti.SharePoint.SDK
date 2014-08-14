@@ -1,0 +1,72 @@
+TD.ms-titleareaframe,Div.ms-titleareaframe,.ms-pagetitleareaframe,.ms-mwspagetitleareaframe,.ms-consoletitleareaframe{
+background:#ffffff url("pageTitleBKGD_simple.gif") repeat-x;
+}
+.ms-consoletitleareaframebottom{
+background:#ffffff;
+}
+table.ms-applyfiltersinactive {
+ background-image:url('ApplyFiltersInActive.gif');
+}
+table.ms-applyfiltersactive {
+ background-image:url('ApplyFiltersActive.gif');
+}
+table.ms-applyfiltershoverover {
+ background-image:url('ApplyFiltersHoverOver.gif');
+}
+.leftnavPic{
+ background-image: url("portraitbackground.gif");
+}
+.ms-main .ms-ptabcn, .ms-main .ms-sctabcn {
+    background: url("PortalTabSelected.gif");
+    border-color: #5e3593;
+}
+.ms-main .ms-sctabcn {
+    background-color: #ffffff;
+}
+.ms-main .ms-ptabcnhover, .ms-main .ms-sctabcnhover {
+    background: url("PortalTabHover.gif");
+    border-color: #5e3593;
+}
+.ms-main .ms-ptabcf, .ms-main .ms-sctabcf {
+    border-color: #5e3593;
+    border-right:0px;
+}
+.ms-main .ms-sctabcf {
+    background: #ffffff;
+}
+.ms-main .ms-ptabcfhover, .ms-main .ms-sctabcfhover {
+    background: url("PortalTabHover.gif");
+    border-color: #5e3593;
+}
+.ms-main .ms-ptabrx, .ms-main .ms-sctabrx {
+    border: 1px solid #5e3593;
+    border-top:0px;
+}
+.ms-main .ms-sctabrx {
+    background: #ffffff;
+}
+.ms-searchsummarymain
+{
+    background-color: #f2f2f2;
+}
+
+div.ms-searchChannelTitle
+{
+    BACKGROUND: url("searchgradient.jpg") #73A1DD repeat-x;
+    border-width: 1px;
+    border-color: #8ebbf5;
+    border-style: solid;
+}
+.ms-searchChannelTitle span
+{
+    color: #003399 !important;
+}
+
+.ms-searchtamain, div.srch-BestBetsBottom, .srch-HCMain
+{
+    border-bottom: solid 1px #8ebbf5;
+}
+
+.ms-srchresultstop, .srch-stats{
+    background-color: #f2f2f2 !important;
+}

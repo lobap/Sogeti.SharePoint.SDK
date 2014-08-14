@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="36b7f33c-7996-4e49-bd65-ae03bf0c65d1" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ImagesModule" Url="Picture Libraries/Images" Path="" List="109" >
+    <File Path="imageMicroscope.jpg" Url="imageMicroscope.jpg" Type="GhostableInLibrary">
+    </File>
+    <File Path="imageProfs.jpg" Url="imageProfs.jpg" Type="GhostableInLibrary">
+    </File>
+    <File Path="imageTubes.jpg" Url="imageTubes.jpg" Type="GhostableInLibrary">
+    </File>
+    <File Path="imageTubes2.jpg" Url="imageTubes2.jpg" Type="GhostableInLibrary">
+    </File>
+  </Module>
+</Elements>

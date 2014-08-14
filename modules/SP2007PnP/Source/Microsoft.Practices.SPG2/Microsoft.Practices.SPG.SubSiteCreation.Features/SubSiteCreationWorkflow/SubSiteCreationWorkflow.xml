@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="bfbd9e33-9266-4af4-a58f-b35423755cb1" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Workflow Name="Microsoft SPG Sub Site Creation Workflow"
+            Description="Workflow for creating subsites"
+            Id="3B15AE78-175B-438f-B14C-53CC9A054252"
+            CodeBesideAssembly="Microsoft.Practices.SPG.SubSiteCreation, Culture=neutral, Version=1.0.0.0, PublicKeyToken=fb379bdd60f32127"
+            CodeBesideClass="Microsoft.Practices.SPG.SubSiteCreation.Workflow.SubSiteCreationActivity"
+            TaskListContentTypeId="0x0108">
+    <Categories/>
+    <MetaData>
+      <StatusPageUrl>_layouts/WrkStat.aspx</StatusPageUrl>
+    </MetaData>
+  </Workflow>
+</Elements>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="ceb9d74a-9b83-4b62-9dbc-ecd18df6fd28" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoPartnerPortalCollaborationOrderExceptionSite\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalCollaborationOrderExceptionWeb\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalCollaborationOrderExceptionSiteElements\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Contoso.PartnerPortal.Collaboration.OrderException.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <SiteDefinitionManifests>
+    <SiteDefinitionManifest Location="ORDEREXCEPTION">
+      <WebTempFile Location="1033\xml\webtempContoso.PSS.OrderException.xml" />
+    </SiteDefinitionManifest>
+  </SiteDefinitionManifests>
+</Solution>

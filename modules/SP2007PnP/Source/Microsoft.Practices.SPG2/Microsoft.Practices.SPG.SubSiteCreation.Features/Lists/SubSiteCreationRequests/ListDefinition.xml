@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="96240ac3-2af6-4ca7-95a9-2288851c634b" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="SubSiteCreationRequests"
+                DisplayName="SubSiteCreationRequests"
+                Description=""
+                BaseType="0"
+                Type="10003"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="410"
+                Image="/_layouts/images/itgen.gif" />
+</Elements>

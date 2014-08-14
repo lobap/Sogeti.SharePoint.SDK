@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="87de9a3d-5e58-4fbf-b2cb-4fd5bdeb0cd4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8787/Contoso.PartnerPortal.Services/SubSiteCreation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SubSiteCreation.wsdl" MetadataType="Wsdl" ID="43079896-c70d-4799-988d-9838d2c23b27" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/SubSiteCreation.svc?wsdl" />
+    <MetadataFile FileName="SubSiteCreation.xsd" MetadataType="Schema" ID="4348f325-a9ac-47c2-864d-3b5c9b59e1b7" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/SubSiteCreation.svc?xsd=xsd0" />
+    <MetadataFile FileName="SubSiteCreation.disco" MetadataType="Disco" ID="33c4dc61-2fb6-4196-a705-f3e4fb47f5b8" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/SubSiteCreation.svc?disco" />
+    <MetadataFile FileName="SubSiteCreation1.xsd" MetadataType="Schema" ID="e9479df2-b928-4f2a-8824-95c43870a310" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/SubSiteCreation.svc?xsd=xsd1" />
+    <MetadataFile FileName="SubSiteCreation1.wsdl" MetadataType="Wsdl" ID="543dc444-a543-400b-856c-ce24bf55ab3b" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/SubSiteCreation.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

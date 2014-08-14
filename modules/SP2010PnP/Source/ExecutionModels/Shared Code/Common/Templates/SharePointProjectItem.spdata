@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Templates\" Type="ElementManifest" />
+    <ProjectItemFile Source="estimate.xltx" Type="ElementFile" />
+    <ProjectItemFile Source="SOW.dotx" Type="ElementFile" />
+    <ProjectItemFile Source="..\..\..\..\Shared Code\Common\Templates\estimate.xltx" Type="ElementFile" />
+    <ProjectItemFile Source="..\..\..\..\Shared Code\Common\Templates\SOW.dotx" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="3E088607-EDB1-4fa1-9840-E8A7BD31B2D9" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{5AA31951-0DBE-4097-AF4F-60EB8D6B3E8F}"
+         Type="Text"
+         Name="PartnerDirectoryPartnerField"
+         DisplayName="Partner"
+         StaticName="PartnerDirectoryPartnerField"
+         Hidden="FALSE"
+         Required="FALSE"
+         Sealed="TRUE"
+         Group="Contoso" />
+</Elements>

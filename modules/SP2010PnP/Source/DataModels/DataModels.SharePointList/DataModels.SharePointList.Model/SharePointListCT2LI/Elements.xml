@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentTypeBinding ListUrl="Lists/Categories" ContentTypeId="0x01001BE67949DD484746B132BFA579DE4D1A"/>
+  <ContentTypeBinding ListUrl="Lists/Departments" ContentTypeId="0x01004F9943253ED2684E90E2BC4FCD34A54B"/>
+  <ContentTypeBinding ListUrl="Lists/InventoryLocations" ContentTypeId="0x01003ADD73260584374BA9AF545AB6ECF52B"/>
+  <ContentTypeBinding ListUrl="Lists/MachineDepartments" ContentTypeId="0x0100F8A89D8611A0E8439DC1395EE949C21A"/>
+  <ContentTypeBinding ListUrl="Lists/MachineParts" ContentTypeId="0x0100220B06426A421E41A0CA50F1FA1F421F"/>
+  <ContentTypeBinding ListUrl="Lists/Machines" ContentTypeId="0x01002131F2F6C84FE042A765CDC2C96765F4"/>
+  <ContentTypeBinding ListUrl="Lists/Manufacturers" ContentTypeId="0x0100AE7CD2D2A3D4BC469EB4E95692B750F3"/>
+  <ContentTypeBinding ListUrl="Lists/PartSuppliers" ContentTypeId="0x0100679072FB68AF53409FD9F7E845B4D053"/>
+  <ContentTypeBinding ListUrl="Lists/Parts" ContentTypeId="0x01001966A9D6EDFEB845A8DD2DDA365BF5DC"/>
+  <ContentTypeBinding ListUrl="Lists/Suppliers" ContentTypeId="0x0100C8F084CAA9580A4CB3E1B290909459F6"/>
+</Elements>

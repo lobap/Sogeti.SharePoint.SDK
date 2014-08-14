@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="302a4683-eb33-45c1-be6b-411690367dee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8787/Contoso.PartnerPortal.Services/IncidentSite.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IncidentSite.xsd" MetadataType="Schema" ID="45d368bb-7497-4456-affd-3c07be9862bb" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/IncidentSite.svc?xsd=xsd1" />
+    <MetadataFile FileName="IncidentSite1.xsd" MetadataType="Schema" ID="b7f8241e-2a82-4d64-bd90-817678314c21" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/IncidentSite.svc?xsd=xsd0" />
+    <MetadataFile FileName="IncidentSite.wsdl" MetadataType="Wsdl" ID="bfcc4b64-bc73-462f-8d11-53b60fbbc29e" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/IncidentSite.svc?wsdl" />
+    <MetadataFile FileName="IncidentSite1.wsdl" MetadataType="Wsdl" ID="1b129985-30b2-4ef0-937d-bd25d30fef4e" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/IncidentSite.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="IncidentSite.disco" MetadataType="Disco" ID="a5cc2f95-449b-4148-a34a-3a0f9249e63f" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.PartnerPortal.Services/IncidentSite.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

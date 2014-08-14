@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="1d7f7c32-9a58-4127-ac0b-d2b1742e9f4e" Title="Contoso Theme" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/" ReceiverAssembly="Contoso.RI.UpdateTheme, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" ReceiverClass="Contoso.RI.UpdateTheme.ApplyThemeFeatureReceiver">
+</Feature>

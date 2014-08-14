@@ -1,0 +1,19 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="ListsSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="ListsSoap1" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost/sites/sharepointlist/_vti_bin/Lists.asmx"
+                binding="basicHttpBinding" bindingConfiguration="ListsSoap1"
+                contract="SPListsWebService.ListsSoap" name="ListsSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

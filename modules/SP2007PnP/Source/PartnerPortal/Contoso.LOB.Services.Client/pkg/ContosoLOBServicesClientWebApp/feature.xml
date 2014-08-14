@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="8b0f085e-72a0-4d9f-ac74-0038dc0f6dd5" Title="Contoso LOB Services Client (WebApp)" Scope="WebApplication" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests />
+</Feature>

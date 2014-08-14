@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Silverlight\" Type="ElementManifest" />
+    <ProjectOutputFile ProjectId="69c840d9-e966-43f4-9573-5495f6701106" ProjectPath="..\Client.CSOM.Silverlight\Client.CSOM.Silverlight.csproj" Target="Silverlight\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="ba2f1ee3-4a62-431f-86f5-341605cb8b4e" ProjectPath="..\Client.SPWebService.Silverlight\Client.SPWebService.Silverlight.csproj" Target="Silverlight\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="155a15c8-30fd-4438-84fc-2e7379086b3e" ProjectPath="..\Client.REST\Client.REST.Silverlight\Client.REST.Silverlight.csproj" Target="Silverlight\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="b19fe985-e2da-4b3c-8065-fef3c7b15fcb" ProjectPath="..\Client.REST\Client.REST.Silverlight.Alt\Client.REST.Silverlight.Alt.csproj" Target="Silverlight\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="6e73d003-44d9-4ee7-b21f-6b2293b12e12" ProjectPath="..\Client.ExtService.Silverlight\Client.ExtService.Silverlight.csproj" Target="Silverlight\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="8354dc81-4b09-4b6c-930f-545ff19c8ceb" ProjectPath="..\Client.REST\Client.REST.Silverlight.Alt.NoMVVM\Client.REST.Silverlight.Alt.NoMVVM.csproj" Target="Silverlight\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

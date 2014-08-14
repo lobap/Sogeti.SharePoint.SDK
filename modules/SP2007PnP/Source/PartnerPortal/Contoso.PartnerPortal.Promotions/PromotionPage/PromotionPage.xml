@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="73fec268-8247-430e-8d0f-77e93ada0c10" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{729c0fb2-62c8-4a91-86c5-5ace6e8265fb}"
+         Type="Image"
+         Name="PromotionImageField"
+         DisplayName="Promotion Image Field"
+         StaticName="ProductImageField"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         Hidden="FALSE"
+         Required="FALSE"
+         Sealed="TRUE"
+         Group="Contoso Publishing"
+         RichText="TRUE"
+         RichTextMode="FullHtml"/>
+  <Field ID="{351cd1fd-efd2-4db7-ac9d-c669149adce5}"
+         Type="HTML"
+         Name="PromotionNameField"
+         DisplayName="Promotion Name Field"
+         StaticName="PromotionNameField"
+         Hidden="FALSE"
+         Required="TRUE"
+         Sealed="TRUE"
+         Group="Contoso Publishing"
+         RichText="TRUE"
+         RichTextMode="FullHtml"/>
+  <Field ID="{aaed1aca-3f64-4b13-8e87-863ebc659432}"
+         Type="HTML"
+         Name="PromotionDescriptionField"
+         DisplayName="Promotion Description Field"
+         StaticName="PromotionDescriptionField"
+         Hidden="FALSE"
+         Required="FALSE"
+         Sealed="TRUE"
+         Group="Contoso Publishing"
+         RichText="TRUE"
+         RichTextMode="FullHtml"/>
+  <Field ID="{a933192c-4430-4814-97d5-f99b23ace03e}"
+         Type="Text"
+         Name="ProductSkuField"
+         DisplayName="Product Sku Field"
+         StaticName="ProductSkuField"
+         Hidden="FALSE"
+         Required="TRUE"
+         Sealed="TRUE"
+         Group="Contoso Publishing"/>
+  <Field ID="{E38B18B2-B680-4601-9C46-B05E230F5605}"
+         Type="Text"
+         Name="WindowsMediaField"
+         DisplayName="Windows Media Field"
+         StaticName="WindowsMediaField"
+         Hidden="FALSE"
+         Required="FALSE"
+         Sealed="TRUE"
+         Group="Contoso Publishing"/>
+  <ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900982aa5f52db449bd8fa3f35bd5c6ee21"
+               Name="PromotionPage"
+               Group="Page Layout Content Types"
+               Description="Content Type for Promotion Page Layout"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{729c0fb2-62c8-4a91-86c5-5ace6e8265fb}" Name="PromotionImageField" />
+      <FieldRef ID="{351cd1fd-efd2-4db7-ac9d-c669149adce5}" Name="PromotionNameField" />
+      <FieldRef ID="{aaed1aca-3f64-4b13-8e87-863ebc659432}" Name="PromotionDescriptionField" />
+      <FieldRef ID="{a933192c-4430-4814-97d5-f99b23ace03e}" Name="ProductSkuField" />
+      <FieldRef ID="{E38B18B2-B680-4601-9C46-B05E230F5605}" Name="WindowsMediaField" />
+    </FieldRefs>
+  </ContentType>  
+</Elements>

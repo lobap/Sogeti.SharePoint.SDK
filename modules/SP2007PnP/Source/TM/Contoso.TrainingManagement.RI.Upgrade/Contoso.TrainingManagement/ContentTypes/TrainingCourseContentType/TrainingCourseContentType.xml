@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="75e45e5d-9139-446e-a0e0-edc390ca9083" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{e5509750-cb71-4de3-873d-171ba6448fa5}" Type="Text" Name="TrainingCourseCode" DisplayName="Code" Hidden="FALSE" Required="TRUE" Sealed="FALSE" MaxLength="8" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{8E39DAD4-65FA-4395-BA0C-43BF52586B3E}" Type="Note" Name="TrainingCourseDescription" DisplayName="Description" Hidden="FALSE" Required="FALSE" Sealed="FALSE" RichText="TRUE" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{43568365-8448-4130-831C-98C074B61E89}" Type="DateTime" Name="TrainingCourseEnrollmentDate" DisplayName="Enrollment Deadline" StaticName="TrainingCourseEnrollmentDate" Hidden="FALSE" Required="TRUE" Sealed="FALSE" Format="DateOnly" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{AE2A0BBD-F22E-41dc-8753-451067122318}" Type="DateTime" Name="TrainingCourseStartDate" DisplayName="Start Date" Hidden="FALSE" Required="TRUE" Sealed="FALSE" Format="DateOnly" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{F5E6F566-FA7C-4883-BF7F-006727760E22}" Type="DateTime" Name="TrainingCourseEndDate" DisplayName="End Date" Hidden="FALSE" Required="TRUE" Sealed="FALSE" Format="DateOnly" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{7E4004FA-D0BE-4611-A817-65D17CF11A6A}" Type="Currency" Name="TrainingCourseCost" DisplayName="Cost" Hidden="FALSE" Required="TRUE" Sealed="FALSE" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{bb040623-7e93-4df8-a3fc-36e990e0220c}" Type="CourseDifficultyLevelField" Name="TrainingCourseDifficultyLevel" DisplayName="Difficulty Level" Hidden="False" Required="FALSE" Sealed="FALSE" DisplaceOnUpgrade="TRUE" />
+  <ContentType ID="0x01000cee433cd7484dc5adbec636a5dd0c07" Name="Training Course" Group="Contoso" Description="Training Course Content Type" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{e5509750-cb71-4de3-873d-171ba6448fa5}" Name="TrainingCourseCode" />
+      <FieldRef ID="{8E39DAD4-65FA-4395-BA0C-43BF52586B3E}" Name="TrainingCourseDescription" />
+      <FieldRef ID="{43568365-8448-4130-831C-98C074B61E89}" Name="TrainingCourseEnrollmentDate" />
+      <FieldRef ID="{AE2A0BBD-F22E-41dc-8753-451067122318}" Name="TrainingCourseStartDate" />
+      <FieldRef ID="{F5E6F566-FA7C-4883-BF7F-006727760E22}" Name="TrainingCourseEndDate" />
+      <FieldRef ID="{7E4004FA-D0BE-4611-A817-65D17CF11A6A}" Name="TrainingCourseCost"/>
+      <FieldRef ID="{bb040623-7e93-4df8-a3fc-36e990e0220c}" Name="TrainingCourseDifficultyLevel"/>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers>
+          <Receiver>
+            <Name>ItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Class>813bfe9b-29e9-4dc0-bb29-82bf3e53bb19</Class>
+          </Receiver>
+          <Receiver>
+            <Name>ItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Class>813bfe9b-29e9-4dc0-bb29-82bf3e53bb19</Class>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

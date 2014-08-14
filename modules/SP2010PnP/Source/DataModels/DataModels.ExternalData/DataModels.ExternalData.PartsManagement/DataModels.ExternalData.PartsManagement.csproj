@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{227A854A-4A8B-45B1-A9A0-DEA2C89D8233}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataModels.ExternalData.PartsManagement</RootNamespace>
+    <AssemblyName>DataModels.ExternalData.PartsManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\..\Build\TeamBuildTypes\MicrosoftExtendedCorrectnessRulesTreatAsErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BusinessData, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.BusinessData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactsSystem\BdcContact.cs" />
+    <Compile Include="ContactsSystem\BdcContactService.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ContactsSystem\BdcSupplierService.cs" />
+    <Compile Include="ContactsSystem\BdcSupplier.cs" />
+    <Compile Include="Features\PartsManagmentPages\PartsManagmentPages.EventReceiver.cs">
+      <DependentUpon>PartsManagmentPages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ManageMachines\ManageMachines.cs" />
+    <Compile Include="ManageSuppliers\ManageSuppliers.cs" />
+    <Compile Include="PartManagementRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BdcMachine.cs" />
+    <Compile Include="ViewModels\BdcPart.cs" />
+    <Compile Include="DataMapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContactsSystem\ContactSystem.bdcm" />
+    <None Include="ContactsSystem\ContactSystem.bdcm.diagram">
+      <DependentUpon>ContactSystem.bdcm</DependentUpon>
+    </None>
+    <None Include="ContactsSystem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ce4d10e-ecf2-4a2f-88cb-f474af9aac92}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\BDC\BDC.feature">
+      <FeatureId>{3cb0cf1c-6bcc-460b-b105-e37c41789f6f}</FeatureId>
+    </None>
+    <None Include="Features\ExternalLists\ExternalLists.feature">
+      <FeatureId>{0016e60c-856f-40b2-b485-ea13a4575a79}</FeatureId>
+    </None>
+    <None Include="Features\Connector\Connector.feature">
+      <FeatureId>{0422842b-14d8-4481-8b8f-1666264e9354}</FeatureId>
+    </None>
+    <None Include="Features\WebParts\WebParts.feature">
+      <FeatureId>{b37e7b81-f4e6-4cae-800f-e5c28bec930a}</FeatureId>
+    </None>
+    <None Include="Features\PartsManagmentPages\PartsManagmentPages.feature">
+      <FeatureId>{32aa69a2-1e9c-4e99-a186-3941135af67e}</FeatureId>
+    </None>
+    <None Include="ListInstances\Categories\ListsCategories_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29105295-b7d3-4b8d-b720-ff5052578e6b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Categories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a505fb9c-8769-4470-87a1-3569c4ec804f}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Departments\ListsDepartments_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{520cb560-4d8a-42c7-89fe-b4a4c25a9145}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Departments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f37c5bf6-41d8-4dc7-8827-a42f69d57330}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\InventoryLocations\ListsInventoryLocations_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f2519a84-96aa-4743-bf98-e6cfd594d489}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\InventoryLocations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{342fddbc-9e6c-46bf-84c1-99a37d46c274}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\MachineDepartments\ListsMachineDepartments_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aca54033-9ece-45c9-a313-f49f99ce647d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\MachineDepartments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27090c14-52a8-4cac-aa38-4d4168905b54}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\MachineParts\ListsMachineParts_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c1d6a76-fca1-4670-a9b0-c70adb866506}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\MachineParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f33bff11-049c-4b5a-9497-03cf5db731e2}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Machines\ListsMachines_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5e823036-4d2f-4121-a384-6609d73a0791}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Machines\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{92010807-a37a-4e23-a740-0f6cf03150bc}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Manufacturers\ListsManufacturers_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b80ba82-fb9a-4cac-9d5e-ff9e6ff240b0}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Manufacturers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{989ccb1b-de8a-47b2-a987-efa45b4b62d1}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\PartSuppliers\ListsPartSuppliers_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9610a93d-2fdd-4929-8682-a28119235922}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\PartSuppliers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2544f1b3-bb24-47fb-84ae-840f567d35ad}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Parts\ListsParts_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{046a7d70-adb6-4172-b69f-0e30df14daf7}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Parts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{24d58452-3307-478c-83de-0f812f64d3be}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageMachines\ManageMachines.webpart" />
+    <None Include="ManageMachines\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{74567a81-3d2c-4991-b04d-833fad0b3e64}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageSuppliers\ManageSuppliers.webpart" />
+    <None Include="ManageSuppliers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{21e3e381-d183-46db-90a3-c5a20400e4cc}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ed06e345-31fb-4fc7-b4a9-15ec30ba35f0}</SharePointProjectItemId>
+    </None>
+    <None Include="PartsManagement\PartsManagement.bdcm" />
+    <None Include="PartsManagement\PartsManagement.bdcm.diagram">
+      <DependentUpon>PartsManagement.bdcm</DependentUpon>
+    </None>
+    <None Include="PartsManagement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c85b3483-e6c4-4423-898a-fa1079ed4144}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{1f14577b-5a3c-4cf0-9238-02f8d829dc47}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\BDC\BDC.Template.xml">
+      <DependentUpon>BDC.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\ExternalLists\ExternalLists.Template.xml">
+      <DependentUpon>ExternalLists.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Connector\Connector.Template.xml">
+      <DependentUpon>Connector.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebParts\WebParts.Template.xml">
+      <DependentUpon>WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\PartsManagmentPages\PartsManagmentPages.Template.xml">
+      <DependentUpon>PartsManagmentPages.feature</DependentUpon>
+    </Content>
+    <Content Include="ListInstances\Categories\Elements.xml" />
+    <Content Include="ListInstances\Categories\ListsCategories_pages\Elements.xml" />
+    <Content Include="ListInstances\Categories\Schema.xml" />
+    <Content Include="ListInstances\Departments\Elements.xml" />
+    <Content Include="ListInstances\Departments\ListsDepartments_pages\Elements.xml" />
+    <Content Include="ListInstances\Departments\Schema.xml" />
+    <Content Include="ListInstances\InventoryLocations\Elements.xml" />
+    <Content Include="ListInstances\InventoryLocations\ListsInventoryLocations_pages\Elements.xml" />
+    <Content Include="ListInstances\InventoryLocations\Schema.xml" />
+    <Content Include="ListInstances\MachineDepartments\Elements.xml" />
+    <Content Include="ListInstances\MachineDepartments\ListsMachineDepartments_pages\Elements.xml" />
+    <Content Include="ListInstances\MachineDepartments\Schema.xml" />
+    <Content Include="ListInstances\MachineParts\Elements.xml" />
+    <Content Include="ListInstances\MachineParts\ListsMachineParts_pages\Elements.xml" />
+    <Content Include="ListInstances\MachineParts\Schema.xml" />
+    <Content Include="ListInstances\Machines\Elements.xml" />
+    <Content Include="ListInstances\Machines\ListsMachines_pages\Elements.xml" />
+    <Content Include="ListInstances\Machines\Schema.xml" />
+    <Content Include="ListInstances\Manufacturers\Elements.xml" />
+    <Content Include="ListInstances\Manufacturers\ListsManufacturers_pages\Elements.xml" />
+    <Content Include="ListInstances\Manufacturers\Schema.xml" />
+    <Content Include="ListInstances\PartSuppliers\Elements.xml" />
+    <Content Include="ListInstances\PartSuppliers\ListsPartSuppliers_pages\Elements.xml" />
+    <Content Include="ListInstances\PartSuppliers\Schema.xml" />
+    <Content Include="ListInstances\Parts\Elements.xml" />
+    <Content Include="ListInstances\Parts\ListsParts_pages\Elements.xml" />
+    <Content Include="ListInstances\Parts\Schema.xml" />
+    <Content Include="ManageMachines\Elements.xml" />
+    <Content Include="ManageSuppliers\Elements.xml" />
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\PartsManagement.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Supplier.SampleService\Supplier.SampleService.csproj">
+      <Project>{59EA9B50-8E29-4413-B2FC-5F64964134FE}</Project>
+      <Name>Supplier.SampleService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

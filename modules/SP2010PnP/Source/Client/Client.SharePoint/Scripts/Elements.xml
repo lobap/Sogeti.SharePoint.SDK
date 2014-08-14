@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts" Path ="CustomScripts"  Url ="Lists/CustomScripts">
+    <File Path="CsomScripts.js" Url="CsomScripts.js"  Type ="GhostableInLibrary"/>
+    <File Path="RestScripts.js" Url="RestScripts.js" Type ="GhostableInLibrary" />
+    <File Path="clientCommon.js" Url="clientCommon.js"  Type ="GhostableInLibrary" />
+</Module>
+</Elements>

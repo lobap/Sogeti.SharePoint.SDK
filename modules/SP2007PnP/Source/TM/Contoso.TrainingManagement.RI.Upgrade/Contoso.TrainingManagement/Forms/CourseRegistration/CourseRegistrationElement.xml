@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="e8f66e05-179f-42e7-87de-b4c16a9b17ed" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="CourseRegistration">
+    <File Path="CourseRegistration.aspx" Url="CourseRegistration.aspx" />
+  </Module>
+  <CustomAction
+       Id="695F3959-79C5-48b0-AACC-30DF5A731C81"
+       Location="DisplayFormToolbar"
+       Title="Register for Course"
+       RegistrationType="ContentType"
+       RegistrationId="0x01000CEE433CD7484DC5ADBEC636A5DD0C07">
+    <UrlAction Url="~site/CourseRegistration.aspx?ID={ItemId}"/>
+  </CustomAction>
+  <CustomAction
+        Id="0F446E21-839F-4938-9F1C-914237F15694"
+        Location="EditControlBlock"
+        Title="Register for Course"
+        RegistrationType="ContentType"
+        RegistrationId="0x01000CEE433CD7484DC5ADBEC636A5DD0C07">
+    <UrlAction Url="~site/CourseRegistration.aspx?ID={ItemId}"/>
+  </CustomAction>
+</Elements>

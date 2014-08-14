@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="79cd6df4-37b5-4a12-9619-496b85f5dcbd" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Media" Url="Movie Libraries/DemoMedia" List="109">
+    <File Path="Intro.wmv" Url="Intro.wmv" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE" />
+  </Module>
+  <Module Name="ImagesModule" Url="PublishingImages" Path="" List="109" >
+    <File Path="WWH08_Doctors_around_System2.jpg" Url="WWH08_Doctors_around_System2.jpg" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE" />
+  </Module>
+</Elements>

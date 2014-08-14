@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{059ACB18-E4BF-489C-874D-2EBEDBE7D073}</ProjectGuid>
+    <ProjectTypeGuids>{593B0543-81F6-4436-BA1E-4747859CAAE2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Contoso.TrainingManagement</RootNamespace>
+    <AssemblyName>Contoso.TrainingManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>..\Temporary.snk</AssemblyOriginatorKeyFile></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.sharepoint.WorkflowActions, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Workflow.Activities">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Contoso.TrainingManagement.Web\CourseRegistration\CourseRegistration.aspx.cs">
+      <Link>Forms\CourseRegistration\CourseRegistration.aspx.cs</Link>
+      <DependentUpon>CourseRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\CourseRegistration\CourseRegistration.aspx.designer.cs">
+      <Link>Forms\CourseRegistration\CourseRegistration.aspx.designer.cs</Link>
+      <DependentUpon>CourseRegistration.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\CourseRegistration\CourseRegistrationPresenter.cs">
+      <Link>Forms\CourseRegistration\CourseRegistrationPresenter.cs</Link>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\CourseRegistration\ICourseRegistrationView.cs">
+      <Link>Forms\CourseRegistration\ICourseRegistrationView.cs</Link>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\DirectReports\DirectReports.ascx.cs">
+      <Link>Templates\ControlTemplates\TrainingManagement\DirectReports.ascx.cs</Link>
+      <DependentUpon>DirectReports.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\DirectReports\DirectReports.ascx.designer.cs">
+      <Link>Templates\ControlTemplates\TrainingManagement\DirectReports.ascx.designer.cs</Link>
+      <DependentUpon>DirectReports.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\DirectReports\DirectReportsPresenter.cs">
+      <Link>WebParts\DirectReportsWebPart\DirectReportsPresenter.cs</Link>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\DirectReports\IDirectReportsView.cs">
+      <Link>WebParts\DirectReportsWebPart\IDirectReportsView.cs</Link>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\RegistrationApproval\IRegistrationApprovalView.cs">
+      <Link>Forms\RegistrationApproval\IRegistrationApprovalView.cs</Link>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\RegistrationApproval\RegistrationApproval.aspx.cs">
+      <Link>Templates\Layouts\Contoso\RegistrationApproval.aspx.cs</Link>
+      <DependentUpon>RegistrationApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\RegistrationApproval\RegistrationApproval.aspx.designer.cs">
+      <Link>Templates\Layouts\Contoso\RegistrationApproval.aspx.designer.cs</Link>
+      <DependentUpon>RegistrationApproval.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\Contoso.TrainingManagement.Web\RegistrationApproval\RegistrationApprovalPresenter.cs">
+      <Link>Forms\RegistrationApproval\RegistrationApprovalPresenter.cs</Link>
+    </Compile>
+    <Compile Include="ContentTypes\TrainingCourseContentType\TrainingCourseItemEventReceiver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeatureReceivers\SiteFeatureReceiver.cs" />
+    <Compile Include="FeatureReceivers\WebFeatureReceiver.cs" />
+    <Compile Include="FieldTypes\CourseDifficultyLevel\CourseDifficultyLevel.Field.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FieldTypes\CourseDifficultyLevel\CourseDifficultyLevel.FieldControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Attributes.cs" />
+    <Compile Include="WebParts\DirectReportsWebPart\DirectReportsWebPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebParts\TrainingBudgetWebPart\ITrainingBudgetView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebParts\TrainingBudgetWebPart\TrainingBudgetPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebParts\TrainingBudgetWebPart\TrainingBudgetWebPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Temporary.snk">
+      <Link>Temporary.snk</Link>
+    </None>
+    <None Include="WebParts\DirectReportsWebPart\DirectReports.webpart" />
+    <None Include="WebParts\TrainingBudgetWebPart\TrainingBudget.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Contoso.TrainingManagement.Web\CourseRegistration\CourseRegistration.aspx">
+      <Link>Forms\CourseRegistration\CourseRegistration.aspx</Link>
+    </Content>
+    <Content Include="..\Contoso.TrainingManagement.Web\DirectReports\DirectReports.ascx">
+      <Link>Templates\ControlTemplates\TrainingManagement\DirectReports.ascx</Link>
+    </Content>
+    <Content Include="..\Contoso.TrainingManagement.Web\RegistrationApproval\RegistrationApproval.aspx">
+      <Link>Templates\Layouts\Contoso\RegistrationApproval.aspx</Link>
+    </Content>
+    <Content Include="ContentTypes\RegistrationApprovalTaskContentType\RegistrationApprovalTaskContentType.xml" />
+    <Content Include="ContentTypes\RegistrationContentType\RegistrationContentType.xml" />
+    <Content Include="ContentTypes\TrainingCourseContentType\TrainingCourseContentType.xml" />
+    <Content Include="ContentTypes\TrainingCourseContentType\TrainingCourseInstructorField.xml" />
+    <Content Include="Forms\CourseRegistration\CourseRegistrationElement.xml" />
+    <Content Include="Forms\Default\DefaultElement.xml" />
+    <Content Include="Forms\TrainingDashboard\trainingdashboard_v2.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Forms\TrainingDashboard\TrainingDashboardElement.xml" />
+    <Content Include="Forms\ManagerDashboard\managerdashboard_v2.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Forms\ManagerDashboard\ManagerDashboardElement.xml" />
+    <Content Include="Images\imageMicroscope.jpg" />
+    <Content Include="Images\imageProfs.jpg" />
+    <Content Include="Images\ImagesModule.xml" />
+    <Content Include="Images\imageTubes.jpg" />
+    <Content Include="Images\imageTubes2.jpg" />
+    <Content Include="ListDefinitions\Announcements\AnnouncementsListInstance.xml" />
+    <Content Include="ListDefinitions\Images\ImagesListInstance.xml" />
+    <Content Include="ListDefinitions\RegistrationApprovalTasks\RegistrationApprovalTasksListInstance.xml" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\AllItems.aspx" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\DispForm.aspx" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\EditForm.aspx" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\NewForm.aspx" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\RegistrationListInstance.xml" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\RegistrationListTemplate.xml" />
+    <Content Include="ListDefinitions\RegistrationListDefinition\schema.xml" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\AllItems.aspx" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\DispForm.aspx" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\EditForm.aspx" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\NewForm.aspx" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\schema.xml" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\TrainingCourseListInstance.xml" />
+    <Content Include="ListDefinitions\TrainingCoursesListDefinition\TrainingCourseListTemplate.xml" />
+    <Content Include="ListDefinitions\WorkflowHistory\WorkflowHistoryListInstance.xml" />
+    <Content Include="pkg\ContosoTrainingManagementSiteCollection\feature.xml" />
+    <Content Include="pkg\ContosoTrainingManagementSiteElements\feature.xml" />
+    <Content Include="pkg\ContosoTrainingManagementWeb\feature.xml" />
+    <Content Include="pkg\CONTOSOTRAINING\webtempContosoTrainingManagement.xml" />
+    <Content Include="pkg\manifest.xml" />
+    <Content Include="pkg\solution.xml" />
+    <Content Include="SiteDefinition\onet.xml" />
+    <Content Include="Forms\Default\default.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Templates\Images\Contoso\imagePills.jpg" />
+    <Content Include="Templates\Images\TrainingManagement\level0.gif" />
+    <Content Include="Templates\Images\TrainingManagement\level1.gif" />
+    <Content Include="Templates\Images\TrainingManagement\level2.gif" />
+    <Content Include="Templates\Images\TrainingManagement\level3.gif" />
+    <Content Include="Templates\Images\TrainingManagement\level4.gif" />
+    <Content Include="Templates\Images\TrainingManagement\level5.gif" />
+    <Content Include="Templates\Layouts\layouts.sitemap.contosoregistrationapproval.xml" />
+    <Content Include="Templates\xml\fldtypes_CourseDifficultyLevel.xml" />
+    <Content Include="WebParts\DirectReportsWebPart\DirectReportsWebPart.xml" />
+    <Content Include="WebParts\TrainingBudgetWebPart\TrainingBudgetWebPart.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contoso.TrainingManagement.RI\Contoso.AccountingManagement\Contoso.AccountingManagement.csproj">
+      <Project>{C7F714CB-0FED-476A-AF16-4CC92B76A68A}</Project>
+      <Name>Contoso.AccountingManagement</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contoso.TrainingManagement.RI\Contoso.HRManagement\Contoso.HRManagement.csproj">
+      <Project>{F7D4567E-2051-4BA1-875A-3664A18F098A}</Project>
+      <Name>Contoso.HRManagement</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Common\Contoso.TrainingManagement.Common.csproj">
+      <Project>{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}</Project>
+      <Name>Contoso.TrainingManagement.Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Repository\Contoso.TrainingManagement.Repository.csproj">
+      <Project>{5EB7688B-1AB4-4421-B339-6BB347399366}</Project>
+      <Name>Contoso.TrainingManagement.Repository</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.ServiceLocator\Contoso.TrainingManagement.ServiceLocator.csproj">
+      <Project>{86C279C6-BDEC-491B-BA06-611BB2E8F139}</Project>
+      <Name>Contoso.TrainingManagement.ServiceLocator</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio />
+  </ProjectExtensions>
+</Project>

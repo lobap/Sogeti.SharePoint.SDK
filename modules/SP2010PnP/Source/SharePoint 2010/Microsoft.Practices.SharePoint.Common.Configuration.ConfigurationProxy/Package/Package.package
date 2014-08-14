@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="57977ba1-3857-4882-ac0e-038420181ec4" solutionId="57977ba1-3857-4882-ac0e-038420181ec4" resetWebServer="false" name="ConfigurationProxy" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ed5212ad-9b6c-4183-9825-8e7af7720c38" />
+  </features>
+</package>

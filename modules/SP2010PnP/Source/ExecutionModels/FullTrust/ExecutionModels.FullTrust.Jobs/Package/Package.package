@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3d99193e-bd52-4cff-8e77-a2bf5f7efcce" solutionId="3d99193e-bd52-4cff-8e77-a2bf5f7efcce" resetWebServer="false" name="ExecutionModels.FullTrust.Jobs" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="ExecutionModels.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="38d96652-12c7-486b-aba2-12797f1274de" />
+    <featureReference itemId="ce0d2d3f-75ea-414f-866f-e46ae74ee9cd" />
+  </features>
+</package>

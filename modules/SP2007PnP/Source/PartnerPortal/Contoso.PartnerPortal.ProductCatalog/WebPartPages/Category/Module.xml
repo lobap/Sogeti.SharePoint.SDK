@@ -1,0 +1,1566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="4b339a0c-4690-4419-9809-f0d25662251f" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="CategoryPage">
+    <File Path="Category.aspx" Url="Category.aspx" Type="Ghostable" >
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Left">
+        <![CDATA[
+          <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+            <Title>Business Data Item Builder</Title>
+            <FrameType>Default</FrameType>
+            <Description>Creates a Business Data item from parameters in the query string and provides it to other web parts. This Web part is only used on Business Data profile pages.</Description>
+            <IsIncluded>true</IsIncluded>
+            <ZoneID>Left</ZoneID>
+            <PartOrder>1</PartOrder>
+            <FrameState>Normal</FrameState>
+            <Height />
+            <Width />
+            <AllowRemove>true</AllowRemove>
+            <AllowZoneChange>true</AllowZoneChange>
+            <AllowMinimize>true</AllowMinimize>
+            <AllowConnect>true</AllowConnect>
+            <AllowEdit>true</AllowEdit>
+            <AllowHide>true</AllowHide>
+            <IsVisible>true</IsVisible>
+            <DetailLink />
+            <HelpLink />
+            <HelpMode>Modeless</HelpMode>
+            <Dir>Default</Dir>
+            <PartImageSmall>/_layouts/images/bizdatawebpart.gif</PartImageSmall>
+            <MissingAssembly />
+            <PartImageLarge>/_layouts/images/bizdatawebpart.gif</PartImageLarge>
+            <IsIncludedFilter />
+            <Hidden>false</Hidden>
+            <AuthorizationFilter>
+            </AuthorizationFilter>
+            <Assembly>Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+            <TypeName>Microsoft.SharePoint.Portal.WebControls.BusinessDataItemBuilder</TypeName>
+          </WebPart>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="2" WebPartZoneID="Left">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="Microsoft.SharePoint.Portal.WebControls.BusinessDataDetailsWebPart, Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="AllowConnect" type="bool">True</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="CacheXslTimeOut" type="int">600</property>
+                  <property name="CatalogIconImageUrl" type="string">/_layouts/images/bizdatawebpart.gif</property>
+                  <property name="HelpMode" type="helpmode">Modeless</property>
+                  <property name="ItemIDFromQuery" type="bool">False</property>
+                  <property name="Description" type="string">Display one item from a data source in the Business Data Catalog.</property>
+                  <property name="Entity" type="string">Category</property>
+                  <property name="Application" type="string">ContosoProductCatalogService</property>
+                  <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                  <property name="DisplayName" type="string" />
+                  <property name="AllowMinimize" type="bool">True</property>
+                  <property name="TitleUrl" type="string" />
+                  <property name="Direction" type="direction">NotSet</property>
+                  <property name="NoDefaultStyle" type="string">TRUE</property>
+                  <property name="SampleData" type="string" null="true" />
+                  <property name="ViewName" type="string" />
+                  <property name="ExportMode" type="exportmode">All</property>
+                  <property name="Height" type="string" />
+                  <property name="ListName" type="string" null="true" />
+                  <property name="DisplayNewActions" type="bool">True</property>
+                  <property name="Width" type="string" />
+                  <property name="ShouldDisplayToolBar" type="bool">False</property>
+                  <property name="AllowClose" type="bool">True</property>
+                  <property name="AllowEdit" type="bool">True</property>
+                  <property name="PageSize" type="int">-1</property>
+                  <property name="CacheXslStorage" type="bool">True</property>
+                  <property name="DeselectedActions" type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</property>
+                  <property name="ShowWithSampleData" type="bool">False</property>
+                  <property name="DeselectedFields" type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</property>
+                  <property name="HelpUrl" type="string" />
+                  <property name="ShouldDisplayAnimation" type="bool">True</property>
+                  <property name="Default" type="string" />
+                  <property name="ViewFlag" type="string" />
+                  <property name="DataFields" type="string" />
+                  <property name="Fields" type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;CategoryId&lt;/string&gt;
+            &lt;string&gt;Name&lt;/string&gt;
+            &lt;string&gt;ParentId&lt;/string&gt;
+          &lt;/ArrayOfString&gt;</property>
+                  <property name="Hidden" type="bool">False</property>
+                  <property name="DataSourceID" type="string" />
+                  <property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="cc1" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;cc1:BdcDataSource runat="server" Enabled="True" Mode="Item" ShowSampleData="False" Entity="Category" Application="ContosoProductCatalogService"&gt;&lt;/cc1:BdcDataSource&gt;
+          </property>
+                  <property name="SerializedVersion" type="int">0</property>
+                  <property name="ChromeType" type="chrometype">Default</property>
+                  <property name="ViewContentTypeId" type="string" />
+                  <property name="SelectedActions" type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;View Profile&lt;/string&gt;
+          &lt;/ArrayOfString&gt;</property>
+                  <property name="XslLink" type="string" null="true" />
+                  <property name="UseSQLDataSourcePaging" type="bool">True</property>
+                  <property name="ItemID" type="string" null="true" />
+                  <property name="Xsl" type="string">&lt;xsl:stylesheet version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.Sharepoint.WebControls"&gt;&lt;xsl:output method="html" indent="no" /&gt;&lt;xsl:param name="PreviousLinkText"&gt;Previous&lt;/xsl:param&gt;&lt;xsl:param name="NextLinkText"&gt;Next&lt;/xsl:param&gt;&lt;xsl:param name="EditViewText"&gt;Edit View&lt;/xsl:param&gt;&lt;xsl:param name="AscendingText"&gt;Ascending&lt;/xsl:param&gt;&lt;xsl:param name="DescendingText"&gt;Descending&lt;/xsl:param&gt;&lt;xsl:param name="RetrieveDataText"&gt;Retrieve Data&lt;/xsl:param&gt;&lt;xsl:param name="ActionsText"&gt;Actions&lt;/xsl:param&gt;&lt;xsl:param name="FilterNameText"&gt;Filter name&lt;/xsl:param&gt;&lt;xsl:param name="OperatorText"&gt;Operator&lt;/xsl:param&gt;&lt;xsl:param name="AddText"&gt;Add&lt;/xsl:param&gt;&lt;xsl:param name="CurrentLCID"&gt;1033&lt;/xsl:param&gt;&lt;xsl:param name="IsRTL"&gt;&lt;/xsl:param&gt;&lt;xsl:param name="dvt_apos"&gt;'&lt;/xsl:param&gt;&lt;xsl:param name="dvt_adhocmode"&gt;sort&lt;/xsl:param&gt;&lt;xsl:param name="ClickThroughUrl" /&gt;&lt;xsl:param name="dvt_url" /&gt;&lt;xsl:param name="jsMenuApplication" /&gt;&lt;xsl:param name="jsMenuEntity" /&gt;&lt;xsl:param name="jsMenuLoadingMessage" /&gt;&lt;xsl:param name="dvt_1_automode"&gt;0&lt;/xsl:param&gt;&lt;xsl:param name="filterParam" /&gt;&lt;xsl:param name="dvt_firstrow"&gt;1&lt;/xsl:param&gt;&lt;xsl:param name="dvt_nextpagedata" /&gt;&lt;xsl:param name="IsMenuVisible" /&gt;&lt;xsl:param name="IsEditViewVisible" /&gt;&lt;xsl:param name="dvt_partguid" /&gt;&lt;xsl:param name="ColumnKey"&gt;Kunnr&lt;/xsl:param&gt;&lt;xsl:param name="dvt_1_form_selectkey" /&gt;&lt;xsl:param name="dvt_sortdir"&gt;ascending&lt;/xsl:param&gt;&lt;xsl:param name="dvt_sortfield" /&gt;&lt;xsl:param name="dvt_emptytext"&gt;&lt;/xsl:param&gt;&lt;xsl:param name="dvt_filterfields" /&gt;&lt;xsl:param name="ColName_0"&gt;&lt;/xsl:param&gt;&lt;xsl:param name="ColName_1"&gt;&lt;/xsl:param&gt;&lt;xsl:param name="ColName_2"&gt;&lt;/xsl:param&gt;&lt;xsl:template match="/"&gt;&lt;xsl:call-template name="dvt_1" /&gt;&lt;/xsl:template&gt;&lt;xsl:template name="dvt_1"&gt;&lt;xsl:variable name="dvt_StyleName"&gt;RepForm3&lt;/xsl:variable&gt;&lt;xsl:variable name="Rows" select="/dsQueryResponse/NewDataSet/Row" /&gt;&lt;xsl:variable name="dvt_RowCount" select="count($Rows)" /&gt;&lt;xsl:variable name="RowLimit" select="$dvt_RowCount" /&gt;&lt;xsl:variable name="FirstRow" select="$dvt_firstrow" /&gt;&lt;xsl:variable name="LastRow"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="($FirstRow + $RowLimit - 1) &amp;gt; $dvt_RowCount"&gt;&lt;xsl:value-of select="$dvt_RowCount" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="$FirstRow + $RowLimit - 1" /&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;&lt;div&gt;&lt;asp:PlaceHolder id="ActionBarTable" runat="server"&gt;&lt;table class="ms-toolbar" cellpadding="0" cellspacing="0" border="0" width="100%"&gt;&lt;tr style="height:2em"&gt;&lt;td valign="middle" style="padding-left:2px"&gt;&lt;img src="_layouts/images/viewprof.gif" border="0" alt="" /&gt;&lt;/td&gt;&lt;td valight="middle" style="padding-left:2px; width:100%;"&gt;&lt;a href="#"&gt;View Profile&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/asp:PlaceHolder&gt;&lt;/div&gt;&lt;table border="0" width="100%"&gt;&lt;xsl:call-template name="dvt_1.body"&gt;&lt;xsl:with-param name="Rows" select="$Rows" /&gt;&lt;xsl:with-param name="FirstRow" select="$dvt_firstrow" /&gt;&lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;&lt;/xsl:call-template&gt;&lt;/table&gt;&lt;/xsl:template&gt;&lt;xsl:template name="dvt_1.body"&gt;&lt;xsl:param name="Rows" /&gt;&lt;xsl:param name="FirstRow" /&gt;&lt;xsl:param name="LastRow" /&gt;&lt;xsl:for-each select="$Rows"&gt;&lt;xsl:call-template name="dvt_1.rowview" /&gt;&lt;/xsl:for-each&gt;&lt;/xsl:template&gt;&lt;xsl:template name="dvt_1.rowview"&gt;&lt;tr&gt;&lt;td&gt;&lt;table border="0" width="100%"&gt;&lt;tr&gt;&lt;td class="ms-descriptiontext ms-alignright"&gt;&lt;nobr&gt;&lt;xsl:value-of select="$ColName_0" /&gt;:&lt;/nobr&gt;&lt;/td&gt;&lt;td class="ms-descriptiontext ms-alignleft" width="100%"&gt;&lt;xsl:variable name="fieldValue"&gt;&lt;xsl:call-template name="LFtoBR"&gt;&lt;xsl:with-param name="input"&gt;&lt;xsl:value-of select="@CategoryId" /&gt;&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;&lt;xsl:copy-of select="$fieldValue" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="ms-descriptiontext ms-alignright"&gt;&lt;nobr&gt;&lt;xsl:value-of select="$ColName_1" /&gt;:&lt;/nobr&gt;&lt;/td&gt;&lt;td class="ms-descriptiontext ms-alignleft" width="100%"&gt;&lt;xsl:variable name="fieldValue"&gt;&lt;xsl:call-template name="LFtoBR"&gt;&lt;xsl:with-param name="input"&gt;&lt;xsl:value-of select="@Name" /&gt;&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;&lt;xsl:copy-of select="$fieldValue" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="ms-descriptiontext ms-alignright"&gt;&lt;nobr&gt;&lt;xsl:value-of select="$ColName_2" /&gt;:&lt;/nobr&gt;&lt;/td&gt;&lt;td class="ms-descriptiontext ms-alignleft" width="100%"&gt;&lt;xsl:variable name="fieldValue"&gt;&lt;xsl:call-template name="LFtoBR"&gt;&lt;xsl:with-param name="input"&gt;&lt;xsl:value-of select="@ParentId" /&gt;&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;&lt;xsl:copy-of select="$fieldValue" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/xsl:template&gt;&lt;xsl:template name="formatString"&gt;&lt;xsl:param name="stringvalue" /&gt;&lt;xsl:param name="separator" /&gt;&lt;xsl:variable name="curStr" select="substring-after($stringvalue, $separator)" /&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contains($curStr, $separator)"&gt;&lt;xsl:value-of select="substring-before($stringvalue, $separator)" /&gt;&lt;xsl:value-of select="ddwrt:UrlEncode(@*[name()=substring-before($curStr, $separator)])" /&gt;&lt;xsl:call-template name="formatString"&gt;&lt;xsl:with-param name="stringvalue" select="substring-after($curStr, $separator)" /&gt;&lt;xsl:with-param name="separator" select="$separator" /&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="$stringvalue" /&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:template&gt;&lt;xsl:template name="OpenActionsMenu"&gt;&lt;xsl:param name="method" /&gt;&lt;xsl:param name="id" /&gt;&lt;xsl:param name="menuText" /&gt;&lt;xsl:value-of select="$method" /&gt;&lt;xsl:text&gt;('&lt;/xsl:text&gt;&lt;xsl:value-of select="$jsMenuLoadingMessage" /&gt;&lt;xsl:text&gt;','&lt;/xsl:text&gt;&lt;xsl:value-of select="ddwrt:EcmaScriptEncode($menuText)" /&gt;&lt;xsl:text&gt;',false,'&lt;/xsl:text&gt;&lt;xsl:value-of select="$jsMenuApplication" /&gt;&lt;xsl:text&gt;','&lt;/xsl:text&gt;&lt;xsl:value-of select="$jsMenuEntity" /&gt;&lt;xsl:text&gt;','&lt;/xsl:text&gt;&lt;xsl:value-of select="ddwrt:EcmaScriptEncode($id)" /&gt;&lt;xsl:text&gt;');&lt;/xsl:text&gt;&lt;/xsl:template&gt;&lt;xsl:template name="_trimLF"&gt;&lt;xsl:param name="input" /&gt;&lt;xsl:choose&gt;&lt;xsl:when test="starts-with($input, '&amp;#xA;')"&gt;&lt;xsl:call-template name="_trimLF"&gt;&lt;xsl:with-param name="input" select="substring($input, 2)" /&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:when test="substring($input, string-length($input), 1) = '&amp;#xA;'"&gt;&lt;xsl:call-template name="_trimLF"&gt;&lt;xsl:with-param name="input" select="substring($input, 1, string-length($input)-1)" /&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="$input" /&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:template&gt;&lt;xsl:template name="_LFtoBRloop"&gt;&lt;xsl:param name="input" /&gt;&lt;xsl:variable name="beforeText" select="substring-before($input, '&amp;#xA;')" /&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length($beforeText) = 0 and substring($input, 1, 1) != '&amp;#xA;'"&gt;&lt;xsl:value-of select="$input" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="$beforeText" /&gt;&lt;br /&gt;&lt;xsl:call-template name="_LFtoBRloop"&gt;&lt;xsl:with-param name="input" select="substring($input, string-length($beforeText)+2)" /&gt;&lt;/xsl:call-template&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:template&gt;&lt;xsl:template name="LFtoBR"&gt;&lt;xsl:param name="input" /&gt;&lt;xsl:choose&gt;&lt;xsl:when test="substring-before($input, '&amp;#xA;') = ''"&gt;&lt;xsl:value-of select="$input" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:call-template name="_LFtoBRloop"&gt;&lt;xsl:with-param name="input"&gt;&lt;xsl:call-template name="_trimLF"&gt;&lt;xsl:with-param name="input" select="translate($input, '&amp;#xD;', '')" /&gt;&lt;/xsl:call-template&gt;&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</property>
+                  <property name="AllowHide" type="bool">True</property>
+                  <property name="TitleIconImageUrl" type="string" />
+                  <property name="AllowZoneChange" type="bool">True</property>
+                  <property name="Title" type="string">Category Details</property>
+                  <property name="ParameterBindings" type="string" null="true" />
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="3" WebPartZoneID="Left">
+        <![CDATA[
+            <webParts>
+              <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                <metaData>
+                  <type name="Microsoft.SharePoint.Portal.WebControls.BusinessDataAssociationWebPart, Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                  <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                </metaData>
+                <data>
+                  <properties>
+                    <property name="Association" type="string">CategoryToChildCategories</property>
+                    <property name="ShouldDisplayToolBar" type="bool">True</property>
+                    <property name="NoDefaultStyle" type="string">TRUE</property>
+                    <property name="ShouldDisplayAnimation" type="bool">True</property>
+                    <property name="AllowZoneChange" type="bool">True</property>
+                    <property name="ParameterBindings" type="string">&lt;ParameterBinding Name="dvt_fieldsort" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_sorttype" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_filterfield" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_filterval" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_filtertype" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_nextpagedata" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_apos" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="filterParam" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_1_form_selectkey" Location="Postback;Connection"/&gt;</property>
+                    <property name="Width" type="string" />
+                    <property name="AllowMinimize" type="bool">True</property>
+                    <property name="TitleUrl" type="string" />
+                    <property name="CacheXslStorage" type="bool">True</property>
+                    <property name="HelpUrl" type="string" />
+                    <property name="CatalogIconImageUrl" type="string">/_layouts/images/bizdatawebpart.gif</property>
+                    <property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="cc1" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;cc1:BdcDataSource runat="server" Enabled="True" ShowSampleData="False" Entity="Category" Application="ContosoProductCatalogService"&gt;&lt;/cc1:BdcDataSource&gt;</property>
+                    <property name="Entity" type="string">Category</property>
+                    <property name="AllowConnect" type="bool">True</property>
+                    <property name="AllowClose" type="bool">True</property>
+                    <property name="ChromeState" type="chromestate">Normal</property>
+                    <property name="ChromeType" type="chrometype">Default</property>
+                    <property name="ViewContentTypeId" type="string" />
+                    <property name="Height" type="string" />
+                    <property name="Title" type="string">Category List</property>
+                    <property name="Direction" type="direction">NotSet</property>
+                    <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                    <property name="ListName" type="string" null="true" />
+                    <property name="SerializedVersion" type="int">1</property>
+                    <property name="Default" type="string" />
+                    <property name="Description" type="string">Display a list of items related to one or more parent items from a data source in the Business Data Catalog.</property>
+                    <property name="AllowEdit" type="bool">True</property>
+                    <property name="DataFields" type="string" />
+                    <property name="Hidden" type="bool">False</property>
+                    <property name="UseSQLDataSourcePaging" type="bool">True</property>
+                    <property name="ViewFlag" type="string" />
+                    <property name="Application" type="string">ContosoProductCatalogService</property>
+                    <property name="ShowWithSampleData" type="bool">False</property>
+                    <property name="AllowHide" type="bool">True</property>
+                    <property name="CacheXslTimeOut" type="int">86400</property>
+                    <property name="TitleIconImageUrl" type="string" />
+                    <property name="DataSourceID" type="string" />
+                    <property name="XslLink" type="string" null="true" />
+                    <property name="ExportMode" type="exportmode">All</property>
+                    <property name="PageSize" type="int">-1</property>
+                    <property name="DisplayName" type="string" />
+                    <property name="SampleData" type="string" null="true" />
+                    <property name="Xsl" type="string">&lt;xsl:stylesheet version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.Sharepoint.WebControls"&gt;
+              &lt;xsl:output method="html" indent="no" /&gt;
+              &lt;xsl:param name="PreviousLinkText"&gt;Previous&lt;/xsl:param&gt;
+              &lt;xsl:param name="NextLinkText"&gt;Next&lt;/xsl:param&gt;
+              &lt;xsl:param name="EditViewText"&gt;Edit View&lt;/xsl:param&gt;
+              &lt;xsl:param name="AscendingText"&gt;Ascending&lt;/xsl:param&gt;
+              &lt;xsl:param name="DescendingText"&gt;Descending&lt;/xsl:param&gt;
+              &lt;xsl:param name="RetrieveDataText"&gt;Retrieve Data&lt;/xsl:param&gt;
+              &lt;xsl:param name="ActionsText"&gt;Actions&lt;/xsl:param&gt;
+              &lt;xsl:param name="FilterNameText"&gt;Filter name&lt;/xsl:param&gt;
+              &lt;xsl:param name="OperatorText"&gt;Operator&lt;/xsl:param&gt;
+              &lt;xsl:param name="AddText"&gt;Add&lt;/xsl:param&gt;
+              &lt;xsl:param name="CurrentLCID"&gt;1033&lt;/xsl:param&gt;
+              &lt;xsl:param name="IsRTL"&gt;
+              &lt;/xsl:param&gt;
+              &lt;xsl:param name="dvt_apos"&gt;'&lt;/xsl:param&gt;
+              &lt;xsl:param name="dvt_adhocmode"&gt;sort&lt;/xsl:param&gt;
+              &lt;xsl:param name="ClickThroughUrl" /&gt;
+              &lt;xsl:param name="dvt_url" /&gt;
+              &lt;xsl:param name="jsMenuApplication" /&gt;
+              &lt;xsl:param name="jsMenuEntity" /&gt;
+              &lt;xsl:param name="jsMenuLoadingMessage" /&gt;
+              &lt;xsl:param name="dvt_1_automode"&gt;0&lt;/xsl:param&gt;
+              &lt;xsl:param name="filterParam" /&gt;
+              &lt;xsl:param name="dvt_firstrow"&gt;1&lt;/xsl:param&gt;
+              &lt;xsl:param name="dvt_nextpagedata" /&gt;
+              &lt;xsl:param name="IsMenuVisible" /&gt;
+              &lt;xsl:param name="IsEditViewVisible" /&gt;
+              &lt;xsl:param name="dvt_partguid" /&gt;
+              &lt;xsl:param name="ColumnKey"&gt;Kunnr&lt;/xsl:param&gt;
+              &lt;xsl:param name="dvt_1_form_selectkey" /&gt;
+              &lt;xsl:param name="dvt_sortdir"&gt;ascending&lt;/xsl:param&gt;
+              &lt;xsl:param name="dvt_sortfield" /&gt;
+              &lt;xsl:param name="dvt_emptytext"&gt;
+              &lt;/xsl:param&gt;
+              &lt;xsl:param name="dvt_filterfields" /&gt;
+              &lt;xsl:param name="ColName_0"&gt;
+              &lt;/xsl:param&gt;
+              &lt;xsl:param name="ColName_1"&gt;
+              &lt;/xsl:param&gt;
+              &lt;xsl:param name="ColName_2"&gt;
+              &lt;/xsl:param&gt;
+              &lt;xsl:template name="dvt.headerfield"&gt;
+                &lt;xsl:param name="fieldname" /&gt;
+                &lt;xsl:param name="fieldtitle" /&gt;
+                &lt;xsl:param name="displayname" /&gt;
+                &lt;xsl:param name="fieldtype"&gt;0&lt;/xsl:param&gt;
+                &lt;xsl:variable name="sortfield"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="substring($fieldname, 1, 1) = '@'"&gt;
+                      &lt;xsl:value-of select="substring($fieldname, 2)" /&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;xsl:value-of select="$fieldname" /&gt;
+                    &lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/xsl:variable&gt;
+                &lt;xsl:variable name="linkdir"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$dvt_sortfield = $sortfield and $dvt_sortdir = 'ascending'"&gt;descending&lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;ascending&lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/xsl:variable&gt;
+                &lt;xsl:variable name="sortText"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$linkdir='descending'"&gt;' + 'descending' + '&lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;' + 'ascending' + '&lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/xsl:variable&gt;
+                &lt;xsl:variable name="separator" select="' '" /&gt;
+                &lt;xsl:variable name="connector" select="';'" /&gt;
+                &lt;table CtxNum="1" cellspacing="0" class="ms-unselectedtitle" onmouseover="OnMouseOverAdHocFilter(this, '{concat($displayname,$separator,$fieldname, $separator,$fieldtype, $connector, $CurrentLCID, $separator, $dvt_partguid)}')"&gt;
+                  &lt;tr&gt;
+                    &lt;td width="100%" class="ms-vb" nowrap=""&gt;
+                      &lt;a&gt;
+                        &lt;xsl:attribute name="href"&gt;javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_sortfield={',$sortfield,'};dvt_sortdir={',$sortText,'}'))" /&gt;;&lt;/xsl:attribute&gt;
+                        &lt;xsl:value-of select="$fieldtitle" /&gt;
+                        &lt;xsl:if test="$dvt_sortfield = $sortfield"&gt;
+                          &lt;xsl:choose&gt;
+                            &lt;xsl:when test="$dvt_sortdir = 'ascending'"&gt;
+                              &lt;img border="0" alt="{$AscendingText}" src="{ddwrt:FieldSortImageUrl('Desc')}" /&gt;
+                            &lt;/xsl:when&gt;
+                            &lt;xsl:when test="$dvt_sortdir = 'descending'"&gt;
+                              &lt;img border="0" alt="{$DescendingText}" src="{ddwrt:FieldSortImageUrl('Asc')}" /&gt;
+                            &lt;/xsl:when&gt;
+                          &lt;/xsl:choose&gt;
+                        &lt;/xsl:if&gt;
+                      &lt;/a&gt;
+                      &lt;xsl:if test="contains($dvt_filterfields, concat($fieldname, ';' ))"&gt;
+                        &lt;img src="/_layouts/images/filter.gif" border="0" alt="" /&gt;
+                      &lt;/xsl:if&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                      &lt;img src="/_layouts/images/blank.gif" width="13" style="visibility: hidden" alt="" /&gt;
+                    &lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template match="/"&gt;
+                &lt;xsl:call-template name="dvt_1" /&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="dvt_1"&gt;
+                &lt;xsl:variable name="dvt_StyleName"&gt;Table&lt;/xsl:variable&gt;
+                &lt;xsl:variable name="Rows" select="/dsQueryResponse/NewDataSet/Row" /&gt;
+                &lt;xsl:variable name="dvt_RowCount" select="count($Rows)" /&gt;
+                &lt;xsl:variable name="RowLimit" select="20" /&gt;
+                &lt;xsl:variable name="FirstRow" select="$dvt_firstrow" /&gt;
+                &lt;xsl:variable name="LastRow"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="($FirstRow + $RowLimit - 1) &amp;gt; $dvt_RowCount"&gt;
+                      &lt;xsl:value-of select="$dvt_RowCount" /&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;xsl:value-of select="$FirstRow + $RowLimit - 1" /&gt;
+                    &lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/xsl:variable&gt;
+                &lt;xsl:call-template name="dvt_1.commandheader"&gt;
+                  &lt;xsl:with-param name="FirstRow" select="$FirstRow" /&gt;
+                  &lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;
+                  &lt;xsl:with-param name="RowLimit" select="$RowLimit" /&gt;
+                  &lt;xsl:with-param name="dvt_RowCount" select="$dvt_RowCount" /&gt;
+                &lt;/xsl:call-template&gt;
+                &lt;table id="BdwpRows" border="0" width="100%" cellpadding="2" cellspacing="0"&gt;
+                  &lt;tr valign="top"&gt;
+                    &lt;th class="ms-vh" width="1" /&gt;
+                    &lt;th class="ms-vh" align="left"&gt;
+                      &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                        &lt;xsl:with-param name="fieldname"&gt;@CategoryId&lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="fieldtitle"&gt;
+                          &lt;xsl:value-of select="$ColName_0" /&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="displayname"&gt;
+                          &lt;xsl:value-of select="$ColName_0" /&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/th&gt;
+                    &lt;th class="ms-vh" align="left"&gt;
+                      &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                        &lt;xsl:with-param name="fieldname"&gt;@Name&lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="fieldtitle"&gt;
+                          &lt;xsl:value-of select="$ColName_1" /&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="displayname"&gt;
+                          &lt;xsl:value-of select="$ColName_1" /&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/th&gt;
+                    &lt;th class="ms-vh" align="left"&gt;
+                      &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                        &lt;xsl:with-param name="fieldname"&gt;@ParentId&lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="fieldtitle"&gt;
+                          &lt;xsl:value-of select="$ColName_2" /&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="displayname"&gt;
+                          &lt;xsl:value-of select="$ColName_2" /&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;xsl:call-template name="dvt_1.body"&gt;
+                    &lt;xsl:with-param name="Rows" select="$Rows" /&gt;
+                    &lt;xsl:with-param name="FirstRow" select="$dvt_firstrow" /&gt;
+                    &lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;
+                  &lt;/xsl:call-template&gt;
+                &lt;/table&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="dvt_1.body"&gt;
+                &lt;xsl:param name="Rows" /&gt;
+                &lt;xsl:param name="FirstRow" /&gt;
+                &lt;xsl:param name="LastRow" /&gt;
+                &lt;xsl:for-each select="$Rows"&gt;
+                  &lt;xsl:if test="position() &amp;gt;= $FirstRow and position() &amp;lt;= $LastRow"&gt;
+                    &lt;xsl:call-template name="dvt_1.rowview" /&gt;
+                  &lt;/xsl:if&gt;
+                &lt;/xsl:for-each&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="dvt_1.rowview"&gt;
+                &lt;tr&gt;
+                  &lt;td class="ms-vb" width="1"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_automode = '1'"&gt;
+                        &lt;xsl:call-template name="dvt_1.automode"&gt;
+                          &lt;xsl:with-param name="KeyField"&gt;
+                          &lt;/xsl:with-param&gt;
+                          &lt;xsl:with-param name="KeyValue" select="@*[name()=$ColumnKey]" /&gt;
+                          &lt;xsl:with-param name="Mode"&gt;select&lt;/xsl:with-param&gt;
+                        &lt;/xsl:call-template&gt;
+                      &lt;/xsl:when&gt;
+                      &lt;xsl:otherwise&gt;
+                        &lt;span ddwrt:amkeyfield="" ddwrt:amkeyvalue="''" ddwrt:ammode="select" /&gt;
+                      &lt;/xsl:otherwise&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/td&gt;
+                  &lt;td class="ms-vb"&gt;
+                    &lt;xsl:attribute name="style"&gt;
+                      &lt;xsl:choose&gt;
+                        &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                        &lt;xsl:otherwise /&gt;
+                      &lt;/xsl:choose&gt;
+                    &lt;/xsl:attribute&gt;
+                    &lt;xsl:variable name="fieldValue"&gt;
+                      &lt;xsl:call-template name="LFtoBR"&gt;
+                        &lt;xsl:with-param name="input"&gt;
+                          &lt;xsl:value-of select="@CategoryId" /&gt;
+                        &lt;/xsl:with-param&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/xsl:variable&gt;
+                    &lt;xsl:copy-of select="$fieldValue" /&gt;
+                  &lt;/td&gt;
+                  &lt;td class="ms-vb"&gt;
+                    &lt;xsl:attribute name="style"&gt;
+                      &lt;xsl:choose&gt;
+                        &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                        &lt;xsl:otherwise /&gt;
+                      &lt;/xsl:choose&gt;
+                    &lt;/xsl:attribute&gt;
+                    &lt;xsl:variable name="output"&gt;
+                      &lt;xsl:variable name="rowId" select="@*[name()=$ColumnKey]" /&gt;
+                      &lt;xsl:choose&gt;
+                        &lt;xsl:when test="$IsMenuVisible"&gt;
+                          &lt;div class="ms-vb-title"&gt;
+                            &lt;table height="100%" cellspacing="0" class="ms-unselectedtitle" onmouseover="MMU_EcbTableMouseOverOut(this, true)" hoverActive="ms-selectedtitle" hoverInactive="ms-unselectedtitle" oncontextmenu="this.click(); return false;" menuformat="ArrowOnHover" downArrowTitle="Open Menu"&gt;
+                              &lt;xsl:attribute name="id"&gt;
+                                &lt;xsl:value-of select="$rowId" /&gt;
+                                &lt;xsl:text&gt;t&lt;/xsl:text&gt;
+                              &lt;/xsl:attribute&gt;
+                              &lt;xsl:attribute name="onclick"&gt;
+                                &lt;xsl:call-template name="OpenActionsMenu"&gt;
+                                  &lt;xsl:with-param name="method"&gt;showActionMenu&lt;/xsl:with-param&gt;
+                                  &lt;xsl:with-param name="id" select="$rowId" /&gt;
+                                  &lt;xsl:with-param name="menuText"&gt;
+                                    &lt;xsl:variable name="fieldValue"&gt;
+                                      &lt;xsl:call-template name="LFtoBR"&gt;
+                                        &lt;xsl:with-param name="input"&gt;
+                                          &lt;xsl:value-of select="@Name" /&gt;
+                                        &lt;/xsl:with-param&gt;
+                                      &lt;/xsl:call-template&gt;
+                                    &lt;/xsl:variable&gt;
+                                    &lt;xsl:copy-of select="$fieldValue" /&gt;
+                                  &lt;/xsl:with-param&gt;
+                                &lt;/xsl:call-template&gt;
+                              &lt;/xsl:attribute&gt;
+                              &lt;tr&gt;
+                                &lt;td class="ms-vb"&gt;
+                                  &lt;a onclick="event.cancelBubble=true"&gt;
+                                    &lt;xsl:if test="$ClickThroughUrl"&gt;
+                                      &lt;xsl:attribute name="href"&gt;
+                                        &lt;xsl:value-of select="concat($ClickThroughUrl, $rowId)" /&gt;
+                                      &lt;/xsl:attribute&gt;
+                                    &lt;/xsl:if&gt;
+                                    &lt;xsl:attribute name="onkeydown"&gt;
+                                      &lt;xsl:call-template name="OpenActionsMenu"&gt;
+                                        &lt;xsl:with-param name="method"&gt;actionMenuOnKeyDown&lt;/xsl:with-param&gt;
+                                        &lt;xsl:with-param name="id" select="$rowId" /&gt;
+                                        &lt;xsl:with-param name="menuText"&gt;
+                                          &lt;xsl:variable name="fieldValue"&gt;
+                                            &lt;xsl:call-template name="LFtoBR"&gt;
+                                              &lt;xsl:with-param name="input"&gt;
+                                                &lt;xsl:value-of select="@Name" /&gt;
+                                              &lt;/xsl:with-param&gt;
+                                            &lt;/xsl:call-template&gt;
+                                          &lt;/xsl:variable&gt;
+                                          &lt;xsl:copy-of select="$fieldValue" /&gt;
+                                        &lt;/xsl:with-param&gt;
+                                      &lt;/xsl:call-template&gt;
+                                    &lt;/xsl:attribute&gt;
+                                    &lt;xsl:variable name="fieldValue"&gt;
+                                      &lt;xsl:call-template name="LFtoBR"&gt;
+                                        &lt;xsl:with-param name="input"&gt;
+                                          &lt;xsl:value-of select="@Name" /&gt;
+                                        &lt;/xsl:with-param&gt;
+                                      &lt;/xsl:call-template&gt;
+                                    &lt;/xsl:variable&gt;
+                                    &lt;xsl:copy-of select="$fieldValue" /&gt;
+                                    &lt;img src="/_layouts/images/blank.gif" border="0" alt="" /&gt;
+                                  &lt;/a&gt;
+                                &lt;/td&gt;
+                                &lt;td class="ms-menuimagecell" style="visibility:hidden"&gt;
+                                  &lt;xsl:attribute name="id"&gt;
+                                    &lt;xsl:value-of select="$rowId" /&gt;
+                                    &lt;xsl:text&gt;ti&lt;/xsl:text&gt;
+                                  &lt;/xsl:attribute&gt;
+                                  &lt;img src="/_layouts/images/downarrw.gif" width="13" alt="" /&gt;
+                                &lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/table&gt;
+                          &lt;/div&gt;
+                          &lt;span /&gt;
+                        &lt;/xsl:when&gt;
+                        &lt;xsl:otherwise&gt;
+                          &lt;xsl:variable name="fieldValue"&gt;
+                            &lt;xsl:call-template name="LFtoBR"&gt;
+                              &lt;xsl:with-param name="input"&gt;
+                                &lt;xsl:value-of select="@Name" /&gt;
+                              &lt;/xsl:with-param&gt;
+                            &lt;/xsl:call-template&gt;
+                          &lt;/xsl:variable&gt;
+                          &lt;xsl:copy-of select="$fieldValue" /&gt;
+                        &lt;/xsl:otherwise&gt;
+                      &lt;/xsl:choose&gt;
+                    &lt;/xsl:variable&gt;
+                    &lt;xsl:copy-of select="$output" /&gt;
+                  &lt;/td&gt;
+                  &lt;td class="ms-vb"&gt;
+                    &lt;xsl:attribute name="style"&gt;
+                      &lt;xsl:choose&gt;
+                        &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                        &lt;xsl:otherwise /&gt;
+                      &lt;/xsl:choose&gt;
+                    &lt;/xsl:attribute&gt;
+                    &lt;xsl:variable name="fieldValue"&gt;
+                      &lt;xsl:call-template name="LFtoBR"&gt;
+                        &lt;xsl:with-param name="input"&gt;
+                          &lt;xsl:value-of select="@ParentId" /&gt;
+                        &lt;/xsl:with-param&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/xsl:variable&gt;
+                    &lt;xsl:copy-of select="$fieldValue" /&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="dvt_1.navigation"&gt;
+                &lt;xsl:param name="FirstRow" /&gt;
+                &lt;xsl:param name="LastRow" /&gt;
+                &lt;xsl:param name="RowLimit" /&gt;
+                &lt;xsl:param name="dvt_RowCount" /&gt;
+                &lt;xsl:variable name="PrevRow"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$FirstRow - $RowLimit &amp;lt; 1"&gt;1&lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;xsl:value-of select="$FirstRow - $RowLimit" /&gt;
+                    &lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/xsl:variable&gt;
+                &lt;xsl:variable name="NextRow"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$LastRow &amp;gt;= $dvt_RowCount"&gt;
+                      &lt;xsl:value-of select="$FirstRow" /&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;xsl:value-of select="$LastRow + 1" /&gt;
+                    &lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/xsl:variable&gt;
+                &lt;asp:Literal id="PagerControl" runat="server"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$dvt_RowCount = 0"&gt;
+                      &lt;xsl:value-of select="$dvt_emptytext" /&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:when test="$FirstRow = 1 and $LastRow = $dvt_RowCount"&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;xsl:if test="$FirstRow != 1"&gt;
+                        &lt;a&gt;
+                          &lt;xsl:attribute name="href"&gt;javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_firstrow={',$PrevRow,'}'))" /&gt;;&lt;/xsl:attribute&gt;
+                          &lt;img src="{ddwrt:PagingImageUrl('Previous')}" border="0" alt="{$PreviousLinkText}" /&gt;
+                        &lt;/a&gt;
+                        &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                      &lt;/xsl:if&gt;
+                      &lt;xsl:value-of select="$FirstRow" /&gt; - &lt;xsl:value-of select="$LastRow" /&gt;&lt;xsl:if test="$LastRow != $dvt_RowCount"&gt;&lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;&lt;a&gt;&lt;xsl:attribute name="href"&gt;javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_firstrow={',$NextRow,'}'))" /&gt;;&lt;/xsl:attribute&gt;&lt;img src="{ddwrt:PagingImageUrl('Next')}" border="0" alt="{$NextLinkText}" /&gt;&lt;/a&gt;&lt;/xsl:if&gt;&lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                  &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                  &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                  &lt;xsl:if test="$IsEditViewVisible"&gt;
+                    &lt;a href="{$dvt_url}"&gt;
+                      &lt;xsl:value-of select="$EditViewText" /&gt;
+                    &lt;/a&gt;
+                    &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                    &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                  &lt;/xsl:if&gt;
+                &lt;/asp:Literal&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="dvt_1.commandheader"&gt;
+                &lt;xsl:param name="FirstRow" /&gt;
+                &lt;xsl:param name="LastRow" /&gt;
+                &lt;xsl:param name="RowLimit" /&gt;
+                &lt;xsl:param name="dvt_RowCount" /&gt;
+                &lt;div&gt;
+                  &lt;xsl:call-template name="dvt_1.navigation"&gt;
+                    &lt;xsl:with-param name="FirstRow" select="$FirstRow" /&gt;
+                    &lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;
+                    &lt;xsl:with-param name="RowLimit" select="$RowLimit" /&gt;
+                    &lt;xsl:with-param name="dvt_RowCount" select="$dvt_RowCount" /&gt;
+                  &lt;/xsl:call-template&gt;
+                  &lt;asp:PlaceHolder id="ActionBarTable" runat="server"&gt;
+                    &lt;table class="ms-menutoolbar" cellpadding="2" cellspacing="0" border="0" width="100%"&gt;
+                      &lt;tr&gt;
+                        &lt;td class="ms-toolbar" style="padding-left:3px;text-align:left" nowrap="true"&gt;
+                          &lt;xsl:value-of select="$ActionsText" /&gt;
+                        &lt;/td&gt;
+                        &lt;td class="ms-toolbar" style="padding-right:3px;text-align:right" nowrap="true"&gt;
+                          &lt;xsl:value-of select="$EditViewText" /&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/asp:PlaceHolder&gt;
+                  &lt;asp:PlaceHolder id="SearchTable" runat="server"&gt;
+                    &lt;table width="100%" style="background-color:#efefd6"&gt;
+                      &lt;tr class="ms-vb"&gt;
+                        &lt;td&gt;
+                          &lt;select&gt;
+                            &lt;option&gt;
+                              &lt;xsl:value-of select="$FilterNameText" /&gt;
+                            &lt;/option&gt;
+                          &lt;/select&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;select&gt;
+                            &lt;option&gt;
+                              &lt;xsl:value-of select="$OperatorText" /&gt;
+                            &lt;/option&gt;
+                          &lt;/select&gt;
+                        &lt;/td&gt;
+                        &lt;td width="100%" nowrap="true"&gt;
+                          &lt;input class="ms-input" style="width:100%" /&gt;
+                        &lt;/td&gt;
+                        &lt;td valign="middle"&gt;
+                          &lt;a href="#"&gt;
+                            &lt;xsl:value-of select="$AddText" /&gt;
+                          &lt;/a&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table width="100%" style="background-color:#efefd6"&gt;
+                      &lt;tr&gt;
+                        &lt;td style="width:16pt;" valign="middle"&gt;
+                          &lt;xsl:choose&gt;
+                            &lt;xsl:when test="$IsRTL"&gt;
+                              &lt;img src="/_layouts/images/icongo01RTL.gif" border="0" /&gt;
+                            &lt;/xsl:when&gt;
+                            &lt;xsl:otherwise&gt;
+                              &lt;img src="/_layouts/images/icongo01.gif" border="0" /&gt;
+                            &lt;/xsl:otherwise&gt;
+                          &lt;/xsl:choose&gt;
+                        &lt;/td&gt;
+                        &lt;td class="ms-vb" valign="middle"&gt;
+                          &lt;a href="#"&gt;
+                            &lt;xsl:value-of select="$RetrieveDataText" /&gt;
+                          &lt;/a&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/asp:PlaceHolder&gt;
+                &lt;/div&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="dvt_1.automode"&gt;
+                &lt;xsl:param name="KeyField" /&gt;
+                &lt;xsl:param name="KeyValue" /&gt;
+                &lt;xsl:param name="Mode" /&gt;
+                &lt;table border="0" cellspacing="0" cellpadding="1"&gt;
+                  &lt;tr&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$Mode = 'edit'"&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                      &lt;/xsl:when&gt;
+                      &lt;xsl:when test="$Mode = 'insert'"&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                      &lt;/xsl:when&gt;
+                      &lt;xsl:otherwise&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb" /&gt;
+                        &lt;td class="ms-vb"&gt;
+                          &lt;a href="#"&gt;
+                            &lt;xsl:attribute name="onclick"&gt;
+                              &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_1_form_selectkey={',$KeyValue,'}'))" /&gt;; return false;&lt;/xsl:attribute&gt;
+                            &lt;xsl:choose&gt;
+                              &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;
+                                &lt;img border="0" style="cursor: hand" src="/_layouts/images/rbsel.gif" /&gt;
+                              &lt;/xsl:when&gt;
+                              &lt;xsl:otherwise&gt;
+                                &lt;img border="0" style="cursor: hand" src="/_layouts/images/rbunsel.gif" /&gt;
+                              &lt;/xsl:otherwise&gt;
+                            &lt;/xsl:choose&gt;
+                          &lt;/a&gt;
+                        &lt;/td&gt;
+                      &lt;/xsl:otherwise&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="formatString"&gt;
+                &lt;xsl:param name="stringvalue" /&gt;
+                &lt;xsl:param name="separator" /&gt;
+                &lt;xsl:variable name="curStr" select="substring-after($stringvalue, $separator)" /&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="contains($curStr, $separator)"&gt;
+                    &lt;xsl:value-of select="substring-before($stringvalue, $separator)" /&gt;
+                    &lt;xsl:value-of select="ddwrt:UrlEncode(@*[name()=substring-before($curStr, $separator)])" /&gt;
+                    &lt;xsl:call-template name="formatString"&gt;
+                      &lt;xsl:with-param name="stringvalue" select="substring-after($curStr, $separator)" /&gt;
+                      &lt;xsl:with-param name="separator" select="$separator" /&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$stringvalue" /&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="OpenActionsMenu"&gt;
+                &lt;xsl:param name="method" /&gt;
+                &lt;xsl:param name="id" /&gt;
+                &lt;xsl:param name="menuText" /&gt;
+                &lt;xsl:value-of select="$method" /&gt;
+                &lt;xsl:text&gt;('&lt;/xsl:text&gt;
+                &lt;xsl:value-of select="$jsMenuLoadingMessage" /&gt;
+                &lt;xsl:text&gt;','&lt;/xsl:text&gt;
+                &lt;xsl:value-of select="ddwrt:EcmaScriptEncode($menuText)" /&gt;
+                &lt;xsl:text&gt;',false,'&lt;/xsl:text&gt;
+                &lt;xsl:value-of select="$jsMenuApplication" /&gt;
+                &lt;xsl:text&gt;','&lt;/xsl:text&gt;
+                &lt;xsl:value-of select="$jsMenuEntity" /&gt;
+                &lt;xsl:text&gt;','&lt;/xsl:text&gt;
+                &lt;xsl:value-of select="ddwrt:EcmaScriptEncode($id)" /&gt;
+                &lt;xsl:text&gt;');&lt;/xsl:text&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="_trimLF"&gt;
+                &lt;xsl:param name="input" /&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="starts-with($input, '&amp;#xA;')"&gt;
+                    &lt;xsl:call-template name="_trimLF"&gt;
+                      &lt;xsl:with-param name="input" select="substring($input, 2)" /&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:when test="substring($input, string-length($input), 1) = '&amp;#xA;'"&gt;
+                    &lt;xsl:call-template name="_trimLF"&gt;
+                      &lt;xsl:with-param name="input" select="substring($input, 1, string-length($input)-1)" /&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$input" /&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="_LFtoBRloop"&gt;
+                &lt;xsl:param name="input" /&gt;
+                &lt;xsl:variable name="beforeText" select="substring-before($input, '&amp;#xA;')" /&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="string-length($beforeText) = 0 and substring($input, 1, 1) != '&amp;#xA;'"&gt;
+                    &lt;xsl:value-of select="$input" /&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$beforeText" /&gt;
+                    &lt;br /&gt;
+                    &lt;xsl:call-template name="_LFtoBRloop"&gt;
+                      &lt;xsl:with-param name="input" select="substring($input, string-length($beforeText)+2)" /&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:template&gt;
+              &lt;xsl:template name="LFtoBR"&gt;
+                &lt;xsl:param name="input" /&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="substring-before($input, '&amp;#xA;') = ''"&gt;
+                    &lt;xsl:value-of select="$input" /&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:call-template name="_LFtoBRloop"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+                        &lt;xsl:call-template name="_trimLF"&gt;
+                          &lt;xsl:with-param name="input" select="translate($input, '&amp;#xD;', '')" /&gt;
+                        &lt;/xsl:call-template&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:template&gt;
+            &lt;/xsl:stylesheet&gt;</property>
+                    <property name="View" type="Microsoft.SharePoint.Portal.WebControls.View, Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+            &lt;View xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+              &lt;Name /&gt;
+              &lt;AllowUserQueries&gt;false&lt;/AllowUserQueries&gt;
+              &lt;SortExpression&gt;Name&lt;/SortExpression&gt;
+              &lt;MaxItemsInPage&gt;20&lt;/MaxItemsInPage&gt;
+              &lt;MaxItems&gt;100&lt;/MaxItems&gt;
+              &lt;Fields&gt;
+                &lt;string&gt;CategoryId&lt;/string&gt;
+                &lt;string&gt;Name&lt;/string&gt;
+                &lt;string&gt;ParentId&lt;/string&gt;
+              &lt;/Fields&gt;
+              &lt;FilterValues /&gt;
+              &lt;QueryValues /&gt;
+              &lt;TitleField&gt;Name&lt;/TitleField&gt;
+              &lt;AllowPaging&gt;true&lt;/AllowPaging&gt;
+              &lt;AllowItemLimiting&gt;true&lt;/AllowItemLimiting&gt;
+              &lt;RetrieveAllItems&gt;true&lt;/RetrieveAllItems&gt;
+            &lt;/View&gt;</property>
+                    <property name="HelpMode" type="helpmode">Modeless</property>
+                  </properties>
+                </data>
+              </webPart>
+            </webParts>
+          ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="4" WebPartZoneID="Left">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="Microsoft.SharePoint.Portal.WebControls.BusinessDataAssociationWebPart, Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Association" type="string">CategoryToProducts</property>
+                  <property name="ShouldDisplayToolBar" type="bool">True</property>
+                  <property name="NoDefaultStyle" type="string">TRUE</property>
+                  <property name="ShouldDisplayAnimation" type="bool">True</property>
+                  <property name="AllowZoneChange" type="bool">True</property>
+                  <property name="ParameterBindings" type="string">&lt;ParameterBinding Name="dvt_fieldsort" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_sorttype" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_filterfield" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_filterval" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_filtertype" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_nextpagedata" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_apos" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="filterParam" Location="Postback;Connection"/&gt;&lt;ParameterBinding Name="dvt_1_form_selectkey" Location="Postback;Connection"/&gt;</property>
+                  <property name="Width" type="string" />
+                  <property name="AllowMinimize" type="bool">True</property>
+                  <property name="TitleUrl" type="string" />
+                  <property name="CacheXslStorage" type="bool">True</property>
+                  <property name="HelpUrl" type="string" />
+                  <property name="CatalogIconImageUrl" type="string">/_layouts/images/bizdatawebpart.gif</property>
+                  <property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="cc1" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;cc1:BdcDataSource runat="server" Enabled="True" ShowSampleData="False" Entity="Product" Application="ContosoProductCatalogService"&gt;&lt;/cc1:BdcDataSource&gt;
+          </property>
+                  <property name="Entity" type="string">Product</property>
+                  <property name="AllowConnect" type="bool">True</property>
+                  <property name="AllowClose" type="bool">True</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ChromeType" type="chrometype">Default</property>
+                  <property name="ViewContentTypeId" type="string" />
+                  <property name="Height" type="string" />
+                  <property name="Title" type="string">Product List</property>
+                  <property name="Direction" type="direction">NotSet</property>
+                  <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                  <property name="ListName" type="string" null="true" />
+                  <property name="SerializedVersion" type="int">1</property>
+                  <property name="Default" type="string" />
+                  <property name="Description" type="string">Display a list of items related to one or more parent items from a data source in the Business Data Catalog.</property>
+                  <property name="AllowEdit" type="bool">True</property>
+                  <property name="DataFields" type="string" />
+                  <property name="Hidden" type="bool">False</property>
+                  <property name="UseSQLDataSourcePaging" type="bool">True</property>
+                  <property name="ViewFlag" type="string" />
+                  <property name="Application" type="string">ContosoProductCatalogService</property>
+                  <property name="ShowWithSampleData" type="bool">False</property>
+                  <property name="AllowHide" type="bool">True</property>
+                  <property name="CacheXslTimeOut" type="int">86400</property>
+                  <property name="TitleIconImageUrl" type="string" />
+                  <property name="DataSourceID" type="string" />
+                  <property name="XslLink" type="string" null="true" />
+                  <property name="ExportMode" type="exportmode">All</property>
+                  <property name="PageSize" type="int">-1</property>
+                  <property name="DisplayName" type="string" />
+                  <property name="SampleData" type="string" null="true" />
+                  <property name="Xsl" type="string">&lt;xsl:stylesheet version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.Sharepoint.WebControls"&gt;
+            &lt;xsl:output method="html" indent="no" /&gt;
+            &lt;xsl:param name="PreviousLinkText"&gt;Previous&lt;/xsl:param&gt;
+            &lt;xsl:param name="NextLinkText"&gt;Next&lt;/xsl:param&gt;
+            &lt;xsl:param name="EditViewText"&gt;Edit View&lt;/xsl:param&gt;
+            &lt;xsl:param name="AscendingText"&gt;Ascending&lt;/xsl:param&gt;
+            &lt;xsl:param name="DescendingText"&gt;Descending&lt;/xsl:param&gt;
+            &lt;xsl:param name="RetrieveDataText"&gt;Retrieve Data&lt;/xsl:param&gt;
+            &lt;xsl:param name="ActionsText"&gt;Actions&lt;/xsl:param&gt;
+            &lt;xsl:param name="FilterNameText"&gt;Filter name&lt;/xsl:param&gt;
+            &lt;xsl:param name="OperatorText"&gt;Operator&lt;/xsl:param&gt;
+            &lt;xsl:param name="AddText"&gt;Add&lt;/xsl:param&gt;
+            &lt;xsl:param name="CurrentLCID"&gt;1033&lt;/xsl:param&gt;
+            &lt;xsl:param name="IsRTL"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="dvt_apos"&gt;'&lt;/xsl:param&gt;
+            &lt;xsl:param name="dvt_adhocmode"&gt;sort&lt;/xsl:param&gt;
+            &lt;xsl:param name="ClickThroughUrl" /&gt;
+            &lt;xsl:param name="dvt_url" /&gt;
+            &lt;xsl:param name="jsMenuApplication" /&gt;
+            &lt;xsl:param name="jsMenuEntity" /&gt;
+            &lt;xsl:param name="jsMenuLoadingMessage" /&gt;
+            &lt;xsl:param name="dvt_1_automode"&gt;0&lt;/xsl:param&gt;
+            &lt;xsl:param name="filterParam" /&gt;
+            &lt;xsl:param name="dvt_firstrow"&gt;1&lt;/xsl:param&gt;
+            &lt;xsl:param name="dvt_nextpagedata" /&gt;
+            &lt;xsl:param name="IsMenuVisible" /&gt;
+            &lt;xsl:param name="IsEditViewVisible" /&gt;
+            &lt;xsl:param name="dvt_partguid" /&gt;
+            &lt;xsl:param name="ColumnKey"&gt;Kunnr&lt;/xsl:param&gt;
+            &lt;xsl:param name="dvt_1_form_selectkey" /&gt;
+            &lt;xsl:param name="dvt_sortdir"&gt;ascending&lt;/xsl:param&gt;
+            &lt;xsl:param name="dvt_sortfield" /&gt;
+            &lt;xsl:param name="dvt_emptytext"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="dvt_filterfields" /&gt;
+            &lt;xsl:param name="ColName_0"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="ColName_1"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="ColName_2"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="ColName_3"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="ColName_4"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="ColName_5"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:param name="ColName_6"&gt;
+            &lt;/xsl:param&gt;
+            &lt;xsl:template name="dvt.headerfield"&gt;
+              &lt;xsl:param name="fieldname" /&gt;
+              &lt;xsl:param name="fieldtitle" /&gt;
+              &lt;xsl:param name="displayname" /&gt;
+              &lt;xsl:param name="fieldtype"&gt;0&lt;/xsl:param&gt;
+              &lt;xsl:variable name="sortfield"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="substring($fieldname, 1, 1) = '@'"&gt;
+                    &lt;xsl:value-of select="substring($fieldname, 2)" /&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$fieldname" /&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:variable&gt;
+              &lt;xsl:variable name="linkdir"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="$dvt_sortfield = $sortfield and $dvt_sortdir = 'ascending'"&gt;descending&lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;ascending&lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:variable&gt;
+              &lt;xsl:variable name="sortText"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="$linkdir='descending'"&gt;' + 'descending' + '&lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;' + 'ascending' + '&lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:variable&gt;
+              &lt;xsl:variable name="separator" select="' '" /&gt;
+              &lt;xsl:variable name="connector" select="';'" /&gt;
+              &lt;table CtxNum="1" cellspacing="0" class="ms-unselectedtitle" onmouseover="OnMouseOverAdHocFilter(this, '{concat($displayname,$separator,$fieldname, $separator,$fieldtype, $connector, $CurrentLCID, $separator, $dvt_partguid)}')"&gt;
+                &lt;tr&gt;
+                  &lt;td width="100%" class="ms-vb" nowrap=""&gt;
+                    &lt;a&gt;
+                      &lt;xsl:attribute name="href"&gt;javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_sortfield={',$sortfield,'};dvt_sortdir={',$sortText,'}'))" /&gt;;&lt;/xsl:attribute&gt;
+                      &lt;xsl:value-of select="$fieldtitle" /&gt;
+                      &lt;xsl:if test="$dvt_sortfield = $sortfield"&gt;
+                        &lt;xsl:choose&gt;
+                          &lt;xsl:when test="$dvt_sortdir = 'ascending'"&gt;
+                            &lt;img border="0" alt="{$AscendingText}" src="{ddwrt:FieldSortImageUrl('Desc')}" /&gt;
+                          &lt;/xsl:when&gt;
+                          &lt;xsl:when test="$dvt_sortdir = 'descending'"&gt;
+                            &lt;img border="0" alt="{$DescendingText}" src="{ddwrt:FieldSortImageUrl('Asc')}" /&gt;
+                          &lt;/xsl:when&gt;
+                        &lt;/xsl:choose&gt;
+                      &lt;/xsl:if&gt;
+                    &lt;/a&gt;
+                    &lt;xsl:if test="contains($dvt_filterfields, concat($fieldname, ';' ))"&gt;
+                      &lt;img src="/_layouts/images/filter.gif" border="0" alt="" /&gt;
+                    &lt;/xsl:if&gt;
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                    &lt;img src="/_layouts/images/blank.gif" width="13" style="visibility: hidden" alt="" /&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template match="/"&gt;
+              &lt;xsl:call-template name="dvt_1" /&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="dvt_1"&gt;
+              &lt;xsl:variable name="dvt_StyleName"&gt;Table&lt;/xsl:variable&gt;
+              &lt;xsl:variable name="Rows" select="/dsQueryResponse/NewDataSet/Row" /&gt;
+              &lt;xsl:variable name="dvt_RowCount" select="count($Rows)" /&gt;
+              &lt;xsl:variable name="RowLimit" select="20" /&gt;
+              &lt;xsl:variable name="FirstRow" select="$dvt_firstrow" /&gt;
+              &lt;xsl:variable name="LastRow"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="($FirstRow + $RowLimit - 1) &amp;gt; $dvt_RowCount"&gt;
+                    &lt;xsl:value-of select="$dvt_RowCount" /&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$FirstRow + $RowLimit - 1" /&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:variable&gt;
+              &lt;xsl:call-template name="dvt_1.commandheader"&gt;
+                &lt;xsl:with-param name="FirstRow" select="$FirstRow" /&gt;
+                &lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;
+                &lt;xsl:with-param name="RowLimit" select="$RowLimit" /&gt;
+                &lt;xsl:with-param name="dvt_RowCount" select="$dvt_RowCount" /&gt;
+              &lt;/xsl:call-template&gt;
+              &lt;table id="BdwpRows" border="0" width="100%" cellpadding="2" cellspacing="0"&gt;
+                &lt;tr valign="top"&gt;
+                  &lt;th class="ms-vh" width="1" /&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@CategoryId&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_0" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_0" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@ImagePath&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_1" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_1" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@LongDescription&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_2" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_2" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@Name&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_3" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_3" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@ShortDescription&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_4" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_4" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@Sku&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_5" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_5" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                  &lt;th class="ms-vh" align="left"&gt;
+                    &lt;xsl:call-template name="dvt.headerfield" ddwrt:atomic="1"&gt;
+                      &lt;xsl:with-param name="fieldname"&gt;@ThumbnailImagePath&lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtitle"&gt;
+                        &lt;xsl:value-of select="$ColName_6" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="displayname"&gt;
+                        &lt;xsl:value-of select="$ColName_6" /&gt;
+                      &lt;/xsl:with-param&gt;
+                      &lt;xsl:with-param name="fieldtype"&gt;text&lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;xsl:call-template name="dvt_1.body"&gt;
+                  &lt;xsl:with-param name="Rows" select="$Rows" /&gt;
+                  &lt;xsl:with-param name="FirstRow" select="$dvt_firstrow" /&gt;
+                  &lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;
+                &lt;/xsl:call-template&gt;
+              &lt;/table&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="dvt_1.body"&gt;
+              &lt;xsl:param name="Rows" /&gt;
+              &lt;xsl:param name="FirstRow" /&gt;
+              &lt;xsl:param name="LastRow" /&gt;
+              &lt;xsl:for-each select="$Rows"&gt;
+                &lt;xsl:if test="position() &amp;gt;= $FirstRow and position() &amp;lt;= $LastRow"&gt;
+                  &lt;xsl:call-template name="dvt_1.rowview" /&gt;
+                &lt;/xsl:if&gt;
+              &lt;/xsl:for-each&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="dvt_1.rowview"&gt;
+              &lt;tr&gt;
+                &lt;td class="ms-vb" width="1"&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$dvt_1_automode = '1'"&gt;
+                      &lt;xsl:call-template name="dvt_1.automode"&gt;
+                        &lt;xsl:with-param name="KeyField"&gt;
+                        &lt;/xsl:with-param&gt;
+                        &lt;xsl:with-param name="KeyValue" select="@*[name()=$ColumnKey]" /&gt;
+                        &lt;xsl:with-param name="Mode"&gt;select&lt;/xsl:with-param&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;span ddwrt:amkeyfield="" ddwrt:amkeyvalue="''" ddwrt:ammode="select" /&gt;
+                    &lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="fieldValue"&gt;
+                    &lt;xsl:call-template name="LFtoBR"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+                        &lt;xsl:value-of select="@CategoryId" /&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;xsl:copy-of select="$fieldValue" /&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="fieldValue"&gt;
+                    &lt;xsl:call-template name="LFtoBR"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+	                  &lt;xsl:value-of select="@ImagePath" /&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;img&gt;
+                    &lt;xsl:attribute name="src"&gt;
+                      &lt;xsl:copy-of select="$fieldValue" /&gt;
+                    &lt;/xsl:attribute&gt;
+                  &lt;/img&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="fieldValue"&gt;
+                    &lt;xsl:call-template name="LFtoBR"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+                        &lt;xsl:value-of select="@LongDescription" /&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;xsl:copy-of select="$fieldValue" /&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="output"&gt;
+                    &lt;xsl:variable name="rowId" select="@*[name()=$ColumnKey]" /&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$IsMenuVisible"&gt;
+                        &lt;div class="ms-vb-title"&gt;
+                          &lt;table height="100%" cellspacing="0" class="ms-unselectedtitle" onmouseover="MMU_EcbTableMouseOverOut(this, true)" hoverActive="ms-selectedtitle" hoverInactive="ms-unselectedtitle" oncontextmenu="this.click(); return false;" menuformat="ArrowOnHover" downArrowTitle="Open Menu"&gt;
+                            &lt;xsl:attribute name="id"&gt;
+                              &lt;xsl:value-of select="$rowId" /&gt;
+                              &lt;xsl:text&gt;t&lt;/xsl:text&gt;
+                            &lt;/xsl:attribute&gt;
+                            &lt;xsl:attribute name="onclick"&gt;
+                              &lt;xsl:call-template name="OpenActionsMenu"&gt;
+                                &lt;xsl:with-param name="method"&gt;showActionMenu&lt;/xsl:with-param&gt;
+                                &lt;xsl:with-param name="id" select="$rowId" /&gt;
+                                &lt;xsl:with-param name="menuText"&gt;
+                                  &lt;xsl:variable name="fieldValue"&gt;
+                                    &lt;xsl:call-template name="LFtoBR"&gt;
+                                      &lt;xsl:with-param name="input"&gt;
+                                        &lt;xsl:value-of select="@Name" /&gt;
+                                      &lt;/xsl:with-param&gt;
+                                    &lt;/xsl:call-template&gt;
+                                  &lt;/xsl:variable&gt;
+                                  &lt;xsl:copy-of select="$fieldValue" /&gt;
+                                &lt;/xsl:with-param&gt;
+                              &lt;/xsl:call-template&gt;
+                            &lt;/xsl:attribute&gt;
+                            &lt;tr&gt;
+                              &lt;td class="ms-vb"&gt;
+                                &lt;a onclick="event.cancelBubble=true"&gt;
+                                  &lt;xsl:if test="$ClickThroughUrl"&gt;
+                                    &lt;xsl:attribute name="href"&gt;
+                                      &lt;xsl:value-of select="concat($ClickThroughUrl, $rowId)" /&gt;
+                                    &lt;/xsl:attribute&gt;
+                                  &lt;/xsl:if&gt;
+                                  &lt;xsl:attribute name="onkeydown"&gt;
+                                    &lt;xsl:call-template name="OpenActionsMenu"&gt;
+                                      &lt;xsl:with-param name="method"&gt;actionMenuOnKeyDown&lt;/xsl:with-param&gt;
+                                      &lt;xsl:with-param name="id" select="$rowId" /&gt;
+                                      &lt;xsl:with-param name="menuText"&gt;
+                                        &lt;xsl:variable name="fieldValue"&gt;
+                                          &lt;xsl:call-template name="LFtoBR"&gt;
+                                            &lt;xsl:with-param name="input"&gt;
+                                              &lt;xsl:value-of select="@Name" /&gt;
+                                            &lt;/xsl:with-param&gt;
+                                          &lt;/xsl:call-template&gt;
+                                        &lt;/xsl:variable&gt;
+                                        &lt;xsl:copy-of select="$fieldValue" /&gt;
+                                      &lt;/xsl:with-param&gt;
+                                    &lt;/xsl:call-template&gt;
+                                  &lt;/xsl:attribute&gt;
+                                  &lt;xsl:variable name="fieldValue"&gt;
+                                    &lt;xsl:call-template name="LFtoBR"&gt;
+                                      &lt;xsl:with-param name="input"&gt;
+                                        &lt;xsl:value-of select="@Name" /&gt;
+                                      &lt;/xsl:with-param&gt;
+                                    &lt;/xsl:call-template&gt;
+                                  &lt;/xsl:variable&gt;
+                                  &lt;xsl:copy-of select="$fieldValue" /&gt;
+                                  &lt;img src="/_layouts/images/blank.gif" border="0" alt="" /&gt;
+                                &lt;/a&gt;
+                              &lt;/td&gt;
+                              &lt;td class="ms-menuimagecell" style="visibility:hidden"&gt;
+                                &lt;xsl:attribute name="id"&gt;
+                                  &lt;xsl:value-of select="$rowId" /&gt;
+                                  &lt;xsl:text&gt;ti&lt;/xsl:text&gt;
+                                &lt;/xsl:attribute&gt;
+                                &lt;img src="/_layouts/images/downarrw.gif" width="13" alt="" /&gt;
+                              &lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                        &lt;/div&gt;
+                        &lt;span /&gt;
+                      &lt;/xsl:when&gt;
+                      &lt;xsl:otherwise&gt;
+                        &lt;xsl:variable name="fieldValue"&gt;
+                          &lt;xsl:call-template name="LFtoBR"&gt;
+                            &lt;xsl:with-param name="input"&gt;
+                              &lt;xsl:value-of select="@Name" /&gt;
+                            &lt;/xsl:with-param&gt;
+                          &lt;/xsl:call-template&gt;
+                        &lt;/xsl:variable&gt;
+                        &lt;xsl:copy-of select="$fieldValue" /&gt;
+                      &lt;/xsl:otherwise&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;xsl:copy-of select="$output" /&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="fieldValue"&gt;
+                    &lt;xsl:call-template name="LFtoBR"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+                        &lt;xsl:value-of select="@ShortDescription" /&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;xsl:copy-of select="$fieldValue" /&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="fieldValue"&gt;
+                    &lt;xsl:call-template name="LFtoBR"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+                        &lt;xsl:value-of select="@Sku" /&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;xsl:copy-of select="$fieldValue" /&gt;
+                &lt;/td&gt;
+                &lt;td class="ms-vb"&gt;
+                  &lt;xsl:attribute name="style"&gt;
+                    &lt;xsl:choose&gt;
+                      &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;color:blue&lt;/xsl:when&gt;
+                      &lt;xsl:otherwise /&gt;
+                    &lt;/xsl:choose&gt;
+                  &lt;/xsl:attribute&gt;
+                  &lt;xsl:variable name="fieldValue"&gt;
+                    &lt;xsl:call-template name="LFtoBR"&gt;
+                      &lt;xsl:with-param name="input"&gt;
+                        &lt;xsl:value-of select="@ThumbnailImagePath" /&gt;
+                      &lt;/xsl:with-param&gt;
+                    &lt;/xsl:call-template&gt;
+                  &lt;/xsl:variable&gt;
+                  &lt;img&gt;
+                    &lt;xsl:attribute name="src"&gt;
+                      &lt;xsl:copy-of select="$fieldValue" /&gt;
+                    &lt;/xsl:attribute&gt;
+                  &lt;/img&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="dvt_1.navigation"&gt;
+              &lt;xsl:param name="FirstRow" /&gt;
+              &lt;xsl:param name="LastRow" /&gt;
+              &lt;xsl:param name="RowLimit" /&gt;
+              &lt;xsl:param name="dvt_RowCount" /&gt;
+              &lt;xsl:variable name="PrevRow"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="$FirstRow - $RowLimit &amp;lt; 1"&gt;1&lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$FirstRow - $RowLimit" /&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:variable&gt;
+              &lt;xsl:variable name="NextRow"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="$LastRow &amp;gt;= $dvt_RowCount"&gt;
+                    &lt;xsl:value-of select="$FirstRow" /&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:value-of select="$LastRow + 1" /&gt;
+                  &lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+              &lt;/xsl:variable&gt;
+              &lt;asp:Literal id="PagerControl" runat="server"&gt;
+                &lt;xsl:choose&gt;
+                  &lt;xsl:when test="$dvt_RowCount = 0"&gt;
+                    &lt;xsl:value-of select="$dvt_emptytext" /&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:when test="$FirstRow = 1 and $LastRow = $dvt_RowCount"&gt;
+                  &lt;/xsl:when&gt;
+                  &lt;xsl:otherwise&gt;
+                    &lt;xsl:if test="$FirstRow != 1"&gt;
+                      &lt;a&gt;
+                        &lt;xsl:attribute name="href"&gt;javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_firstrow={',$PrevRow,'}'))" /&gt;;&lt;/xsl:attribute&gt;
+                        &lt;img src="{ddwrt:PagingImageUrl('Previous')}" border="0" alt="{$PreviousLinkText}" /&gt;
+                      &lt;/a&gt;
+                      &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                    &lt;/xsl:if&gt;
+                    &lt;xsl:value-of select="$FirstRow" /&gt; - &lt;xsl:value-of select="$LastRow" /&gt;&lt;xsl:if test="$LastRow != $dvt_RowCount"&gt;&lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;&lt;a&gt;&lt;xsl:attribute name="href"&gt;javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_firstrow={',$NextRow,'}'))" /&gt;;&lt;/xsl:attribute&gt;&lt;img src="{ddwrt:PagingImageUrl('Next')}" border="0" alt="{$NextLinkText}" /&gt;&lt;/a&gt;&lt;/xsl:if&gt;&lt;/xsl:otherwise&gt;
+                &lt;/xsl:choose&gt;
+                &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                &lt;xsl:if test="$IsEditViewVisible"&gt;
+                  &lt;a href="{$dvt_url}"&gt;
+                    &lt;xsl:value-of select="$EditViewText" /&gt;
+                  &lt;/a&gt;
+                  &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                  &lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+                &lt;/xsl:if&gt;
+              &lt;/asp:Literal&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="dvt_1.commandheader"&gt;
+              &lt;xsl:param name="FirstRow" /&gt;
+              &lt;xsl:param name="LastRow" /&gt;
+              &lt;xsl:param name="RowLimit" /&gt;
+              &lt;xsl:param name="dvt_RowCount" /&gt;
+              &lt;div&gt;
+                &lt;xsl:call-template name="dvt_1.navigation"&gt;
+                  &lt;xsl:with-param name="FirstRow" select="$FirstRow" /&gt;
+                  &lt;xsl:with-param name="LastRow" select="$LastRow" /&gt;
+                  &lt;xsl:with-param name="RowLimit" select="$RowLimit" /&gt;
+                  &lt;xsl:with-param name="dvt_RowCount" select="$dvt_RowCount" /&gt;
+                &lt;/xsl:call-template&gt;
+                &lt;asp:PlaceHolder id="ActionBarTable" runat="server"&gt;
+                  &lt;table class="ms-menutoolbar" cellpadding="2" cellspacing="0" border="0" width="100%"&gt;
+                    &lt;tr&gt;
+                      &lt;td class="ms-toolbar" style="padding-left:3px;text-align:left" nowrap="true"&gt;
+                        &lt;xsl:value-of select="$ActionsText" /&gt;
+                      &lt;/td&gt;
+                      &lt;td class="ms-toolbar" style="padding-right:3px;text-align:right" nowrap="true"&gt;
+                        &lt;xsl:value-of select="$EditViewText" /&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/asp:PlaceHolder&gt;
+                &lt;asp:PlaceHolder id="SearchTable" runat="server"&gt;
+                  &lt;table width="100%" style="background-color:#efefd6"&gt;
+                    &lt;tr class="ms-vb"&gt;
+                      &lt;td&gt;
+                        &lt;select&gt;
+                          &lt;option&gt;
+                            &lt;xsl:value-of select="$FilterNameText" /&gt;
+                          &lt;/option&gt;
+                        &lt;/select&gt;
+                      &lt;/td&gt;
+                      &lt;td&gt;
+                        &lt;select&gt;
+                          &lt;option&gt;
+                            &lt;xsl:value-of select="$OperatorText" /&gt;
+                          &lt;/option&gt;
+                        &lt;/select&gt;
+                      &lt;/td&gt;
+                      &lt;td width="100%" nowrap="true"&gt;
+                        &lt;input class="ms-input" style="width:100%" /&gt;
+                      &lt;/td&gt;
+                      &lt;td valign="middle"&gt;
+                        &lt;a href="#"&gt;
+                          &lt;xsl:value-of select="$AddText" /&gt;
+                        &lt;/a&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                  &lt;table width="100%" style="background-color:#efefd6"&gt;
+                    &lt;tr&gt;
+                      &lt;td style="width:16pt;" valign="middle"&gt;
+                        &lt;xsl:choose&gt;
+                          &lt;xsl:when test="$IsRTL"&gt;
+                            &lt;img src="/_layouts/images/icongo01RTL.gif" border="0" /&gt;
+                          &lt;/xsl:when&gt;
+                          &lt;xsl:otherwise&gt;
+                            &lt;img src="/_layouts/images/icongo01.gif" border="0" /&gt;
+                          &lt;/xsl:otherwise&gt;
+                        &lt;/xsl:choose&gt;
+                      &lt;/td&gt;
+                      &lt;td class="ms-vb" valign="middle"&gt;
+                        &lt;a href="#"&gt;
+                          &lt;xsl:value-of select="$RetrieveDataText" /&gt;
+                        &lt;/a&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/asp:PlaceHolder&gt;
+              &lt;/div&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="dvt_1.automode"&gt;
+              &lt;xsl:param name="KeyField" /&gt;
+              &lt;xsl:param name="KeyValue" /&gt;
+              &lt;xsl:param name="Mode" /&gt;
+              &lt;table border="0" cellspacing="0" cellpadding="1"&gt;
+                &lt;tr&gt;
+                  &lt;xsl:choose&gt;
+                    &lt;xsl:when test="$Mode = 'edit'"&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:when test="$Mode = 'insert'"&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                    &lt;/xsl:when&gt;
+                    &lt;xsl:otherwise&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb" /&gt;
+                      &lt;td class="ms-vb"&gt;
+                        &lt;a href="#"&gt;
+                          &lt;xsl:attribute name="onclick"&gt;
+                            &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_1_form_selectkey={',$KeyValue,'}'))" /&gt;; return false;&lt;/xsl:attribute&gt;
+                          &lt;xsl:choose&gt;
+                            &lt;xsl:when test="$dvt_1_form_selectkey = @*[name()=$ColumnKey]"&gt;
+                              &lt;img border="0" style="cursor: hand" src="/_layouts/images/rbsel.gif" /&gt;
+                            &lt;/xsl:when&gt;
+                            &lt;xsl:otherwise&gt;
+                              &lt;img border="0" style="cursor: hand" src="/_layouts/images/rbunsel.gif" /&gt;
+                            &lt;/xsl:otherwise&gt;
+                          &lt;/xsl:choose&gt;
+                        &lt;/a&gt;
+                      &lt;/td&gt;
+                    &lt;/xsl:otherwise&gt;
+                  &lt;/xsl:choose&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="formatString"&gt;
+              &lt;xsl:param name="stringvalue" /&gt;
+              &lt;xsl:param name="separator" /&gt;
+              &lt;xsl:variable name="curStr" select="substring-after($stringvalue, $separator)" /&gt;
+              &lt;xsl:choose&gt;
+                &lt;xsl:when test="contains($curStr, $separator)"&gt;
+                  &lt;xsl:value-of select="substring-before($stringvalue, $separator)" /&gt;
+                  &lt;xsl:value-of select="ddwrt:UrlEncode(@*[name()=substring-before($curStr, $separator)])" /&gt;
+                  &lt;xsl:call-template name="formatString"&gt;
+                    &lt;xsl:with-param name="stringvalue" select="substring-after($curStr, $separator)" /&gt;
+                    &lt;xsl:with-param name="separator" select="$separator" /&gt;
+                  &lt;/xsl:call-template&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:otherwise&gt;
+                  &lt;xsl:value-of select="$stringvalue" /&gt;
+                &lt;/xsl:otherwise&gt;
+              &lt;/xsl:choose&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="OpenActionsMenu"&gt;
+              &lt;xsl:param name="method" /&gt;
+              &lt;xsl:param name="id" /&gt;
+              &lt;xsl:param name="menuText" /&gt;
+              &lt;xsl:value-of select="$method" /&gt;
+              &lt;xsl:text&gt;('&lt;/xsl:text&gt;
+              &lt;xsl:value-of select="$jsMenuLoadingMessage" /&gt;
+              &lt;xsl:text&gt;','&lt;/xsl:text&gt;
+              &lt;xsl:value-of select="ddwrt:EcmaScriptEncode($menuText)" /&gt;
+              &lt;xsl:text&gt;',false,'&lt;/xsl:text&gt;
+              &lt;xsl:value-of select="$jsMenuApplication" /&gt;
+              &lt;xsl:text&gt;','&lt;/xsl:text&gt;
+              &lt;xsl:value-of select="$jsMenuEntity" /&gt;
+              &lt;xsl:text&gt;','&lt;/xsl:text&gt;
+              &lt;xsl:value-of select="ddwrt:EcmaScriptEncode($id)" /&gt;
+              &lt;xsl:text&gt;');&lt;/xsl:text&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="_trimLF"&gt;
+              &lt;xsl:param name="input" /&gt;
+              &lt;xsl:choose&gt;
+                &lt;xsl:when test="starts-with($input, '&amp;#xA;')"&gt;
+                  &lt;xsl:call-template name="_trimLF"&gt;
+                    &lt;xsl:with-param name="input" select="substring($input, 2)" /&gt;
+                  &lt;/xsl:call-template&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:when test="substring($input, string-length($input), 1) = '&amp;#xA;'"&gt;
+                  &lt;xsl:call-template name="_trimLF"&gt;
+                    &lt;xsl:with-param name="input" select="substring($input, 1, string-length($input)-1)" /&gt;
+                  &lt;/xsl:call-template&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:otherwise&gt;
+                  &lt;xsl:value-of select="$input" /&gt;
+                &lt;/xsl:otherwise&gt;
+              &lt;/xsl:choose&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="_LFtoBRloop"&gt;
+              &lt;xsl:param name="input" /&gt;
+              &lt;xsl:variable name="beforeText" select="substring-before($input, '&amp;#xA;')" /&gt;
+              &lt;xsl:choose&gt;
+                &lt;xsl:when test="string-length($beforeText) = 0 and substring($input, 1, 1) != '&amp;#xA;'"&gt;
+                  &lt;xsl:value-of select="$input" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:otherwise&gt;
+                  &lt;xsl:value-of select="$beforeText" /&gt;
+                  &lt;br /&gt;
+                  &lt;xsl:call-template name="_LFtoBRloop"&gt;
+                    &lt;xsl:with-param name="input" select="substring($input, string-length($beforeText)+2)" /&gt;
+                  &lt;/xsl:call-template&gt;
+                &lt;/xsl:otherwise&gt;
+              &lt;/xsl:choose&gt;
+            &lt;/xsl:template&gt;
+            &lt;xsl:template name="LFtoBR"&gt;
+              &lt;xsl:param name="input" /&gt;
+              &lt;xsl:choose&gt;
+                &lt;xsl:when test="substring-before($input, '&amp;#xA;') = ''"&gt;
+                  &lt;xsl:value-of select="$input" /&gt;
+                &lt;/xsl:when&gt;
+                &lt;xsl:otherwise&gt;
+                  &lt;xsl:call-template name="_LFtoBRloop"&gt;
+                    &lt;xsl:with-param name="input"&gt;
+                      &lt;xsl:call-template name="_trimLF"&gt;
+                        &lt;xsl:with-param name="input" select="translate($input, '&amp;#xD;', '')" /&gt;
+                      &lt;/xsl:call-template&gt;
+                    &lt;/xsl:with-param&gt;
+                  &lt;/xsl:call-template&gt;
+                &lt;/xsl:otherwise&gt;
+              &lt;/xsl:choose&gt;
+            &lt;/xsl:template&gt;
+          &lt;/xsl:stylesheet&gt;</property>
+                  <property name="View" type="Microsoft.SharePoint.Portal.WebControls.View, Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+          &lt;View xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;Name /&gt;
+            &lt;AllowUserQueries&gt;false&lt;/AllowUserQueries&gt;
+            &lt;SortExpression /&gt;
+            &lt;MaxItemsInPage&gt;20&lt;/MaxItemsInPage&gt;
+            &lt;MaxItems&gt;0&lt;/MaxItems&gt;
+            &lt;Fields&gt;
+              &lt;string&gt;CategoryId&lt;/string&gt;
+              &lt;string&gt;ImagePath&lt;/string&gt;
+              &lt;string&gt;LongDescription&lt;/string&gt;
+              &lt;string&gt;Name&lt;/string&gt;
+              &lt;string&gt;ShortDescription&lt;/string&gt;
+              &lt;string&gt;Sku&lt;/string&gt;
+              &lt;string&gt;ThumbnailImagePath&lt;/string&gt;
+            &lt;/Fields&gt;
+            &lt;FilterValues /&gt;
+            &lt;QueryValues /&gt;
+            &lt;TitleField&gt;Name&lt;/TitleField&gt;
+            &lt;AllowPaging&gt;true&lt;/AllowPaging&gt;
+            &lt;AllowItemLimiting&gt;false&lt;/AllowItemLimiting&gt;
+            &lt;RetrieveAllItems&gt;true&lt;/RetrieveAllItems&gt;
+          &lt;/View&gt;</property>
+                  <property name="HelpMode" type="helpmode">Modeless</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>    
+        ]]>
+      </AllUsersWebPart>
+    </File>
+  </Module>
+</Elements>

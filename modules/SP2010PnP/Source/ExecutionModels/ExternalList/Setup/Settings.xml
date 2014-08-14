@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<WebApp Port="80" />
+  <user1 Name="SandboxSvcAcct"/>
+  <user2 Name="ImpersonationAcct"/>
+  <user3 Name="SecureSvcAppPool"/>
+  <user4 Name="Administrator"/>
+  <ServiceApplication Name="SPGAPP"/>
+  <ServiceProxy Name="SPGSSSA"/>
+  <TargetApp Name ="SPGSSSTA"/>
+  <Email id ="info@SPGTEST.com"/>
+  <AppPool Name ="SPGSSSA"/>
+  <Site Name="ECT" />
+</Settings>

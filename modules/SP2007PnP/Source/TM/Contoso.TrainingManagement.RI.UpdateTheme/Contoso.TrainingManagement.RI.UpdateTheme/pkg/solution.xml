@@ -1,0 +1,9 @@
+﻿<solution id="74f02676-7c5d-4b3f-92d5-f5b8069d6686" name="ContosoTheme">
+  <features>
+    <feature id="1c67a1c7-6f25-4fba-9dd0-a36197a9f637">
+      <featureElements>
+        <featureElement id="ceaf7e5c-0d93-4fae-9426-b7311a8f574a" name="ApplyTheme" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<View DisplayName="By Machine" DefaultView="TRUE" BaseViewID="1" Type="HTML" MobileView="TRUE" ImageUrl="/_layouts/images/generic.png" XslLink="main.xsl" WebPartZoneID="Main" WebPartOrder="1" Url="By Machine.aspx" SetupPath="pages\viewpage.aspx">
+  <XslLink>main.xsl</XslLink>
+  <Query>
+    <GroupBy Collapse="TRUE" GroupLimit="30">
+      <FieldRef Name="MachineLookup" />
+    </GroupBy>
+  </Query>
+  <ViewFields>
+    <FieldRef Name="PartLookup" />
+  </ViewFields>
+  <RowLimit Paged="TRUE">30</RowLimit>
+  <Aggregations Value="Off" />
+</View>
+

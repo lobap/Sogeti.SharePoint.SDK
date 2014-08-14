@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="96ba5a75-0bac-4729-b690-d49a1c77ac12" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Assemblies>
+    <Assembly Location="Contoso.PartnerPortal.PartnerCentral.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoPartnerPortalPartnerCentralSite\feature.xml" />
+    <FeatureManifest Location="ContosoPartnerPortalPartnerCentralWeb\feature.xml" />
+  </FeatureManifests>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\Contoso\PartnerRollupControl.ascx" />
+  </TemplateFiles>
+</Solution>

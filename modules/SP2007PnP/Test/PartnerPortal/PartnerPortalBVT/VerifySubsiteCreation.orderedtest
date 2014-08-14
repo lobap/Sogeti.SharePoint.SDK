@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="verifysubsitecreation" storage="c:\alvintfs\trunk\test\contoso.pss.bvt\pssbvt\verifysubsitecreation.orderedtest" id="d4bec202-0aff-4916-aeff-3e0c162e5b94" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="6ff67fda-8cf0-23ea-d67d-36a3712dcbe4" name="VerifyCreateIncidents" storage="bin\debug\pssbvt.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="49b60b8d-ce76-0a72-1a07-9dcd56ac3e81" name="VerifyCreateOrderException" storage="bin\debug\pssbvt.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="bd3a74d1-83e1-4de5-b091-6781a5cdee0f" name="VerifyPartner1Incidents" storage="bin\debug\pssbvt.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="f6a86b3f-1390-abb6-06d1-647026c57496" name="VerifyPartner2Incidents" storage="bin\debug\pssbvt.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="7be389fe-54f7-ea1c-1dc4-92cc425a348b" name="VerifyPartnerOrderExceptionSite" storage="bin\debug\pssbvt.dll" type="Microsoft.VisualStudio.TestTools.WebStress.CodedWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

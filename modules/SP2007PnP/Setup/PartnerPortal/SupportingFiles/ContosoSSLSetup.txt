@@ -1,0 +1,52 @@
+Configure SSL for ContosoServices8585 Web site
+
+The following are the steps for configuring ContosoServices8585 Web site in IIS to use the temporary certificate created in the ContosoSetup batch script for Secure Sockets Layer (SSL) communication. This will enable SSL for the transport communication. 
+
+Steps for IIS version 7
+
+1. Click Start and then click Run.
+
+2. In the Run dialog box, type inetmgr and then click OK.
+
+3. In the Internet Information Services (IIS) Manager dialog box, expand the (local computer) node, and then expand the Sites node.
+
+4. Click ContosoServices8585 and then click Bindings... in the Actions pane.  This brings up the bindings editor that lets you create, edit, and delete bindings for your website.  
+ 
+5. Click the Add... button to add your new SSL binding to the site. New bindings default to http on port 80. 
+ 
+6. Select https in the Type drop-down.  New bindings default to https on port 443
+ 
+7. Change Port from 443 to 8686. And select the certificate which has your computer name (that is automatic created by ContosoSetup.bat) from the SSL Certificate drop-down and click OK. Make sure to select the certificate that is issued by ContosoRootCATest.
+  
+8. Click Close. Now you have a new SSL binding on your site and all that remains is to verify that works.
+
+9. Restart IIS
+
+
+Steps for IIS version 6
+
+1. Click Start and then click Run.
+
+2. In the Run dialog box, type inetmgr and then click OK.
+
+3. In the Internet Information Services (IIS) Manager dialog box,expand the (local computer) node, and then expand the Web Sites node.
+
+4. Right-click ContosoServices8585 Web Site and then click Properties. 
+
+5. In the ContosoServices8585 Web Site Properties dialog box, click the Directory Security tab, and then in the Secure Communications section, click Server Certificate…
+
+6. On the Web Server Certificate Wizard welcome screen, click Next to continue.
+
+7. On the Server Certificate screen, select the Assign an existing certificate radio button option, and then click Next.
+
+8. On the Available Certificates screen, select the certificate which has your computer name (that is automatic created by ContosoSetup.bat), and then click Next. Make sure to select the certificate that is issued by ContosoRootCATest.
+
+9. Change the port number from 443 to 8686. Click Next.
+
+10. Verify the information on the certificate summary screen, and then click Next. 
+
+11. Click Finish to complete the certificate installation.
+
+12. In the ContosoServices8585 Web Site Properties dialog box, click OK.
+
+13. Restart IIS

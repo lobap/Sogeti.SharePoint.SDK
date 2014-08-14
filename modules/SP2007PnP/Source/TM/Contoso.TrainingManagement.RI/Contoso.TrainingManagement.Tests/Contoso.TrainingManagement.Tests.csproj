@@ -1,0 +1,107 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F57E910-1E4F-41FD-A3B8-CD487A0DDB67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contoso.TrainingManagement.Tests</RootNamespace>
+    <AssemblyName>Contoso.TrainingManagement.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Security, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TypeMock, Version=5.0.0.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CourseRatingFieldFixture.cs" />
+    <Compile Include="CourseRegistrationPresenterFixture.cs" />
+    <Compile Include="DirectReportsPresenterFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationApprovalPresenterFixture.cs" />
+    <Compile Include="RegistrationApprovalControllerFixture.cs" />
+    <Compile Include="ServiceLocatorFixture.cs" />
+    <Compile Include="TrainingCourseItemEventReceiverFixture.cs" />
+    <Compile Include="TrainingBudgetWebPartFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contoso.AccountingManagement\Contoso.AccountingManagement.csproj">
+      <Project>{C7F714CB-0FED-476A-AF16-4CC92B76A68A}</Project>
+      <Name>Contoso.AccountingManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.HRManagement\Contoso.HRManagement.csproj">
+      <Project>{F7D4567E-2051-4BA1-875A-3664A18F098A}</Project>
+      <Name>Contoso.HRManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Common\Contoso.TrainingManagement.Common.csproj">
+      <Project>{C14D8B62-3CE7-4E80-BDEF-A1B6D99E10DF}</Project>
+      <Name>Contoso.TrainingManagement.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Mocks\Contoso.TrainingManagement.Mocks.csproj">
+      <Project>{4D4DDDDD-3B38-44F3-B441-9D538CFDF96B}</Project>
+      <Name>Contoso.TrainingManagement.Mocks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Repository\Contoso.TrainingManagement.Repository.csproj">
+      <Project>{5EB7688B-1AB4-4421-B339-6BB347399366}</Project>
+      <Name>Contoso.TrainingManagement.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.ServiceLocator\Contoso.TrainingManagement.ServiceLocator.csproj">
+      <Project>{86C279C6-BDEC-491B-BA06-611BB2E8F139}</Project>
+      <Name>Contoso.TrainingManagement.ServiceLocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement.Workflows.RegistrationApproval\Contoso.TrainingManagement.Workflows.RegistrationApproval.csproj">
+      <Project>{805397FD-8658-42B8-AFED-3E5E87959A00}</Project>
+      <Name>Contoso.TrainingManagement.Workflows.RegistrationApproval</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.TrainingManagement\Contoso.TrainingManagement.csproj">
+      <Project>{95265FA9-2D5D-4F1A-ADB5-7D55B6A450DD}</Project>
+      <Name>Contoso.TrainingManagement</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+	<Conditions And="and" Or="or" Not="not" When="If" Else="Else if">
+		<Condition Name="Site Exists"
+            FunctionName="DoesSiteExistCondition"
+            ClassName="ExecutionModels.Workflow.FullTrust.Activities.SiteExistsActivity"
+		    Assembly="ExecutionModels.Workflow.FullTrust.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=182f888e36465f17"
+			AppliesTo="all"
+		    UsesCurrentItem="True">
+				<RuleDesigner Sentence="The site %1 exists">
+					<FieldBind Id="1" Field="_1_" Text=""/>
+				</RuleDesigner>
+				<Parameters>
+					<Parameter Name="_1_" Type="System.String, mscorlib"
+					Direction="In" />
+				</Parameters>
+			</Condition>
+	</Conditions>
+	<Actions Sequential="then" Parallel="and">
+    <Action Name="Create a Sub-Site" 
+            ClassName="ExecutionModels.Workflow.FullTrust.Activities.CreateSubSiteActivity" 
+		    Assembly="ExecutionModels.Workflow.FullTrust.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=182f888e36465f17"
+            AppliesTo="all" 
+            Category="Patterns and Practices">
+      <RuleDesigner Sentence="Create subsite at %3 using the site template %4 using the title %5 and description %6 and locale of %7.  The site will be converted if exists? %2 The site will use unique permissions? %1">        
+        <FieldBind
+                 Field="UseUniquePermissions"                  
+                 DesignerType="Boolean"
+                 Text="Use unique permissions for the sub-site"
+                 Id="1"/>
+        <FieldBind
+                 Field="ConvertIfExists"   
+                 DesignerType="Boolean"
+                 Text="Convert the sub-site to the template if it already exists"
+                 Id="2"/>
+        <FieldBind
+                  Field="SiteUrl"
+                  DesignerType="Hyperlink"
+                  Text="The full URL of the site"
+                  Id="3"/>
+        <FieldBind
+                  Field="SiteTemplateId"
+                  DesignerType="TextBox"
+                  Text="Site template Id (i.e. STS#0)"
+                  Id="4"/>
+        <FieldBind
+                  Field="SiteTitle"
+                  DesignerType="TextBox"
+                  Text="The title of the new site"
+                  Id="5"/>
+        <FieldBind
+                  Field="SiteDescription"
+                  DesignerType="TextArea"
+                  Text="The description for the new area"
+                  Id="6"/>
+        <FieldBind
+                  Field="LocaleID"
+                  DesignerType="Integer"
+                  Text="Locale ID"
+                  Id="7"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter
+                 Name="UseUniquePermissions"
+                 Type="System.Boolean, mscorlib"
+                 DisplayName="Use unique permissions"
+                 Direction="In" />
+        <Parameter
+                 Name="ConvertIfExists"
+                 Type="System.Boolean, mscorlib"
+                 DisplayName="Convert if exists"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteUrl"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteTemplateId"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteTitle"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteDescription"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="LocaleID"
+                 Type="System.Int32, mscorlib"
+                 Direction="In" />
+      </Parameters>
+    </Action>
+    <Action Name="Create Site Collection"
+            ClassName="ExecutionModels.Workflow.FullTrust.Activities.CreateSiteCollectionActivity"
+		    Assembly="ExecutionModels.Workflow.FullTrust.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=182f888e36465f17"
+            AppliesTo="all"
+            Category="Patterns and Practices">
+      <RuleDesigner Sentence="Create site collection at %1 using the site template %2 using the title %3 and description %4 and locale of %5.  The site quota name is %6.  The owner name is %7.  The owner's logon name is %8.  The owner's email address is %9.">
+        <FieldBind
+                  Field="SiteUrl"
+                  DesignerType="Hyperlink"
+                  Text="The full URL of the site"
+                  Id="1"/>
+        <FieldBind
+                  Field="SiteTemplateId"
+                  DesignerType="TextBox"
+                  Text="Site template Id (i.e. STS#0)"
+                  Id="2"/>
+        <FieldBind
+                  Field="SiteTitle"
+                  DesignerType="TextBox"
+                  Text="The title of the new site"
+                  Id="3"/>
+        <FieldBind
+                  Field="SiteDescription"
+                  DesignerType="TextArea"
+                  Text="The description for the new area"
+                  Id="4"/>
+        <FieldBind
+                  Field="LocaleID"
+                  DesignerType="Integer"
+                  Text="Locale ID"
+                  Id="5"/>
+        <FieldBind
+                 Field="QuotaName"
+                 DesignerType="Boolean"
+                 Text="Use unique permissions for the sub-site"
+                 Id="6"/>
+        <FieldBind
+                 Field="OwnerName"
+                 DesignerType="TextBox"
+                 Text="The Site owners name"
+                 Id="7"/>
+        <FieldBind
+                 Field="OwnerLogon"
+                 DesignerType="TextBox"
+                 Text="The site owner's logon name"
+                 Id="8"/>
+        <FieldBind
+                 Field="OwnerEmail"
+                 DesignerType="TextBox"
+                 Text="The site owner's email address"
+                 Id="9"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter
+                 Name="UseUniquePermissions"
+                 Type="System.Boolean, mscorlib"
+                 DisplayName="Use unique permissions"
+                 Direction="In" />
+        <Parameter
+                 Name="ConvertIfExists"
+                 Type="System.Boolean, mscorlib"
+                 DisplayName="Convert if exists"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteUrl"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteTemplateId"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteTitle"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="SiteDescription"
+                 Type="System.String, mscorlib"
+                 Direction="In" />
+        <Parameter
+                 Name="LocaleID"
+                 Type="System.Uint32, mscorlib"
+                 Direction="In" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

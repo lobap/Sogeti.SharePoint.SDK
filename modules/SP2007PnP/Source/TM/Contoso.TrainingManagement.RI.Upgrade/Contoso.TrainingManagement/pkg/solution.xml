@@ -1,0 +1,39 @@
+﻿<solution id="608cc10b-0b6f-4283-b10e-1eca4cb7a3a8" name="ContosoTrainingManagement">
+  <features>
+    <feature id="0cb4445d-ab1a-4053-9301-50c3b2666f31">
+      <featureElements>
+        <featureElement id="cecbaf2d-0e0e-4393-b6be-71eb87cd6761" name="RegistrationApprovalTaskContentType" />
+        <featureElement id="c66fc92b-b12b-4360-8905-2ee9bdf96878" name="RegistrationContentType" />
+        <featureElement id="75e45e5d-9139-446e-a0e0-edc390ca9083" name="TrainingCourseContentType" />
+        <featureElement id="82fde2ad-e0ae-4889-b3c8-8ba72c822ac1" name="TrainingCourseInstructorField" />
+        <featureElement id="fa39abe9-4672-4be3-b9d2-290c4d7a8822" name="DirectReportsWebPart" />
+        <featureElement id="1e98f121-e107-4301-854a-0db8ba88385b" name="TrainingBudgetWebPart" />
+      </featureElements>
+    </feature>
+    <feature id="8007101d-34cd-45dc-83ec-d0b6dc35edf9">
+      <featureElements>
+        <featureElement id="e8f66e05-179f-42e7-87de-b4c16a9b17ed" name="CourseRegistrationForm" />
+        <featureElement id="7dcf4989-3ff0-49bb-9740-42d8374f0bed" name="DefaultPage" />
+        <featureElement id="7432c77e-da35-4360-adc0-7dcb3a824a63" name="ManagerDashboard" />
+        <featureElement id="463a3ae8-9021-4e8b-9d96-eecff9bb589c" name="TrainingDashboard" />
+        <featureElement id="36b7f33c-7996-4e49-bd65-ae03bf0c65d1" name="Images" />
+        <featureElement id="81a3dca5-6981-4d31-bfe4-ce6744b931b0" name="AnnouncementsListInstance" />
+        <featureElement id="53c52c44-63e3-4092-b60d-09713bb3e669" name="ImagesListInstance" />
+        <featureElement id="d3809482-9c5c-4ace-a48c-a4f4ae56796d" name="RegistrationApprovalTasksListInstance" />
+        <featureElement id="615000bf-7106-4f42-a919-03922df5f81c" name="RegistrationListInstance" />
+        <featureElement id="3a888d14-a364-4a94-a534-ce6a4fd38d26" name="RegistrationListDefinition" />
+        <featureElement id="81f3bb2b-9c7f-46e6-b1cf-66be9eb3213b" name="TrainingCourseListInstance" />
+        <featureElement id="d81bd4d7-c2fc-4789-9438-6d8ca4896669" name="TrainingCourseListDefinition" />
+        <featureElement id="e472dbac-58aa-4b81-b809-387bc55bb21d" name="WorkflowHistoryListInstance" />
+      </featureElements>
+    </feature>
+    <feature id="aef4d353-c04c-4bf5-8472-e881da3802a1">
+      <featureElements>
+        <featureElement id="aef4d353-c04c-4bf5-8472-e881da3802a1" name="ContosoTrainingManagementSiteElements" />
+      </featureElements>
+    </feature>
+  </features>
+  <sitedefinitions>
+    <sitedefinition id="aef4d353-c04c-4bf5-8472-e881da3802a1"/>
+  </sitedefinitions>
+</solution>

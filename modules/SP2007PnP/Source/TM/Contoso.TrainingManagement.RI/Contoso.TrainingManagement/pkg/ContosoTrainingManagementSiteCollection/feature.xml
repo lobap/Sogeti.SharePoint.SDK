@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="0cb4445d-ab1a-4053-9301-50c3b2666f31" Title="ContosoTrainingManagementSiteCollection" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="RegistrationApprovalTaskContentType\RegistrationApprovalTaskContentType.xml" />
+    <ElementManifest Location="RegistrationContentType\RegistrationContentType.xml" />
+    <ElementManifest Location="TrainingCourseContentType\TrainingCourseContentType.xml" />
+    <ElementManifest Location="DirectReportsWebPart\DirectReportsWebPart.xml" />
+    <ElementFile Location="DirectReportsWebPart\DirectReports.webpart" />
+    <ElementManifest Location="TrainingBudgetWebPart\TrainingBudgetWebPart.xml" />
+    <ElementFile Location="TrainingBudgetWebPart\TrainingBudget.webpart" />
+  </ElementManifests>
+</Feature>

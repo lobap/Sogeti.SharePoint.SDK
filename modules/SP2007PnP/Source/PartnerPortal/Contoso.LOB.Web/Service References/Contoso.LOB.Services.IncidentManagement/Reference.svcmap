@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e514169d-b8f9-4738-8d82-0960729c7194" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8585/Contoso.LOB.Services/IncidentManagement.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IncidentManagement.xsd" MetadataType="Schema" ID="506b0a8e-3e03-41d2-abd8-f7a23c2042cf" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd1" />
+    <MetadataFile FileName="IncidentManagement.wsdl" MetadataType="Wsdl" ID="d595a55f-56cc-4857-8a64-d4afb18f7855" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="IncidentManagement.disco" MetadataType="Disco" ID="f9f4c29f-cea9-4cb9-9835-d8db279ca6bb" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?disco" />
+    <MetadataFile FileName="IncidentManagement1.xsd" MetadataType="Schema" ID="2227c156-67dc-45be-b6be-78f704a60a65" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="IncidentManagement1.wsdl" MetadataType="Wsdl" ID="5737576f-fd68-42b5-8a60-5ca3bee3e230" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?wsdl" />
+    <MetadataFile FileName="IncidentManagement2.xsd" MetadataType="Schema" ID="42b031a7-9932-4444-a9c1-ec15e20e4ae8" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd0" />
+    <MetadataFile FileName="IncidentManagement3.xsd" MetadataType="Schema" ID="b2765b60-1979-487e-9115-7b330168b792" SourceId="1" SourceUrl="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

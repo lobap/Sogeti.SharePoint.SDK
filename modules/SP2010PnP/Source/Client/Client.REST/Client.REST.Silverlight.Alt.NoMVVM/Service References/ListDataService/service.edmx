@@ -1,0 +1,976 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="Microsoft.SharePoint.DataService" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2007/05/edm">
+      <EntityType Name="AttachmentsItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="EntitySet" />
+          <PropertyRef Name="ItemId" />
+          <PropertyRef Name="Name" />
+        </Key>
+        <Property Name="EntitySet" Type="Edm.String" Nullable="false" />
+        <Property Name="ItemId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+      </EntityType>
+      <EntityType Name="CategoriesItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="CategoryName" Type="Edm.String" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.CategoriesItem_CreatedBy" FromRole="CategoriesItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.CategoriesItem_ModifiedBy" FromRole="CategoriesItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.CategoriesItem_Attachments" FromRole="CategoriesItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="DepartmentsItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="DepartmentNumber" Type="Edm.Double" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.DepartmentsItem_CreatedBy" FromRole="DepartmentsItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.DepartmentsItem_ModifiedBy" FromRole="DepartmentsItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.DepartmentsItem_Attachments" FromRole="DepartmentsItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="InventoryLocationsItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="Part" Relationship="Microsoft.SharePoint.DataService.InventoryLocationsItem_Part" FromRole="InventoryLocationsItem" ToRole="Part" />
+        <Property Name="PartId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="BinNumber" Type="Edm.String" Nullable="true" />
+        <Property Name="Quantity" Type="Edm.Double" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.InventoryLocationsItem_CreatedBy" FromRole="InventoryLocationsItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.InventoryLocationsItem_ModifiedBy" FromRole="InventoryLocationsItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.InventoryLocationsItem_Attachments" FromRole="InventoryLocationsItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="ListTemplateGalleryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.ListTemplateGalleryItem_CreatedBy" FromRole="ListTemplateGalleryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.ListTemplateGalleryItem_ModifiedBy" FromRole="ListTemplateGalleryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.ListTemplateGalleryItem_CheckedOutTo" FromRole="ListTemplateGalleryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="SiteDefinitionID" Type="Edm.String" Nullable="true" />
+        <Property Name="BaseType" Type="Edm.Int32" Nullable="true" />
+        <Property Name="ProductVersion" Type="Edm.Double" Nullable="true" />
+        <Property Name="FeatureID" Type="Edm.Guid" Nullable="true" />
+      </EntityType>
+      <EntityType Name="MachineDepartmentsItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="Machine" Relationship="Microsoft.SharePoint.DataService.MachineDepartmentsItem_Machine" FromRole="MachineDepartmentsItem" ToRole="Machine" />
+        <Property Name="MachineId" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="Department" Relationship="Microsoft.SharePoint.DataService.MachineDepartmentsItem_Department" FromRole="MachineDepartmentsItem" ToRole="Department" />
+        <Property Name="DepartmentId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.MachineDepartmentsItem_CreatedBy" FromRole="MachineDepartmentsItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.MachineDepartmentsItem_ModifiedBy" FromRole="MachineDepartmentsItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.MachineDepartmentsItem_Attachments" FromRole="MachineDepartmentsItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="MachinePartsItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="Machine" Relationship="Microsoft.SharePoint.DataService.MachinePartsItem_Machine" FromRole="MachinePartsItem" ToRole="Machine" />
+        <Property Name="MachineId" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="Part" Relationship="Microsoft.SharePoint.DataService.MachinePartsItem_Part" FromRole="MachinePartsItem" ToRole="Part" />
+        <Property Name="PartId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.MachinePartsItem_CreatedBy" FromRole="MachinePartsItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.MachinePartsItem_ModifiedBy" FromRole="MachinePartsItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.MachinePartsItem_Attachments" FromRole="MachinePartsItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="MachinesItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="ModelNumber" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Manufacturer" Relationship="Microsoft.SharePoint.DataService.MachinesItem_Manufacturer" FromRole="MachinesItem" ToRole="Manufacturer" />
+        <Property Name="ManufacturerId" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="Category" Relationship="Microsoft.SharePoint.DataService.MachinesItem_Category" FromRole="MachinesItem" ToRole="Category" />
+        <Property Name="CategoryId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.MachinesItem_CreatedBy" FromRole="MachinesItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.MachinesItem_ModifiedBy" FromRole="MachinesItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.MachinesItem_Attachments" FromRole="MachinesItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="ManufacturersItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="ManufacturerAddress" Type="Edm.String" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.ManufacturersItem_CreatedBy" FromRole="ManufacturersItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.ManufacturersItem_ModifiedBy" FromRole="ManufacturersItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.ManufacturersItem_Attachments" FromRole="ManufacturersItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="MasterPageGalleryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.MasterPageGalleryItem_CreatedBy" FromRole="MasterPageGalleryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.MasterPageGalleryItem_ModifiedBy" FromRole="MasterPageGalleryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.MasterPageGalleryItem_CheckedOutTo" FromRole="MasterPageGalleryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CompatibleUIVersionS" Relationship="Microsoft.SharePoint.DataService.MasterPageGalleryItem_CompatibleUIVersionS" FromRole="MasterPageGalleryItem" ToRole="CompatibleUIVersionS" />
+      </EntityType>
+      <EntityType Name="MasterPageGalleryCompatibleUIVersionSValue">
+        <Key>
+          <PropertyRef Name="Value" />
+        </Key>
+        <Property Name="Value" Type="Edm.String" Nullable="false" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+      </EntityType>
+      <EntityType Name="PartsItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="SKU" Type="Edm.String" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.PartsItem_CreatedBy" FromRole="PartsItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.PartsItem_ModifiedBy" FromRole="PartsItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.PartsItem_Attachments" FromRole="PartsItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="PartSuppliersItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="Part" Relationship="Microsoft.SharePoint.DataService.PartSuppliersItem_Part" FromRole="PartSuppliersItem" ToRole="Part" />
+        <Property Name="PartId" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="Supplier" Relationship="Microsoft.SharePoint.DataService.PartSuppliersItem_Supplier" FromRole="PartSuppliersItem" ToRole="Supplier" />
+        <Property Name="SupplierId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.PartSuppliersItem_CreatedBy" FromRole="PartSuppliersItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.PartSuppliersItem_ModifiedBy" FromRole="PartSuppliersItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.PartSuppliersItem_Attachments" FromRole="PartSuppliersItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="SolutionGalleryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.SolutionGalleryItem_CreatedBy" FromRole="SolutionGalleryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.SolutionGalleryItem_ModifiedBy" FromRole="SolutionGalleryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.SolutionGalleryItem_CheckedOutTo" FromRole="SolutionGalleryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="SolutionId" Type="Edm.Guid" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <Property Name="Hash" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="StyleLibraryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.StyleLibraryItem_CreatedBy" FromRole="StyleLibraryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.StyleLibraryItem_ModifiedBy" FromRole="StyleLibraryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.StyleLibraryItem_CheckedOutTo" FromRole="StyleLibraryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+      </EntityType>
+      <EntityType Name="SuppliersItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="DUNS" Type="Edm.String" Nullable="true" />
+        <Property Name="Rating" Type="Edm.Double" Nullable="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.SuppliersItem_CreatedBy" FromRole="SuppliersItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.SuppliersItem_ModifiedBy" FromRole="SuppliersItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.SuppliersItem_Attachments" FromRole="SuppliersItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="ThemeGalleryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.ThemeGalleryItem_CreatedBy" FromRole="ThemeGalleryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.ThemeGalleryItem_ModifiedBy" FromRole="ThemeGalleryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.ThemeGalleryItem_CheckedOutTo" FromRole="ThemeGalleryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="UserInformationListItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.UserInformationListItem_CreatedBy" FromRole="UserInformationListItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.UserInformationListItem_ModifiedBy" FromRole="UserInformationListItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Attachments" Relationship="Microsoft.SharePoint.DataService.UserInformationListItem_Attachments" FromRole="UserInformationListItem" ToRole="Attachments" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <Property Name="Account" Type="Edm.String" Nullable="true" />
+        <Property Name="EMail" Type="Edm.String" Nullable="true" />
+        <Property Name="MobileNumber" Type="Edm.String" Nullable="true" />
+        <Property Name="AboutMe" Type="Edm.String" Nullable="true" />
+        <Property Name="SIPAddress" Type="Edm.String" Nullable="true" />
+        <Property Name="IsSiteAdmin" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Deleted" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Picture" Type="Edm.String" Nullable="true" />
+        <Property Name="Department" Type="Edm.String" Nullable="true" />
+        <Property Name="JobTitle" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="WebPartGalleryItem" m:HasStream="true">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContentTypeID" Type="Edm.String" Nullable="true" />
+        <Property Name="ContentType" Type="Edm.String" Nullable="true" />
+        <Property Name="Created" Type="Edm.DateTime" Nullable="true" />
+        <NavigationProperty Name="CreatedBy" Relationship="Microsoft.SharePoint.DataService.WebPartGalleryItem_CreatedBy" FromRole="WebPartGalleryItem" ToRole="CreatedBy" />
+        <Property Name="CreatedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Modified" Type="Edm.DateTime" Nullable="true" m:FC_TargetPath="SyndicationUpdated" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <NavigationProperty Name="ModifiedBy" Relationship="Microsoft.SharePoint.DataService.WebPartGalleryItem_ModifiedBy" FromRole="WebPartGalleryItem" ToRole="ModifiedBy" />
+        <Property Name="ModifiedById" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CopySource" Type="Edm.String" Nullable="true" />
+        <Property Name="ApprovalStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="Path" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="CheckedOutTo" Relationship="Microsoft.SharePoint.DataService.WebPartGalleryItem_CheckedOutTo" FromRole="WebPartGalleryItem" ToRole="CheckedOutTo" />
+        <Property Name="CheckedOutToId" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="VirusStatus" Type="Edm.String" Nullable="true" />
+        <Property Name="IsCurrentVersion" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Owshiddenversion" Type="Edm.Int32" Nullable="true" ConcurrencyMode="Fixed" />
+        <Property Name="Version" Type="Edm.String" Nullable="true" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Group" Relationship="Microsoft.SharePoint.DataService.WebPartGalleryItem_Group" FromRole="WebPartGalleryItem" ToRole="Group" />
+        <Property Name="GroupValue" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="RecommendationSettings" Relationship="Microsoft.SharePoint.DataService.WebPartGalleryItem_RecommendationSettings" FromRole="WebPartGalleryItem" ToRole="RecommendationSettings" />
+      </EntityType>
+      <EntityType Name="WebPartGalleryGroupValue">
+        <Key>
+          <PropertyRef Name="Value" />
+        </Key>
+        <Property Name="Value" Type="Edm.String" Nullable="false" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+      </EntityType>
+      <EntityType Name="WebPartGalleryRecommendationSettingsValue">
+        <Key>
+          <PropertyRef Name="Value" />
+        </Key>
+        <Property Name="Value" Type="Edm.String" Nullable="false" m:FC_TargetPath="SyndicationTitle" m:FC_ContentKind="text" m:FC_KeepInContent="true" />
+      </EntityType>
+      <Association Name="CategoriesItem_CreatedBy">
+        <End Role="CategoriesItem" Type="Microsoft.SharePoint.DataService.CategoriesItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="CategoriesItem_ModifiedBy">
+        <End Role="CategoriesItem" Type="Microsoft.SharePoint.DataService.CategoriesItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="CategoriesItem_Attachments">
+        <End Role="CategoriesItem" Type="Microsoft.SharePoint.DataService.CategoriesItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="DepartmentsItem_CreatedBy">
+        <End Role="DepartmentsItem" Type="Microsoft.SharePoint.DataService.DepartmentsItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="DepartmentsItem_ModifiedBy">
+        <End Role="DepartmentsItem" Type="Microsoft.SharePoint.DataService.DepartmentsItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="DepartmentsItem_Attachments">
+        <End Role="DepartmentsItem" Type="Microsoft.SharePoint.DataService.DepartmentsItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="InventoryLocationsItem_Part">
+        <End Role="InventoryLocationsItem" Type="Microsoft.SharePoint.DataService.InventoryLocationsItem" Multiplicity="*" />
+        <End Role="Part" Type="Microsoft.SharePoint.DataService.PartsItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="InventoryLocationsItem_CreatedBy">
+        <End Role="InventoryLocationsItem" Type="Microsoft.SharePoint.DataService.InventoryLocationsItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="InventoryLocationsItem_ModifiedBy">
+        <End Role="InventoryLocationsItem" Type="Microsoft.SharePoint.DataService.InventoryLocationsItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="InventoryLocationsItem_Attachments">
+        <End Role="InventoryLocationsItem" Type="Microsoft.SharePoint.DataService.InventoryLocationsItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="ListTemplateGalleryItem_CreatedBy">
+        <End Role="ListTemplateGalleryItem" Type="Microsoft.SharePoint.DataService.ListTemplateGalleryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ListTemplateGalleryItem_ModifiedBy">
+        <End Role="ListTemplateGalleryItem" Type="Microsoft.SharePoint.DataService.ListTemplateGalleryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ListTemplateGalleryItem_CheckedOutTo">
+        <End Role="ListTemplateGalleryItem" Type="Microsoft.SharePoint.DataService.ListTemplateGalleryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachineDepartmentsItem_Machine">
+        <End Role="MachineDepartmentsItem" Type="Microsoft.SharePoint.DataService.MachineDepartmentsItem" Multiplicity="*" />
+        <End Role="Machine" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachineDepartmentsItem_Department">
+        <End Role="MachineDepartmentsItem" Type="Microsoft.SharePoint.DataService.MachineDepartmentsItem" Multiplicity="*" />
+        <End Role="Department" Type="Microsoft.SharePoint.DataService.DepartmentsItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachineDepartmentsItem_CreatedBy">
+        <End Role="MachineDepartmentsItem" Type="Microsoft.SharePoint.DataService.MachineDepartmentsItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachineDepartmentsItem_ModifiedBy">
+        <End Role="MachineDepartmentsItem" Type="Microsoft.SharePoint.DataService.MachineDepartmentsItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachineDepartmentsItem_Attachments">
+        <End Role="MachineDepartmentsItem" Type="Microsoft.SharePoint.DataService.MachineDepartmentsItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="MachinePartsItem_Machine">
+        <End Role="MachinePartsItem" Type="Microsoft.SharePoint.DataService.MachinePartsItem" Multiplicity="*" />
+        <End Role="Machine" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinePartsItem_Part">
+        <End Role="MachinePartsItem" Type="Microsoft.SharePoint.DataService.MachinePartsItem" Multiplicity="*" />
+        <End Role="Part" Type="Microsoft.SharePoint.DataService.PartsItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinePartsItem_CreatedBy">
+        <End Role="MachinePartsItem" Type="Microsoft.SharePoint.DataService.MachinePartsItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinePartsItem_ModifiedBy">
+        <End Role="MachinePartsItem" Type="Microsoft.SharePoint.DataService.MachinePartsItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinePartsItem_Attachments">
+        <End Role="MachinePartsItem" Type="Microsoft.SharePoint.DataService.MachinePartsItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="MachinesItem_Manufacturer">
+        <End Role="MachinesItem" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="*" />
+        <End Role="Manufacturer" Type="Microsoft.SharePoint.DataService.ManufacturersItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinesItem_Category">
+        <End Role="MachinesItem" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="*" />
+        <End Role="Category" Type="Microsoft.SharePoint.DataService.CategoriesItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinesItem_CreatedBy">
+        <End Role="MachinesItem" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinesItem_ModifiedBy">
+        <End Role="MachinesItem" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MachinesItem_Attachments">
+        <End Role="MachinesItem" Type="Microsoft.SharePoint.DataService.MachinesItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="ManufacturersItem_CreatedBy">
+        <End Role="ManufacturersItem" Type="Microsoft.SharePoint.DataService.ManufacturersItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ManufacturersItem_ModifiedBy">
+        <End Role="ManufacturersItem" Type="Microsoft.SharePoint.DataService.ManufacturersItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ManufacturersItem_Attachments">
+        <End Role="ManufacturersItem" Type="Microsoft.SharePoint.DataService.ManufacturersItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="MasterPageGalleryItem_CreatedBy">
+        <End Role="MasterPageGalleryItem" Type="Microsoft.SharePoint.DataService.MasterPageGalleryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MasterPageGalleryItem_ModifiedBy">
+        <End Role="MasterPageGalleryItem" Type="Microsoft.SharePoint.DataService.MasterPageGalleryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MasterPageGalleryItem_CheckedOutTo">
+        <End Role="MasterPageGalleryItem" Type="Microsoft.SharePoint.DataService.MasterPageGalleryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="MasterPageGalleryItem_CompatibleUIVersionS">
+        <End Role="MasterPageGalleryItem" Type="Microsoft.SharePoint.DataService.MasterPageGalleryItem" Multiplicity="*" />
+        <End Role="CompatibleUIVersionS" Type="Microsoft.SharePoint.DataService.MasterPageGalleryCompatibleUIVersionSValue" Multiplicity="*" />
+      </Association>
+      <Association Name="PartsItem_CreatedBy">
+        <End Role="PartsItem" Type="Microsoft.SharePoint.DataService.PartsItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="PartsItem_ModifiedBy">
+        <End Role="PartsItem" Type="Microsoft.SharePoint.DataService.PartsItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="PartsItem_Attachments">
+        <End Role="PartsItem" Type="Microsoft.SharePoint.DataService.PartsItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="PartSuppliersItem_Part">
+        <End Role="PartSuppliersItem" Type="Microsoft.SharePoint.DataService.PartSuppliersItem" Multiplicity="*" />
+        <End Role="Part" Type="Microsoft.SharePoint.DataService.PartsItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="PartSuppliersItem_Supplier">
+        <End Role="PartSuppliersItem" Type="Microsoft.SharePoint.DataService.PartSuppliersItem" Multiplicity="*" />
+        <End Role="Supplier" Type="Microsoft.SharePoint.DataService.SuppliersItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="PartSuppliersItem_CreatedBy">
+        <End Role="PartSuppliersItem" Type="Microsoft.SharePoint.DataService.PartSuppliersItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="PartSuppliersItem_ModifiedBy">
+        <End Role="PartSuppliersItem" Type="Microsoft.SharePoint.DataService.PartSuppliersItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="PartSuppliersItem_Attachments">
+        <End Role="PartSuppliersItem" Type="Microsoft.SharePoint.DataService.PartSuppliersItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="SolutionGalleryItem_CreatedBy">
+        <End Role="SolutionGalleryItem" Type="Microsoft.SharePoint.DataService.SolutionGalleryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="SolutionGalleryItem_ModifiedBy">
+        <End Role="SolutionGalleryItem" Type="Microsoft.SharePoint.DataService.SolutionGalleryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="SolutionGalleryItem_CheckedOutTo">
+        <End Role="SolutionGalleryItem" Type="Microsoft.SharePoint.DataService.SolutionGalleryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="StyleLibraryItem_CreatedBy">
+        <End Role="StyleLibraryItem" Type="Microsoft.SharePoint.DataService.StyleLibraryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="StyleLibraryItem_ModifiedBy">
+        <End Role="StyleLibraryItem" Type="Microsoft.SharePoint.DataService.StyleLibraryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="StyleLibraryItem_CheckedOutTo">
+        <End Role="StyleLibraryItem" Type="Microsoft.SharePoint.DataService.StyleLibraryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="SuppliersItem_CreatedBy">
+        <End Role="SuppliersItem" Type="Microsoft.SharePoint.DataService.SuppliersItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="SuppliersItem_ModifiedBy">
+        <End Role="SuppliersItem" Type="Microsoft.SharePoint.DataService.SuppliersItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="SuppliersItem_Attachments">
+        <End Role="SuppliersItem" Type="Microsoft.SharePoint.DataService.SuppliersItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="ThemeGalleryItem_CreatedBy">
+        <End Role="ThemeGalleryItem" Type="Microsoft.SharePoint.DataService.ThemeGalleryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ThemeGalleryItem_ModifiedBy">
+        <End Role="ThemeGalleryItem" Type="Microsoft.SharePoint.DataService.ThemeGalleryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="ThemeGalleryItem_CheckedOutTo">
+        <End Role="ThemeGalleryItem" Type="Microsoft.SharePoint.DataService.ThemeGalleryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="UserInformationListItem_CreatedBy">
+        <End Role="UserInformationListItem" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="UserInformationListItem_ModifiedBy">
+        <End Role="UserInformationListItem" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="UserInformationListItem_Attachments">
+        <End Role="UserInformationListItem" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="*" />
+        <End Role="Attachments" Type="Microsoft.SharePoint.DataService.AttachmentsItem" Multiplicity="*" />
+      </Association>
+      <Association Name="WebPartGalleryItem_CreatedBy">
+        <End Role="WebPartGalleryItem" Type="Microsoft.SharePoint.DataService.WebPartGalleryItem" Multiplicity="*" />
+        <End Role="CreatedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="WebPartGalleryItem_ModifiedBy">
+        <End Role="WebPartGalleryItem" Type="Microsoft.SharePoint.DataService.WebPartGalleryItem" Multiplicity="*" />
+        <End Role="ModifiedBy" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="WebPartGalleryItem_CheckedOutTo">
+        <End Role="WebPartGalleryItem" Type="Microsoft.SharePoint.DataService.WebPartGalleryItem" Multiplicity="*" />
+        <End Role="CheckedOutTo" Type="Microsoft.SharePoint.DataService.UserInformationListItem" Multiplicity="0..1" />
+      </Association>
+      <Association Name="WebPartGalleryItem_Group">
+        <End Role="WebPartGalleryItem" Type="Microsoft.SharePoint.DataService.WebPartGalleryItem" Multiplicity="*" />
+        <End Role="Group" Type="Microsoft.SharePoint.DataService.WebPartGalleryGroupValue" Multiplicity="0..1" />
+      </Association>
+      <Association Name="WebPartGalleryItem_RecommendationSettings">
+        <End Role="WebPartGalleryItem" Type="Microsoft.SharePoint.DataService.WebPartGalleryItem" Multiplicity="*" />
+        <End Role="RecommendationSettings" Type="Microsoft.SharePoint.DataService.WebPartGalleryRecommendationSettingsValue" Multiplicity="*" />
+      </Association>
+      <EntityContainer Name="PartsDataContext" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Attachments" EntityType="Microsoft.SharePoint.DataService.AttachmentsItem" />
+        <EntitySet Name="Categories" EntityType="Microsoft.SharePoint.DataService.CategoriesItem" />
+        <EntitySet Name="Departments" EntityType="Microsoft.SharePoint.DataService.DepartmentsItem" />
+        <EntitySet Name="InventoryLocations" EntityType="Microsoft.SharePoint.DataService.InventoryLocationsItem" />
+        <EntitySet Name="ListTemplateGallery" EntityType="Microsoft.SharePoint.DataService.ListTemplateGalleryItem" />
+        <EntitySet Name="MachineDepartments" EntityType="Microsoft.SharePoint.DataService.MachineDepartmentsItem" />
+        <EntitySet Name="MachineParts" EntityType="Microsoft.SharePoint.DataService.MachinePartsItem" />
+        <EntitySet Name="Machines" EntityType="Microsoft.SharePoint.DataService.MachinesItem" />
+        <EntitySet Name="Manufacturers" EntityType="Microsoft.SharePoint.DataService.ManufacturersItem" />
+        <EntitySet Name="MasterPageGallery" EntityType="Microsoft.SharePoint.DataService.MasterPageGalleryItem" />
+        <EntitySet Name="MasterPageGalleryCompatibleUIVersionS" EntityType="Microsoft.SharePoint.DataService.MasterPageGalleryCompatibleUIVersionSValue" />
+        <EntitySet Name="Parts" EntityType="Microsoft.SharePoint.DataService.PartsItem" />
+        <EntitySet Name="PartSuppliers" EntityType="Microsoft.SharePoint.DataService.PartSuppliersItem" />
+        <EntitySet Name="SolutionGallery" EntityType="Microsoft.SharePoint.DataService.SolutionGalleryItem" />
+        <EntitySet Name="StyleLibrary" EntityType="Microsoft.SharePoint.DataService.StyleLibraryItem" />
+        <EntitySet Name="Suppliers" EntityType="Microsoft.SharePoint.DataService.SuppliersItem" />
+        <EntitySet Name="ThemeGallery" EntityType="Microsoft.SharePoint.DataService.ThemeGalleryItem" />
+        <EntitySet Name="UserInformationList" EntityType="Microsoft.SharePoint.DataService.UserInformationListItem" />
+        <EntitySet Name="WebPartGallery" EntityType="Microsoft.SharePoint.DataService.WebPartGalleryItem" />
+        <EntitySet Name="WebPartGalleryGroup" EntityType="Microsoft.SharePoint.DataService.WebPartGalleryGroupValue" />
+        <EntitySet Name="WebPartGalleryRecommendationSettings" EntityType="Microsoft.SharePoint.DataService.WebPartGalleryRecommendationSettingsValue" />
+        <AssociationSet Name="CategoriesItem_CreatedBy" Association="Microsoft.SharePoint.DataService.CategoriesItem_CreatedBy">
+          <End Role="CategoriesItem" EntitySet="Categories" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="CategoriesItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.CategoriesItem_ModifiedBy">
+          <End Role="CategoriesItem" EntitySet="Categories" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="CategoriesItem_Attachments" Association="Microsoft.SharePoint.DataService.CategoriesItem_Attachments">
+          <End Role="CategoriesItem" EntitySet="Categories" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="DepartmentsItem_CreatedBy" Association="Microsoft.SharePoint.DataService.DepartmentsItem_CreatedBy">
+          <End Role="DepartmentsItem" EntitySet="Departments" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="DepartmentsItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.DepartmentsItem_ModifiedBy">
+          <End Role="DepartmentsItem" EntitySet="Departments" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="DepartmentsItem_Attachments" Association="Microsoft.SharePoint.DataService.DepartmentsItem_Attachments">
+          <End Role="DepartmentsItem" EntitySet="Departments" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="InventoryLocationsItem_Part" Association="Microsoft.SharePoint.DataService.InventoryLocationsItem_Part">
+          <End Role="InventoryLocationsItem" EntitySet="InventoryLocations" />
+          <End Role="Part" EntitySet="Parts" />
+        </AssociationSet>
+        <AssociationSet Name="InventoryLocationsItem_CreatedBy" Association="Microsoft.SharePoint.DataService.InventoryLocationsItem_CreatedBy">
+          <End Role="InventoryLocationsItem" EntitySet="InventoryLocations" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="InventoryLocationsItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.InventoryLocationsItem_ModifiedBy">
+          <End Role="InventoryLocationsItem" EntitySet="InventoryLocations" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="InventoryLocationsItem_Attachments" Association="Microsoft.SharePoint.DataService.InventoryLocationsItem_Attachments">
+          <End Role="InventoryLocationsItem" EntitySet="InventoryLocations" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="ListTemplateGalleryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.ListTemplateGalleryItem_CreatedBy">
+          <End Role="ListTemplateGalleryItem" EntitySet="ListTemplateGallery" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ListTemplateGalleryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.ListTemplateGalleryItem_ModifiedBy">
+          <End Role="ListTemplateGalleryItem" EntitySet="ListTemplateGallery" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ListTemplateGalleryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.ListTemplateGalleryItem_CheckedOutTo">
+          <End Role="ListTemplateGalleryItem" EntitySet="ListTemplateGallery" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachineDepartmentsItem_Machine" Association="Microsoft.SharePoint.DataService.MachineDepartmentsItem_Machine">
+          <End Role="MachineDepartmentsItem" EntitySet="MachineDepartments" />
+          <End Role="Machine" EntitySet="Machines" />
+        </AssociationSet>
+        <AssociationSet Name="MachineDepartmentsItem_Department" Association="Microsoft.SharePoint.DataService.MachineDepartmentsItem_Department">
+          <End Role="MachineDepartmentsItem" EntitySet="MachineDepartments" />
+          <End Role="Department" EntitySet="Departments" />
+        </AssociationSet>
+        <AssociationSet Name="MachineDepartmentsItem_CreatedBy" Association="Microsoft.SharePoint.DataService.MachineDepartmentsItem_CreatedBy">
+          <End Role="MachineDepartmentsItem" EntitySet="MachineDepartments" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachineDepartmentsItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.MachineDepartmentsItem_ModifiedBy">
+          <End Role="MachineDepartmentsItem" EntitySet="MachineDepartments" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachineDepartmentsItem_Attachments" Association="Microsoft.SharePoint.DataService.MachineDepartmentsItem_Attachments">
+          <End Role="MachineDepartmentsItem" EntitySet="MachineDepartments" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="MachinePartsItem_Machine" Association="Microsoft.SharePoint.DataService.MachinePartsItem_Machine">
+          <End Role="MachinePartsItem" EntitySet="MachineParts" />
+          <End Role="Machine" EntitySet="Machines" />
+        </AssociationSet>
+        <AssociationSet Name="MachinePartsItem_Part" Association="Microsoft.SharePoint.DataService.MachinePartsItem_Part">
+          <End Role="MachinePartsItem" EntitySet="MachineParts" />
+          <End Role="Part" EntitySet="Parts" />
+        </AssociationSet>
+        <AssociationSet Name="MachinePartsItem_CreatedBy" Association="Microsoft.SharePoint.DataService.MachinePartsItem_CreatedBy">
+          <End Role="MachinePartsItem" EntitySet="MachineParts" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachinePartsItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.MachinePartsItem_ModifiedBy">
+          <End Role="MachinePartsItem" EntitySet="MachineParts" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachinePartsItem_Attachments" Association="Microsoft.SharePoint.DataService.MachinePartsItem_Attachments">
+          <End Role="MachinePartsItem" EntitySet="MachineParts" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="MachinesItem_Manufacturer" Association="Microsoft.SharePoint.DataService.MachinesItem_Manufacturer">
+          <End Role="MachinesItem" EntitySet="Machines" />
+          <End Role="Manufacturer" EntitySet="Manufacturers" />
+        </AssociationSet>
+        <AssociationSet Name="MachinesItem_Category" Association="Microsoft.SharePoint.DataService.MachinesItem_Category">
+          <End Role="MachinesItem" EntitySet="Machines" />
+          <End Role="Category" EntitySet="Categories" />
+        </AssociationSet>
+        <AssociationSet Name="MachinesItem_CreatedBy" Association="Microsoft.SharePoint.DataService.MachinesItem_CreatedBy">
+          <End Role="MachinesItem" EntitySet="Machines" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachinesItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.MachinesItem_ModifiedBy">
+          <End Role="MachinesItem" EntitySet="Machines" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MachinesItem_Attachments" Association="Microsoft.SharePoint.DataService.MachinesItem_Attachments">
+          <End Role="MachinesItem" EntitySet="Machines" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="ManufacturersItem_CreatedBy" Association="Microsoft.SharePoint.DataService.ManufacturersItem_CreatedBy">
+          <End Role="ManufacturersItem" EntitySet="Manufacturers" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ManufacturersItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.ManufacturersItem_ModifiedBy">
+          <End Role="ManufacturersItem" EntitySet="Manufacturers" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ManufacturersItem_Attachments" Association="Microsoft.SharePoint.DataService.ManufacturersItem_Attachments">
+          <End Role="ManufacturersItem" EntitySet="Manufacturers" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="MasterPageGalleryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.MasterPageGalleryItem_CreatedBy">
+          <End Role="MasterPageGalleryItem" EntitySet="MasterPageGallery" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MasterPageGalleryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.MasterPageGalleryItem_ModifiedBy">
+          <End Role="MasterPageGalleryItem" EntitySet="MasterPageGallery" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MasterPageGalleryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.MasterPageGalleryItem_CheckedOutTo">
+          <End Role="MasterPageGalleryItem" EntitySet="MasterPageGallery" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="MasterPageGalleryItem_CompatibleUIVersionS" Association="Microsoft.SharePoint.DataService.MasterPageGalleryItem_CompatibleUIVersionS">
+          <End Role="MasterPageGalleryItem" EntitySet="MasterPageGallery" />
+          <End Role="CompatibleUIVersionS" EntitySet="MasterPageGalleryCompatibleUIVersionS" />
+        </AssociationSet>
+        <AssociationSet Name="PartsItem_CreatedBy" Association="Microsoft.SharePoint.DataService.PartsItem_CreatedBy">
+          <End Role="PartsItem" EntitySet="Parts" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="PartsItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.PartsItem_ModifiedBy">
+          <End Role="PartsItem" EntitySet="Parts" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="PartsItem_Attachments" Association="Microsoft.SharePoint.DataService.PartsItem_Attachments">
+          <End Role="PartsItem" EntitySet="Parts" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="PartSuppliersItem_Part" Association="Microsoft.SharePoint.DataService.PartSuppliersItem_Part">
+          <End Role="PartSuppliersItem" EntitySet="PartSuppliers" />
+          <End Role="Part" EntitySet="Parts" />
+        </AssociationSet>
+        <AssociationSet Name="PartSuppliersItem_Supplier" Association="Microsoft.SharePoint.DataService.PartSuppliersItem_Supplier">
+          <End Role="PartSuppliersItem" EntitySet="PartSuppliers" />
+          <End Role="Supplier" EntitySet="Suppliers" />
+        </AssociationSet>
+        <AssociationSet Name="PartSuppliersItem_CreatedBy" Association="Microsoft.SharePoint.DataService.PartSuppliersItem_CreatedBy">
+          <End Role="PartSuppliersItem" EntitySet="PartSuppliers" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="PartSuppliersItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.PartSuppliersItem_ModifiedBy">
+          <End Role="PartSuppliersItem" EntitySet="PartSuppliers" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="PartSuppliersItem_Attachments" Association="Microsoft.SharePoint.DataService.PartSuppliersItem_Attachments">
+          <End Role="PartSuppliersItem" EntitySet="PartSuppliers" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="SolutionGalleryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.SolutionGalleryItem_CreatedBy">
+          <End Role="SolutionGalleryItem" EntitySet="SolutionGallery" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="SolutionGalleryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.SolutionGalleryItem_ModifiedBy">
+          <End Role="SolutionGalleryItem" EntitySet="SolutionGallery" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="SolutionGalleryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.SolutionGalleryItem_CheckedOutTo">
+          <End Role="SolutionGalleryItem" EntitySet="SolutionGallery" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="StyleLibraryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.StyleLibraryItem_CreatedBy">
+          <End Role="StyleLibraryItem" EntitySet="StyleLibrary" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="StyleLibraryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.StyleLibraryItem_ModifiedBy">
+          <End Role="StyleLibraryItem" EntitySet="StyleLibrary" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="StyleLibraryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.StyleLibraryItem_CheckedOutTo">
+          <End Role="StyleLibraryItem" EntitySet="StyleLibrary" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="SuppliersItem_CreatedBy" Association="Microsoft.SharePoint.DataService.SuppliersItem_CreatedBy">
+          <End Role="SuppliersItem" EntitySet="Suppliers" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="SuppliersItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.SuppliersItem_ModifiedBy">
+          <End Role="SuppliersItem" EntitySet="Suppliers" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="SuppliersItem_Attachments" Association="Microsoft.SharePoint.DataService.SuppliersItem_Attachments">
+          <End Role="SuppliersItem" EntitySet="Suppliers" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="ThemeGalleryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.ThemeGalleryItem_CreatedBy">
+          <End Role="ThemeGalleryItem" EntitySet="ThemeGallery" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ThemeGalleryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.ThemeGalleryItem_ModifiedBy">
+          <End Role="ThemeGalleryItem" EntitySet="ThemeGallery" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="ThemeGalleryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.ThemeGalleryItem_CheckedOutTo">
+          <End Role="ThemeGalleryItem" EntitySet="ThemeGallery" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="UserInformationListItem_CreatedBy" Association="Microsoft.SharePoint.DataService.UserInformationListItem_CreatedBy">
+          <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="UserInformationListItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.UserInformationListItem_ModifiedBy">
+          <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="UserInformationListItem_Attachments" Association="Microsoft.SharePoint.DataService.UserInformationListItem_Attachments">
+          <End Role="UserInformationListItem" EntitySet="UserInformationList" />
+          <End Role="Attachments" EntitySet="Attachments" />
+        </AssociationSet>
+        <AssociationSet Name="WebPartGalleryItem_CreatedBy" Association="Microsoft.SharePoint.DataService.WebPartGalleryItem_CreatedBy">
+          <End Role="WebPartGalleryItem" EntitySet="WebPartGallery" />
+          <End Role="CreatedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="WebPartGalleryItem_ModifiedBy" Association="Microsoft.SharePoint.DataService.WebPartGalleryItem_ModifiedBy">
+          <End Role="WebPartGalleryItem" EntitySet="WebPartGallery" />
+          <End Role="ModifiedBy" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="WebPartGalleryItem_CheckedOutTo" Association="Microsoft.SharePoint.DataService.WebPartGalleryItem_CheckedOutTo">
+          <End Role="WebPartGalleryItem" EntitySet="WebPartGallery" />
+          <End Role="CheckedOutTo" EntitySet="UserInformationList" />
+        </AssociationSet>
+        <AssociationSet Name="WebPartGalleryItem_Group" Association="Microsoft.SharePoint.DataService.WebPartGalleryItem_Group">
+          <End Role="WebPartGalleryItem" EntitySet="WebPartGallery" />
+          <End Role="Group" EntitySet="WebPartGalleryGroup" />
+        </AssociationSet>
+        <AssociationSet Name="WebPartGalleryItem_RecommendationSettings" Association="Microsoft.SharePoint.DataService.WebPartGalleryItem_RecommendationSettings">
+          <End Role="WebPartGalleryItem" EntitySet="WebPartGallery" />
+          <End Role="RecommendationSettings" EntitySet="WebPartGalleryRecommendationSettings" />
+        </AssociationSet>
+        <FunctionImport Name="ConvertListTitleToEntitySetName" ReturnType="Edm.String" m:HttpMethod="GET">
+          <Parameter Name="listTitle" Type="Edm.String" Mode="In" />
+        </FunctionImport>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

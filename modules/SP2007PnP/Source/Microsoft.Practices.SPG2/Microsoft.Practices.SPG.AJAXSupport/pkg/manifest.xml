@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="f7c5f3a1-b9ee-4a46-a5f9-1c78955fd26b" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Assemblies>
+    <Assembly Location="Microsoft.Practices.SPG.AJAXSupport.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="MicrosoftSPGAJAXSupportWebApp\feature.xml" />
+  </FeatureManifests>
+</Solution>

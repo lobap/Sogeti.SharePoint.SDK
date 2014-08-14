@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="74f02676-7c5d-4b3f-92d5-f5b8069d6686" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Assemblies>
+    <Assembly Location="Contoso.RI.UpdateTheme.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoTheme\feature.xml" />
+    <FeatureManifest Location="ContosoThemeFeatureStapler\feature.xml" />
+  </FeatureManifests>
+  <TemplateFiles>
+    <TemplateFile Location="THEMES\Contoso\allday_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\alldayOver_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\ApplyFiltersActive.gif" />
+    <TemplateFile Location="THEMES\Contoso\ApplyFiltersHoverOver.gif" />
+    <TemplateFile Location="THEMES\Contoso\ApplyFiltersInactive.gif" />
+    <TemplateFile Location="THEMES\Contoso\breadcrumbBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\CONTOSO.INF" />
+    <TemplateFile Location="THEMES\Contoso\formtitlegrad_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\linksectiongrad_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\listheadergrad_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\mossExtension.css" />
+    <TemplateFile Location="THEMES\Contoso\navBullet_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\navBullet_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\navFrameBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\navHeaderBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\pageMarginBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\pageTitleBKGD_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\partgrad_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\portaltabhover.gif" />
+    <TemplateFile Location="THEMES\Contoso\portaltabselected.gif" />
+    <TemplateFile Location="THEMES\Contoso\portraitbackground.gif" />
+    <TemplateFile Location="THEMES\Contoso\quickLaunchHeader_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\recycleBinBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\rightMarginBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\siteActionBorderBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\siteTitleBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\siteTitleBKGD_simple.jpg" />
+    <TemplateFile Location="THEMES\Contoso\siteTitleBKGDBor_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\siteTitleBKGDSel_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\theme.css" />
+    <TemplateFile Location="THEMES\Contoso\titleHeader.jpg" />
+    <TemplateFile Location="THEMES\Contoso\titleHeaderBKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\toolgrad_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\topnavhover_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\topnavselected_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\vh2BKGD_cp.gif" />
+    <TemplateFile Location="THEMES\Contoso\viewheadergrad_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\weekbox_simple.gif" />
+    <TemplateFile Location="THEMES\Contoso\wpHeaderBKGD_cp.gif" />
+  </TemplateFiles>
+</Solution>

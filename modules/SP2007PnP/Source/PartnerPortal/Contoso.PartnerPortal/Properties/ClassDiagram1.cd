@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Contoso.PSS.Portal.WebParts.ConnectionDataProviders.PublishingPageField.PublishingPageFieldProvider">
+    <Position X="2.75" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Contoso.PSS.Portal.WebParts.ConnectionDataProviders.PublishingPageField.PublishingPageFieldProvider.PublishingPageFieldValue">
+        <TypeIdentifier>
+          <NewMemberFileName>WebParts\ConnectionDataProviders\PublishingPageField\PublishingPageFieldProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>WebParts\ConnectionDataProviders\PublishingPageField\PublishingPageFieldProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Contoso.PSS.Portal.WebParts.Discounts.DiscountsWebPart">
+    <Position X="5.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebParts\Discounts\DiscountsWebPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Contoso.PSS.Portal.WebParts.ConnectionDataProviders.IConnectionDataProvider">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebParts\ConnectionDataProviders\IConnectionDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

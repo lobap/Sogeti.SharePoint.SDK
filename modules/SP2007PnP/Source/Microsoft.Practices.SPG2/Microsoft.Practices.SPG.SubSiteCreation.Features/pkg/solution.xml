@@ -1,0 +1,19 @@
+﻿<solution id="5facd16e-356c-470e-b7f7-c8f3c9d47800" name="MicrosoftPracticesSPGSubSiteCreation">
+  <features>
+    <feature id="9c6f9bca-2cf5-4ec7-b493-39d081730ca7">
+      <featureElements>
+        <featureElement id="bfbd9e33-9266-4af4-a58f-b35423755cb1" name="SubSiteCreationWorkflow" />
+      </featureElements>
+    </feature>
+    <feature id="d962e88b-1ce2-44f3-b30d-8d8f23dfc2e2">
+      <featureElements>
+        <featureElement id="d48274cd-6e90-4ad4-9c36-89cc9fe1bfb6" name="Business Event Type Configuration" />
+        <featureElement id="6c8c0fd5-b7c6-48fe-9794-727a341eb0df" name="BusinessEventTypeConfiguration" />
+        <featureElement id="1a88fe5f-fc7e-4974-badd-887e130345d5" name="SubSiteCreationRequests instance" />
+        <featureElement id="96240ac3-2af6-4ca7-95a9-2288851c634b" name="SubSiteCreationRequests" />
+        <featureElement id="0d824c80-c880-4cbd-8a91-6e383d9533ca" name="SubSiteCreationRequestTasks" />
+        <featureElement id="ff8b901e-ecfc-40a4-9f34-d52de24d1088" name="SubSiteCreationRerquestWorkflowHistory" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

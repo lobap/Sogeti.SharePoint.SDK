@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels.SharePointList.PartsMgmnt", "DataModels.SharePointList.PartsMgmnt\DataModels.SharePointList.PartsMgmnt.csproj", "{5F666B39-E9FD-40A4-BFAF-533B5982036D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E96E2133-694E-4F78-A9EE-772AE7FD5B1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SharePoint.Common", "..\..\SharePoint 2010\Microsoft.Practices.SharePoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj", "{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels.SharePointList.Sandbox", "DataModels.SharePointList.Sandbox\DataModels.SharePointList.Sandbox.csproj", "{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels.SharePointList.Model", "DataModels.SharePointList.Model\DataModels.SharePointList.Model.csproj", "{FE597399-6275-4644-A01E-76753ABDF1E3}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DataModels.SharePointListData (With Tests).vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5F666B39-E9FD-40A4-BFAF-533B5982036D}.Release|x86.ActiveCfg = Release|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A4A8EF68-9CC7-4F71-B98D-0CD4AFCEA5F2}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FE597399-6275-4644-A01E-76753ABDF1E3}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57} = {E96E2133-694E-4F78-A9EE-772AE7FD5B1B}
+	EndGlobalSection
+EndGlobal

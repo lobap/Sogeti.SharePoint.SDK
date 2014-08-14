@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages" List="101" Url="Lists/ModalPages">
+    <File Url="VendorTransactionDetail.aspx" Type="GhostableInLibrary" >
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="1">
+        <![CDATA[<webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+            <metaData>
+              <type name="ExecutionModels.Sandboxed.ExternalList.VendorTransactionList.VendorTransactionList, ExecutionModels.Sandboxed.ExternalList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=faebcd6f775a6073" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              <Solution SolutionId="ccc65377-e950-4f76-96f0-5455afb33a71" xmlns="http://schemas.microsoft.com/sharepoint/" />
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Vendor Transaction</property>
+                <property name="Description" type="string">Web Part for showing the Vendor's Transactions.</property>
+                <property name="ChromeType" type="chrometype">None</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>]]>
+        </AllUsersWebPart>
+    </File>
+</Module>
+  <CustomAction Location="ScriptLink" ScriptBlock ="
+                function ShowVendorDetailsDialog(url) {
+    var options = SP.UI.$create_DialogOptions();
+    options.url = url;
+    options.height = 300;
+    SP.UI.ModalDialog.showModalDialog(options);
+}">
+</CustomAction>
+</Elements>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Parts Management Pages" List="101" Url="">
+  <File Url="PartsMgmntPages/SearchPage.aspx" Path ="Pages\PartsMgmnt.aspx" Type ="Ghostable" >
+    <Property Name="Title" Value="Search Page" />
+    <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+      <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.SearchPage.SearchPage, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Part Search By SKU</property>
+                <property name="Description" type="string">Search for a part by its SKU</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+    </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageParts.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Parts" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageParts.ManageParts, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Parts</property>
+                <property name="Description" type="string">Search for a Parts by its Sku</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageMachines.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Machines" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageMachines.ManageMachines, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Machines</property>
+                <property name="Description" type="string">Search for a Machine by its Name</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageSuppliers.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Part Suppliers" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageSuppliers.ManageSuppliers, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Supplier Search By Name</property>
+                <property name="Description" type="string">Search for a Supplier by its Name</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageManufacturers.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Manufacturers" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageManufacturers.ManageManufacturers, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Manufacturers</property>
+                <property name="Description" type="string">Search for a Manufacturer By Name</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File >
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageCategories.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Categories" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageCategories.ManageCategories, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Categories</property>
+                <property name="Description" type="string">Search for a Category By Name</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageDepartments.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Departments" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageDepartments.ManageDepartments, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Departments</property>
+                <property name="Description" type="string">Search for a Department By Name</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManageInventory.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Inventory" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManageInventory.ManageInventory, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Inventory</property>
+                <property name="Description" type="string">Search for a part and update the related inventory locations</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File>
+    
+        <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManagePartMachines.aspx" Type ="Ghostable" >
+          <Property Name="Title" Value="Manage Machine Parts" />
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManagePartMachines.ManagePartMachines, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Machines for Part</property>
+                <property name="Description" type="string">Search for a part and update the related inventory locations</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File>
+
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManagePartSuppliers.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Part Suppliers" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManagePartSuppliers.ManagePartSuppliers, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Suppliers for Part</property>
+                <property name="Description" type="string">Search for a part and update the related inventory locations</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File>
+
+    <File Path="Pages\PartsMgmnt.aspx" Url="PartsMgmntPages/ManagePartLocations.aspx" Type ="Ghostable" >
+      <Property Name="Title" Value="Manage Part Locations" />
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[ <webParts>
+          <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">         
+            <metaData>
+              <type name="DataModels.SharePointList.PartsMgmnt.ManagePartLocations.ManagePartLocations, DataModels.SharePointList.PartsMgmnt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bec531ba08cb25fc" />
+              <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>              
+            </metaData>
+            <data>
+              <properties>
+                <property name="Title" type="string">Manage Inventory Locations for Part</property>
+                <property name="Description" type="string">Search for a part and update the related inventory locations</property>
+              </properties>
+            </data>
+          </webPart>
+        </webParts>
+  ]]>
+      </AllUsersWebPart>
+    </File>
+</Module>
+  <CustomAction Location="ScriptLink" ScriptBlock ="
+                function ShowModalDialog(url) {
+    var options = SP.UI.$create_DialogOptions();
+    options.url = url;
+    options.height = 400;
+    SP.UI.ModalDialog.showModalDialog(options);
+}">
+  </CustomAction>
+</Elements>

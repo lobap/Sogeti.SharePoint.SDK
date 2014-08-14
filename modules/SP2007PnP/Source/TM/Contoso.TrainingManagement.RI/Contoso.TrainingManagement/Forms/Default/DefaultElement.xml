@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="7dcf4989-3ff0-49bb-9740-42d8374f0bed" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="DefaultPage">
+    <File Path="default.aspx" Url="default.aspx" NavBarHome="True" Type="Ghostable">
+      <View List="Lists/Announcements" BaseViewID="0" WebPartOrder="1" WebPartZoneID="Left"/>
+    </File>
+  </Module>
+</Elements>

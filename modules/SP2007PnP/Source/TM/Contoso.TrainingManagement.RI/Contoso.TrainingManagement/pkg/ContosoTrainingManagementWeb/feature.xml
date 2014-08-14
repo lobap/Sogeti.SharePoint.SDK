@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="8007101d-34cd-45dc-83ec-d0b6dc35edf9" Title="ContosoTrainingManagementWeb" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="CourseRegistrationForm\CourseRegistrationElement.xml" />
+    <ElementFile Location="CourseRegistrationForm\CourseRegistration.aspx" />
+    <ElementManifest Location="DefaultPage\DefaultElement.xml" />
+    <ElementFile Location="DefaultPage\default.aspx" />
+    <ElementManifest Location="ManagerDashboard\ManagerDashboardElement.xml" />
+    <ElementFile Location="ManagerDashboard\managerdashboard.aspx" />
+    <ElementManifest Location="TrainingDashboard\TrainingDashboardElement.xml" />
+    <ElementFile Location="TrainingDashboard\trainingdashboard.aspx" />
+    <ElementManifest Location="AnnouncementsListInstance\AnnouncementsListInstance.xml" />
+    <ElementManifest Location="RegistrationApprovalTasksListInstance\RegistrationApprovalTasksListInstance.xml" />
+    <ElementManifest Location="RegistrationListInstance\RegistrationListInstance.xml" />
+    <ElementManifest Location="RegistrationListDefinition\RegistrationListTemplate.xml" />
+    <ElementFile Location="RegistrationListDefinition\schema.xml" />
+    <ElementFile Location="RegistrationListDefinition\AllItems.aspx" />
+    <ElementFile Location="RegistrationListDefinition\DispForm.aspx" />
+    <ElementFile Location="RegistrationListDefinition\EditForm.aspx" />
+    <ElementFile Location="RegistrationListDefinition\NewForm.aspx" />
+    <ElementManifest Location="TrainingCourseListInstance\TrainingCourseListInstance.xml" />
+    <ElementManifest Location="TrainingCourseListDefinition\TrainingCourseListTemplate.xml" />
+    <ElementFile Location="TrainingCourseListDefinition\schema.xml" />
+    <ElementFile Location="TrainingCourseListDefinition\AllItems.aspx" />
+    <ElementFile Location="TrainingCourseListDefinition\DispForm.aspx" />
+    <ElementFile Location="TrainingCourseListDefinition\EditForm.aspx" />
+    <ElementFile Location="TrainingCourseListDefinition\NewForm.aspx" />
+    <ElementManifest Location="WorkflowHistoryListInstance\WorkflowHistoryListInstance.xml" />
+  </ElementManifests>
+</Feature>

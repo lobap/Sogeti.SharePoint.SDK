@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="59225c51-8ac1-4ba4-8477-2a1d337b32b8" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature id at deployment time.
+  -->
+  <ListInstance FeatureId="791c56ba-bd97-445f-94eb-02988ad30160" 
+                Title="SPGDebuggingQuickStartList" 
+                Url="Lists/SPGDebuggingQuickStartList" 
+                OnQuickLaunch="TRUE" 
+                QuickLaunchUrl="Lists/SPGDebuggingQuickStartList">
+  </ListInstance>
+</Elements>

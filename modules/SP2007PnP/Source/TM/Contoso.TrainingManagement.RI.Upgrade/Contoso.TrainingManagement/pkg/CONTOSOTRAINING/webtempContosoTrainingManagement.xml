@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates>
+  <Template Name="CONTOSOTRAINING" ID="99999">
+    <Configuration ID="0" Title="Contoso Training Management Site" Description="Contoso Training Management Site" Hidden="FALSE" ImageUrl="/_layouts/images/stsprev.png" DisplayCategory="Contoso" />
+  </Template>
+</Templates>

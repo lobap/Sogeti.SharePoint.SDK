@@ -1,0 +1,14 @@
+﻿<solution id="96ba5a75-0bac-4729-b690-d49a1c77ac12" name="ContosoPartnerPortalPartnerCentral">
+  <features>
+    <feature id="212f448e-32bb-4bee-b7c6-f845cf7c33ac">
+      <featureElements>
+        <featureElement id="5bfc33be-50bd-4a8b-af3c-513ff0041dd3" name="PartnerRollupWebPart" />
+      </featureElements>
+    </feature>
+    <feature id="57e15457-3dff-4be4-b22c-08f1325463ff">
+      <featureElements>
+        <featureElement id="aba0dfb7-c224-4068-9c32-9ad73fe56b21" name="PartnerRollupPage" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

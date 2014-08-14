@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="60c36335-3939-4f87-88d4-cd07110663d7" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature Id at deployment time.
+  -->
+  <ListInstance FeatureId="9fa1ef02-f1ae-4444-8d23-55edffd2138e" 
+                Title="DemoMedia" 
+                Url="Movie Libraries/DemoMedia">
+  </ListInstance>
+</Elements>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="0b4849e8-3438-4009-831b-92ee23ffd139" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentType ID="0x010046cc7715a39948c7bf4a3682cc8a02c3" Name="SPGDebuggingQuickStartContentType" Group="Development" Description="Developing Content Type" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{550233a6-836e-427c-b9ac-323f5ccef7a9}" Name="MyDateTimeField1" />
+      <FieldRef ID="{b6208e5b-6c81-4a0d-b21d-5b51e134009d}" Name="MyDateTimeField2" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers>
+          <Receiver>
+            <Name>ItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Class>fb154e84-a558-4542-a8c5-988acec4d930</Class>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <Field ID="{550233a6-836e-427c-b9ac-323f5ccef7a9}" Type="DateTime" Name="MyDateTimeField1" DisplayName="MyDateTimeField 1" StaticName="MyDateTimeField 1" Hidden="FALSE" Required="FALSE" Sealed="FALSE" Format="DateOnly"/>
+  <Field ID="{b6208e5b-6c81-4a0d-b21d-5b51e134009d}" Type="DateTime" Name="MyDateTimeField2" DisplayName="MyDateTimeField 2" StaticName="MyDateTimeField 2" Hidden="TRUE" Required="FALSE" Sealed="FALSE" Format="DateOnly"/>
+</Elements>

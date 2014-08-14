@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="3CE74201-9343-444a-8E2B-636F0A74F362" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PartnerRedirect" RootWebOnly="true">
+    <File Path="partnerredirect.aspx" Url="partnerredirect.aspx" Type="Ghostable" >
+    </File>
+  </Module>
+</Elements>

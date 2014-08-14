@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution SolutionId="5e274eac-0b03-4284-81a4-94d05316f1cc" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <FeatureManifests>
+    <FeatureManifest Location="ContosoTrainingManagementSiteCollection\feature.xml" />
+    <FeatureManifest Location="ContosoTrainingManagementWeb\feature.xml" />
+    <FeatureManifest Location="ContosoTrainingManagementSiteElements\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Contoso.TrainingManagement.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Contoso.TrainingManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" Namespace="Contoso.TrainingManagement.WebParts" TypeName="*" Safe="True" />
+      </SafeControls>
+    </Assembly>
+    <Assembly Location="Contoso.HRManagement.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Contoso.TrainingManagement.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Contoso.TrainingManagement.ServiceLocator.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Contoso.AccountingManagement.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Contoso.TrainingManagement.Repository.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <SiteDefinitionManifests>
+    <SiteDefinitionManifest Location="CONTOSOTRAINING">
+      <WebTempFile Location="1033\xml\webtempContosoTrainingManagement.xml" />
+    </SiteDefinitionManifest>
+  </SiteDefinitionManifests>
+  <TemplateFiles>
+    <TemplateFile Location="ControlTemplates\TrainingManagement\DirectReports.ascx" />
+    <TemplateFile Location="Images\TrainingManagement\level0.gif" />
+    <TemplateFile Location="Images\TrainingManagement\level1.gif" />
+    <TemplateFile Location="Images\TrainingManagement\level2.gif" />
+    <TemplateFile Location="Images\TrainingManagement\level3.gif" />
+    <TemplateFile Location="Images\TrainingManagement\level4.gif" />
+    <TemplateFile Location="Images\TrainingManagement\level5.gif" />
+    <TemplateFile Location="Layouts\Contoso\RegistrationApproval.aspx" />
+    <TemplateFile Location="Layouts\layouts.sitemap.contosoregistrationapproval.xml" />
+    <TemplateFile Location="xml\fldtypes_CourseDifficultyLevel.xml" />
+  </TemplateFiles>
+</Solution>

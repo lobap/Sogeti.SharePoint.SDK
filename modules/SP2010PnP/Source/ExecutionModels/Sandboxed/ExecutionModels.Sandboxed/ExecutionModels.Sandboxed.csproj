@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" IsSafeAgainstScript="true">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E7F148E-B581-420A-BED6-E38444B2DFE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExecutionModels.Sandboxed</RootNamespace>
+    <AssemblyName>ExecutionModels.Sandboxed</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <SandboxedSolution>True</SandboxedSolution><IncludeAssemblyInPackage>True</IncludeAssemblyInPackage>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <IsSafeAgainstScript>true</IsSafeAgainstScript>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\..\Build\TeamBuildTypes\MicrosoftExtendedCorrectnessRulesTreatAsErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AggregateView\EstimatesService.cs" />
+    <Compile Include="AggregateView\AggregateView.cs" />
+    <Compile Include="AggregateView\IEstimatesService.cs" />
+    <Compile Include="AggregateView\IAggregateView.cs" />
+    <Compile Include="AggregateView\AggregateViewPresenter.cs" />
+    <Compile Include="Features\EstimateCTs\EstimateCTs.EventReceiver.cs">
+      <DependentUpon>EstimateCTs.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\EstimatesInstance\EstimatesInstance.EventReceiver.cs">
+      <DependentUpon>EstimatesInstance.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ProjectsList\ProjectsList.EventReceiver.cs">
+      <DependentUpon>ProjectsList.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Shared Code\Common\Templates\estimate.xltx">
+      <Link>Templates\estimate.xltx</Link>
+    </None>
+    <None Include="..\..\Shared Code\Common\Templates\SOW.dotx">
+      <Link>Templates\SOW.dotx</Link>
+    </None>
+    <None Include="AggregateView\Sandbox-AggregateView.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AggregateView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b2a6f29a-f2fa-4784-81ff-fe8ea331fcd2}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Estimates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d413b1b-6d27-4532-8f11-9a39e5f0b196}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\EstimateCTs\EstimateCTs.feature">
+      <FeatureId>{ded26074-e93b-433c-b64a-f414c2c91076}</FeatureId>
+    </None>
+    <None Include="Features\EstimatesInstance\EstimatesInstance.feature">
+      <FeatureId>{922a4c7b-e641-42e3-bdf8-bd26c3737373}</FeatureId>
+    </None>
+    <None Include="Features\ProjectsList\ProjectsList.feature">
+      <FeatureId>{5972bee6-868a-4ef7-aba1-6e161484c702}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{df889e22-f88f-452c-b97a-423869ea2b52}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Projects\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56786da5-ffd0-4ed7-a81a-4b9456564d32}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{74bcee25-2e2c-4332-8a04-9a86185ff943}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c05c291-dff8-496a-a1b6-25aa4064dfbd}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AggregateView\Elements.xml" />
+    <Content Include="Estimates\Elements.xml" />
+    <Content Include="Features\EstimateCTs\EstimateCTs.Template.xml">
+      <DependentUpon>EstimateCTs.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\EstimatesInstance\EstimatesInstance.Template.xml">
+      <DependentUpon>EstimatesInstance.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\ProjectsList\ProjectsList.Template.xml">
+      <DependentUpon>ProjectsList.feature</DependentUpon>
+    </Content>
+    <Content Include="Projects\Elements.xml" />
+    <Content Include="SiteColumns\Elements.xml" />
+    <Content Include="Templates\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sharepoint 2010\Microsoft.Practices.Sharepoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj">
+      <Project>{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj">
+      <Project>{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}</Project>
+      <Name>ExecutionModels.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[MachineParts]
+    ADD CONSTRAINT [FK_MachineParts_Parts] FOREIGN KEY ([PartSKU]) REFERENCES [dbo].[Parts] ([SKU]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

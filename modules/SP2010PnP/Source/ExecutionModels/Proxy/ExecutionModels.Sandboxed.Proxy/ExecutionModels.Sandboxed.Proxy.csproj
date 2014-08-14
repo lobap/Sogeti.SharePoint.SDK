@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E7F148E-B581-420A-BED6-E38444B2DFE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExecutionModels.Sandboxed.Proxy</RootNamespace>
+    <AssemblyName>ExecutionModels.Sandboxed.Proxy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <SandboxedSolution>True</SandboxedSolution><IncludeAssemblyInPackage>True</IncludeAssemblyInPackage>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\..\Build\TeamBuildTypes\MicrosoftExtendedCorrectnessRulesTreatAsErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AggregateView\AggregateView.cs" />
+    <Compile Include="AggregateView\EstimatesService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AggregateView\IAggregateView.cs" />
+    <Compile Include="AggregateView\AggregateViewPresenter.cs" />
+    <Compile Include="AggregateView\IEstimatesService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="VendorDetails\VendorDetails.cs" />
+    <Compile Include="VendorDetails\VendorService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VendorDetails\VendorDetailsPresenter.cs" />
+    <Compile Include="VendorDetails\IVendorDetails.cs" />
+    <Compile Include="VendorDetails\IVendorService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Shared Code\Common\Templates\estimate.xltx">
+      <Link>Templates\estimate.xltx</Link>
+    </None>
+    <None Include="..\..\Shared Code\Common\Templates\SOW.dotx">
+      <Link>Templates\SOW.dotx</Link>
+    </None>
+    <None Include="AggregateView\Proxy-AggregateView.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AggregateView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b2a6f29a-f2fa-4784-81ff-fe8ea331fcd2}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.config" />
+    <None Include="VendorDetails\VendorDetails.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4e80cda-4cb6-4e3b-a3c0-32fc5102f0f2}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\WebParts\WebParts.feature">
+      <FeatureId>{56c2b378-a182-477d-b06a-b732b294cc06}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{df889e22-f88f-452c-b97a-423869ea2b52}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PagesLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fdaeae5f-a6ab-434d-ae71-cb3f9eab5222}</SharePointProjectItemId>
+    </None>
+    <None Include="Templates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f864aa25-0b6a-41f0-af4c-e14f464f846a}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d18f46da-c62f-45e7-8e32-3c7d3d9cadf3}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AggregateView\Elements.xml" />
+    <Content Include="VendorDetails\Elements.xml" />
+    <Content Include="Features\WebParts\WebParts.Template.xml">
+      <DependentUpon>WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="PagesLibrary\Elements.xml" />
+    <None Include="Pages\VendorDetail.aspx" />
+    <Content Include="Templates\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sharepoint 2010\Microsoft.Practices.Sharepoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj">
+      <Project>{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj">
+      <Project>{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}</Project>
+      <Name>ExecutionModels.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VendorSystemProxy\VendorSystemProxy.csproj">
+      <Project>{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}</Project>
+      <Name>VendorSystemProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

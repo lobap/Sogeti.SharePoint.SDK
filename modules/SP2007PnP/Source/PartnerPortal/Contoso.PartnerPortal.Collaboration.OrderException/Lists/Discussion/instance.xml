@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="9086ec22-ce38-46a6-811f-057376aa4e21" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature Id at deployment time.
+  -->
+  <ListInstance FeatureId="cf22c15f-461e-4111-9400-1e9c1f852712" 
+                Title="Discussion instance" 
+                Url="Lists/Discussion">
+  </ListInstance>
+</Elements>

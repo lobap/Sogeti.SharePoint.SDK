@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="5c431d05-f9ab-48d0-94d0-152b4243b333" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Product Page">
+    <File Path="Product.aspx" Url="Product.aspx" Type="Ghostable" >
+    </File>
+  </Module>
+</Elements>

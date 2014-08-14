@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Contoso.LOB.Services/2009/01" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Contoso.LOB.Services/2009/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Contoso.LOB.Services/2009/01/Imports">
+      <xsd:import schemaLocation="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd0" namespace="http://Contoso.LOB.Services/2009/01" />
+      <xsd:import schemaLocation="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/Pricing.svc?xsd=xsd2" namespace="http://Contoso.LOB.Services/2009/01/BusinessEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPricing_GetPriceBySku_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceBySku" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetPriceBySku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceBySkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscountById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountById" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscountById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscountByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountByName" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscountByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscounts" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscountsBySku_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountsBySku" />
+  </wsdl:message>
+  <wsdl:message name="IPricing_GetDiscountsBySku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountsBySkuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPricing">
+    <wsdl:operation name="GetPriceBySku">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetPriceBySku" message="tns:IPricing_GetPriceBySku_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetPriceBySkuResponse" message="tns:IPricing_GetPriceBySku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountById">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountById" message="tns:IPricing_GetDiscountById_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountByIdResponse" message="tns:IPricing_GetDiscountById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountByName">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountByName" message="tns:IPricing_GetDiscountByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountByNameResponse" message="tns:IPricing_GetDiscountByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscounts">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscounts" message="tns:IPricing_GetDiscounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountsResponse" message="tns:IPricing_GetDiscounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountsBySku">
+      <wsdl:input wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountsBySku" message="tns:IPricing_GetDiscountsBySku_InputMessage" />
+      <wsdl:output wsaw:Action="http://Contoso.LOB.Services/2009/01/IPricing/GetDiscountsBySkuResponse" message="tns:IPricing_GetDiscountsBySku_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

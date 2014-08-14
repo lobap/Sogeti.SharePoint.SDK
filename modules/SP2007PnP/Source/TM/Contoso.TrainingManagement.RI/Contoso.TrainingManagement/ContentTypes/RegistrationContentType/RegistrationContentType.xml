@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="c66fc92b-b12b-4360-8905-2ee9bdf96878" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{11b6eba7-d1a1-4d15-9770-645052681e40}" Type="Integer" Name="CourseId" DisplayName="Course Id" Hidden="TRUE" Required="TRUE" Sealed="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{7277EB32-0529-4f5a-9F40-42220C327C55}" Type="Integer" Name="UserId" DisplayName="User Id" Hidden="TRUE" Required="TRUE" Sealed="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{4782FC5D-5A82-4f7e-BD4D-BB4407A3D473}" Type="User" Name="User" DisplayName="User" Hidden="FALSE" Required="TRUE" Sealed="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" />
+  <Field ID="{0711F3FA-7D65-4653-8E46-7835D48063EA}" Type="Choice" Name="RegistrationStatus" DisplayName="Status" Hidden="FALSE" Required="TRUE" Sealed="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" >
+    <CHOICES>
+      <CHOICE>Pending</CHOICE>
+      <CHOICE>Approved</CHOICE>
+      <CHOICE>Rejected</CHOICE>
+    </CHOICES>
+  </Field>
+  <ContentType ID="0x010006a454a442104771b18a852ea7df1e0f" Name="Registration" Group="Contoso" Description="Registration Content Type" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{11b6eba7-d1a1-4d15-9770-645052681e40}" Name="CourseId" />
+      <FieldRef ID="{7277EB32-0529-4f5a-9F40-42220C327C55}" Name="UserId" />
+      <FieldRef ID="{4782FC5D-5A82-4f7e-BD4D-BB4407A3D473}" Name="User" />
+      <FieldRef ID="{0711F3FA-7D65-4653-8E46-7835D48063EA}" Name="RegistrationStatus" />        
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers />
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormsUrl xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>CourseRegistration.aspx</New>
+        </FormsUrl>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>  
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates>
+  <Template Name="ORDEREXCEPTION" ID="99999">
+    <Configuration ID="0" Title="Contoso.PSS.OrderException" Description="" Hidden="FALSE" ImageUrl="/_layouts/images/stsprev.png" DisplayCategory="Development" />
+  </Template>
+</Templates>

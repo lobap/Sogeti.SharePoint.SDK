@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d822a399-f4d6-4c8b-8ace-c745422a230c" solutionId="d822a399-f4d6-4c8b-8ace-c745422a230c" resetWebServer="false" name="ExecutionModels.Sandboxed.Proxy" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="VendorSystemProxy.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\VendorSystemProxy\VendorSystemProxy.csproj" />
+    <projectOutputAssembly location="ExecutionModels.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\ExecutionModels.Common\ExecutionModels.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="56c2b378-a182-477d-b06a-b732b294cc06" />
+  </features>
+</package>

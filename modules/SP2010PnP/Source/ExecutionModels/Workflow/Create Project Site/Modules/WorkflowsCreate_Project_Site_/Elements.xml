@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsCreate Project Site_" Url="_catalogs/wfpub/Create Project Site" RootWebOnly="FALSE" Path="Files\Workflows\Create Project Site" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Create Project Site.xsn" Type="GhostableInLibrary" Path="CreateProjectSite.xsn">
+			<Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/Manufacturing/_catalogs/wfpub/Create Project Site" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site.xsn" />
+			<Property Name="MetaInfo" Value="7;#vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;ipfs_streamhash:SW|bX0nni3kUoKjlVWPAsFbtaUpG3MhAl70r9gIP8cAxHY=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x01010700B80CEF325729BB4D839E52EDB1E5789C&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;" />
+			<Property Name="Order" Value="700.000000000000" />
+		</File>
+		<File Url="Create Project Site.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="CreateProjectSite.xoml.wfconfig.xml">
+			<Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/Manufacturing/_catalogs/wfpub/Create Project Site" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="5;#WorkflowDisplayName:SW|Create Project Site&#xD;&#xA;FSObjType:SW|0&#xD;&#xA;Order:SW|1100.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;FileDirRef:SW|sites/Estimates/_catalogs/wfpub/Create Project Site&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|_catalogs/wfpub/Create Project Site/Create Project Site.xoml&#xD;&#xA;NoCodeVisibility:SW|Public&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;MetaInfo:SW|11;#BaseAssociationGuid:SW|{725AF4E2-4A14-4D3D-B8D8-BB3408608DCE}\r\nWorkflowDisplayName:SW|Create Project Site\r\nvti_parserversion:SR|14.0.0.4730\r\nvti_folderitemcount:IR|0\r\nvti_charset:SR|utf-8\r\nXomlUrl:SW|_catalogs/wfpub/Create Project Site/Create Project Site.xoml\r\nNoCodeVisibility:SW|Public\r\nvti_author:SR|DEMOS\\\\Administrator\r\nvti_foldersubfolderitemcount:IR|0\r\nAssociatedListId:SW|\r\nvti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId\r\nvti_modifiedby:SR|DEMOS\\\\Administrator\r\nvti_privatelistexempt:BW|true\r\nvti_title:SR|Create Project Site.xoml.wfconfig.xml\r\nContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F\r\nContentType:SW|User Workflow Document\r\nRulesUrl:SW|_catalogs/wfpub/Create Project Site/Create Project Site.xoml.rules\r\nRestrictContentTypeId:SW|0x010100B022E34803AB43AEA87C937368261B49\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;FileLeafRef:SW|Create Project Site.xoml.wfconfig.xml&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SW|Create Project Site.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x01010700B80CEF325729BB4D839E52EDB1E5789C&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|_catalogs/wfpub/Create Project Site/Create Project Site.xoml.rules&#xD;&#xA;RestrictContentTypeId:SW|0x010100B022E34803AB43AEA87C937368261B49&#xD;&#xA;BaseAssociationGuid:SW|{725AF4E2-4A14-4D3D-B8D8-BB3408608DCE}&#xD;&#xA;" />
+			<Property Name="Order" Value="1100.00000000000" />
+		</File>
+		<File Url="Create Project Site.xoml.rules" Type="GhostableInLibrary" Path="CreateProjectSite.xoml.rules">
+			<Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/Manufacturing/_catalogs/wfpub/Create Project Site" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site.xoml.rules" />
+			<Property Name="MetaInfo" Value="4;#FSObjType:SW|0&#xD;&#xA;Order:SW|1300.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;ContentTypeId:SW|0x01010700B80CEF325729BB4D839E52EDB1E5789C&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;FileDirRef:SW|sites/Estimates/_catalogs/wfpub/Create Project Site&#xD;&#xA;FileLeafRef:SW|Create Project Site.xoml.rules&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;MetaInfo:SW|13;#vti_parserversion:SR|14.0.0.4730\r\nvti_folderitemcount:IR|0\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_modifiedby:SR|DEMOS\\\\Administrator\r\nContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F\r\nvti_author:SR|DEMOS\\\\Administrator\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;" />
+			<Property Name="Order" Value="1300.00000000000" />
+		</File>
+		<File Url="Create Project Site.xoml" Type="GhostableInLibrary" Path="CreateProjectSite.xoml">
+			<Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/Manufacturing/_catalogs/wfpub/Create Project Site" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site.xoml" />
+			<Property Name="MetaInfo" Value="6;#FSObjType:SW|0&#xD;&#xA;Order:SW|1000.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;ContentTypeId:SW|0x01010700B80CEF325729BB4D839E52EDB1E5789C&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;FileDirRef:SW|sites/Estimates/_catalogs/wfpub/Create Project Site&#xD;&#xA;FileLeafRef:SW|Create Project Site.xoml&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;MetaInfo:SW|10;#vti_parserversion:SR|14.0.0.4730\r\nvti_folderitemcount:IR|0\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_modifiedby:SR|DEMOS\\\\Administrator\r\nContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F\r\nvti_author:SR|DEMOS\\\\Administrator\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;" />
+			<Property Name="Order" Value="1000.00000000000" />
+		</File>
+		<File Url="Approval.xsn" Type="GhostableInLibrary" Path="Approval.xsn">
+			<Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/Manufacturing/_catalogs/wfpub/Create Project Site" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Approval.xsn" />
+			<Property Name="MetaInfo" Value="3;#FSObjType:SW|0&#xD;&#xA;Order:SW|1400.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;ContentTypeId:SW|0x01010700B80CEF325729BB4D839E52EDB1E5789C&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;FileDirRef:SW|sites/Estimates/_catalogs/wfpub/Create Project Site&#xD;&#xA;FileLeafRef:SW|Approval.xsn&#xD;&#xA;vti_privatelistexempt:BW|TRUE&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;MetaInfo:SW|14;#vti_parserversion:SR|14.0.0.4730\r\nvti_modifiedby:SR|DEMOS\\\\Administrator\r\nipfs_streamhash:SW|NWdR7t3rTu++RgBTertbLdNmUyxGkJ2mQhVGcTpdnxA=\r\nvti_folderitemcount:IW|0\r\nvti_foldersubfolderitemcount:IW|0\r\nvti_privatelistexempt:BW|true\r\nContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F\r\nvti_author:SR|DEMOS\\\\Administrator\r\n&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;ipfs_streamhash:SW|NWdR7t3rTu++RgBTertbLdNmUyxGkJ2mQhVGcTpdnxA=&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;" />
+			<Property Name="Order" Value="1400.00000000000" />
+		</File>
+	</Module>
+</Elements>

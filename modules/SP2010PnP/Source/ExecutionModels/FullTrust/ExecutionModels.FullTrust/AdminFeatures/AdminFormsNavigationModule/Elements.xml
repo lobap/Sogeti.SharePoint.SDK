@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction  Id="DCA50F3D-D38F-41D9-8120-25BD7F930FDE"  GroupId="TimerJobs"  Location="Microsoft.SharePoint.Administration.Monitoring"  Sequence="10" Title="Configure Approved Estimates Aggregation Timer Job" Description="">
+    <UrlAction Url="_admin/TimerJobAdmin/TimerJobConfig.aspx" />
+  </CustomAction>
+</Elements>

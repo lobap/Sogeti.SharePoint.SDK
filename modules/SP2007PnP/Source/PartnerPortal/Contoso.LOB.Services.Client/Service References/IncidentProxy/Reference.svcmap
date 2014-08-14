@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ee788e63-c881-49a2-8e17-d8ebd5ce2e4c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8585/Contoso.LOB.Services/IncidentManagement.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IncidentManagement.xsd" MetadataType="Schema" ID="e46606b2-f22d-4de3-a585-8b87689010ad" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd0" />
+    <MetadataFile FileName="IncidentManagement1.xsd" MetadataType="Schema" ID="480d86b3-8c7b-4d45-af16-238b0659fbaf" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd1" />
+    <MetadataFile FileName="IncidentManagement2.xsd" MetadataType="Schema" ID="16e6fd35-cd6b-4a7d-8d68-35fd27337723" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="IncidentManagement.wsdl" MetadataType="Wsdl" ID="892ab331-b660-45db-aed2-17492120578d" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?wsdl" />
+    <MetadataFile FileName="IncidentManagement3.xsd" MetadataType="Schema" ID="c3c9d984-8979-4c33-8fb7-f46e02e6be71" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd3" />
+    <MetadataFile FileName="IncidentManagement.disco" MetadataType="Disco" ID="32c8ee76-36c2-40aa-8a0f-164dd312b876" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?disco" />
+    <MetadataFile FileName="IncidentManagement1.wsdl" MetadataType="Wsdl" ID="2be1332b-ce93-465e-9f88-523c2dd0a1f8" SourceId="1" SourceUrl="http://erwinvd-win7.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="aba0dfb7-c224-4068-9c32-9ad73fe56b21" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PartnerRollupPage">
+    <File Path="PartnerRollup.aspx" Url="PartnerRollup.aspx" />
+  </Module>
+</Elements>

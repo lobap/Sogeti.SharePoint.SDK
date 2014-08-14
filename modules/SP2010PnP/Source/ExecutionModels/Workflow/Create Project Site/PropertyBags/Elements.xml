@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <PropertyBag Url="Workflows" ParentType="Folder" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="1" Type="int" />
+    <Property Name="vti_isexecutable" Value="false" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{229201E7-A5EB-4D38-87BD-FC95EAD0F5C0},0&quot;" Type="string" />
+    <Property Name="vti_isscriptable" Value="false" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_listrequirecheckout" Value="false" Type="string" />
+    <Property Name="vti_listtitle" Value="Workflows" Type="string" />
+    <Property Name="vti_contentversion" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="1" Type="int" />
+    <Property Name="vti_listenableminorversions" Value="false" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="vti_listname" Value="{$ListId:Workflows;}" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_listservertemplate" Value="117" Type="int" />
+    <Property Name="vti_foldersubfolderitemcount" Value="1" Type="int" />
+    <Property Name="vti_timecreated" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_dirlateststamp" Value="2010-03-22T15:27:56Z" Type="DateTime" />
+    <Property Name="vti_listbasetype" Value="1" Type="int" />
+    <Property Name="vti_listenablemoderation" Value="false" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_replid" Value="rid:{229201E7-A5EB-4D38-87BD-FC95EAD0F5C0}" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2010-03-15T12:55:24Z" Type="DateTime" />
+    <Property Name="vti_isbrowsable" Value="true" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_hassubdirs" Value="false" Type="string" />
+    <Property Name="vti_rtag" Value="rt:229201E7-A5EB-4D38-87BD-FC95EAD0F5C0@00000000000" Type="string" />
+    <Property Name="vti_listenableversioning" Value="true" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="_catalogs/wfpub/Create Project Site" ParentType="Folder" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="5" Type="int" />
+    <Property Name="vti_isexecutable" Value="false" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{A5C4125C-2F9D-4326-8601-2877DA08B5CF},0&quot;" Type="string" />
+    <Property Name="vti_isscriptable" Value="false" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_listrequirecheckout" Value="false" Type="string" />
+    <Property Name="vti_docstoretype" Value="1" Type="int" />
+    <Property Name="vti_contentversion" Value="0" Type="int" />
+    <Property Name="vti_listenableminorversions" Value="false" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="vti_listname" Value="{$ListId:Workflows;}" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_listservertemplate" Value="117" Type="int" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_timecreated" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_dirlateststamp" Value="2010-03-22T15:27:56Z" Type="DateTime" />
+    <Property Name="vti_listbasetype" Value="1" Type="int" />
+    <Property Name="vti_listenablemoderation" Value="false" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_replid" Value="rid:{A5C4125C-2F9D-4326-8601-2877DA08B5CF}" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2010-03-15T13:33:58Z" Type="DateTime" />
+    <Property Name="vti_isbrowsable" Value="true" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_hassubdirs" Value="false" Type="string" />
+    <Property Name="vti_rtag" Value="rt:A5C4125C-2F9D-4326-8601-2877DA08B5CF@00000000000" Type="string" />
+    <Property Name="vti_listenableversioning" Value="true" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="_catalogs/wfpub/Create Project Site/Approval.xsn" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://v-robogu-spdev/sites/Manufacturing" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="FileDirRef" Value="sites/Estimates/_catalogs/wfpub/Create Project Site" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{3BFB2D0A-5072-41AC-848E-1439EEDB499D},2&quot;" Type="string" />
+    <Property Name="FSObjType" Value="0" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_contentversion" Value="1" Type="int" />
+    <Property Name="vti_parserversion" Value="14.0.0.4747" Type="string" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="vti_author" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" Type="string" />
+    <Property Name="MetaInfo" Value="14;#vti_parserversion:SR|14.0.0.4730&#xD;&#xA;vti_modifiedby:SR|DEMOS\\Administrator&#xD;&#xA;ipfs_streamhash:SW|NWdR7t3rTu++RgBTertbLdNmUyxGkJ2mQhVGcTpdnxA=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F&#xD;&#xA;vti_author:SR|DEMOS\\Administrator&#xD;&#xA;" Type="string" />
+    <Property Name="vti_replid" Value="rid:{3BFB2D0A-5072-41AC-848E-1439EEDB499D}" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="Order" Value="1400.00000000000" Type="string" />
+    <Property Name="vti_timecreated" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="12605" Type="int" />
+    <Property Name="vti_rtag" Value="rt:3BFB2D0A-5072-41AC-848E-1439EEDB499D@00000000002" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2010-03-15T12:55:24Z" Type="DateTime" />
+    <Property Name="ipfs_streamhash" Value="NWdR7t3rTu++RgBTertbLdNmUyxGkJ2mQhVGcTpdnxA=" Type="string" />
+    <Property Name="vti_docstoreversion" Value="2" Type="int" />
+    <Property Name="FileLeafRef" Value="Approval.xsn" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V2.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="_catalogs/wfpub/Create Project Site/Create Project Site.xoml" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://v-robogu-spdev/sites/Manufacturing" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="FileDirRef" Value="sites/Estimates/_catalogs/wfpub/Create Project Site" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{6B8EF823-550E-4A56-8E74-87E83BE56244},7&quot;" Type="string" />
+    <Property Name="FSObjType" Value="0" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_contentversion" Value="6" Type="int" />
+    <Property Name="vti_parserversion" Value="14.0.0.4747" Type="string" />
+    <Property Name="vti_rtag" Value="rt:6B8EF823-550E-4A56-8E74-87E83BE56244@00000000007" Type="string" />
+    <Property Name="vti_author" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_metainfoversion" Value="7" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" Type="string" />
+    <Property Name="MetaInfo" Value="10;#vti_parserversion:SR|14.0.0.4730&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|DEMOS\\Administrator&#xD;&#xA;ContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F&#xD;&#xA;vti_author:SR|DEMOS\\Administrator&#xD;&#xA;" Type="string" />
+    <Property Name="vti_replid" Value="rid:{6B8EF823-550E-4A56-8E74-87E83BE56244}" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="Order" Value="1000.00000000000" Type="string" />
+    <Property Name="vti_timecreated" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="11677" Type="int" />
+    <Property Name="vti_timelastmodified" Value="2010-03-22T15:32:37Z" Type="DateTime" />
+    <Property Name="vti_docstoreversion" Value="7" Type="int" />
+    <Property Name="FileLeafRef" Value="Create Project Site.xoml" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T13:35:22Z" Type="DateTime" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V7.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="_catalogs/wfpub/Create Project Site/Create Project Site.xoml.rules" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://v-robogu-spdev/sites/Manufacturing" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="FileDirRef" Value="sites/Estimates/_catalogs/wfpub/Create Project Site" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{C49B9C12-079C-4427-A454-47758B4E5F07},7&quot;" Type="string" />
+    <Property Name="FSObjType" Value="0" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_contentversion" Value="6" Type="int" />
+    <Property Name="vti_parserversion" Value="14.0.0.4747" Type="string" />
+    <Property Name="vti_rtag" Value="rt:C49B9C12-079C-4427-A454-47758B4E5F07@00000000007" Type="string" />
+    <Property Name="vti_author" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_metainfoversion" Value="7" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" Type="string" />
+    <Property Name="MetaInfo" Value="13;#vti_parserversion:SR|14.0.0.4730&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|DEMOS\\Administrator&#xD;&#xA;ContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F&#xD;&#xA;vti_author:SR|DEMOS\\Administrator&#xD;&#xA;" Type="string" />
+    <Property Name="vti_replid" Value="rid:{C49B9C12-079C-4427-A454-47758B4E5F07}" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="Order" Value="1300.00000000000" Type="string" />
+    <Property Name="vti_timecreated" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="4347" Type="int" />
+    <Property Name="vti_timelastmodified" Value="2010-03-22T15:32:37Z" Type="DateTime" />
+    <Property Name="vti_docstoreversion" Value="7" Type="int" />
+    <Property Name="FileLeafRef" Value="Create Project Site.xoml.rules" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T13:35:22Z" Type="DateTime" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V7.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="_catalogs/wfpub/Create Project Site/Create Project Site.xoml.wfconfig.xml" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://v-robogu-spdev/sites/Manufacturing" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_charset" Value="utf-8" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T13:35:27Z" Type="DateTime" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="NoCodeVisibility" Value="RootPublic" Type="string" />
+    <Property Name="vti_rtag" Value="rt:F8C09C08-6CBD-4BB3-B116-0ADA1C097A33@00000000008" Type="string" />
+    <Property Name="FileDirRef" Value="sites/Estimates/_catalogs/wfpub/Create Project Site" Type="string" />
+    <Property Name="XomlUrl" Value="_catalogs/wfpub/Create Project Site/Create Project Site.xoml" Type="string" />
+    <Property Name="vti_title" Value="Create Project Site.xoml.wfconfig.xml" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.4747" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="RestrictContentTypeId" Value="0x010100B022E34803AB43AEA87C937368261B49" Type="string" />
+    <Property Name="AssociatedListId" Value="" Type="string" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="Order" Value="1100.00000000000" Type="string" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="BaseAssociationGuid" Value="{725AF4E2-4A14-4D3D-B8D8-BB3408608DCE}" Type="string" />
+    <Property Name="vti_metainfoversion" Value="8" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{F8C09C08-6CBD-4BB3-B116-0ADA1C097A33},8&quot;" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_contentversion" Value="7" Type="int" />
+    <Property Name="RulesUrl" Value="_catalogs/wfpub/Create Project Site/Create Project Site.xoml.rules" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2010-03-22T15:32:43Z" Type="DateTime" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="FileLeafRef" Value="Create Project Site.xoml.wfconfig.xml" Type="string" />
+    <Property Name="FSObjType" Value="0" Type="string" />
+    <Property Name="vti_timecreated" Value="2010-03-15T12:55:23Z" Type="DateTime" />
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" Type="string" />
+    <Property Name="vti_filesize" Value="2517" Type="int" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="WorkflowDisplayName" Value="Create Project Site" Type="string" />
+    <Property Name="vti_author" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="MetaInfo" Value="11;#BaseAssociationGuid:SW|{725AF4E2-4A14-4D3D-B8D8-BB3408608DCE}&#xD;&#xA;WorkflowDisplayName:SW|Create Project Site&#xD;&#xA;vti_parserversion:SR|14.0.0.4730&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|_catalogs/wfpub/Create Project Site/Create Project Site.xoml&#xD;&#xA;NoCodeVisibility:SW|Public&#xD;&#xA;vti_author:SR|DEMOS\\Administrator&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|DEMOS\\Administrator&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Create Project Site.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107004D7D41E2E50A4443AFC866737D0E803F&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|_catalogs/wfpub/Create Project Site/Create Project Site.xoml.rules&#xD;&#xA;RestrictContentTypeId:SW|0x010100B022E34803AB43AEA87C937368261B49&#xD;&#xA;" Type="string" />
+    <Property Name="vti_replid" Value="rid:{F8C09C08-6CBD-4BB3-B116-0ADA1C097A33}" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V8.0" Type="string" />
+    <Property Name="vti_docstoreversion" Value="8" Type="int" />
+    <Property Name="vti_cachedcustomprops" Value="BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="_catalogs/wfpub/Create Project Site/Create Project Site.xsn" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://v-robogu-spdev/sites/Manufacturing" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_etag" Value="&quot;{14CED911-AE8B-4BF2-B9D9-CD235CBB3068},2&quot;" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_contentversion" Value="1" Type="int" />
+    <Property Name="vti_parserversion" Value="14.0.0.4747" Type="string" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="vti_author" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="ContentTypeId" Value="0x01010700B80CEF325729BB4D839E52EDB1E5789C" Type="string" />
+    <Property Name="vti_replid" Value="rid:{14CED911-AE8B-4BF2-B9D9-CD235CBB3068}" Type="string" />
+    <Property Name="vti_modifiedby" Value="V-ROBOGU-SPDEV\administrator" Type="string" />
+    <Property Name="vti_timecreated" Value="2010-03-15T13:33:58Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="vti_filesize" Value="7182" Type="int" />
+    <Property Name="vti_timelastmodified" Value="2010-03-15T13:33:59Z" Type="DateTime" />
+    <Property Name="ipfs_streamhash" Value="bX0nni3kUoKjlVWPAsFbtaUpG3MhAl70r9gIP8cAxHY=" Type="string" />
+    <Property Name="vti_docstoreversion" Value="2" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2010-03-15T13:33:58Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:14CED911-AE8B-4BF2-B9D9-CD235CBB3068@00000000002" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V2.0" Type="string" />
+  </PropertyBag>
+</Elements>

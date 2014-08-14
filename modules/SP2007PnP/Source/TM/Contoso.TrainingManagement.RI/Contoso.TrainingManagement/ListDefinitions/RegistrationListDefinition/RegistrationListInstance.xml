@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="615000bf-7106-4f42-a919-03922df5f81c" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature id at deployment time.
+  -->
+  <ListInstance FeatureId="3a888d14-a364-4a94-a534-ce6a4fd38d26" 
+                Title="Registrations" 
+                Url="Lists/Registrations"
+                OnQuickLaunch="TRUE" 
+                QuickLaunchUrl="Lists\Registrations">
+  </ListInstance>
+</Elements>

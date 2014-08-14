@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsCreate Project Site-ListOf_" Url="_catalogs/wfpub/Create Project Site-ListOf" RootWebOnly="FALSE" Path="Files\Workflows\Create Project Site-ListOf" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Create Project Site-ListOf.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="2CreateProjectSite-ListOf.xoml.wfconfig.xml">
+			<Property Name="ContentTypeId" Value="0x01010700D77814084A46FC4E8DAB873319904850" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/ManufacturingWF/_catalogs/wfpub/Create Project Site-ListOf" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site-ListOf.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="5;#BaseAssociationGuid:SW|{D73FD7B5-6A48-4513-9D9B-2C9CBFABA278}&#xD;&#xA;WorkflowDisplayName:SW|Create Project Site-ListOf&#xD;&#xA;vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|_catalogs/wfpub/Create Project Site-ListOf/Create Project Site-ListOf.xoml&#xD;&#xA;NoCodeVisibility:SW|Public&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Create Project Site-ListOf.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x01010700D77814084A46FC4E8DAB873319904850&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|_catalogs/wfpub/Create Project Site-ListOf/Create Project Site-ListOf.xoml.rules&#xD;&#xA;RestrictContentTypeId:SW|0x010100B022E34803AB43AEA87C937368261B49&#xD;&#xA;" />
+			<Property Name="Order" Value="500.000000000000" />
+		</File>
+		<File Url="Create Project Site-ListOf.xoml" Type="GhostableInLibrary" Path="3CreateProjectSite-ListOf.xoml">
+			<Property Name="ContentTypeId" Value="0x01010700D77814084A46FC4E8DAB873319904850" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/ManufacturingWF/_catalogs/wfpub/Create Project Site-ListOf" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site-ListOf.xoml" />
+			<Property Name="MetaInfo" Value="3;#vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;ContentTypeId:SW|0x01010700D77814084A46FC4E8DAB873319904850&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;" />
+			<Property Name="Order" Value="300.000000000000" />
+		</File>
+		<File Url="Create Project Site-ListOf.xoml.rules" Type="GhostableInLibrary" Path="4CreateProjectSite-ListOf.xoml.rules">
+			<Property Name="ContentTypeId" Value="0x01010700D77814084A46FC4E8DAB873319904850" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/ManufacturingWF/_catalogs/wfpub/Create Project Site-ListOf" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site-ListOf.xoml.rules" />
+			<Property Name="MetaInfo" Value="4;#vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;ContentTypeId:SW|0x01010700D77814084A46FC4E8DAB873319904850&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;" />
+			<Property Name="Order" Value="400.000000000000" />
+		</File>
+		<File Url="Create Project Site-ListOf.xsn" Type="GhostableInLibrary" Path="5CreateProjectSite-ListOf.xsn">
+			<Property Name="ContentTypeId" Value="0x01010700D77814084A46FC4E8DAB873319904850" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/ManufacturingWF/_catalogs/wfpub/Create Project Site-ListOf" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Project Site-ListOf.xsn" />
+			<Property Name="MetaInfo" Value="6;#vti_parserversion:SR|14.0.0.4747&#xD;&#xA;vti_modifiedby:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;ipfs_streamhash:SW|6k8GVvLvnh2pLtNUS16n7E/KBgjTrFfHuOOt5hBwPN0=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x01010700D77814084A46FC4E8DAB873319904850&#xD;&#xA;vti_author:SR|V-ROBOGU-SPDEV\\administrator&#xD;&#xA;" />
+			<Property Name="Order" Value="600.000000000000" />
+		</File>
+	</Module>
+</Elements>

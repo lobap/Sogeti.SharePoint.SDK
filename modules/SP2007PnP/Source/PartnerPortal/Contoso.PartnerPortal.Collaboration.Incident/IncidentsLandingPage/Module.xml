@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="1109F486-96ED-46f7-BFB6-DF0F3A4AD241" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="IncidentDashboard" RootWebOnly="false">
+    <File Path="IncidentDashboard.aspx" Url="IncidentDashboard.aspx">
+      <AllUsersWebPart WebPartOrder="1" WebPartZoneID="Left">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Height" type="string" />
+                  <property name="GroupStyle" type="string">DefaultHeader</property>
+                  <property name="Description" type="string">Use to display a dynamic view of content from your site on a Web page</property>
+                  <property name="Direction" type="direction">NotSet</property>
+                  <property name="DisplayColumns" type="int">1</property>
+                  <property name="FilterField2" type="string" />
+                  <property name="TitleUrl" type="string" />
+                  <property name="DataSourcesString" type="string" />
+                  <property name="SampleData" type="string">&lt;dsQueryResponse&gt;
+                              &lt;Rows&gt;
+                                  &lt;Row Title="Item 1" LinkUrl="http://Item1" Group="Group Header" __begincolumn="True" __begingroup="True" /&gt;
+                                  &lt;Row Title="Item 2" LinkUrl="http://Item2" __begincolumn="False" __begingroup="False" /&gt;
+                                  &lt;Row Title="Item 3" LinkUrl="http://Item3" __begincolumn="False" __begingroup="False" /&gt;
+                              &lt;/Rows&gt;
+                              &lt;/dsQueryResponse&gt;</property>
+                  <property name="ViewContentTypeId" type="string" />
+                  <property name="XslLink" type="string" null="true" />
+                  <property name="UseCopyUtil" type="bool">True</property>
+                  <property name="Title" type="string">Active Incident Tasks</property>
+                  <property name="ContentTypeName" type="string" />
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ItemStyle" type="string">Default</property>
+                  <property name="NoDefaultStyle" type="string" />
+                  <property name="ViewFieldsOverride" type="string" />
+                  <property name="GroupByFieldType" type="string" />
+                  <property name="AllowZoneChange" type="bool">True</property>
+                  <property name="AllowClose" type="bool">True</property>
+                  <property name="FilterType3" type="string" />
+                  <property name="ListName" type="string" />
+                  <property name="UseCache" type="bool">True</property>
+                  <property name="ParameterBindings" type="string" />
+                  <property name="Hidden" type="bool">False</property>
+                  <property name="AdditionalGroupAndSortFields" type="string" null="true" />
+                  <property name="FeedTitle" type="string" />
+                  <property name="ExportMode" type="exportmode">All</property>
+                  <property name="HeaderXslLink" type="string" />
+                  <property name="HelpMode" type="helpmode">Modeless</property>
+                  <property name="DataColumnRenames" type="string" />
+                  <property name="Width" type="string" />
+                  <property name="FeedDescription" type="string" />
+                  <property name="AllowHide" type="bool">True</property>
+                  <property name="CatalogIconImageUrl" type="string" />
+                  <property name="Default" type="string" />
+                  <property name="FeedEnabled" type="bool">False</property>
+                  <property name="WebsOverride" type="string" />
+                  <property name="AllowConnect" type="bool">True</property>
+                  <property name="HelpUrl" type="string" />
+                  <property name="ListGuid" type="string" />
+                  <property name="WebUrl" type="string" />
+                  <property name="ItemLimit" type="int">15</property>
+                  <property name="ListsOverride" type="string" />
+                  <property name="SortByFieldType" type="string">DateTime</property>
+                  <property name="ShowUntargetedItems" type="bool">False</property>
+                  <property name="TitleIconImageUrl" type="string" />
+                  <property name="ViewFlag" type="string" />
+                  <property name="ChromeType" type="chrometype">TitleOnly</property>
+                  <property name="FilterValue2" type="string" />
+                  <property name="Filter1ChainingOperator" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterChainingOperator, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">And</property>
+                  <property name="Filter2ChainingOperator" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterChainingOperator, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Or</property>
+                  <property name="CommonViewFields" type="string" />
+                  <property name="FilterType1" type="string">Choice</property>
+                  <property name="GroupBy" type="string" />
+                  <property name="Xsl" type="string">&lt;xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:cmswrt="http://schemas.microsoft.com/WebPart/v3/Publishing/runtime" exclude-result-prefixes="xsl cmswrt x" &gt; &lt;xsl:import href="/Style Library/XSL Style Sheets/Header.xsl" /&gt; &lt;xsl:import href="/Style Library/XSL Style Sheets/ItemStyle.xsl" /&gt; &lt;xsl:import href="/Style Library/XSL Style Sheets/ContentQueryMain.xsl" /&gt; &lt;/xsl:stylesheet&gt;</property>
+                  <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                  <property name="FilterOperator1" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Neq</property>
+                  <property name="FilterValue3" type="string" />
+                  <property name="FilterField3" type="string" />
+                  <property name="AllowEdit" type="bool">True</property>
+                  <property name="FilterOperator2" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Eq</property>
+                  <property name="FilterOperator3" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Eq</property>
+                  <property name="QueryOverride" type="string" />
+                  <property name="CacheXslTimeOut" type="int">86400</property>
+                  <property name="MainXslLink" type="string" />
+                  <property name="FireInitialRow" type="bool">True</property>
+                  <property name="SortByDirection" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+SortDirection, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Desc</property>
+                  <property name="ItemXslLink" type="string" />
+                  <property name="FilterByAudience" type="bool">False</property>
+                  <property name="DisplayName" type="string" />
+                  <property name="ServerTemplate" type="string">107</property>
+                  <property name="GroupByDirection" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+SortDirection, Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Desc</property>
+                  <property name="FilterValue1" type="string">Completed</property>
+                  <property name="ShowWithSampleData" type="bool">False</property>
+                  <property name="BaseType" type="string" />
+                  <property name="DataFields" type="string" />
+                  <property name="UseSQLDataSourcePaging" type="bool">True</property>
+                  <property name="AdditionalFilterFields" type="string" null="true" />
+                  <property name="PageSize" type="int">-1</property>
+                  <property name="FilterType2" type="string" />
+                  <property name="ContentTypeBeginsWithId" type="string">0x0108009BBBA7168ED64455B16ECDBD00BA7997</property>
+                  <property name="DataSourceID" type="string" />
+                  <property name="SystemViewFields" type="string" />
+                  <property name="AllowMinimize" type="bool">True</property>
+                  <property name="FilterField1" type="string">{c15b34c3-ce7d-490a-b133-3f4de8801b76}</property>
+                  <property name="SortBy" type="string">{8c06beca-0777-48f7-91c7-6da68bc07b69}</property>
+                  <property name="CacheXslStorage" type="bool">True</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="2" WebPartZoneID="Left">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <!--
+                The following Guid is used as a reference to the Web part class, 
+                and it will be automatically replaced with actual type name at deployment time.
+                -->
+                <type name="Contoso.PartnerPortal.Collaboration.Incident.WebParts.IncidentStatusList.IncidentStatusListWebPart, Contoso.PartnerPortal.Collaboration.Incident, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46683bd8f0b79b4" />
+                <importErrorMessage>Cannot import IncidentStatusListWebPart Web Part.</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">IncidentStatusListWebPart Web Part</property>
+                  <property name="Description" type="string">IncidentStatusListWebPart Description</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <!--<View List="Lists/IncidentSites" BaseViewID="2" DisplayName="Active Incidents" Name="Active Incidents" WebPartOrder="2" WebPartZoneID="Left">
+        <![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListViewWebPart</TypeName>
+                        <Title>Active Incidents</Title>
+                   </WebPart>
+            ]]>
+      </View>
+      <View List="Lists/IncidentSites" BaseViewID="3" DisplayName="Closed Incidents" Name="Closed Incidents" WebPartOrder="3" WebPartZoneID="Left">
+        <![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListViewWebPart</TypeName>
+                        <Title>Closed Incidents</Title>
+                   </WebPart>
+            ]]>
+      </View>-->
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{9398585F-7F0E-488D-A92C-B886AD0425E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCEBE09A-4AF6-4128-814F-4469B8B1BA38}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExecutionModel", "ExecutionModel", "{AC4532A7-0930-4EBE-935A-932986E35195}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{68A3E8F6-DADA-4036-BA64-952065B4A348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.IntegrationTests", "Service\Service.IntegrationTests\Service.IntegrationTests.csproj", "{7D50ED32-ABEF-4D24-BC55-826377F8E0F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D75DED11-9A9B-499F-AA79-D37CB8F1299E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.SharePoint.Common", "..\..\Sharepoint 2010\Microsoft.Practices.Sharepoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj", "{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Common", "..\ExecutionModels.Common\ExecutionModels.Common.csproj", "{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorSystemProxy", "VendorSystemProxy\VendorSystemProxy.csproj", "{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendor.Services", "Service\Vendor.Services\Vendor.Services.csproj", "{6941DD3C-F132-4A59-B54D-26FD81745409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Sandboxed.Proxy", "ExecutionModels.Sandboxed.Proxy\ExecutionModels.Sandboxed.Proxy.csproj", "{1E7F148E-B581-420A-BED6-E38444B2DFE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6941DD3C-F132-4A59-B54D-26FD81745409} = {6941DD3C-F132-4A59-B54D-26FD81745409}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Common.Tests", "..\ExecutionModels.Common.Tests\ExecutionModels.Common.Tests.csproj", "{102E0F01-531E-4B75-B748-D41C90E691C7}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Vendor", "http://localhost:81/Vendor", "{B8F8A5AA-FA86-4CDB-9D90-F414130607E1}"
+	ProjectSection(WebsiteProperties) = preProject
+	TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Vendor"
+		Debug.AspNetCompiler.PhysicalPath = "Vendor\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Vendor\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Vendor"
+		Release.AspNetCompiler.PhysicalPath = "Vendor\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Vendor\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Vendor\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionModels.Sandboxed.Proxy.Tests", "ExecutionModels.Sandboxed.Proxy.Tests\ExecutionModels.Sandboxed.Proxy.Tests.csproj", "{461A0254-DA13-4E42-8C67-CD7182EDD02E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorInterface", "VendorInterface\VendorInterface.csproj", "{6CA2D5F5-05AA-4A07-9EE9-C376B30DD8D6}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ExecutionModels.Hybrid.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D50ED32-ABEF-4D24-BC55-826377F8E0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D50ED32-ABEF-4D24-BC55-826377F8E0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D50ED32-ABEF-4D24-BC55-826377F8E0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D50ED32-ABEF-4D24-BC55-826377F8E0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6941DD3C-F132-4A59-B54D-26FD81745409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6941DD3C-F132-4A59-B54D-26FD81745409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6941DD3C-F132-4A59-B54D-26FD81745409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6941DD3C-F132-4A59-B54D-26FD81745409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{102E0F01-531E-4B75-B748-D41C90E691C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102E0F01-531E-4B75-B748-D41C90E691C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102E0F01-531E-4B75-B748-D41C90E691C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102E0F01-531E-4B75-B748-D41C90E691C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F8A5AA-FA86-4CDB-9D90-F414130607E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F8A5AA-FA86-4CDB-9D90-F414130607E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F8A5AA-FA86-4CDB-9D90-F414130607E1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F8A5AA-FA86-4CDB-9D90-F414130607E1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{461A0254-DA13-4E42-8C67-CD7182EDD02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461A0254-DA13-4E42-8C67-CD7182EDD02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461A0254-DA13-4E42-8C67-CD7182EDD02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461A0254-DA13-4E42-8C67-CD7182EDD02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA2D5F5-05AA-4A07-9EE9-C376B30DD8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA2D5F5-05AA-4A07-9EE9-C376B30DD8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA2D5F5-05AA-4A07-9EE9-C376B30DD8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA2D5F5-05AA-4A07-9EE9-C376B30DD8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DCEBE09A-4AF6-4128-814F-4469B8B1BA38} = {9398585F-7F0E-488D-A92C-B886AD0425E8}
+		{7D50ED32-ABEF-4D24-BC55-826377F8E0F5} = {9398585F-7F0E-488D-A92C-B886AD0425E8}
+		{102E0F01-531E-4B75-B748-D41C90E691C7} = {9398585F-7F0E-488D-A92C-B886AD0425E8}
+		{461A0254-DA13-4E42-8C67-CD7182EDD02E} = {9398585F-7F0E-488D-A92C-B886AD0425E8}
+		{0792E53A-ECC9-46B3-962F-FA6BADD7FEE0} = {AC4532A7-0930-4EBE-935A-932986E35195}
+		{1E7F148E-B581-420A-BED6-E38444B2DFE4} = {AC4532A7-0930-4EBE-935A-932986E35195}
+		{6941DD3C-F132-4A59-B54D-26FD81745409} = {68A3E8F6-DADA-4036-BA64-952065B4A348}
+		{6CA2D5F5-05AA-4A07-9EE9-C376B30DD8D6} = {68A3E8F6-DADA-4036-BA64-952065B4A348}
+		{0FAB4900-9FE2-4CE9-A047-CEEB28920F57} = {D75DED11-9A9B-499F-AA79-D37CB8F1299E}
+		{6FA89134-5B92-4FC7-B08A-C29CE5C092B0} = {D75DED11-9A9B-499F-AA79-D37CB8F1299E}
+	EndGlobalSection
+EndGlobal

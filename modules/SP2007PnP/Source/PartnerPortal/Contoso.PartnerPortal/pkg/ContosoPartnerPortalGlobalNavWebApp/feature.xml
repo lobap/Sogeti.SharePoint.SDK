@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="2f9a50ad-6165-4a3d-8b37-cb2666a62dbd" Title="Contoso Partner Portal Global Navigation (WebApp)" Scope="WebApplication" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests />
+</Feature>

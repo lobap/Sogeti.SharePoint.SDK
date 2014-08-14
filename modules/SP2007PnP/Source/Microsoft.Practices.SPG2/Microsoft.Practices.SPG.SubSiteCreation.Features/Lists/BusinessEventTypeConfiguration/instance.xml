@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="d48274cd-6e90-4ad4-9c36-89cc9fe1bfb6" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  The following Guid for FeatureId is used as a reference to the list definition, 
+  and it will be automatically replaced with actual feature Id at deployment time.
+  -->
+  <ListInstance FeatureId="6c8c0fd5-b7c6-48fe-9794-727a341eb0df" 
+                Title="Business Event Type Configuration" 
+                Url="Lists/BusinessEventTypeConfiguration"
+                OnQuickLaunch="True"
+                QuickLaunchUrl="Lists/BusinessEventTypeConfiguration" >
+  </ListInstance>
+</Elements>

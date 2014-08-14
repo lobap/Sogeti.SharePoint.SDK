@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Contoso.LOB.Services/2009/01" elementFormDefault="qualified" targetNamespace="http://Contoso.LOB.Services/2009/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://chacho-spgdev.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/IncidentManagement.svc?xsd=xsd2" namespace="http://Contoso.LOB.Services/2009/01/BusinessEntities" />
+  <xs:element name="GetIncident">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incidentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetIncidentResult" nillable="true" type="q1:Incident" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteToHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteToHistoryResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllIncidents">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllIncidentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://Contoso.LOB.Services/2009/01/BusinessEntities" minOccurs="0" name="GetAllIncidentsResult" nillable="true" type="q2:ArrayOfIncident" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

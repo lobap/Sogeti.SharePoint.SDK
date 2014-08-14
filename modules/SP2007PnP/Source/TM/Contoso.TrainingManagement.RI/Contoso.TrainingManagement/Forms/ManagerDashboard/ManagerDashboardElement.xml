@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements Id="7432c77e-da35-4360-adc0-7dcb3a824a63" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ManagerDashboard">
+    <File Path="managerdashboard.aspx" Url="managerdashboard.aspx" Type="Ghostable">
+      <View List="Lists/Registrations" BaseViewID="3" DisplayName="Pending Registrations" Name="Pending Registrations" RecurrenceRowset="TRUE" WebPartZoneID="Left" WebPartOrder="1">
+        <![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListViewWebPart</TypeName>
+                        <Title>Pending Registrations</Title>
+                   </WebPart>
+            ]]>
+      </View>
+      <View List="Lists/RegistrationApprovalTasks" BaseViewID="0" RecurrenceRowset="TRUE" WebPartZoneID="Left" WebPartOrder="2" />
+      <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="1">
+        <![CDATA[
+            <webParts>
+                <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                        <type name="Contoso.TrainingManagement.WebParts.TrainingBudgetWebPart, Contoso.TrainingManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" /> 
+                        <importErrorMessage>Cannot import Contoso Training Budget Web Part.</importErrorMessage> 
+                    </metaData>
+                    <data>
+                        <properties>
+                            <property name="Title" type="string">Contoso Training Budget</property> 
+                            <property name="Description" type="string">The Contoso Training Budget Web Part will display total budget, remaining budget, and a list of transactions, grouped by cost center.</property> 
+                        </properties>
+                    </data>
+                </webPart>
+            </webParts>
+           ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="2">
+        <![CDATA[
+            <webParts>
+                <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                        <type name="Contoso.TrainingManagement.WebParts.DirectReportsWebPart, Contoso.TrainingManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" /> 
+                        <importErrorMessage>Cannot import Contoso Direct Reports Web Part.</importErrorMessage> 
+                    </metaData>
+                    <data>
+                        <properties>
+                            <property name="Title" type="string">Contoso Direct Reports</property> 
+                            <property name="Description" type="string">The Contoso Direct Reports Web Part displays all direct reports for the current user.</property> 
+                        </properties>
+                    </data>
+                </webPart>
+            </webParts>
+           ]]>
+      </AllUsersWebPart>
+    </File>
+  </Module>
+</Elements>

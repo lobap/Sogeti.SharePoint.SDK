@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="ExecutionModels.Sandboxed.ExternalList.VendorList.VendorList, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Vendor List</property>
+        <property name="Description" type="string">This is a list of Vendors from an external Vendor Management System</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

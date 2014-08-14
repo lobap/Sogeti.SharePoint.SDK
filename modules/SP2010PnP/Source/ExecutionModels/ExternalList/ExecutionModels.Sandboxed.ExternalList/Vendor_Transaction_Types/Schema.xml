@@ -1,0 +1,45 @@
+﻿<List Title="VendorTransactionTypes" Direction="none" Url="Lists/VendorTransactionTypes" BaseType="0" Type="600" DontSaveInTemplate="TRUE" DisableGridEditing="TRUE" NoCrawl="TRUE" DisallowContentTypes="TRUE" BrowserFileHandling="Permissive" FolderCreation="FALSE" DisableAttachments="TRUE" Catalog="FALSE" SendToLocation="|" ImageUrl="/_layouts/images/itebl.png" xmlns:ows="Microsoft SharePoint" xmlns:spctf="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms" xmlns="http://schemas.microsoft.com/sharepoint/">
+	<MetaData>
+		<ContentTypes>
+			<ContentType ID="0x01" Name="Item" Group="List Content Types" Description="Create a new list item." FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}">
+				<Folder TargetName="Item" />
+				<FieldRefs>
+					<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+					<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+				</FieldRefs>
+				<XmlDocuments>
+					<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+						<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+							<Display>ListForm</Display>
+							<Edit>ListForm</Edit>
+							<New>ListForm</New>
+						</FormTemplates>
+					</XmlDocument>
+				</XmlDocuments>
+			</ContentType>
+		</ContentTypes>
+		<Fields>
+			<Field DisplayName="BDC Identity" Hidden="FALSE" Name="BdcIdentity" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BdcIdentity" Type="Text" />
+			<Field DisplayName="Id" Hidden="FALSE" Name="Id" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Id" Type="Integer" />
+			<Field DisplayName="TransactionType" Hidden="FALSE" Name="TransactionType" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TransactionType" Type="Text" />
+		</Fields>
+		<Forms />
+		<Views>
+			<View DisplayName="Transaction Types Read List" DefaultView="TRUE" BaseViewID="1" Type="HTML" MobileView="TRUE" MobileDefaultView="TRUE" ImageUrl="/_layouts/images/generic.png" XslLink="main.xsl" WebPartZoneID="Main" WebPartOrder="0" Url="Read List.aspx" SetupPath="pages\viewpage.aspx">
+				<XslLink>main.xsl</XslLink>
+				<Method Name="Read List" />
+				<Query>
+					<OrderBy>
+						<FieldRef Name="Id" />
+					</OrderBy>
+				</Query>
+				<ViewFields>
+					<FieldRef Name="Id" ListItemMenu="TRUE" LinkToItem="TRUE" />
+					<FieldRef Name="TransactionType" />
+				</ViewFields>
+				<RowLimit Paged="TRUE">30</RowLimit>
+				<Aggregations Value="Off" />
+			</View>
+		</Views>
+	</MetaData>
+</List>

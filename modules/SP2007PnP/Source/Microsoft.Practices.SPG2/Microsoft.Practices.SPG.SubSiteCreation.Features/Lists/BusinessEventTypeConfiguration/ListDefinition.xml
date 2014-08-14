@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements Id="6c8c0fd5-b7c6-48fe-9794-727a341eb0df" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate Name="BusinessEventTypeConfiguration"
+                DisplayName="BusinessEventTypeConfiguration"
+                Description="Sub Site Creation configuration metadata"
+                BaseType="0"
+                Type="10002"
+                OnQuickLaunch="TRUE"
+                SecurityBits="11"
+                Sequence="410"
+                Image="/_layouts/images/itgen.gif" />
+</Elements>

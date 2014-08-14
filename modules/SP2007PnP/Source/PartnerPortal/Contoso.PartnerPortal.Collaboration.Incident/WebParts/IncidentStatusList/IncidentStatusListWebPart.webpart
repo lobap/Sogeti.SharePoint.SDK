@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the Web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="f8df25d5-4f7c-41fa-985f-10caa88bb874" />
+      <importErrorMessage>Cannot import IncidentStatusList Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">IncidentStatusList Web Part</property>
+        <property name="Description" type="string">Displays status information such as create date and last modified date of Incident Tasks within this site collection.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

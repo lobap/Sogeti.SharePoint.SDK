@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2c6658b1-24b1-4b11-afb5-368870c41c9b" solutionId="2c6658b1-24b1-4b11-afb5-368870c41c9b" resetWebServer="false" name="DataModels.SharePointListData.Model" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="942ca75e-26b3-43f9-8102-f08ededb0e38" />
+    <featureReference itemId="0fea48e8-97f0-451c-9121-a6d12579b171" />
+    <featureReference itemId="84a55ff7-7af6-4bf2-baaf-b282ade85c66" />
+  </features>
+</package>

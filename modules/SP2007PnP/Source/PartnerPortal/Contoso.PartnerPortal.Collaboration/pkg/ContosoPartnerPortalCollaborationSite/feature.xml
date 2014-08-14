@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="f15ec5c3-d97f-4838-b874-0224dbbee676" Title="Contoso Partner Portal Collaboration (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="PartnerLandingPageContentType\PartnerLandingPageContentType.xml" />
+  </ElementManifests>
+</Feature>

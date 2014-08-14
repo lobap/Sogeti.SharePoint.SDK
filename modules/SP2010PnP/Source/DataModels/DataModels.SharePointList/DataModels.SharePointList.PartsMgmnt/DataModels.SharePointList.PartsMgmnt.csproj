@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F666B39-E9FD-40A4-BFAF-533B5982036D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataModels.SharePointList.PartsMgmnt</RootNamespace>
+    <AssemblyName>DataModels.SharePointList.PartsMgmnt</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\..\Build\TeamBuildTypes\MicrosoftExtendedCorrectnessRulesTreatAsErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Features\Pages\Pages.EventReceiver.cs">
+      <DependentUpon>Pages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Services\Services.EventReceiver.cs">
+      <DependentUpon>Services.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\WebParts\WebParts.EventReceiver.cs">
+      <DependentUpon>WebParts.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ManageMachines\ManageMachines.ascx.designer.cs">
+      <DependentUpon>ManageMachines.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePartLocations\ManagePartLocations.ascx.cs">
+      <DependentUpon>ManagePartLocations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePartLocations\ManagePartLocations.ascx.designer.cs">
+      <DependentUpon>ManagePartLocations.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePartSuppliers\ManagePartSuppliers.ascx.cs">
+      <DependentUpon>ManagePartSuppliers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePartSuppliers\ManagePartSuppliers.ascx.designer.cs">
+      <DependentUpon>ManagePartSuppliers.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePartMachines\ManagePartMachines.ascx.cs">
+      <DependentUpon>ManagePartMachines.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePartMachines\ManagePartMachines.ascx.designer.cs">
+      <DependentUpon>ManagePartMachines.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericEventArgs.cs" />
+    <Compile Include="ManageManufacturers\ManageManufacturers.ascx.cs">
+      <DependentUpon>ManageManufacturers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageManufacturers\ManageManufacturers.ascx.designer.cs">
+      <DependentUpon>ManageManufacturers.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCategories\ManageCategories.ascx.cs">
+      <DependentUpon>ManageCategories.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageCategories\ManageCategories.ascx.designer.cs">
+      <DependentUpon>ManageCategories.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDepartments\ManageDepartments.ascx.cs">
+      <DependentUpon>ManageDepartments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageDepartments\ManageDepartments.ascx.designer.cs">
+      <DependentUpon>ManageDepartments.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMachines\ManageMachines.ascx.cs">
+      <DependentUpon>ManageMachines.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePartLocations\ManagePartLocations.cs" />
+    <Compile Include="ManagePartMachines\ManagePartMachines.cs" />
+    <Compile Include="ManagePartSuppliers\ManagePartSuppliers.cs" />
+    <Compile Include="ManageParts\ManageParts.ascx.cs">
+      <DependentUpon>ManageParts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageParts\ManageParts.ascx.designer.cs">
+      <DependentUpon>ManageParts.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPage\SearchPage.ascx.cs">
+      <DependentUpon>SearchPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchPage\SearchPage.ascx.designer.cs">
+      <DependentUpon>SearchPage.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSuppliers\ManageSuppliers.ascx.cs">
+      <DependentUpon>ManageSuppliers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageSuppliers\ManageSuppliers.ascx.designer.cs">
+      <DependentUpon>ManageSuppliers.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageInventory\ManageInventory.cs" />
+    <Compile Include="ManageInventory\ManageInventory.ascx.cs">
+      <DependentUpon>ManageInventory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageInventory\ManageInventory.ascx.designer.cs">
+      <DependentUpon>ManageInventory.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTOs\AreaDTO.cs" />
+    <Compile Include="DTOs\CategoryDTO.cs" />
+    <Compile Include="DTOs\DepartmentDTO.cs" />
+    <Compile Include="DTOs\MachineDepartmentDTO.cs" />
+    <Compile Include="DTOs\MachineDTO.cs" />
+    <Compile Include="DTOs\ManufacturerDTO.cs" />
+    <Compile Include="DTOs\PartInventoryDTO.cs" />
+    <Compile Include="IPartManagementRepository.cs" />
+    <Compile Include="ManageCategories\ManageCategories.cs" />
+    <Compile Include="ManageDepartments\ManageDepartments.cs" />
+    <Compile Include="ManageMachines\ManageMachines.cs" />
+    <Compile Include="ManageManufacturers\ManageManufacturers.cs" />
+    <Compile Include="ManageParts\ManageParts.cs" />
+    <Compile Include="ManageSuppliers\ManageSuppliers.cs" />
+    <Compile Include="SearchPage\SearchPage.cs" />
+    <Compile Include="PartManagementRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DTOs\SupplierDTO.cs" />
+    <Compile Include="WebPartConnections.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Services\Services.feature">
+      <FeatureId>{7064ea64-ef73-47f8-886a-b90f01b963c0}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e9c898b-ac74-4d53-a1ba-1c5b5e4b26e9}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageCategories\ManageCategories.webpart" />
+    <None Include="ManageCategories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4c27eb4e-0af7-4c94-8b04-96a09255db49}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageDepartments\ManageDepartments.webpart" />
+    <None Include="ManageDepartments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1816363d-9901-4fcb-9456-4f056b8591f3}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageInventory\ManageInventory.webpart" />
+    <None Include="ManageInventory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35c119f7-7889-4a38-a673-174f6a97adc0}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageMachines\ManageMachines.webpart" />
+    <None Include="ManageMachines\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f7da47d1-d05e-45eb-b9ac-771bf05265b0}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageManufacturers\ManageManufacturers.webpart" />
+    <None Include="ManageManufacturers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{92006502-51f4-443a-bb1c-2430730ecbfe}</SharePointProjectItemId>
+    </None>
+    <None Include="ManagePartLocations\ManagePartLocations.webpart" />
+    <None Include="ManagePartLocations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db3502bf-e9d3-406e-8d57-e577d322b584}</SharePointProjectItemId>
+    </None>
+    <None Include="ManagePartMachines\ManagePartMachines.webpart" />
+    <None Include="ManagePartMachines\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d7f7dd51-6777-4d14-8ca6-cb0eaf56f136}</SharePointProjectItemId>
+    </None>
+    <None Include="ManagePartSuppliers\ManagePartSuppliers.webpart" />
+    <None Include="ManagePartSuppliers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c3cf3f5-365e-4d5d-b56e-7cec0b730766}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageParts\ManageParts.webpart" />
+    <None Include="ManageParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15b06f8b-f3f4-4567-956e-970f8a4c5f02}</SharePointProjectItemId>
+    </None>
+    <None Include="ManageSuppliers\ManageSuppliers.webpart" />
+    <None Include="ManageSuppliers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{345a5ecc-aad5-48df-b067-3a398051d9d3}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2b9079b0-117f-4d1c-a267-03b4dbde54ac}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Pages\Pages.feature">
+      <FeatureId>{d3d91542-631b-4386-9c67-63e1aba8fcde}</FeatureId>
+    </None>
+    <None Include="Features\WebParts\WebParts.feature">
+      <FeatureId>{aa4d0e60-2b45-43c5-85cb-f53516488ac4}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{0112cd68-e7f4-4282-981c-d61d9ad4df85}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SearchPage\SearchPage.webpart" />
+    <None Include="SearchPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a076ccc-2bba-4134-ac74-78cc2da43698}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Services\Services.Template.xml">
+      <DependentUpon>Services.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\PartsMgmnt\titleHeader.jpg" />
+    <Content Include="ManagePartLocations\ManagePartLocations.ascx" />
+    <Content Include="ManagePartSuppliers\ManagePartSuppliers.ascx" />
+    <Content Include="ManagePartMachines\ManagePartMachines.ascx" />
+    <Content Include="ManageManufacturers\ManageManufacturers.ascx" />
+    <Content Include="ManageCategories\ManageCategories.ascx" />
+    <Content Include="ManageDepartments\ManageDepartments.ascx" />
+    <Content Include="ManageMachines\ManageMachines.ascx" />
+    <Content Include="ManagePartLocations\Elements.xml" />
+    <Content Include="ManagePartMachines\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ManagePartSuppliers\Elements.xml" />
+    <Content Include="ManageParts\ManageParts.ascx" />
+    <Content Include="SearchPage\SearchPage.ascx" />
+    <Content Include="ManageSuppliers\ManageSuppliers.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ManageCategories\Elements.xml" />
+    <Content Include="ManageDepartments\Elements.xml" />
+    <Content Include="ManageInventory\Elements.xml" />
+    <Content Include="ManageInventory\ManageInventory.ascx" />
+    <Content Include="ManageMachines\Elements.xml" />
+    <Content Include="ManageManufacturers\Elements.xml" />
+    <Content Include="ManageParts\Elements.xml" />
+    <Content Include="ManageSuppliers\Elements.xml" />
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\PartsMgmnt.aspx" />
+    <Content Include="Features\Pages\Pages.Template.xml">
+      <DependentUpon>Pages.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebParts\WebParts.Template.xml">
+      <DependentUpon>WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="SearchPage\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SharePoint 2010\Microsoft.Practices.SharePoint.Common\Source\Microsoft.Practices.SharePoint.Common.csproj">
+      <Project>{0FAB4900-9FE2-4CE9-A047-CEEB28920F57}</Project>
+      <Name>Microsoft.Practices.SharePoint.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModels.SharePointList.Model\DataModels.SharePointList.Model.csproj">
+      <Project>{FE597399-6275-4644-A01E-76753ABDF1E3}</Project>
+      <Name>DataModels.SharePointList.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

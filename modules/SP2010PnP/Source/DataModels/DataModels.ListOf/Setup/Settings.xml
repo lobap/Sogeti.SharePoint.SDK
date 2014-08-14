@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <WebApp Port="80" />
+  <Sites>
+    <Site Name="ManufacturingLstOfWF" Title="Manufacturing ListOf Plant" WFLstOfRI="True">
+      <Projects>
+        <Project Name="Expansion of the cooling capacity for the clean room" />
+        <Project Name="Replace water and purification system filters" />
+        <Project Name="Add a process cooling tower to expand manufacturing capacity" />
+        <Project Name="Overhaul No. 2 and No. 4 air handlers" />
+      </Projects>
+      <Webs>
+        <Web Name="Construction" Description="Construction">
+          <Estimates>
+            <Estimate Title="Clean room chiller purchase and installation" ProjectId="1" SOWStatus="Submitted" ContentType="Estimate" Name="Const-test-file1" VendorId="1" VendorName="Vname1" EstimateValue="$1000" />
+            <Estimate Title="Foundation and wall concrete construction " ProjectId="3" SOWStatus="Submitted" ContentType="Estimate" Name="Const-test-file2" VendortId="2" VendorName="Vname2" EstimateValue="$2000"/>
+            <Estimate Title="Chiller processing system purchase and installation" ProjectId="3" SOWStatus="Submitted" ContentType="Estimate" Name="Const-test-file3" VendorId="3" VendorName="Vname3" EstimateValue="$3000"/>
+            <Estimate Title="Electrical system installation" ProjectId="3" SOWStatus="Draft" ContentType="Estimate" Name="Const-test-file4" VendorId="4" VendorName="Vname4" EstimateValue="$5000"/>
+            <!--Content Type is not used-->
+          </Estimates>
+        </Web>
+        <Web Name="Maintenance" Description="Maintenance">
+          <Estimates>
+            <Estimate Title="Disassemble, replace, and reassemble water purification filtration media for purification system" ProjectId="2" SOWStatus="Submitted" ContentType="Estimate" Name="Maint-test-file1" VendorId="5" VendorName="Vname5" EstimateValue="$10000"/>
+            <Estimate Title="Remove and overhaul air handler drive motors" ProjectId="4" SOWStatus="Submitted" ContentType="Estimate" Name="Maint-test-file2" VendorId="6" VendorName="Vname6" EstimateValue="$12000"/>
+            <Estimate Title="Replace and calibrate pressure sensors and flow regulators" ProjectId="4" SOWStatus="Draft" ContentType="Estimate" Name="Maint-test-file3" VendorId="7" VendorName="Vname7" EstimateValue="$15000"/>
+            <!--Content Type is not used-->
+          </Estimates>
+        </Web>
+      </Webs>
+    </Site>
+  </Sites>
+
+
+</Settings>

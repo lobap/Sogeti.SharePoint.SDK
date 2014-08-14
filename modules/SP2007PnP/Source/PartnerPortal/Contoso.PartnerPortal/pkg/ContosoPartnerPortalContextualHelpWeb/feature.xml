@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="92a99385-aefc-4718-98c2-1ac541c55a6e" Scope="Web" Title="Contoso Partner Portal Contextual Help (Web)" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ContextualHelpMasterPage\Module.xml" />
+    <ElementFile Location="ContextualHelpMasterPage\contextualHelp.master" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ContactsSystem">
+  <modelRootMoniker Name="/ContactsSystem" />
+  <nestedChildShapes>
+    <entityShape Id="076614f4-c465-4042-aba4-74b8cf48480a" absoluteBounds="1.75, 0.875, 1.5, 1.59568359375">
+      <entityMoniker name="DataModels.ExternalData.PartsManagement.ContactsSystem.BdcContact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8138d52a-7e62-4541-92b5-16e0c8a7057c" absoluteBounds="1.7650000000000001, 1.2850000000000001, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="25355996-5a1d-4b2d-87b8-ec1fe0683283" absoluteBounds="1.765, 1.7366910807291667, 1.4700000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <entityShape Id="8320e364-2607-4d72-8ffd-0c0895540602" absoluteBounds="5.625, 0.875, 1.5, 1.787985026041667">
+      <entityMoniker name="DataModels.ExternalData.PartsManagement.ContactsSystem.BdcSupplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efa7fb8f-bb2d-414a-8c57-49a27169564c" absoluteBounds="5.64, 1.2850000000000001, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d1ce2334-105e-4037-9b8d-bb7c61b12ebe" absoluteBounds="5.64, 1.7366910807291667, 1.4700000000000002, 0.8262939453125" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <associationGroupConnector edgePoints="[(5.625 : 1.5889794921875); (3.25 : 1.5889794921875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <associationGroupMoniker name="/DataModels.ExternalData.PartsManagement.ContactsSystem.BdcSupplier/BdcSupplierToBdcContactAssociation" />
+      <relativeChildShapes />
+      <nodes>
+        <entityShapeMoniker Id="8320e364-2607-4d72-8ffd-0c0895540602" />
+        <entityShapeMoniker Id="076614f4-c465-4042-aba4-74b8cf48480a" />
+      </nodes>
+    </associationGroupConnector>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

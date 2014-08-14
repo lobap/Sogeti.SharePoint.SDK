@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="6fd12cb8-f910-4cf4-b7d0-6b74769483ae" Title="Contoso Partner Portal Promotions (Site)" Scope="Site" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="PromotionPage\PromotionPage.xml" />
+    <ElementManifest Location="PartnerPromotionsWebPart\PartnerPromotionsWebPart.xml" />
+    <ElementFile Location="PartnerPromotionsWebPart\PartnerPromotionsWebPart.webpart" />
+  </ElementManifests>
+</Feature>

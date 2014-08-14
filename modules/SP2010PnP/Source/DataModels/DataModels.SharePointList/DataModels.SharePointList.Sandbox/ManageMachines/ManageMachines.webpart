@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DataModels.SharePointList.Sandbox.ManageMachines.ManageMachines, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ManageMachines Title</property>
+        <property name="Description" type="string">ManageMachines Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Client.SPWebService.Silverlight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="325" d:DesignWidth="400" xmlns:dataInput="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <ListBox Height="227" HorizontalAlignment="Left" Margin="12,61,0,0" Name="partsListBox" VerticalAlignment="Top" Width="184" ItemsSource="{Binding Parts}" SelectedItem="{Binding CurrentPart, Mode=TwoWay}">
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <dataInput:Label Height="14" HorizontalAlignment="Left" Margin="12,17,0,0" Name="skuLabel" VerticalAlignment="Top" Width="60" Content="Part SKU:" VerticalContentAlignment="Bottom" FontWeight="Bold" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="78,12,0,0" Name="skuTextBox" VerticalAlignment="Top" Width="118" Text="{Binding SearchSku, Mode=TwoWay}" />
+        <Button Content="Find Parts" Height="23" HorizontalAlignment="Left" Margin="202,12,0,0" Name="findPartsButton" VerticalAlignment="Top" Width="75" Click="findPartsButton_Click" />
+        <dataInput:Label Height="14" HorizontalAlignment="Left" Margin="202,41,0,0" Name="label1" VerticalAlignment="Top" Width="186" Content="Suppliers" FontWeight="Bold" />
+        <ListBox Height="227" HorizontalAlignment="Left" Margin="202,61,0,0" Name="suppliersListBox" VerticalAlignment="Top" Width="186" ItemsSource="{Binding Suppliers}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <dataInput:Label Content="Parts" Height="14" HorizontalAlignment="Left" Margin="12,41,0,0" Name="label2" VerticalAlignment="Top" Width="184" FontWeight="Bold" />
+        <dataInput:Label Height="19" HorizontalAlignment="Left" Margin="12,294,0,0" Name="numberOfPartsFoundLabel" VerticalAlignment="Top" Width="140" Content="Number of parts found:" />
+        <dataInput:Label Height="19" HorizontalAlignment="Left" Margin="158,294,0,0" Name="numberOfPartsFoundValueLabel" VerticalAlignment="Top" Width="38" Content="{Binding NumberOfPartsFound}" IsEnabled="True" />
+        <dataInput:Label Content="Number of suppliers found:" Height="19" HorizontalAlignment="Left" Margin="202,294,0,0" Name="numberOfSuppliersFoundLabel" VerticalAlignment="Top" Width="156" />
+        <dataInput:Label Height="19" HorizontalAlignment="Left" Margin="364,294,0,0" Name="numberOfSuppliersFoundValueLabel" VerticalAlignment="Top" Width="24" Content="{Binding NumberOfSuppliersFound}" IsRequired="False" />
+    </Grid>
+</UserControl>

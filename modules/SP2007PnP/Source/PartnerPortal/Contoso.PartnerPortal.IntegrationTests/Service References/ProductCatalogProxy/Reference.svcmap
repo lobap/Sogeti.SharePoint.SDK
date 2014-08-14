@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f1176378-8244-4dea-94e3-666bb7a678dc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="mscorlib" />
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8585/Contoso.LOB.Services/ProductCatalog.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProductCatalog.xsd" MetadataType="Schema" ID="653963b2-eb21-4a23-847f-58a8dc855616" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd4" />
+    <MetadataFile FileName="ProductCatalog1.xsd" MetadataType="Schema" ID="dce87168-d0e8-4155-b80f-a14fb96a8392" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProductCatalog.disco" MetadataType="Disco" ID="5037c098-592d-47a3-9a53-111c10eee7b7" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?disco" />
+    <MetadataFile FileName="ProductCatalog2.xsd" MetadataType="Schema" ID="93277cbc-4cae-419c-b3e6-c9289f831f69" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProductCatalog.wsdl" MetadataType="Wsdl" ID="6841103d-799a-4ba5-8e37-61dfa075da41" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ProductCatalog3.xsd" MetadataType="Schema" ID="442725af-9c4e-4ba2-b43c-3856b98e4da3" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProductCatalog4.xsd" MetadataType="Schema" ID="8d6b4fcb-1901-448e-9194-52afd624ea16" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProductCatalog1.wsdl" MetadataType="Wsdl" ID="6567a81b-aae4-48c3-ac09-ff9dda3c9cc3" SourceId="1" SourceUrl="http://erwinvd-win7rc.redmond.corp.microsoft.com:8585/Contoso.LOB.Services/ProductCatalog.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

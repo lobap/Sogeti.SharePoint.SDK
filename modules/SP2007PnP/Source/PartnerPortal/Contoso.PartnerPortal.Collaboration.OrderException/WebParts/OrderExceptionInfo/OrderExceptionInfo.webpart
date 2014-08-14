@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the Web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="610fc132-c155-49f4-8bcb-413aedde0735" />
+      <importErrorMessage>Cannot import Order Exception Info Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Order Exception Info Web Part</property>
+        <property name="Description" type="string">Order Exception Information</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

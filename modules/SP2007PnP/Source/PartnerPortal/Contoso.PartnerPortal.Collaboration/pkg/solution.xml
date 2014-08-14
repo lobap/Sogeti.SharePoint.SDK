@@ -1,0 +1,14 @@
+﻿<solution id="8466b570-e785-42a4-9528-f9e49267de45" name="ContosoPartnerPortalCollaboration">
+  <features>
+    <feature id="f15ec5c3-d97f-4838-b874-0224dbbee676">
+      <featureElements>
+        <featureElement id="68bbce1c-3ab8-48c5-ab55-c0bb063b5658" name="PartnerLandingPageContentType" />
+      </featureElements>
+    </feature>
+    <feature id="0d4249b5-6c67-466a-8c5a-a49cb7aff73e">
+      <featureElements>
+        <featureElement id="c58e53fd-f156-4248-ac7e-abfc852c2b50" name="PartnerLandingPage" />
+      </featureElements>
+    </feature>
+  </features>
+</solution>

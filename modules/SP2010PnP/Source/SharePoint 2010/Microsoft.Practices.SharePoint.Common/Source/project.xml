@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<doc>
+  <members>
+    <member name="N:Microsoft.Practices.SharePoint.Common">
+      <summary>
+        <para>
+          The <see cref="N:Microsoft.Practices.SharePoint.Common"/> namespace provides general utility classes for simplifying coding
+          with SharePoint.  Sub namespaces provide support for specific areas of application configuration management, service location, and logging.
+        </para>
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.Configuration">
+      <summary>
+        <para>
+          The <see cref="N:Microsoft.Practices.SharePoint.Common.Configuration"/> namespace contains classes used in managing configuration
+          within SharePoint for applications.  The configuration manager supports managing configuration at different levels, like the web, site,
+          web application, and farm.  The default implementation uses property bags associated with these objects at these levels like SPWeb, SPWebApplication,
+          and SPFarm to store the configuration.  The configuration can be used within the sandbox.
+        </para>
+        <list type="bullet">
+          <item>
+            <description>
+              <see cref="T:Microsoft.Practices.SharePoint.Common.Configuration.IHierarchicalConfig"/> The implementation provides for hierarchical lookup of a configured item. This interface
+              looks in order for the property bags.  The order of the hierarchy is web->site->web application->farm.  Not all property bags are available on all contexts.  For example,
+              the web application and farm are not available in the sandbox. 
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="T:Microsoft.Practices.SharePoint.Common.Configuration.ConfigManager"/> The implementation provides for accessing configuration settings at
+              a specific level, and for setting, updating, and deleting a configuration setting from a specific property bag.
+            </description>
+          </item>
+        </list>
+        <para>
+          The default implementation of property bags can be overridden to provide storage in different backing stores like
+          lists as well.  <see cref="T:Microsoft.Practices.SharePoint.Common.Configuration.IPropertyBagHierarchy"/> for more information.
+        </para>
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.ListRepository">
+      <summary>
+        The <see cref="N:Microsoft.Practices.SharePoint.Common.ListRepository"/> contains components that can be composed to build a repository for a list.  A repository
+        provides a means to manage strongly typed entities that are mapped to list items.  The components provided help build simple CAML queries, and to map
+        between list items and strongly typed entities.
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.Logging">
+      <summary>
+        The <see cref="N:Microsoft.Practices.SharePoint.Common.Logging"/> namespace can implementation of a logger for logging to the ULS and event log.  This logger
+        builds upon the SPDiagnosticsServiceBase provided by SharePoint, and reads categories and areas defined in configuration to use for logging.  Logging can not
+        be used within the sandbox without customization since the base SharePoint class does not support sandbox operation.  A full trust sandbox proxy is provided
+        that enables logging from the sandbox when installed.  If logging occurs within the sandbox and the proxy is not installed then the logging framework will
+        drop the logged or traced message.  These methods are virtual and can be overridden to provide a custom implementation that stores the message to a different 
+        source, for example, a list in a sandbox solution.
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.ServiceLocation">
+      <summary>
+        The <see cref="N:Microsoft.Practices.SharePoint.Common.ServiceLocation"/> namespace contains an implementation of a service locator for operation within
+        SharePoint, and implements the interface provided by the common service locator project, <see cref="N:IServiceLocator"/>.  The SharePointServiceLocator provides
+        bootstrapping of the service locator within the SharePoint environment.  The implementation supports storing type mappings at either the site or farm levels. 
+        The site service locators combine the settings from farm and site, with site settings taking precedence over farm settings.  Service location works within the
+        sandbox, and will use farm level settings in the sandbox if the proxy is installed for reading farm level configuration.
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.ProxyArgs">
+      <summary>
+        The <see cref="N:Microsoft.Practices.SharePoint.Common.ProxyArgs"/> namespace contains the classes used for passing arguments to the full trust proxy operations supported
+        by the SharePoint library for use within the sandbox.  These operations include reading web application and farm configuration, logging to the event log and
+        ULS, and determining if a specific full trust proxy is installed in the farm.
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.Logging.LoggerProxy">
+      <summary>
+        The <see cref="N:Microsoft.Practices.SharePoint.Common.Logging.LoggerProxy"/> namespace contains the proxy operations for logging and tracing to the event log
+        and ULS from the sandbox.
+      </summary>
+    </member>
+    <member name="N:Microsoft.Practices.SharePoint.Common.Configuration.ConfigurationProxy">
+      <summary>
+        The <see cref="N:Microsoft.Practices.SharePoint.Common.Logging.ConfigurationProxy"/> namespace contains the proxy operations for reading configuration
+        from the sandbox for the web application and farm, and determine if a proxy is installed.
+      </summary>
+    </member>
+  </members>
+</doc>

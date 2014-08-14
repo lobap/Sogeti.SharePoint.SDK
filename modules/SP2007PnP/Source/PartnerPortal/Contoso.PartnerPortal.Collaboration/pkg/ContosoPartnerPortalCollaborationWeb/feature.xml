@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="0d4249b5-6c67-466a-8c5a-a49cb7aff73e" Title="Contoso Partner Portal Collaboration (Web)" Scope="Web" Version="1.0.0.0" Hidden="FALSE" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="PartnerLandingPage\Module.xml" />
+    <ElementFile Location="PartnerLandingPage\PartnerLandingPageLayout.aspx" />
+  </ElementManifests>
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="f15ec5c3-d97f-4838-b874-0224dbbee676"/>
+  </ActivationDependencies>
+</Feature>
