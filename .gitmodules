@@ -1,0 +1,3 @@
+[submodule "modules/O365PnP"]
+	path = modules/O365PnP
+	url = git://github.com/OfficeDev/PnP.git
